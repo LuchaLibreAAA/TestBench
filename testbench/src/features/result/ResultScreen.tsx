@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { getAttempt } from '@/data/repositories/attempts';
-import { getPaper } from '@/data/repositories/papers';
-import type { Attempt, Paper } from '@/core/schema';
+import { getPaper, savePaper } from '@/data/repositories/papers';
+import type { Attempt, Paper, Section, Question } from '@/core/schema';
 import type { ScoreResult } from '@/core/marking';
 import { Button } from '@/components/Button';
 import { resolveText } from '@/core/utils/localized-text';
@@ -14,6 +14,9 @@ import {
   Home,
   TrendingUp,
   Percent,
+  BookOpen,
+  Zap,
+  BarChart2,
 } from 'lucide-react';
 
 export const ResultScreen: React.FC = () => {
@@ -43,15 +46,7 @@ export const ResultScreen: React.FC = () => {
     load();
   }, [attemptId]);
 
-  if (loading || !attempt || !paper) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-gray-50">
-        <p className="text-sm text-gray-500">Calculating results...</p>
-      </div>
-    );
-  }
-
-  const result = (attempt.result as ScoreResult) ?? {
+  const result = (attempt?.result as ScoreResult) ?? {
     totalObtained: 0,
     totalMax: 0,
     totalCorrect: 0,
@@ -61,6 +56,7 @@ export const ResultScreen: React.FC = () => {
     totalQuestions: 0,
     sectionScores: [],
     topicScores: [],
+    questionResults: [],
   };
 
   const percentage = result.totalMax > 0
@@ -72,8 +68,88 @@ export const ResultScreen: React.FC = () => {
     ? Math.round((result.totalCorrect / attemptedCount) * 100)
     : 0;
 
+  // Rule-based insights
+  const insights = useMemo(() => {
+    if (!attempt || !paper) return null;
+
+    let negativeLoss = 0;
+    let fastWrongCount = 0;
+
+    result.questionResults?.forEach((qr) => {
+      const resp = attempt.responses[qr.qid];
+      if (qr.outcome === 'wrong' && qr.marks < 0) {
+        negativeLoss += Math.abs(qr.marks);
+      }
+      if (qr.outcome === 'wrong' && resp && resp.timeSpentMs < 10000) {
+        fastWrongCount++;
+      }
+    });
+
+    const weakTopics = result.topicScores?.filter(
+      (ts) => ts.total >= 2 && ts.correct / ts.total < 0.5
+    ) ?? [];
+
+    return {
+      negativeLoss,
+      fastWrongCount,
+      weakTopics,
+    };
+  }, [attempt, paper, result]);
+
+  if (loading || !attempt || !paper) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-gray-50">
+        <p className="text-sm text-gray-500">Calculating results...</p>
+      </div>
+    );
+  }
+
+  // Handler to generate a derived paper with wrong & skipped questions only
+  const handleRetryWrongAndSkipped = async () => {
+    const wrongOrSkippedQids = new Set(
+      result.questionResults
+        ?.filter((qr) => qr.outcome === 'wrong' || qr.outcome === 'skipped' || qr.outcome === 'partial')
+        .map((qr) => qr.qid) ?? []
+    );
+
+    if (wrongOrSkippedQids.size === 0) {
+      alert('You answered all questions correctly! Perfect score!');
+      return;
+    }
+
+    // Build derived sections containing only wrong/skipped questions
+    const derivedSections: Section[] = [];
+    for (const sec of paper.sections) {
+      const matchingQuestions = (sec.questions as Question[]).filter((q) =>
+        wrongOrSkippedQids.has(q.id)
+      );
+
+      if (matchingQuestions.length > 0) {
+        derivedSections.push({
+          ...sec,
+          questions: matchingQuestions,
+          attemptLimit: undefined, // Remove attempt limit for practice
+        });
+      }
+    }
+
+    const retryPaperId = `${paper.id}-retry-${Date.now().toString(36)}`;
+    const derivedPaper: Paper = {
+      ...paper,
+      id: retryPaperId,
+      title: `${paper.title} (Retry Wrong & Skipped)`,
+      sections: derivedSections,
+      durationMin: Math.max(10, Math.round((wrongOrSkippedQids.size / result.totalQuestions) * (paper.durationMin ?? 60))),
+    };
+
+    await savePaper(derivedPaper);
+
+    const newAttemptId = 'att-' + Date.now().toString(36) + '-' + Math.random().toString(36).substring(2, 6);
+    navigate(`/exam/${newAttemptId}/instructions`, { state: { paperId: retryPaperId } });
+  };
+
   return (
-    <div className="min-h-screen bg-[#f4f6f9] pb-16">
+    <div className="min-h-screen bg-[#f4f6f9] pb-16 select-none">
       {/* Header */}
       <header className="bg-white border-b border-gray-200 sticky top-0 z-20 shadow-2xs safe-top">
         <div className="max-w-4xl mx-auto px-4 h-14 flex items-center justify-between">
@@ -81,9 +157,24 @@ export const ResultScreen: React.FC = () => {
             <Award className="w-5 h-5 text-[#1f5fa6]" />
             <h1 className="text-base font-bold text-gray-900">Scorecard: {paper.title}</h1>
           </div>
-          <Button variant="ghost" size="sm" onClick={() => navigate('/')} icon={<Home className="w-4 h-4" />}>
-            Home
-          </Button>
+          <div className="flex items-center gap-2">
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => navigate('/analytics')}
+              icon={<BarChart2 className="w-4 h-4" />}
+            >
+              Analytics
+            </Button>
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => navigate('/')}
+              icon={<Home className="w-4 h-4" />}
+            >
+              Home
+            </Button>
+          </div>
         </div>
       </header>
 
@@ -133,6 +224,60 @@ export const ResultScreen: React.FC = () => {
           </div>
         </div>
 
+        {/* Action CTAs */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <Button
+            variant="primary"
+            size="lg"
+            onClick={() => navigate(`/review/${attempt.id}`)}
+            icon={<BookOpen className="w-5 h-5" />}
+            className="bg-[#1f5fa6] hover:bg-[#184d87] font-bold"
+          >
+            Review Solutions
+          </Button>
+
+          <Button
+            variant="outline"
+            size="lg"
+            onClick={handleRetryWrongAndSkipped}
+            icon={<RotateCcw className="w-5 h-5 text-amber-600" />}
+            className="border-amber-300 text-amber-800 bg-amber-50 hover:bg-amber-100 font-bold"
+          >
+            Retry Wrong & Skipped ({result.totalWrong + result.totalSkipped})
+          </Button>
+        </div>
+
+        {/* Rule-Based Insights Card */}
+        {insights && (
+          <div className="bg-white rounded-2xl border border-gray-200/90 p-5 shadow-2xs space-y-3">
+            <h3 className="text-sm font-bold text-gray-900 flex items-center gap-1.5">
+              <Zap className="w-4 h-4 text-amber-500" /> Exam Insights & Diagnostics
+            </h3>
+
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
+              <div className="p-3 bg-red-50/70 border border-red-200 rounded-xl space-y-1">
+                <span className="text-xs text-red-600 font-semibold">Negative Marking Loss</span>
+                <div className="text-xl font-bold text-red-700">-{insights.negativeLoss} marks</div>
+                <p className="text-[11px] text-gray-500">Marks lost from incorrect answers</p>
+              </div>
+
+              <div className="p-3 bg-amber-50/70 border border-amber-200 rounded-xl space-y-1">
+                <span className="text-xs text-amber-700 font-semibold">Rushed Guesses</span>
+                <div className="text-xl font-bold text-amber-800">{insights.fastWrongCount} questions</div>
+                <p className="text-[11px] text-gray-500">Answered in &lt;10s and incorrect</p>
+              </div>
+
+              <div className="p-3 bg-blue-50/70 border border-blue-200 rounded-xl space-y-1">
+                <span className="text-xs text-[#1f5fa6] font-semibold">Weak Topics</span>
+                <div className="text-xl font-bold text-[#1f5fa6]">
+                  {insights.weakTopics.length > 0 ? insights.weakTopics[0].topic : 'None'}
+                </div>
+                <p className="text-[11px] text-gray-500">Focus your revision here</p>
+              </div>
+            </div>
+          </div>
+        )}
+
         {/* Section Breakdown Card */}
         <div className="bg-white rounded-2xl border border-gray-200/90 p-5 sm:p-6 shadow-2xs space-y-4">
           <h3 className="text-base font-bold text-gray-900">Section-wise Performance</h3>
@@ -172,7 +317,7 @@ export const ResultScreen: React.FC = () => {
           </div>
         </div>
 
-        {/* Action Buttons */}
+        {/* Bottom Actions */}
         <div className="flex flex-col sm:flex-row gap-3 pt-2">
           <Button
             variant="outline"
@@ -181,15 +326,15 @@ export const ResultScreen: React.FC = () => {
             icon={<RotateCcw className="w-4 h-4" />}
             className="flex-1"
           >
-            Retake Test
+            Retake Full Test
           </Button>
 
           <Button
-            variant="primary"
+            variant="ghost"
             size="lg"
             onClick={() => navigate('/')}
             icon={<Home className="w-4 h-4" />}
-            className="flex-1 bg-[#1f5fa6] hover:bg-[#184d87]"
+            className="flex-1"
           >
             Back to Library
           </Button>

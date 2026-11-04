@@ -15,6 +15,7 @@ interface ExamStore {
   startExam: (paper: Paper, attemptId: string, language: string) => Promise<void>;
   resumeExam: (attempt: Attempt, paper: Paper) => void;
   submitExam: (auto?: boolean) => Promise<void>;
+  setLanguage: (lang: string) => void;
 
   // Selectors
   currentQuestion: () => Question | null;
@@ -123,6 +124,12 @@ export const useExamStore = create<ExamStore>((set, get) => ({
     };
 
     set({ state: restoredState });
+  },
+
+  setLanguage: (language: string) => {
+    set((store) => ({
+      state: { ...store.state, language },
+    }));
   },
 
   submitExam: async (auto = false) => {

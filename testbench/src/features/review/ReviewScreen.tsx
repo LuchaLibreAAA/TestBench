@@ -3,7 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { getAttempt } from '@/data/repositories/attempts';
 import { getPaper } from '@/data/repositories/papers';
 import type { Attempt, Paper, Question, Section, Response } from '@/core/schema';
-import type { ScoreResult, QuestionResult, Outcome } from '@/core/marking';
+import type { ScoreResult, QuestionResult } from '@/core/marking';
 import { Button } from '@/components/Button';
 import { RichText } from '@/components/RichText';
 import { Img } from '@/components/Img';
@@ -15,7 +15,6 @@ import {
   XCircle,
   Clock,
   Check,
-  X,
   ArrowLeft,
   BookOpen,
 } from 'lucide-react';

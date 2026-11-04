@@ -4,6 +4,8 @@ import { PaperDetailScreen } from '@/features/library/PaperDetailScreen';
 import { InstructionsScreen } from '@/features/instructions/InstructionsScreen';
 import { ExamScreen } from '@/features/exam/ExamScreen';
 import { ResultScreen } from '@/features/result/ResultScreen';
+import { ReviewScreen } from '@/features/review/ReviewScreen';
+import { AnalyticsScreen } from '@/features/analytics/AnalyticsScreen';
 import { SettingsScreen } from '@/features/settings/SettingsScreen';
 
 export function App() {
@@ -15,6 +17,8 @@ export function App() {
         <Route path="/exam/:attemptId/instructions" element={<InstructionsScreen />} />
         <Route path="/exam/:attemptId" element={<ExamScreen />} />
         <Route path="/result/:attemptId" element={<ResultScreen />} />
+        <Route path="/review/:attemptId" element={<ReviewScreen />} />
+        <Route path="/analytics" element={<AnalyticsScreen />} />
         <Route path="/settings" element={<SettingsScreen />} />
       </Routes>
     </HashRouter>

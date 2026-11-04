@@ -123,7 +123,7 @@ export function importPaperZip(buffer: Uint8Array): ZipImportResult {
       });
     }
 
-    const blob = new Blob([bytes], { type: mimeType });
+    const blob = new Blob([bytes as unknown as BlobPart], { type: mimeType });
     assets.push({ filename, blob, mimeType });
     assetMap.add(filename);
     assetMap.add(rawPath);

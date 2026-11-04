@@ -24,6 +24,7 @@ export const ExamScreen: React.FC = () => {
     currentResponse,
     resumeExam,
     submitExam,
+    setLanguage,
   } = useExamStore();
 
   const [paletteOpen, setPaletteOpen] = useState(false);
@@ -145,8 +146,8 @@ export const ExamScreen: React.FC = () => {
         endsAt={state.endsAt}
         languages={state.paper.languages}
         activeLanguage={state.language}
-        onLanguageChange={(_lang) => {
-          // Language change handler
+        onLanguageChange={(lang) => {
+          setLanguage(lang);
         }}
         onTogglePalette={() => setPaletteOpen(!paletteOpen)}
         onExpire={handleExpire}

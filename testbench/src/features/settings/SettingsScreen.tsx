@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '@/components/Button';
 import { db } from '@/data/db';
+import { getSetting, setSetting } from '@/data/repositories/settings';
 import {
   ChevronLeft,
   Sun,
@@ -20,6 +21,16 @@ export const SettingsScreen: React.FC = () => {
   const [storageEstimate, setStorageEstimate] = useState<string>('Calculating...');
 
   useEffect(() => {
+    async function loadSettings() {
+      const storedTheme = await getSetting<'light' | 'dark'>('theme', 'light');
+      const storedSize = await getSetting<'small' | 'medium' | 'large'>('textSize', 'medium');
+      const storedKeypad = await getSetting<boolean>('showKeypad', true);
+      setTheme(storedTheme);
+      setTextSize(storedSize);
+      setShowKeypad(storedKeypad);
+    }
+    loadSettings();
+
     if (navigator.storage && navigator.storage.estimate) {
       navigator.storage.estimate().then((estimate) => {
         if (estimate.usage !== undefined) {
@@ -31,6 +42,21 @@ export const SettingsScreen: React.FC = () => {
       setStorageEstimate('Unavailable in this browser');
     }
   }, []);
+
+  const handleThemeChange = async (t: 'light' | 'dark') => {
+    setTheme(t);
+    await setSetting('theme', t);
+  };
+
+  const handleTextSizeChange = async (sz: 'small' | 'medium' | 'large') => {
+    setTextSize(sz);
+    await setSetting('textSize', sz);
+  };
+
+  const handleKeypadToggle = async (val: boolean) => {
+    setShowKeypad(val);
+    await setSetting('showKeypad', val);
+  };
 
   const handleClearAllData = async () => {
     if (confirm('Are you sure you want to delete ALL papers, attempts, and assets? This cannot be undone.')) {
@@ -75,7 +101,7 @@ export const SettingsScreen: React.FC = () => {
             <div className="flex items-center gap-1 bg-gray-100 p-1 rounded-xl">
               <button
                 type="button"
-                onClick={() => setTheme('light')}
+                onClick={() => handleThemeChange('light')}
                 className={`px-3 py-1.5 text-xs font-semibold rounded-lg transition-all ${
                   theme === 'light' ? 'bg-white text-gray-900 shadow-xs' : 'text-gray-600'
                 }`}
@@ -84,7 +110,7 @@ export const SettingsScreen: React.FC = () => {
               </button>
               <button
                 type="button"
-                onClick={() => setTheme('dark')}
+                onClick={() => handleThemeChange('dark')}
                 className={`px-3 py-1.5 text-xs font-semibold rounded-lg transition-all ${
                   theme === 'dark' ? 'bg-white text-gray-900 shadow-xs' : 'text-gray-600'
                 }`}
@@ -106,7 +132,7 @@ export const SettingsScreen: React.FC = () => {
                 <button
                   key={sz}
                   type="button"
-                  onClick={() => setTextSize(sz)}
+                  onClick={() => handleTextSizeChange(sz)}
                   className={`px-2.5 py-1 text-xs font-semibold rounded-lg capitalize transition-all ${
                     textSize === sz ? 'bg-white text-gray-900 shadow-xs' : 'text-gray-600'
                   }`}
@@ -134,7 +160,7 @@ export const SettingsScreen: React.FC = () => {
             <input
               type="checkbox"
               checked={showKeypad}
-              onChange={(e) => setShowKeypad(e.target.checked)}
+              onChange={(e) => handleKeypadToggle(e.target.checked)}
               className="w-5 h-5 accent-[#1f5fa6] rounded cursor-pointer"
             />
           </div>

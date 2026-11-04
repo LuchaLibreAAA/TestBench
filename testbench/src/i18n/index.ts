@@ -1,8 +1,9 @@
 import en from './en.json';
+import hi from './hi.json';
 
 type Translations = typeof en;
 
-const translations: Record<string, Translations> = { en };
+const translations: Record<string, Translations> = { en, hi };
 
 let currentLanguage = 'en';
 

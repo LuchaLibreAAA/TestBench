@@ -9,9 +9,7 @@ import {
   ArrowLeft,
   TrendingUp,
   Award,
-  CheckCircle2,
   Calendar,
-  Layers,
   Percent,
 } from 'lucide-react';
 
