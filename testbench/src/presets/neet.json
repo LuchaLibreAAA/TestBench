@@ -1,0 +1,50 @@
+{
+  "presetId": "neet",
+  "title": "NEET",
+  "defaultDurationMin": 200,
+  "navigation": "free",
+  "languages": ["en", "hi"],
+  "sections": [
+    {
+      "id": "phy-a", "name": { "en": "Physics A" },
+      "type": "single", "count": 35,
+      "marking": { "correct": 4, "wrong": -1, "unattempted": 0 }
+    },
+    {
+      "id": "phy-b", "name": { "en": "Physics B" },
+      "type": "single", "count": 15, "attemptLimit": 10,
+      "marking": { "correct": 4, "wrong": -1, "unattempted": 0 }
+    },
+    {
+      "id": "chem-a", "name": { "en": "Chemistry A" },
+      "type": "single", "count": 35,
+      "marking": { "correct": 4, "wrong": -1, "unattempted": 0 }
+    },
+    {
+      "id": "chem-b", "name": { "en": "Chemistry B" },
+      "type": "single", "count": 15, "attemptLimit": 10,
+      "marking": { "correct": 4, "wrong": -1, "unattempted": 0 }
+    },
+    {
+      "id": "bot-a", "name": { "en": "Botany A" },
+      "type": "single", "count": 35,
+      "marking": { "correct": 4, "wrong": -1, "unattempted": 0 }
+    },
+    {
+      "id": "bot-b", "name": { "en": "Botany B" },
+      "type": "single", "count": 15, "attemptLimit": 10,
+      "marking": { "correct": 4, "wrong": -1, "unattempted": 0 }
+    },
+    {
+      "id": "zoo-a", "name": { "en": "Zoology A" },
+      "type": "single", "count": 35,
+      "marking": { "correct": 4, "wrong": -1, "unattempted": 0 }
+    },
+    {
+      "id": "zoo-b", "name": { "en": "Zoology B" },
+      "type": "single", "count": 15, "attemptLimit": 10,
+      "marking": { "correct": 4, "wrong": -1, "unattempted": 0 }
+    }
+  ]
+}
+

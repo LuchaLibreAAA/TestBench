@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "id": "sample-mock-01",
+  "title": "Sample Mock 1",
+  "exam": "custom",
+  "durationMin": 30,
+  "languages": ["en"],
+  "navigation": "free",
+  "instructions": { "en": "Read each question carefully. +4 for correct, -1 for wrong in Section A. +4/0 for numerical in Section B." },
+  "sections": [
+    {
+      "id": "phy-a",
+      "name": { "en": "Physics A (MCQ)" },
+      "marking": { "correct": 4, "wrong": -1, "unattempted": 0 },
+      "questions": [
+        {
+          "id": "q1", "type": "single", "topic": "Kinematics",
+          "text": { "en": "If $v = 3t^2$, the acceleration at $t = 2$ is:" },
+          "options": [
+            { "id": "a", "text": { "en": "6 m/s²" } },
+            { "id": "b", "text": { "en": "12 m/s²" } },
+            { "id": "c", "text": { "en": "18 m/s²" } },
+            { "id": "d", "text": { "en": "24 m/s²" } }
+          ],
+          "answer": ["b"],
+          "explanation": { "en": "$a = \\frac{dv}{dt} = 6t$. At $t = 2$, $a = 12$ m/s²." }
+        },
+        {
+          "id": "q2", "type": "single", "topic": "Laws of Motion",
+          "text": { "en": "A body of mass 5 kg is acted upon by two perpendicular forces 12 N and 5 N. The acceleration of the body is:" },
+          "options": [
+            { "id": "a", "text": { "en": "2.6 m/s²" } },
+            { "id": "b", "text": { "en": "3.4 m/s²" } },
+            { "id": "c", "text": { "en": "1.0 m/s²" } },
+            { "id": "d", "text": { "en": "0.5 m/s²" } }
+          ],
+          "answer": ["a"],
+          "explanation": { "en": "Resultant $F = \\sqrt{12^2 + 5^2} = 13$ N. $a = F/m = 13/5 = 2.6$ m/s²." }
+        },
+        {
+          "id": "q3", "type": "single", "topic": "Work Energy",
+          "text": { "en": "A ball is thrown vertically upward. At the highest point:" },
+          "options": [
+            { "id": "a", "text": { "en": "Both velocity and acceleration are zero" } },
+            { "id": "b", "text": { "en": "Velocity is zero but acceleration is non-zero" } },
+            { "id": "c", "text": { "en": "Velocity is non-zero but acceleration is zero" } },
+            { "id": "d", "text": { "en": "Both velocity and acceleration are non-zero" } }
+          ],
+          "answer": ["b"],
+          "explanation": { "en": "At the highest point, velocity is zero but gravitational acceleration ($g$) still acts downward." }
+        },
+        {
+          "id": "q4", "type": "single", "topic": "Gravitation",
+          "text": { "en": "If the radius of the Earth is reduced by 1% keeping mass constant, then the acceleration due to gravity on the surface:" },
+          "options": [
+            { "id": "a", "text": { "en": "Decreases by 2%" } },
+            { "id": "b", "text": { "en": "Increases by 2%" } },
+            { "id": "c", "text": { "en": "Decreases by 1%" } },
+            { "id": "d", "text": { "en": "Increases by 1%" } }
+          ],
+          "answer": ["b"],
+          "explanation": { "en": "$g = GM/R^2$. If $R$ decreases by 1%, $g$ increases by approximately 2%." }
+        },
+        {
+          "id": "q5", "type": "single", "topic": "Oscillations",
+          "text": { "en": "The time period of a simple pendulum of length $l$ on the surface of the moon (where $g_{moon} = g/6$) is:" },
+          "options": [
+            { "id": "a", "text": { "en": "$T$" } },
+            { "id": "b", "text": { "en": "$\\sqrt{6}\\,T$" } },
+            { "id": "c", "text": { "en": "$T/\\sqrt{6}$" } },
+            { "id": "d", "text": { "en": "$6T$" } }
+          ],
+          "answer": ["b"],
+          "explanation": { "en": "$T = 2\\pi\\sqrt{l/g}$. If $g$ becomes $g/6$, $T' = 2\\pi\\sqrt{6l/g} = \\sqrt{6}\\,T$." }
+        }
+      ]
+    },
+    {
+      "id": "phy-b",
+      "name": { "en": "Physics B (Numerical)" },
+      "marking": { "correct": 4, "wrong": 0, "unattempted": 0 },
+      "questions": [
+        {
+          "id": "q6", "type": "numerical", "topic": "Kinematics",
+          "text": { "en": "Find the acceleration (in m/s²) at $t = 2$ s for $v = 3t^2$." },
+          "answer": 12, "tolerance": 0.01
+        },
+        {
+          "id": "q7", "type": "numerical", "topic": "Laws of Motion",
+          "text": { "en": "Two forces of 3 N and 4 N act at right angles on a body of mass 5 kg. Find the acceleration in m/s²." },
+          "answer": 1, "tolerance": 0.01
+        },
+        {
+          "id": "q8", "type": "numerical", "topic": "Work Energy",
+          "text": { "en": "A 2 kg ball is dropped from a height of 5 m. Find its kinetic energy (in Joules) just before hitting the ground. Take $g = 10$ m/s²." },
+          "answer": 100, "tolerance": 0.5
+        }
+      ]
+    },
+    {
+      "id": "multi-sec",
+      "name": { "en": "Multi-Correct" },
+      "marking": { "correct": 4, "wrong": -2, "unattempted": 0, "partial": { "perCorrect": 1, "anyWrong": -2 } },
+      "questions": [
+        {
+          "id": "q9", "type": "multi", "topic": "Vectors",
+          "text": { "en": "Select all vector quantities from the following:" },
+          "options": [
+            { "id": "a", "text": { "en": "Velocity" } },
+            { "id": "b", "text": { "en": "Speed" } },
+            { "id": "c", "text": { "en": "Force" } },
+            { "id": "d", "text": { "en": "Mass" } }
+          ],
+          "answer": ["a", "c"],
+          "explanation": { "en": "Velocity and Force are vector quantities (they have both magnitude and direction). Speed and Mass are scalar quantities." }
+        },
+        {
+          "id": "q10", "type": "multi", "topic": "Thermodynamics",
+          "text": { "en": "Which of the following are state functions?" },
+          "options": [
+            { "id": "a", "text": { "en": "Internal energy" } },
+            { "id": "b", "text": { "en": "Work" } },
+            { "id": "c", "text": { "en": "Entropy" } },
+            { "id": "d", "text": { "en": "Heat" } }
+          ],
+          "answer": ["a", "c"],
+          "explanation": { "en": "Internal energy and entropy are state functions. Work and heat are path functions." }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "author": "TestBench Sample",
+    "createdAt": "2026-11-04",
+    "tags": ["physics", "sample", "jee-style"]
+  }
+}
+

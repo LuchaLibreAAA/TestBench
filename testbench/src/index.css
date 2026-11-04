@@ -1,0 +1,90 @@
+@import "tailwindcss";
+@import "katex/dist/katex.min.css";
+
+@theme {
+  /* NTA-inspired design tokens */
+  --color-nta-blue: #1f5fa6;
+  --color-nta-bg: #f4f6f9;
+  --color-nta-ink: #1b1f24;
+
+  /* Palette status colors */
+  --color-status-not-visited: #cfd4da;
+  --color-status-not-answered: #e5533d;
+  --color-status-answered: #2e9e5b;
+  --color-status-marked: #6f42c1;
+  --color-status-answered-marked: #6f42c1;
+
+  /* Timer severity */
+  --color-timer-normal: #1b1f24;
+  --color-timer-warning: #d97706;
+  --color-timer-danger: #dc2626;
+
+  /* Spacing and sizing */
+  --touch-target: 44px;
+
+  /* Font sizes */
+  --font-size-question: 1rem;
+}
+
+/* Base styles */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  @apply bg-nta-bg text-nta-ink antialiased;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  touch-action: manipulation;
+  overscroll-behavior: none;
+}
+
+/* Prevent pull-to-refresh in exam mode */
+.exam-mode {
+  overscroll-behavior-y: contain;
+  overflow: hidden;
+  position: fixed;
+  inset: 0;
+}
+
+/* Safe area padding utilities */
+.safe-top {
+  padding-top: env(safe-area-inset-top);
+}
+
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* Disable user-select on UI chrome */
+.ui-chrome {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* KaTeX lazy loading placeholder */
+.katex-loading {
+  display: inline-block;
+  min-width: 2em;
+  min-height: 1em;
+  background: #e5e7eb;
+  border-radius: 4px;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

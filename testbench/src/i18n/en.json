@@ -1,0 +1,119 @@
+{
+  "app": {
+    "name": "TestBench",
+    "tagline": "Practice smarter, score higher"
+  },
+  "library": {
+    "title": "My Papers",
+    "import": "Import Paper",
+    "trySample": "Try Sample Paper",
+    "empty": "No papers yet. Import a JSON paper to get started.",
+    "questions": "questions",
+    "sections": "sections",
+    "duration": "{{minutes}} min",
+    "resume": "Resume Test",
+    "resumeDesc": "You have an unfinished test",
+    "remaining": "{{time}} remaining",
+    "deleteConfirm": "Delete this paper? Past attempts will also be removed.",
+    "importSuccess": "Paper imported successfully!",
+    "importErrors": "Import failed — fix the errors below:",
+    "importWarnings": "Imported with warnings:"
+  },
+  "paper": {
+    "start": "Start Test",
+    "details": "Paper Details",
+    "marking": "+{{correct}} / {{wrong}}",
+    "attempts": "Past Attempts",
+    "noAttempts": "No attempts yet",
+    "totalQuestions": "Total Questions",
+    "sections": "Sections"
+  },
+  "instructions": {
+    "title": "Instructions",
+    "markingScheme": "Marking Scheme",
+    "section": "Section",
+    "questions": "Questions",
+    "correct": "Correct",
+    "wrong": "Wrong",
+    "agree": "I have read and understood the instructions",
+    "begin": "Begin Test",
+    "language": "Language"
+  },
+  "exam": {
+    "question": "Question",
+    "of": "of",
+    "saveNext": "Save & Next",
+    "markNext": "Mark for Review & Next",
+    "clear": "Clear Response",
+    "prev": "Previous",
+    "next": "Next",
+    "palette": "Question Palette",
+    "submit": "Submit Test",
+    "selectAll": "Select all that apply",
+    "enterValue": "Enter your answer",
+    "leaveConfirm": "Are you sure you want to leave the exam? Your progress is saved.",
+    "timeUp": "Time's up! Your test has been auto-submitted.",
+    "sectionLocked": "This section is locked",
+    "lockConfirm": "Once you leave this section, you cannot return. Continue?"
+  },
+  "summary": {
+    "title": "Test Summary",
+    "answered": "Answered",
+    "notAnswered": "Not Answered",
+    "marked": "Marked for Review",
+    "notVisited": "Not Visited",
+    "total": "Total",
+    "submitConfirm": "Are you sure you want to submit? You cannot change your answers after submitting.",
+    "goBack": "Go Back to Test"
+  },
+  "result": {
+    "title": "Test Result",
+    "score": "Score",
+    "accuracy": "Accuracy",
+    "correct": "Correct",
+    "wrong": "Wrong",
+    "partial": "Partial",
+    "skipped": "Skipped",
+    "attempted": "Attempted",
+    "sectionWise": "Section-wise Performance",
+    "review": "Review Solutions",
+    "retake": "Retake Test",
+    "home": "Go Home",
+    "percentage": "Percentage"
+  },
+  "settings": {
+    "title": "Settings",
+    "theme": "Theme",
+    "light": "Light",
+    "dark": "Dark",
+    "textSize": "Text Size",
+    "small": "Small",
+    "medium": "Medium",
+    "large": "Large",
+    "numericKeypad": "Show Numeric Keypad",
+    "paletteShapes": "Palette Button Style",
+    "classic": "Classic (NTA shapes)",
+    "simple": "Simple squares",
+    "swipeNav": "Swipe Navigation",
+    "storage": "Storage Used",
+    "back": "Back to Home"
+  },
+  "palette": {
+    "notVisited": "Not Visited",
+    "notAnswered": "Not Answered",
+    "answered": "Answered",
+    "marked": "Marked for Review",
+    "answeredMarked": "Answered & Marked"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "retry": "Retry",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "close": "Close",
+    "delete": "Delete",
+    "back": "Back"
+  }
+}
+

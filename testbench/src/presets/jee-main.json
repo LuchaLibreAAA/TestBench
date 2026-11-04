@@ -1,0 +1,40 @@
+{
+  "presetId": "jee-main",
+  "title": "JEE Main",
+  "defaultDurationMin": 180,
+  "navigation": "free",
+  "languages": ["en", "hi"],
+  "sections": [
+    {
+      "id": "phy-a", "name": { "en": "Physics A", "hi": "भौतिकी A" },
+      "type": "single", "count": 20,
+      "marking": { "correct": 4, "wrong": -1, "unattempted": 0 }
+    },
+    {
+      "id": "phy-b", "name": { "en": "Physics B", "hi": "भौतिकी B" },
+      "type": "numerical", "count": 10, "attemptLimit": 5,
+      "marking": { "correct": 4, "wrong": 0, "unattempted": 0 }
+    },
+    {
+      "id": "chem-a", "name": { "en": "Chemistry A", "hi": "रसायन A" },
+      "type": "single", "count": 20,
+      "marking": { "correct": 4, "wrong": -1, "unattempted": 0 }
+    },
+    {
+      "id": "chem-b", "name": { "en": "Chemistry B", "hi": "रसायन B" },
+      "type": "numerical", "count": 10, "attemptLimit": 5,
+      "marking": { "correct": 4, "wrong": 0, "unattempted": 0 }
+    },
+    {
+      "id": "math-a", "name": { "en": "Mathematics A", "hi": "गणित A" },
+      "type": "single", "count": 20,
+      "marking": { "correct": 4, "wrong": -1, "unattempted": 0 }
+    },
+    {
+      "id": "math-b", "name": { "en": "Mathematics B", "hi": "गणित B" },
+      "type": "numerical", "count": 10, "attemptLimit": 5,
+      "marking": { "correct": 4, "wrong": 0, "unattempted": 0 }
+    }
+  ]
+}
+
