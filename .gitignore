@@ -26,3 +26,13 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+# Environment & credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.cert
+
+

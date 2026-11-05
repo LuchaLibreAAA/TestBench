@@ -63,3 +63,4 @@ describe('ZIP Paper Importer', () => {
     expect(res.assets[0].filename).toBe('diagram.png');
   });
 });
+

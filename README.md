@@ -30,7 +30,17 @@
 - **Performance Analytics**: Score totals, accuracy percentage, time per question, and topic mastery breakdown.
 - **Retry Modes**: Instant retake of wrong and skipped questions.
 
-### 4. Offline-First & JSON / ZIP Content
+### 4. Official JEE Main & NEET UG Papers Catalog
+- **Separate Dedicated Sections**: Distinct, organized sections in the Library for **JEE Main** and **NEET UG** past year papers.
+- **Full Real Papers**:
+  - **JEE Main 2024 (January Session 1, Shift 1)**: Complete 90 questions across Physics, Chemistry, and Mathematics (Section A MCQs + Section B numericals with 5/10 attempt limit).
+  - **JEE Main 2023 (April Session 2, Shift 1)**: Complete 90 questions across Physics, Chemistry, and Mathematics.
+  - **NEET UG 2024 (Official)**: Complete 200 questions across Physics, Chemistry, Botany, and Zoology (Section A 35 compulsory + Section B 15 questions with 10/15 attempt limit).
+  - **NEET UG 2023 (Official)**: Complete 200 questions across Physics, Chemistry, Botany, and Zoology.
+- **One-Click Paper Seeding**: Instant loading and local offline persistence of all official papers directly into IndexedDB.
+- **Instant Search & Category Filters**: Search by exam name, year, or topic, with filtering tabs (`All`, `JEE Main`, `NEET UG`, `Custom`).
+
+### 5. Offline-First & JSON / ZIP Content
 - **100% Offline Capability**: Runs entirely in the browser using Dexie (IndexedDB) for local storage of papers, attempts, assets, and settings.
 - **JSON & ZIP Import**: Drag-and-drop or upload `.json` papers or `.zip` packages containing `paper.json` and diagram assets (`images/`).
 - **Two-Pass Validation**: Schema validation with Zod plus cross-field domain checks with human-readable error reporting.
@@ -88,5 +98,17 @@ npm run build
 
 ---
 
+## 🔒 Security & Data Privacy
+
+- **Client-Side & Offline-Only Architecture**: TestBench executes 100% in the user's browser. No student answers, test scores, or personal responses are transmitted to any remote servers.
+- **Zero Third-Party Tracking**: No analytics scripts, trackers, or cookies are stored or broadcast.
+- **XSS Mitigation with DOMPurify**: All KaTeX math renderings and markdown markup are sanitized via `DOMPurify` before rendering to prevent script injection.
+- **Rigorous Schema Validation**: All imported JSON and ZIP files are strictly validated with Zod v4 schemas with deep domain validation before any storage or execution.
+- **0 Dependencies Vulnerabilities**: Audited clean against known CVEs via `npm audit`.
+
+---
+
 ## 📄 License
 MIT
+
+
