@@ -1,0 +1,2991 @@
+{
+  "schemaVersion": 1,
+  "id": "jee-main-2023-apr-s1",
+  "title": "JEE Main 2023 — April Session 2 (06 Apr, Shift 1)",
+  "description": "Official NTA JEE Main April 2023 Session 2 question paper. 90 Questions covering Physics, Chemistry, and Mathematics.",
+  "exam": "jee-main",
+  "durationMin": 180,
+  "languages": [
+    "en"
+  ],
+  "navigation": "free",
+  "instructions": {
+    "en": "This paper contains 90 questions across 3 subjects: Physics, Chemistry, and Mathematics. Each subject has Section A (20 MCQs, +4/-1) and Section B (10 Numerical Value questions, attempt any 5, +4/0). Total marks: 300."
+  },
+  "meta": {
+    "author": "NTA (Memory-based reconstruction)",
+    "createdAt": "2023-04-06T00:00:00Z",
+    "tags": [
+      "jee-main",
+      "2023",
+      "april",
+      "session-2",
+      "physics",
+      "chemistry",
+      "mathematics"
+    ]
+  },
+  "sections": [
+    {
+      "id": "phy-a",
+      "name": {
+        "en": "Physics — Section A"
+      },
+      "marking": {
+        "correct": 4,
+        "wrong": -1,
+        "unattempted": 0
+      },
+      "questions": [
+        {
+          "id": "p23-a-1",
+          "type": "single",
+          "text": {
+            "en": "A ball of mass $0.5$ kg is dropped from a height of $20$ m. What is its kinetic energy just before hitting the ground? ($g = 10$ m/s²)"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "$50$ J"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "$100$ J"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "$200$ J"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "$20$ J"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "explanation": {
+            "en": "Potential energy lost $= mgh = 0.5 \\times 10 \\times 20 = 100$ J. By conservation of energy, kinetic energy gained $= 100$ J."
+          },
+          "topic": "Work, Energy and Power",
+          "difficulty": "easy"
+        },
+        {
+          "id": "p23-a-2",
+          "type": "single",
+          "text": {
+            "en": "The escape velocity of a body from the Earth is $v_e$. If a body is projected with speed $2v_e$, its speed in interstellar space (far away from Earth) will be:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "$v_e$"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "$\\sqrt{3}v_e$"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "$\\sqrt{2}v_e$"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "$2v_e$"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "explanation": {
+            "en": "By energy conservation: $\\frac{1}{2}m v_f^2 = \\frac{1}{2}m(2v_e)^2 - \\frac{1}{2}mv_e^2 = \\frac{3}{2}m v_e^2 \\Rightarrow v_f = \\sqrt{3}v_e$."
+          },
+          "topic": "Gravitation",
+          "difficulty": "medium"
+        },
+        {
+          "id": "p23-a-3",
+          "type": "single",
+          "text": {
+            "en": "A Carnot engine has an efficiency of $50\\%$ when its sink is at $300$ K. By how much should the source temperature be increased to achieve an efficiency of $60\\%$?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "$150$ K"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "$100$ K"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "$200$ K"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "$50$ K"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ],
+          "explanation": {
+            "en": "$\\eta_1 = 1 - 300/T_1 = 0.5 \\Rightarrow T_1 = 600$ K. $\\eta_2 = 1 - 300/T_2 = 0.6 \\Rightarrow T_2 = 300/0.4 = 750$ K. Increase $= 750 - 600 = 150$ K."
+          },
+          "topic": "Thermodynamics",
+          "difficulty": "medium"
+        },
+        {
+          "id": "p23-a-4",
+          "type": "single",
+          "text": {
+            "en": "Two long parallel wires carrying equal currents in opposite directions experience:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "An attractive force"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "A repulsive force"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "No magnetic force"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "A rotational torque only"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "explanation": {
+            "en": "Parallel currents flowing in opposite directions (antiparallel) produce magnetic fields that result in mutual repulsive forces between the wires."
+          },
+          "topic": "Magnetism",
+          "difficulty": "easy"
+        },
+        {
+          "id": "p23-a-5",
+          "type": "single",
+          "text": {
+            "en": "The self-inductance of a solenoid with $N$ turns, length $l$, and cross-sectional area $A$ is given by:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "$\\mu_0 N A / l$"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "$\\mu_0 N^2 A / l$"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "$\\mu_0 N^2 A l$"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "$\\mu_0 N A l$"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "explanation": {
+            "en": "Magnetic field $B = \\mu_0 (N/l) I$. Flux $\\Phi = N B A = \\mu_0 (N^2 A / l) I$. Thus $L = \\Phi / I = \\mu_0 N^2 A / l$."
+          },
+          "topic": "Electromagnetic Induction",
+          "difficulty": "easy"
+        },
+        {
+          "id": "p23-a-6",
+          "type": "single",
+          "text": {
+            "en": "An unpolarized light of intensity $I_0$ is incident on a polarizer. The intensity of transmitted light is:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "$I_0$"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "$I_0 / 2$"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "$I_0 / 4$"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Zero"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "explanation": {
+            "en": "By Malus' law averaged over all random orientations of unpolarized light, the transmitted intensity is $I = \\langle I_0 \\cos^2\\theta \\rangle = I_0 / 2$."
+          },
+          "topic": "Wave Optics",
+          "difficulty": "easy"
+        },
+        {
+          "id": "p23-a-7",
+          "type": "single",
+          "text": {
+            "en": "A radioactive nucleus decays by emitting one $\\alpha$ particle and two $\\beta^-$ particles. The resulting daughter nucleus has:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Same atomic number (isotope)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Same mass number (isobar)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Two fewer neutrons"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Four fewer protons"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ],
+          "explanation": {
+            "en": "Emitting $1\\,\\alpha$ reduces $Z$ by 2. Emitting $2\\,\\beta^-$ increases $Z$ by 2. Net change in atomic number $Z$ is zero, forming an isotope of the parent."
+          },
+          "topic": "Nuclear Physics",
+          "difficulty": "easy"
+        },
+        {
+          "id": "p23-a-8",
+          "type": "single",
+          "text": {
+            "en": "The de Broglie wavelength of a thermal neutron at temperature $T$ is proportional to:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "$T$"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "$T^{1/2}$"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "$T^{-1/2}$"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "$T^{-1}$"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "explanation": {
+            "en": "Thermal kinetic energy $E = \\frac{3}{2}k_B T$. Wavelength $\\lambda = h/p = h/\\sqrt{2mE} = h/\\sqrt{3mk_B T} \\propto T^{-1/2}$."
+          },
+          "topic": "Dual Nature of Matter",
+          "difficulty": "easy"
+        },
+        {
+          "id": "p23-a-9",
+          "type": "single",
+          "text": {
+            "en": "A wire of resistance $12\\,\\Omega$ is bent into a closed circular loop. The equivalent resistance between two diametrically opposite points is:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "$12\\,\\Omega$"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "$6\\,\\Omega$"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "$3\\,\\Omega$"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "$1.5\\,\\Omega$"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "explanation": {
+            "en": "The two semicircular halves each have resistance $R/2 = 6\\,\\Omega$. Connected in parallel: $R_{eq} = (6 \\times 6)/(6 + 6) = 3\\,\\Omega$."
+          },
+          "topic": "Current Electricity",
+          "difficulty": "easy"
+        },
+        {
+          "id": "p23-a-10",
+          "type": "single",
+          "text": {
+            "en": "A block attached to a horizontal spring oscillates with amplitude $A$. At displacement $x = A/2$, the ratio of kinetic energy to potential energy is:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "$1 : 1$"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "$2 : 1$"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "$3 : 1$"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "$1 : 3$"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "explanation": {
+            "en": "$\\text{PE} = \\frac{1}{2}kx^2 = \\frac{1}{8}kA^2$. $\\text{KE} = \\frac{1}{2}k(A^2 - x^2) = \\frac{3}{8}kA^2$. $\\text{KE}/\\text{PE} = 3/1$."
+          },
+          "topic": "Oscillations",
+          "difficulty": "easy"
+        },
+        {
+          "id": "p23-a-11",
+          "type": "single",
+          "text": {
+            "en": "The dimensional formula for magnetic flux ($\\Phi_B$) is:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "$[ML^2T^{-2}A^{-1}]$"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "$[MLT^{-2}A^{-1}]$"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "$[ML^2T^{-1}A^{-2}]$"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "$[ML^0T^{-2}A^{-1}]$"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ],
+          "explanation": {
+            "en": "$\\Phi_B = B \\cdot A$. Force $F = I L B \\Rightarrow [B] = [ML^0T^{-2}A^{-1}]$. Thus $[Phi_B] = [B][A] = [ML^2T^{-2}A^{-1}]$."
+          },
+          "topic": "Units and Dimensions",
+          "difficulty": "easy"
+        },
+        {
+          "id": "p23-a-12",
+          "type": "single",
+          "text": {
+            "en": "A ray of light is incident at Brewster angle $\\theta_B$ on a glass surface ($\\,\\mu = \\sqrt{3}$). The angle of refraction is:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "$60^\\circ$"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "$30^\\circ$"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "$45^\\circ$"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "$90^\\circ$"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "explanation": {
+            "en": "Brewster's law: $\\tan\\theta_B = \\mu = \\sqrt{3} \\Rightarrow \\theta_B = 60^\\circ$. Angle of refraction $r = 90^\\circ - \\theta_B = 90^\\circ - 60^\\circ = 30^\\circ$."
+          },
+          "topic": "Wave Optics",
+          "difficulty": "easy"
+        },
+        {
+          "id": "p23-a-13",
+          "type": "single",
+          "text": {
+            "en": "A uniform rod of length $L$ and mass $M$ is pivoted at one end. Its moment of inertia about the pivot perpendicular to the rod is:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "$\\frac{1}{12}ML^2$"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "$\\frac{1}{3}ML^2$"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "$\\frac{1}{2}ML^2$"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "$ML^2$"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "explanation": {
+            "en": "By the parallel axis theorem, $I = I_{cm} + M(L/2)^2 = \\frac{1}{12}ML^2 + \\frac{1}{4}ML^2 = \\frac{1}{3}ML^2$."
+          },
+          "topic": "Rotational Motion",
+          "difficulty": "easy"
+        },
+        {
+          "id": "p23-a-14",
+          "type": "single",
+          "text": {
+            "en": "In an adiabatic expansion of an ideal gas, the work done by the gas is equal to:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Heat added to the gas"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Decrease in internal energy"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Increase in internal energy"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Zero"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "explanation": {
+            "en": "For adiabatic process $Q = 0$. By First Law: $\\Delta U = -W \\Rightarrow W = -\\Delta U$. Work done comes at the expense of internal energy."
+          },
+          "topic": "Thermodynamics",
+          "difficulty": "easy"
+        },
+        {
+          "id": "p23-a-15",
+          "type": "single",
+          "text": {
+            "en": "An electric dipole placed in a non-uniform electric field experiences:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Torque only"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Net force only"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Both net force and torque"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Neither force nor torque"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "explanation": {
+            "en": "In a non-uniform field, the unequal forces on $+q$ and $-q$ result in a net translational force, and their line of action creates a net torque."
+          },
+          "topic": "Electrostatics",
+          "difficulty": "easy"
+        },
+        {
+          "id": "p23-a-16",
+          "type": "single",
+          "text": {
+            "en": "The frequency of the fundamental note produced by a vibrating string of length $L$, tension $T$, and linear mass density $\\mu$ is:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "$\\frac{1}{2L}\\sqrt{\\frac{T}{\\mu}}$"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "$\\frac{1}{L}\\sqrt{\\frac{T}{\\mu}}$"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "$\\frac{1}{4L}\\sqrt{\\frac{T}{\\mu}}$"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "$\\frac{2}{L}\\sqrt{\\frac{T}{\\mu}}$"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ],
+          "explanation": {
+            "en": "Wave velocity on stretched string is $v = \\sqrt{T/\\mu}$. Fundamental wavelength $\\lambda = 2L$. Frequency $f = v/\\lambda = \\frac{1}{2L}\\sqrt{T/\\mu}$."
+          },
+          "topic": "Waves",
+          "difficulty": "easy"
+        },
+        {
+          "id": "p23-a-17",
+          "type": "single",
+          "text": {
+            "en": "A zener diode is primarily used in electronic circuits as a:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Half-wave rectifier"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Voltage regulator in reverse breakdown"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Current amplifier"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Oscillator"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "explanation": {
+            "en": "Zener diodes operate in the reverse breakdown regime where voltage remains nearly constant across wide variations in reverse current, stabilizing load voltage."
+          },
+          "topic": "Semiconductors",
+          "difficulty": "easy"
+        },
+        {
+          "id": "p23-a-18",
+          "type": "single",
+          "text": {
+            "en": "The capacitive reactance $X_C$ of a capacitor of capacitance $C$ in an AC circuit of frequency $f$ is given by:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "$2\\pi f C$"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "$1 / (2\\pi f C)$"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "$2\\pi / (f C)$"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "$f / (2\\pi C)$"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "explanation": {
+            "en": "$X_C = 1 / (\\omega C) = 1 / (2\\pi f C)$. It is inversely proportional to AC frequency and capacitance."
+          },
+          "topic": "Alternating Current",
+          "difficulty": "easy"
+        },
+        {
+          "id": "p23-a-19",
+          "type": "single",
+          "text": {
+            "en": "A concave mirror has focal length $f = 15$ cm. To form an inverted image twice the size of the object ($m = -2$), the object distance $u$ should be:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "$-22.5$ cm"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "$-30$ cm"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "$-10$ cm"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "$-45$ cm"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ],
+          "explanation": {
+            "en": "$m = \\frac{-v}{u} = -2 \\Rightarrow v = 2u$. Mirror formula: $\\frac{1}{2u} + \\frac{1}{u} = \\frac{1}{-15} \\Rightarrow \\frac{3}{2u} = \\frac{-1}{15} \\Rightarrow 2u = -45 \\Rightarrow u = -22.5$ cm."
+          },
+          "topic": "Ray Optics",
+          "difficulty": "medium"
+        },
+        {
+          "id": "p23-a-20",
+          "type": "single",
+          "text": {
+            "en": "The magnetic potential energy stored in an inductor of inductance $L$ carrying steady current $I$ is:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "$LI^2$"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "$\\frac{1}{2}LI^2$"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "$\\frac{1}{2}L^2I$"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "$2LI$"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "explanation": {
+            "en": "Work done to establish current $I$ against back-EMF is $U = \\int_0^I L i \\, di = \\frac{1}{2}LI^2$."
+          },
+          "topic": "Electromagnetic Induction",
+          "difficulty": "easy"
+        }
+      ]
+    },
+    {
+      "id": "phy-b",
+      "name": {
+        "en": "Physics — Section B"
+      },
+      "marking": {
+        "correct": 4,
+        "wrong": 0,
+        "unattempted": 0
+      },
+      "attemptLimit": 5,
+      "questions": [
+        {
+          "id": "p23-b-1",
+          "type": "numerical",
+          "text": {
+            "en": "A projectile launched from horizontal ground with velocity $v = 40$ m/s at angle $30^\\circ$ has a time of flight (in seconds) of: (Take $g = 10$ m/s²)"
+          },
+          "answer": 4,
+          "tolerance": 0.1,
+          "explanation": {
+            "en": "$T = 2u\\sin\\theta / g = 2(40)\\sin 30^\\circ / 10 = 80(0.5)/10 = 4$ s."
+          },
+          "topic": "Kinematics",
+          "difficulty": "easy"
+        },
+        {
+          "id": "p23-b-2",
+          "type": "numerical",
+          "text": {
+            "en": "Two capacitors of $4\\,\\mu$F and $6\\,\\mu$F are connected in series across a $100$ V source. The charge (in $\\mu$C) on each capacitor is:"
+          },
+          "answer": 240,
+          "tolerance": 2,
+          "explanation": {
+            "en": "$C_{eq} = (4 \\times 6)/(4 + 6) = 2.4\\,\\mu$F. In series, charge on both is $Q = C_{eq} V = 2.4 \\times 100 = 240\\,\\mu$C."
+          },
+          "topic": "Capacitance",
+          "difficulty": "easy"
+        },
+        {
+          "id": "p23-b-3",
+          "type": "numerical",
+          "text": {
+            "en": "A circular loop of radius $R = 10$ cm carries current $I = 2$ A. The magnetic field at the center (in $\\mu$T) is: (Take $\\pi = 3.14$)"
+          },
+          "answer": 12.56,
+          "tolerance": 0.5,
+          "explanation": {
+            "en": "$B = \\mu_0 I / (2R) = (4\\pi \\times 10^{-7} \\times 2)/(2 \\times 0.1) = 4\\pi \\times 10^{-6}$ T $\\approx 12.56\\,\\mu$T."
+          },
+          "topic": "Magnetism",
+          "difficulty": "easy"
+        },
+        {
+          "id": "p23-b-4",
+          "type": "numerical",
+          "text": {
+            "en": "A heat engine absorbs $2000$ J of heat from a hot reservoir and rejects $1200$ J to the cold reservoir per cycle. The work done (in Joules) per cycle is:"
+          },
+          "answer": 800,
+          "tolerance": 5,
+          "explanation": {
+            "en": "$W = Q_H - Q_C = 2000 - 1200 = 800$ J."
+          },
+          "topic": "Thermodynamics",
+          "difficulty": "easy"
+        },
+        {
+          "id": "p23-b-5",
+          "type": "numerical",
+          "text": {
+            "en": "The speed of light in a glass prism is $2 \\times 10^8$ m/s. If $c = 3 \\times 10^8$ m/s, the refractive index of the glass is:"
+          },
+          "answer": 1.5,
+          "tolerance": 0.05,
+          "explanation": {
+            "en": "$\\mu = c/v = (3 \\times 10^8) / (2 \\times 10^8) = 1.5$."
+          },
+          "topic": "Ray Optics",
+          "difficulty": "easy"
+        },
+        {
+          "id": "p23-b-6",
+          "type": "numerical",
+          "text": {
+            "en": "An ideal inductor of $0.2$ H has an inductive reactance of $62.8\\,\\Omega$. The frequency of the AC source (in Hz) is: (Take $\\pi = 3.14$)"
+          },
+          "answer": 50,
+          "tolerance": 1,
+          "explanation": {
+            "en": "$X_L = 2\\pi f L \\Rightarrow f = X_L / (2\\pi L) = 62.8 / (2 \\times 3.14 \\times 0.2) = 62.8 / 1.256 = 50$ Hz."
+          },
+          "topic": "Alternating Current",
+          "difficulty": "easy"
+        },
+        {
+          "id": "p23-b-7",
+          "type": "numerical",
+          "text": {
+            "en": "A metal has threshold frequency $\\nu_0 = 5 \\times 10^{14}$ Hz. If light of frequency $8 \\times 10^{14}$ Hz shines on it, the maximum kinetic energy of emitted photoelectrons (in $10^{-19}$ J) is: ($h = 6.63 \\times 10^{-34}$ J·s)"
+          },
+          "answer": 1.99,
+          "tolerance": 0.1,
+          "explanation": {
+            "en": "$KE_{max} = h(\\nu - \\nu_0) = 6.63 \\times 10^{-34} \\times 3 \\times 10^{14} = 1.989 \\times 10^{-19}$ J $\\approx 1.99 \\times 10^{-19}$ J."
+          },
+          "topic": "Dual Nature of Matter",
+          "difficulty": "medium"
+        },
+        {
+          "id": "p23-b-8",
+          "type": "numerical",
+          "text": {
+            "en": "The half-life of a radioactive isotope is $20$ days. After $60$ days, the remaining activity is what percentage of the initial activity? (Enter integer)"
+          },
+          "answer": 12.5,
+          "tolerance": 0.5,
+          "explanation": {
+            "en": "Number of half-lives $n = 60/20 = 3$. Remaining fraction $= (1/2)^3 = 1/8 = 12.5\\%$."
+          },
+          "topic": "Nuclear Physics",
+          "difficulty": "easy"
+        },
+        {
+          "id": "p23-b-9",
+          "type": "numerical",
+          "text": {
+            "en": "A body of mass $5$ kg moves in a horizontal circle of radius $2$ m at constant angular speed $4$ rad/s. The centripetal force (in N) is:"
+          },
+          "answer": 160,
+          "tolerance": 2,
+          "explanation": {
+            "en": "$F_c = m r \\omega^2 = 5 \\times 2 \\times (4)^2 = 10 \\times 16 = 160$ N."
+          },
+          "topic": "Laws of Motion",
+          "difficulty": "easy"
+        },
+        {
+          "id": "p23-b-10",
+          "type": "numerical",
+          "text": {
+            "en": "A spring requires $40$ N force to compress by $0.2$ m. Its spring constant $k$ (in N/m) is:"
+          },
+          "answer": 200,
+          "tolerance": 2,
+          "explanation": {
+            "en": "$k = F/x = 40 / 0.2 = 200$ N/m."
+          },
+          "topic": "Work, Energy and Power",
+          "difficulty": "easy"
+        }
+      ]
+    },
+    {
+      "id": "chem-a",
+      "name": {
+        "en": "Chemistry — Section A"
+      },
+      "marking": {
+        "correct": 4,
+        "wrong": -1,
+        "unattempted": 0
+      },
+      "questions": [
+        {
+          "id": "c23-a-1",
+          "type": "single",
+          "text": {
+            "en": "The geometry and hybridization of central carbon atom in graphite is:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Tetrahedral, $sp^3$"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Trigonal planar, $sp^2$"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Linear, $sp$"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Octahedral, $sp^3d^2$"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "explanation": {
+            "en": "In graphite, each carbon atom is bonded to three other carbons in hexagonal planar sheets via $sp^2$ hybridized orbitals."
+          },
+          "topic": "p-Block Elements",
+          "difficulty": "easy"
+        },
+        {
+          "id": "c23-a-2",
+          "type": "single",
+          "text": {
+            "en": "Which of the following molecules has a permanent zero dipole moment (non-polar)?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "$\\text{NH}_3$"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "$\\text{H}_2\\text{O}$"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "$\\text{BF}_3$"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "$\\text{SO}_2$"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "explanation": {
+            "en": "$\\text{BF}_3$ has a symmetrical trigonal planar geometry ($120^\\circ$ bond angles) where the three polar B-F bond dipoles cancel out completely."
+          },
+          "topic": "Chemical Bonding",
+          "difficulty": "easy"
+        },
+        {
+          "id": "c23-a-3",
+          "type": "single",
+          "text": {
+            "en": "The standard reduction potential $E^\\circ$ of $\\text{Zn}^{2+}/\\text{Zn}$ is $-0.76$ V and $\\text{Cu}^{2+}/\\text{Cu}$ is $+0.34$ V. The standard EMF of the Daniel cell is:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "$0.42$ V"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "$1.10$ V"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "$-1.10$ V"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "$2.20$ V"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "explanation": {
+            "en": "$E^\\circ_{cell} = E^\\circ_{cathode} - E^\\circ_{anode} = +0.34 - (-0.76) = +1.10$ V."
+          },
+          "topic": "Electrochemistry",
+          "difficulty": "easy"
+        },
+        {
+          "id": "c23-a-4",
+          "type": "single",
+          "text": {
+            "en": "Which among the following has the smallest ionic radius?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "$\\text{N}^{3-}$"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "$\\text{O}^{2-}$"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "$\\text{F}^-$"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "$\\text{Na}^+$"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ],
+          "explanation": {
+            "en": "For isoelectronic species (10 electrons), higher nuclear charge pulls electron cloud tighter: $\\text{Na}^+$ ($Z=11$) has the smallest ionic radius."
+          },
+          "topic": "Periodic Table",
+          "difficulty": "easy"
+        },
+        {
+          "id": "c23-a-5",
+          "type": "single",
+          "text": {
+            "en": "Reaction of an ether with excess concentrated hydroiodic acid ($\\text{HI}$) on heating yields:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Alkyl alcohol and alkyl iodide"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Alkyl iodides and water"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Alkene and iodine"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Alkane and water"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "explanation": {
+            "en": "$\\text{R}-\\text{O}-\\text{R}' + 2\\text{HI} \\to \\text{R}-\\text{I} + \\text{R}'-\\text{I} + \\text{H}_2\\text{O}$. Excess HI converts both alkyl fragments into alkyl iodides."
+          },
+          "topic": "Ethers",
+          "difficulty": "medium"
+        },
+        {
+          "id": "c23-a-6",
+          "type": "single",
+          "text": {
+            "en": "Which of the following compounds will react fastest via $S_N1$ mechanism?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "$\\text{CH}_3\\text{Cl}$"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "$\\text{CH}_3\\text{CH}_2\\text{Cl}$"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "$(\\text{CH}_3)_2\\text{CHCl}$"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "$(\\text{CH}_3)_3\\text{CCl}$"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ],
+          "explanation": {
+            "en": "$S_N1$ reactivity is governed by carbocation intermediate stability: tertiary ($3^\\circ$) carbocation $(\\text{CH}_3)_3\\text{C}^+$ is most stable due to hyperconjugation."
+          },
+          "topic": "Haloalkanes",
+          "difficulty": "easy"
+        },
+        {
+          "id": "c23-a-7",
+          "type": "single",
+          "text": {
+            "en": "The oxidation of primary alcohols to aldehydes without further over-oxidation to carboxylic acids is cleanly achieved using:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Acidified $\\text{KMnO}_4$"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Chromic acid ($\\text{H}_2\\text{CrO}_4$)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Pyridinium chlorochromate (PCC)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Concentrated nitric acid"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "explanation": {
+            "en": "PCC in anhydrous dichloromethane ($\\,\\text{CH}_2\\text{Cl}_2$) mildly oxidizes $1^\\circ$ alcohols to aldehydes without proceeding to carboxylic acids."
+          },
+          "topic": "Alcohols",
+          "difficulty": "easy"
+        },
+        {
+          "id": "c23-a-8",
+          "type": "single",
+          "text": {
+            "en": "The hybridization of central cobalt ion in low-spin diamagnetic complex $[\\text{Co}(\\text{NH}_3)_6]^{3+}$ is:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "$sp^3d^2$"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "$d^2sp^3$"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "$dsp^2$"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "$sp^3$"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "explanation": {
+            "en": "$\\text{Co}^{3+}$ ($3d^6$) undergoes electron pairing in the presence of strong-field $\\text{NH}_3$ ligands, leaving two vacant inner $3d$ orbitals for $d^2sp^3$ inner orbital octahedral hybridization."
+          },
+          "topic": "Coordination Compounds",
+          "difficulty": "medium"
+        },
+        {
+          "id": "c23-a-9",
+          "type": "single",
+          "text": {
+            "en": "The conjugate acid of ammonia ($\\text{NH}_3$) is:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "$\\text{NH}_2^-$"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "$\\text{NH}_4^+$"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "$\\text{N}_2\\text{H}_4$"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "$\\text{NH}^{2-}$"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "explanation": {
+            "en": "A conjugate acid is formed by accepting a proton ($H^+$): $\\text{NH}_3 + H^+ \\to \\text{NH}_4^+$."
+          },
+          "topic": "Equilibrium",
+          "difficulty": "easy"
+        },
+        {
+          "id": "c23-a-10",
+          "type": "single",
+          "text": {
+            "en": "A catalyst in a chemical reaction increases the forward reaction rate by:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Increasing the enthalpy change of reaction"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Lowering the activation energy barrier for both forward and reverse paths"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Shifting the chemical equilibrium toward products"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Increasing the kinetic energy of reacting molecules"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "explanation": {
+            "en": "A catalyst provides an alternate reaction pathway with lower activation energy ($E_a$), accelerating both forward and reverse reactions equally without altering $\\Delta H$ or $K_{eq}$."
+          },
+          "topic": "Chemical Kinetics",
+          "difficulty": "easy"
+        },
+        {
+          "id": "c23-a-11",
+          "type": "single",
+          "text": {
+            "en": "Which of the following is an intensive thermodynamic property?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Mass"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Volume"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Density"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Enthalpy"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "explanation": {
+            "en": "Density is the ratio of two extensive properties (mass/volume) and does not depend on the quantity of matter present, making it an intensive property."
+          },
+          "topic": "Thermodynamics",
+          "difficulty": "easy"
+        },
+        {
+          "id": "c23-a-12",
+          "type": "single",
+          "text": {
+            "en": "The monomer unit of natural rubber is:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Chloroprene"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Isoprene (2-methylbuta-1,3-diene)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Butadiene"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Styrene"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "explanation": {
+            "en": "Natural rubber is a cis-1,4-polyisoprene polymer composed of repeating isoprene (2-methyl-1,3-butadiene) monomer units."
+          },
+          "topic": "Polymers",
+          "difficulty": "easy"
+        },
+        {
+          "id": "c23-a-13",
+          "type": "single",
+          "text": {
+            "en": "The gas liberated at the cathode during electrolysis of brine (concentrated $\\text{NaCl}$ solution) is:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Chlorine"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Hydrogen"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Oxygen"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Sodium vapor"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "explanation": {
+            "en": "At the cathode, reduction of water ($2\\text{H}_2\\text{O} + 2e^- \\to \\text{H}_2 + 2\\text{OH}^-$) is thermodynamically preferred over reduction of $\\text{Na}^+$, releasing $\\text{H}_2$ gas."
+          },
+          "topic": "Electrochemistry",
+          "difficulty": "easy"
+        },
+        {
+          "id": "c23-a-14",
+          "type": "single",
+          "text": {
+            "en": "Which vitamin is water-soluble?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Vitamin A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Vitamin D"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Vitamin C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Vitamin K"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "explanation": {
+            "en": "Vitamins B-complex and C are water-soluble, while A, D, E, and K are fat-soluble."
+          },
+          "topic": "Biomolecules",
+          "difficulty": "easy"
+        },
+        {
+          "id": "c23-a-15",
+          "type": "single",
+          "text": {
+            "en": "The IUPAC name of $\\text{CH}_3-\\text{C}\\equiv\\text{C}-\\text{CH}_3$ is:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "But-1-yne"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "But-2-yne"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "But-2-ene"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Dimethylacetylene"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "explanation": {
+            "en": "The 4-carbon continuous chain with a triple bond starting at carbon 2 is IUPAC named but-2-yne."
+          },
+          "topic": "Hydrocarbons",
+          "difficulty": "easy"
+        },
+        {
+          "id": "c23-a-16",
+          "type": "single",
+          "text": {
+            "en": "Which of the following transition metals shows the highest oxidation state in its oxides or fluorides?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Chromium"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Manganese"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Titanium"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Vanadium"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "explanation": {
+            "en": "Manganese has 7 valence electrons ($3d^5 4s^2$) and exhibits an oxidation state of $+7$ in compounds like $\\text{KMnO}_4$ and $\\text{Mn}_2\\text{O}_7$."
+          },
+          "topic": "d-Block Elements",
+          "difficulty": "easy"
+        },
+        {
+          "id": "c23-a-17",
+          "type": "single",
+          "text": {
+            "en": "Which noble gas has the lowest boiling point of all known substances?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Helium"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Neon"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Argon"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Xenon"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ],
+          "explanation": {
+            "en": "Helium has extremely weak London dispersion intermolecular forces and boils at just $4.2$ K ($-268.9^\\circ$C), the lowest boiling point of any known element."
+          },
+          "topic": "p-Block Elements",
+          "difficulty": "easy"
+        },
+        {
+          "id": "c23-a-18",
+          "type": "single",
+          "text": {
+            "en": "The test based on reaction with nitrous acid to form diazonium salts followed by $\\beta$-naphthol dye formation identifies:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Primary aliphatic amines"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Primary aromatic amines"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Secondary amines"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Tertiary amines"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "explanation": {
+            "en": "Azo dye test is specific for primary aromatic amines (aniline): diazotization at $0-5^\\circ$C followed by alkaline $\\beta$-naphthol coupling yields an intense scarlet-red azo dye."
+          },
+          "topic": "Amines",
+          "difficulty": "easy"
+        },
+        {
+          "id": "c23-a-19",
+          "type": "single",
+          "text": {
+            "en": "Which of the following compounds is an antacid?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Ranitidine"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Aspirin"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Penicillin"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Chloramphenicol"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ],
+          "explanation": {
+            "en": "Ranitidine (Zantac) is an $H_2$-receptor antagonist that prevents histamine from stimulating gastric acid secretion by parietal cells."
+          },
+          "topic": "Everyday Chemistry",
+          "difficulty": "easy"
+        },
+        {
+          "id": "c23-a-20",
+          "type": "single",
+          "text": {
+            "en": "The total number of lone pairs on the central iodine atom in $\\text{I}_3^-$ ion is:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "$1$"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "$2$"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "$3$"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "$0$"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "explanation": {
+            "en": "The central iodine in triiodide $\\text{I}_3^-$ has 2 bond pairs and 3 equatorial lone pairs in a trigonal bipyramidal arrangement ($sp^3d$), giving a linear molecular geometry."
+          },
+          "topic": "Chemical Bonding",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "id": "chem-b",
+      "name": {
+        "en": "Chemistry — Section B"
+      },
+      "marking": {
+        "correct": 4,
+        "wrong": 0,
+        "unattempted": 0
+      },
+      "attemptLimit": 5,
+      "questions": [
+        {
+          "id": "c23-b-1",
+          "type": "numerical",
+          "text": {
+            "en": "The molar mass of methane ($\\text{CH}_4$) is ___ g/mol. (Atomic mass: C=12, H=1)"
+          },
+          "answer": 16,
+          "tolerance": 0.1,
+          "explanation": {
+            "en": "Molar mass $= 12 + 4(1) = 16$ g/mol."
+          },
+          "topic": "Some Basic Concepts",
+          "difficulty": "easy"
+        },
+        {
+          "id": "c23-b-2",
+          "type": "numerical",
+          "text": {
+            "en": "The pH of a $10^{-4}$ M $\\text{NaOH}$ aqueous solution at 25°C is:"
+          },
+          "answer": 10,
+          "tolerance": 0.1,
+          "explanation": {
+            "en": "$[\\text{OH}^-] = 10^{-4}$ M $\\Rightarrow \\text{pOH} = 4$. $\\text{pH} = 14 - \\text{pOH} = 14 - 4 = 10$."
+          },
+          "topic": "Equilibrium",
+          "difficulty": "easy"
+        },
+        {
+          "id": "c23-b-3",
+          "type": "numerical",
+          "text": {
+            "en": "A first-order reaction has a rate constant $k = 2.303 \\times 10^{-2}$ s⁻¹. The time (in seconds) required for $90\\%$ completion of the reaction is:"
+          },
+          "answer": 100,
+          "tolerance": 2,
+          "explanation": {
+            "en": "$t = \\frac{2.303}{k} \\log\\frac{100}{100-90} = \\frac{2.303}{2.303 \\times 10^{-2}} \\log(10) = 10^2 \\times 1 = 100$ s."
+          },
+          "topic": "Chemical Kinetics",
+          "difficulty": "medium"
+        },
+        {
+          "id": "c23-b-4",
+          "type": "numerical",
+          "text": {
+            "en": "The total number of isomers (structural and stereo) of coordination formula $[\\text{Pt}(\\text{NH}_3)_2\\text{Cl}_2]$ is:"
+          },
+          "answer": 2,
+          "tolerance": 0,
+          "explanation": {
+            "en": "Square planar $[\\text{Pt}(\\text{NH}_3)_2\\text{Cl}_2]$ exhibits cis-platin and trans-platin geometric isomers ($2$ isomers)."
+          },
+          "topic": "Coordination Compounds",
+          "difficulty": "easy"
+        },
+        {
+          "id": "c23-b-5",
+          "type": "numerical",
+          "text": {
+            "en": "The spin-only magnetic moment of $\\text{Cr}^{3+}$ ($Z=24$) ion in Bohr Magnetons (BM) is: (Round to nearest tenth, e.g. 3.9)"
+          },
+          "answer": 3.9,
+          "tolerance": 0.2,
+          "explanation": {
+            "en": "$\\text{Cr}^{3+}$ configuration is $[\\text{Ar}]3d^3$ ($n=3$ unpaired electrons). $\\mu = \\sqrt{3(3+2)} = \\sqrt{15} \\approx 3.87 \\approx 3.9$ BM."
+          },
+          "topic": "d-Block Elements",
+          "difficulty": "easy"
+        },
+        {
+          "id": "c23-b-6",
+          "type": "numerical",
+          "text": {
+            "en": "The number of moles of solute present in $250$ mL of $2.0$ M aqueous solution is:"
+          },
+          "answer": 0.5,
+          "tolerance": 0.05,
+          "explanation": {
+            "en": "Moles $= \\text{Molarity} \\times \\text{Volume in liters} = 2.0 \\times 0.250 = 0.5$ mol."
+          },
+          "topic": "Solutions",
+          "difficulty": "easy"
+        },
+        {
+          "id": "c23-b-7",
+          "type": "numerical",
+          "text": {
+            "en": "The oxidation number of phosphorus in orthophosphoric acid ($\\text{H}_3\\text{PO}_4$) is:"
+          },
+          "answer": 5,
+          "tolerance": 0,
+          "explanation": {
+            "en": "$3(+1) + x + 4(-2) = 0 \\Rightarrow 3 + x - 8 = 0 \\Rightarrow x = +5$."
+          },
+          "topic": "p-Block Elements",
+          "difficulty": "easy"
+        },
+        {
+          "id": "c23-b-8",
+          "type": "numerical",
+          "text": {
+            "en": "The enthalpy of vaporization of water at 100°C is $40.7$ kJ/mol. The entropy of vaporization (in J/mol·K) is approximately: (Enter nearest whole number)"
+          },
+          "answer": 109,
+          "tolerance": 2,
+          "explanation": {
+            "en": "$\\Delta S_{vap} = \\Delta H_{vap} / T_b = 40700 / (273 + 100) = 40700 / 373 \\approx 109.1$ J/mol·K."
+          },
+          "topic": "Thermodynamics",
+          "difficulty": "medium"
+        },
+        {
+          "id": "c23-b-9",
+          "type": "numerical",
+          "text": {
+            "en": "The number of atoms in an FCC (face-centered cubic) unit cell is:"
+          },
+          "answer": 4,
+          "tolerance": 0,
+          "explanation": {
+            "en": "Corners: $8 \\times (1/8) = 1$. Faces: $6 \\times (1/2) = 3$. Total $= 1 + 3 = 4$ atoms."
+          },
+          "topic": "Solid State",
+          "difficulty": "easy"
+        },
+        {
+          "id": "c23-b-10",
+          "type": "numerical",
+          "text": {
+            "en": "How many Faradays of electricity are required to deposit one mole of aluminium from molten $\\text{Al}_2\\text{O}_3$?"
+          },
+          "answer": 3,
+          "tolerance": 0,
+          "explanation": {
+            "en": "$\\text{Al}^{3+} + 3e^- \\to \\text{Al}$. One mole of Al requires 3 moles of electrons, which equals 3 Faradays."
+          },
+          "topic": "Electrochemistry",
+          "difficulty": "easy"
+        }
+      ]
+    },
+    {
+      "id": "math-a",
+      "name": {
+        "en": "Mathematics — Section A"
+      },
+      "marking": {
+        "correct": 4,
+        "wrong": -1,
+        "unattempted": 0
+      },
+      "questions": [
+        {
+          "id": "m23-a-1",
+          "type": "single",
+          "text": {
+            "en": "If $A$ is a square matrix of order 3 such that $\\det(A) = 4$, then $\\det(2A)$ is:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "$8$"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "$16$"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "$32$"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "$24$"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "explanation": {
+            "en": "For an $n \\times n$ matrix, $\\det(kA) = k^n \\det(A)$. Here $n=3$, so $\\det(2A) = 2^3 \\det(A) = 8 \\times 4 = 32$."
+          },
+          "topic": "Matrices",
+          "difficulty": "easy"
+        },
+        {
+          "id": "m23-a-2",
+          "type": "single",
+          "text": {
+            "en": "The value of the definite integral $\\int_{-1}^1 x^3 \\sqrt{1 - x^2} \\, dx$ is:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "$0$"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "$\\pi/4$"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "$1$"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "$\\pi/2$"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ],
+          "explanation": {
+            "en": "The integrand $f(x) = x^3 \\sqrt{1 - x^2}$ is an odd function because $f(-x) = (-x)^3 \\sqrt{1 - (-x)^2} = -f(x)$. The integral over symmetric limits $[-a, a]$ is identically 0."
+          },
+          "topic": "Integral Calculus",
+          "difficulty": "easy"
+        },
+        {
+          "id": "m23-a-3",
+          "type": "single",
+          "text": {
+            "en": "The eccentricity of the rectangular hyperbola $x^2 - y^2 = a^2$ is:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "$1$"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "$\\sqrt{2}$"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "$2$"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "$1/\\sqrt{2}$"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "explanation": {
+            "en": "For a rectangular hyperbola $a = b$. Eccentricity $e = \\sqrt{1 + b^2/a^2} = \\sqrt{1 + 1} = \\sqrt{2}$."
+          },
+          "topic": "Conic Sections",
+          "difficulty": "easy"
+        },
+        {
+          "id": "m23-a-4",
+          "type": "single",
+          "text": {
+            "en": "The domain of the function $f(x) = \\sqrt{4 - x^2}$ is:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "$(-2, 2)$"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "$[-2, 2]$"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "$[0, 2]$"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "$(-\\infty, -2] \\cup [2, \\infty)$"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "explanation": {
+            "en": "Under square root $4 - x^2 \\ge 0 \\Rightarrow x^2 \\le 4 \\Rightarrow -2 \\le x \\le 2$. Domain is $[-2, 2]$."
+          },
+          "topic": "Functions",
+          "difficulty": "easy"
+        },
+        {
+          "id": "m23-a-5",
+          "type": "single",
+          "text": {
+            "en": "The angle between vectors $\\vec{a} = \\hat{i} + \\hat{j}$ and $\\vec{b} = \\hat{j} + \\hat{k}$ is:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "$30^\\circ$"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "$45^\\circ$"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "$60^\\circ$"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "$90^\\circ$"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "explanation": {
+            "en": "$\\vec{a} \\cdot \\vec{b} = (1)(0) + (1)(1) + (0)(1) = 1$. $|\\vec{a}| = \\sqrt{2}, |\\vec{b}| = \\sqrt{2}$. $\\cos\\theta = 1/(\\sqrt{2}\\sqrt{2}) = 1/2 \\Rightarrow \\theta = 60^\\circ$."
+          },
+          "topic": "Vectors",
+          "difficulty": "easy"
+        },
+        {
+          "id": "m23-a-6",
+          "type": "single",
+          "text": {
+            "en": "The slope of the tangent to the curve $y = 3x^4 - 4x$ at $x = 1$ is:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "$4$"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "$8$"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "$12$"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "$0$"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "explanation": {
+            "en": "$dy/dx = 12x^3 - 4$. At $x = 1$: $dy/dx = 12(1) - 4 = 8$."
+          },
+          "topic": "Applications of Derivatives",
+          "difficulty": "easy"
+        },
+        {
+          "id": "m23-a-7",
+          "type": "single",
+          "text": {
+            "en": "If $A$ and $B$ are independent events with $P(A) = 0.5$ and $P(B) = 0.6$, then $P(A \\cap B)$ is:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "$0.1$"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "$0.3$"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "$0.55$"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "$0.8$"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "explanation": {
+            "en": "For independent events, $P(A \\cap B) = P(A) \\times P(B) = 0.5 \\times 0.6 = 0.3$."
+          },
+          "topic": "Probability",
+          "difficulty": "easy"
+        },
+        {
+          "id": "m23-a-8",
+          "type": "single",
+          "text": {
+            "en": "The modulus and principal argument of the complex number $z = 1 + i\\sqrt{3}$ are:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "$2$ and $\\pi/3$"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "$2$ and $\\pi/6$"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "$\\sqrt{2}$ and $\\pi/3$"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "$4$ and $2\\pi/3$"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ],
+          "explanation": {
+            "en": "$|z| = \\sqrt{1^2 + (\\sqrt{3})^2} = \\sqrt{4} = 2$. $\\arg(z) = \\tan^{-1}(\\sqrt{3}/1) = \\pi/3$."
+          },
+          "topic": "Complex Numbers",
+          "difficulty": "easy"
+        },
+        {
+          "id": "m23-a-9",
+          "type": "single",
+          "text": {
+            "en": "The value of $\\lim_{x \\to 0} \\frac{e^{3x} - 1}{x}$ is:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "$1$"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "$3$"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "$0$"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "$e$"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "explanation": {
+            "en": "Standard limit $\\lim_{x \\to 0} \\frac{e^{kx} - 1}{x} = k$. Here $k = 3$."
+          },
+          "topic": "Limits",
+          "difficulty": "easy"
+        },
+        {
+          "id": "m23-a-10",
+          "type": "single",
+          "text": {
+            "en": "The degree of the differential equation $\\left(\\frac{d^2y}{dx^2}\\right)^3 + \\left(\\frac{dy}{dx}\\right)^4 + y = 0$ is:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "$2$"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "$3$"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "$4$"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "$1$"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "explanation": {
+            "en": "The highest order derivative is $d^2y/dx^2$ (order 2), and its highest exponent is 3, so degree $= 3$."
+          },
+          "topic": "Differential Equations",
+          "difficulty": "easy"
+        },
+        {
+          "id": "m23-a-11",
+          "type": "single",
+          "text": {
+            "en": "The number of diagonals in a regular polygon with 8 sides (octagon) is:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "$20$"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "$28$"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "$16$"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "$24$"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ],
+          "explanation": {
+            "en": "Number of diagonals $= \\frac{n(n-3)}{2} = \\frac{8(5)}{2} = 20$."
+          },
+          "topic": "Permutations and Combinations",
+          "difficulty": "easy"
+        },
+        {
+          "id": "m23-a-12",
+          "type": "single",
+          "text": {
+            "en": "The area of the region enclosed by the parabola $y^2 = 4x$ and its latus rectum ($x = 1$) is:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "$8/3$"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "$4/3$"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "$16/3$"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "$2$"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ],
+          "explanation": {
+            "en": "Area $= 2 \\int_0^1 2\\sqrt{x}\\,dx = 4 \\left[\\frac{2}{3}x^{3/2}\\right]_0^1 = \\frac{8}{3}$."
+          },
+          "topic": "Integral Calculus",
+          "difficulty": "medium"
+        },
+        {
+          "id": "m23-a-13",
+          "type": "single",
+          "text": {
+            "en": "The solution of the equation $\\tan x + \\cot x = 2$ in $(0, \\pi/2)$ is:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "$\\pi/6$"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "$\\pi/4$"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "$\\pi/3$"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "No solution"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "explanation": {
+            "en": "$\\tan x + 1/\\tan x = 2 \\Rightarrow \\tan^2 x - 2\\tan x + 1 = 0 \\Rightarrow (\\tan x - 1)^2 = 0 \\Rightarrow \\tan x = 1 \\Rightarrow x = \\pi/4$."
+          },
+          "topic": "Trigonometry",
+          "difficulty": "easy"
+        },
+        {
+          "id": "m23-a-14",
+          "type": "single",
+          "text": {
+            "en": "The length of the perpendicular from the origin to the plane $2x - 3y + 6z + 14 = 0$ is:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "$2$"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "$7$"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "$14$"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "$1$"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ],
+          "explanation": {
+            "en": "$d = \\frac{|14|}{\\sqrt{2^2 + (-3)^2 + 6^2}} = \\frac{14}{\\sqrt{4 + 9 + 36}} = \\frac{14}{\\sqrt{49}} = \\frac{14}{7} = 2$."
+          },
+          "topic": "3D Geometry",
+          "difficulty": "easy"
+        },
+        {
+          "id": "m23-a-15",
+          "type": "single",
+          "text": {
+            "en": "If $a, b, c$ are in arithmetic progression (AP), then $2^a, 2^b, 2^c$ are in:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Arithmetic progression"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Geometric progression"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Harmonic progression"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Arithmetico-geometric progression"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "explanation": {
+            "en": "Since $b - a = c - b = d$, the ratio $2^b/2^a = 2^{b-a} = 2^d$ and $2^c/2^b = 2^{c-b} = 2^d$. Constant ratio means geometric progression (GP)."
+          },
+          "topic": "Sequences and Series",
+          "difficulty": "easy"
+        },
+        {
+          "id": "m23-a-16",
+          "type": "single",
+          "text": {
+            "en": "The minimum value of $f(x) = x + 1/x$ for $x > 0$ is:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "$1$"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "$2$"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "$0$"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "$\\sqrt{2}$"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "explanation": {
+            "en": "By AM-GM inequality: $\\frac{x + 1/x}{2} \\ge \\sqrt{x \\cdot (1/x)} = 1 \\Rightarrow x + 1/x \\ge 2$. Minimum is 2 at $x = 1$."
+          },
+          "topic": "Applications of Derivatives",
+          "difficulty": "easy"
+        },
+        {
+          "id": "m23-a-17",
+          "type": "single",
+          "text": {
+            "en": "The value of $\\sin(2\\sin^{-1}(0.6))$ is:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "$0.48$"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "$0.96$"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "$0.6$"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "$0.8$"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "explanation": {
+            "en": "Let $\\theta = \\sin^{-1}(0.6)$, then $\\sin\\theta = 0.6$ and $\\cos\\theta = 0.8$. $\\sin(2\\theta) = 2\\sin\\theta\\cos\\theta = 2(0.6)(0.8) = 0.96$."
+          },
+          "topic": "Inverse Trigonometry",
+          "difficulty": "easy"
+        },
+        {
+          "id": "m23-a-18",
+          "type": "single",
+          "text": {
+            "en": "The distance between the parallel lines $3x + 4y = 9$ and $3x + 4y = -1$ is:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "$2$"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "$10$"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "$1$"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "$4$"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ],
+          "explanation": {
+            "en": "$d = \\frac{|c_1 - c_2|}{\\sqrt{a^2 + b^2}} = \\frac{|9 - (-1)|}{\\sqrt{3^2 + 4^2}} = \\frac{10}{5} = 2$."
+          },
+          "topic": "Straight Lines",
+          "difficulty": "easy"
+        },
+        {
+          "id": "m23-a-19",
+          "type": "single",
+          "text": {
+            "en": "If the mean of five observations $x, x+2, x+4, x+6, x+8$ is $11$, then the value of $x$ is:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "$5$"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "$7$"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "$9$"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "$11$"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "explanation": {
+            "en": "Sum $= 5x + 20$. Mean $= x + 4 = 11 \\Rightarrow x = 7$."
+          },
+          "topic": "Statistics",
+          "difficulty": "easy"
+        },
+        {
+          "id": "m23-a-20",
+          "type": "single",
+          "text": {
+            "en": "The function $f(x) = |x|$ at $x = 0$ is:"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Neither continuous nor differentiable"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Continuous but not differentiable"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Differentiable but not continuous"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Both continuous and differentiable"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "explanation": {
+            "en": "$\\lim_{x \\to 0} |x| = 0 = f(0)$ (continuous). Left derivative is $-1$, right derivative is $+1$ (not differentiable at the sharp corner $x=0$)."
+          },
+          "topic": "Continuity and Differentiability",
+          "difficulty": "easy"
+        }
+      ]
+    },
+    {
+      "id": "math-b",
+      "name": {
+        "en": "Mathematics — Section B"
+      },
+      "marking": {
+        "correct": 4,
+        "wrong": 0,
+        "unattempted": 0
+      },
+      "attemptLimit": 5,
+      "questions": [
+        {
+          "id": "m23-b-1",
+          "type": "numerical",
+          "text": {
+            "en": "The value of $\\int_0^2 (3x^2 - 2x + 1)\\,dx$ is:"
+          },
+          "answer": 6,
+          "tolerance": 0.1,
+          "explanation": {
+            "en": "$[x^3 - x^2 + x]_0^2 = (8 - 4 + 2) - 0 = 6$."
+          },
+          "topic": "Integral Calculus",
+          "difficulty": "easy"
+        },
+        {
+          "id": "m23-b-2",
+          "type": "numerical",
+          "text": {
+            "en": "The number of terms in the expansion of $(2x + 3y)^7$ is:"
+          },
+          "answer": 8,
+          "tolerance": 0,
+          "explanation": {
+            "en": "In $(a+b)^n$ expansion, number of terms is $n+1 = 7+1 = 8$."
+          },
+          "topic": "Binomial Theorem",
+          "difficulty": "easy"
+        },
+        {
+          "id": "m23-b-3",
+          "type": "numerical",
+          "text": {
+            "en": "If a fair die is rolled once, the probability of obtaining a prime number (2, 3, or 5) expressed as a decimal is:"
+          },
+          "answer": 0.5,
+          "tolerance": 0.05,
+          "explanation": {
+            "en": "Prime outcomes are 2, 3, 5 (3 favorable out of 6 total). $P = 3/6 = 0.5$."
+          },
+          "topic": "Probability",
+          "difficulty": "easy"
+        },
+        {
+          "id": "m23-b-4",
+          "type": "numerical",
+          "text": {
+            "en": "The focus of the parabola $y^2 = 12x$ is at $(a, 0)$. The value of $a$ is:"
+          },
+          "answer": 3,
+          "tolerance": 0,
+          "explanation": {
+            "en": "Comparing with standard form $y^2 = 4ax$: $4a = 12 \\Rightarrow a = 3$. Focus is at $(3, 0)$."
+          },
+          "topic": "Conic Sections",
+          "difficulty": "easy"
+        },
+        {
+          "id": "m23-b-5",
+          "type": "numerical",
+          "text": {
+            "en": "The determinant of matrix $M = \\begin{pmatrix} 5 & 2 \\\\ 3 & 4 \\end{pmatrix}$ is:"
+          },
+          "answer": 14,
+          "tolerance": 0,
+          "explanation": {
+            "en": "$\\det(M) = 5 \\times 4 - 2 \\times 3 = 20 - 6 = 14$."
+          },
+          "topic": "Determinants",
+          "difficulty": "easy"
+        },
+        {
+          "id": "m23-b-6",
+          "type": "numerical",
+          "text": {
+            "en": "The sum of the first 20 natural numbers ($1 + 2 + \\dots + 20$) is:"
+          },
+          "answer": 210,
+          "tolerance": 0,
+          "explanation": {
+            "en": "$S_{20} = \\frac{20 \\times 21}{2} = 210$."
+          },
+          "topic": "Sequences and Series",
+          "difficulty": "easy"
+        },
+        {
+          "id": "m23-b-7",
+          "type": "numerical",
+          "text": {
+            "en": "The radius of the sphere $x^2 + y^2 + z^2 - 4x + 6y - 2z - 11 = 0$ is:"
+          },
+          "answer": 5,
+          "tolerance": 0,
+          "explanation": {
+            "en": "$u = -2, v = 3, w = -1, d = -11$. Radius $R = \\sqrt{u^2 + v^2 + w^2 - d} = \\sqrt{4 + 9 + 1 - (-11)} = \\sqrt{25} = 5$."
+          },
+          "topic": "3D Geometry",
+          "difficulty": "easy"
+        },
+        {
+          "id": "m23-b-8",
+          "type": "numerical",
+          "text": {
+            "en": "The scalar triple product $[\\hat{i} \\,\\, \\hat{j} \\,\\, \\hat{k}] = \\hat{i} \\cdot (\\hat{j} \\times \\hat{k})$ equals:"
+          },
+          "answer": 1,
+          "tolerance": 0,
+          "explanation": {
+            "en": "$\\hat{j} \\times \\hat{k} = \\hat{i}$. Then $\\hat{i} \\cdot \\hat{i} = 1$."
+          },
+          "topic": "Vectors",
+          "difficulty": "easy"
+        },
+        {
+          "id": "m23-b-9",
+          "type": "numerical",
+          "text": {
+            "en": "The number of subsets of a set containing 5 distinct elements is:"
+          },
+          "answer": 32,
+          "tolerance": 0,
+          "explanation": {
+            "en": "Number of subsets in power set is $2^n = 2^5 = 32$."
+          },
+          "topic": "Sets",
+          "difficulty": "easy"
+        },
+        {
+          "id": "m23-b-10",
+          "type": "numerical",
+          "text": {
+            "en": "The slope of the line perpendicular to $2x - 4y + 5 = 0$ is:"
+          },
+          "answer": -2,
+          "tolerance": 0.1,
+          "explanation": {
+            "en": "Slope of given line is $m_1 = -2/(-4) = 1/2$. Perpendicular slope $m_2 = -1/m_1 = -2$."
+          },
+          "topic": "Straight Lines",
+          "difficulty": "easy"
+        }
+      ]
+    }
+  ]
+}
