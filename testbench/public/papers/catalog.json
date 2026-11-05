@@ -1,0 +1,51 @@
+[
+  {
+    "id": "jee-main-2024-jan-s1",
+    "exam": "jee-main",
+    "year": 2024,
+    "title": "JEE Main 2024 — January Session 1 (27 Jan, Shift 1)",
+    "description": "Official NTA JEE Main January 2024 Session 1 paper. 90 Questions (30 Physics, 30 Chemistry, 30 Mathematics) with full solutions.",
+    "durationMin": 180,
+    "sectionsCount": 6,
+    "questionsCount": 90,
+    "path": "/papers/jee-main/jee-main-2024-jan-s1.json",
+    "badge": "2024 Shift 1"
+  },
+  {
+    "id": "jee-main-2023-apr-s1",
+    "exam": "jee-main",
+    "year": 2023,
+    "title": "JEE Main 2023 — April Session 2 (06 Apr, Shift 1)",
+    "description": "Official NTA JEE Main April 2023 Session 2 question paper. 90 Questions (30 Physics, 30 Chemistry, 30 Mathematics).",
+    "durationMin": 180,
+    "sectionsCount": 6,
+    "questionsCount": 90,
+    "path": "/papers/jee-main/jee-main-2023-apr-s1.json",
+    "badge": "2023 Session 2"
+  },
+  {
+    "id": "neet-ug-2024",
+    "exam": "neet",
+    "year": 2024,
+    "title": "NEET UG 2024 — Official Question Paper",
+    "description": "Complete National Eligibility cum Entrance Test (UG) 2024 question paper. 200 Questions covering Physics, Chemistry, Botany, and Zoology.",
+    "durationMin": 200,
+    "sectionsCount": 8,
+    "questionsCount": 200,
+    "path": "/papers/neet/neet-ug-2024.json",
+    "badge": "NEET 2024"
+  },
+  {
+    "id": "neet-ug-2023",
+    "exam": "neet",
+    "year": 2023,
+    "title": "NEET UG 2023 — Official Question Paper",
+    "description": "Complete National Eligibility cum Entrance Test (UG) 2023 question paper. 200 Questions covering Physics, Chemistry, Botany, and Zoology.",
+    "durationMin": 200,
+    "sectionsCount": 8,
+    "questionsCount": 200,
+    "path": "/papers/neet/neet-ug-2023.json",
+    "badge": "NEET 2023"
+  }
+]
+

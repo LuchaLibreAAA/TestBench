@@ -1,0 +1,106 @@
+import type { Paper } from '@/core/schema';
+import { importPaperJSON } from '@/core/import';
+import { savePaper, getPaper } from './repositories/papers';
+
+export interface CatalogItem {
+  id: string;
+  exam: 'jee-main' | 'neet' | string;
+  year: number;
+  title: string;
+  description: string;
+  durationMin: number;
+  sectionsCount: number;
+  questionsCount: number;
+  path: string;
+  badge: string;
+  accentColor: string;
+}
+
+export const CATALOG_PAPERS: CatalogItem[] = [
+  {
+    id: 'jee-main-2024-jan-s1',
+    exam: 'jee-main',
+    year: 2024,
+    title: 'JEE Main 2024 — January Session 1 (27 Jan, Shift 1)',
+    description: 'Full official NTA JEE Main question paper. 90 questions across Physics, Chemistry, and Mathematics with KaTeX solutions and numerical section limits.',
+    durationMin: 180,
+    sectionsCount: 6,
+    questionsCount: 90,
+    path: '/papers/jee-main/jee-main-2024-jan-s1.json',
+    badge: 'JEE 2024 Shift 1',
+    accentColor: '#1f5fa6',
+  },
+  {
+    id: 'jee-main-2023-apr-s1',
+    exam: 'jee-main',
+    year: 2023,
+    title: 'JEE Main 2023 — April Session 2 (06 Apr, Shift 1)',
+    description: 'Full official NTA JEE Main question paper. 90 questions across Physics, Chemistry, and Mathematics.',
+    durationMin: 180,
+    sectionsCount: 6,
+    questionsCount: 90,
+    path: '/papers/jee-main/jee-main-2023-apr-s1.json',
+    badge: 'JEE 2023 Session 2',
+    accentColor: '#1f5fa6',
+  },
+  {
+    id: 'neet-ug-2024',
+    exam: 'neet',
+    year: 2024,
+    title: 'NEET UG 2024 — Official Question Paper',
+    description: 'Complete National Eligibility cum Entrance Test (UG) 2024. 200 questions across Physics, Chemistry, Botany, and Zoology with Section A & B optional choices.',
+    durationMin: 200,
+    sectionsCount: 8,
+    questionsCount: 200,
+    path: '/papers/neet/neet-ug-2024.json',
+    badge: 'NEET 2024 Official',
+    accentColor: '#059669',
+  },
+  {
+    id: 'neet-ug-2023',
+    exam: 'neet',
+    year: 2023,
+    title: 'NEET UG 2023 — Official Question Paper',
+    description: 'Complete National Eligibility cum Entrance Test (UG) 2023. 200 questions across Physics, Chemistry, Botany, and Zoology.',
+    durationMin: 200,
+    sectionsCount: 8,
+    questionsCount: 200,
+    path: '/papers/neet/neet-ug-2023.json',
+    badge: 'NEET 2023 Official',
+    accentColor: '#059669',
+  },
+];
+
+/** Fetch and import a catalog paper into IndexedDB */
+export async function loadCatalogPaper(id: string): Promise<Paper | null> {
+  const item = CATALOG_PAPERS.find((p) => p.id === id);
+  if (!item) return null;
+
+  try {
+    const res = await fetch(item.path);
+    if (!res.ok) throw new Error(`HTTP ${res.status} fetching ${item.path}`);
+    const text = await res.text();
+    const result = importPaperJSON(text);
+    if (result.success && result.data) {
+      await savePaper(result.data);
+      return result.data;
+    }
+  } catch (err) {
+    console.error(`Failed to load catalog paper ${id}:`, err);
+  }
+  return null;
+}
+
+/** Pre-seed or ensure all catalog papers are in IndexedDB */
+export async function seedAllCatalogPapers(): Promise<number> {
+  let seeded = 0;
+  for (const item of CATALOG_PAPERS) {
+    const existing = await getPaper(item.id);
+    if (!existing) {
+      const loaded = await loadCatalogPaper(item.id);
+      if (loaded) seeded++;
+    }
+  }
+  return seeded;
+}
+

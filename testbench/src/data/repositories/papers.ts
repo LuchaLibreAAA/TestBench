@@ -1,5 +1,7 @@
 import { db, type StoredPaper } from '../db';
 import type { Paper } from '@/core/schema';
+import { CATALOG_PAPERS } from '../catalog';
+import { importPaperJSON } from '@/core/import';
 
 export type { StoredPaper };
 
@@ -23,9 +25,30 @@ export async function savePaper(paper: Paper): Promise<void> {
   await db.papers.put(stored);
 }
 
-/** Get a paper by id */
+/** Get a paper by id, with automatic catalog fallback */
 export async function getPaper(id: string): Promise<StoredPaper | undefined> {
-  return db.papers.get(id);
+  const existing = await db.papers.get(id);
+  if (existing) return existing;
+
+  // Check if it's a built-in catalog paper and auto-fetch
+  const catalogItem = CATALOG_PAPERS.find((p) => p.id === id);
+  if (catalogItem && typeof fetch !== 'undefined') {
+    try {
+      const res = await fetch(catalogItem.path);
+      if (res.ok) {
+        const text = await res.text();
+        const parsed = importPaperJSON(text);
+        if (parsed.success && parsed.data) {
+          await savePaper(parsed.data);
+          return await db.papers.get(id);
+        }
+      }
+    } catch (e) {
+      console.warn(`Could not auto-fetch catalog paper ${id}:`, e);
+    }
+  }
+
+  return undefined;
 }
 
 /** Get all papers, sorted by updatedAt desc */
