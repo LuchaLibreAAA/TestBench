@@ -33,12 +33,38 @@
 ### 4. Official JEE Main & NEET UG Papers Catalog
 - **Separate Dedicated Sections**: Distinct, organized sections in the Library for **JEE Main** and **NEET UG** past year papers.
 - **Full Real Papers**:
+  - **JEE Main 2026 (April Session, Shift 2 - 02 Apr 2026)**: Complete 75 questions across Mathematics, Physics, and Chemistry (Section A MCQs + Section B numeric questions) with high-resolution clipped diagram & option assets.
   - **JEE Main 2024 (January Session 1, Shift 1)**: Complete 90 questions across Physics, Chemistry, and Mathematics (Section A MCQs + Section B numericals with 5/10 attempt limit).
   - **JEE Main 2023 (April Session 2, Shift 1)**: Complete 90 questions across Physics, Chemistry, and Mathematics.
   - **NEET UG 2024 (Official)**: Complete 200 questions across Physics, Chemistry, Botany, and Zoology (Section A 35 compulsory + Section B 15 questions with 10/15 attempt limit).
   - **NEET UG 2023 (Official)**: Complete 200 questions across Physics, Chemistry, Botany, and Zoology.
 - **One-Click Paper Seeding**: Instant loading and local offline persistence of all official papers directly into IndexedDB.
 - **Instant Search & Category Filters**: Search by exam name, year, or topic, with filtering tabs (`All`, `JEE Main`, `NEET UG`, `Custom`).
+
+---
+
+## 🛠 PDF-to-QnA Extraction Pipeline (`tools/pdf_qna_pipeline`)
+
+A config-driven, extensible extraction framework to convert official NTA Computer Based Test (CBT) question paper PDFs into universal Q&A datasets with lossless diagram and option clipping.
+
+### Features
+- **Deterministic & Config-Driven**: Section configurations, marking schemes, and regexes are stored in YAML (`configs/jee_main.yaml`). Zero hardcoded exam constants in parser code.
+- **Lossless Image Extraction with Fallback**: PyMuPDF direct XObject extraction with coordinate clip rendering fallback at 300 DPI for inline images.
+- **Automated Post-Processing**: Trims near-white borders (grayscale threshold 245) with 8px margin and strips alpha channel to ensure pristine dark mode rendering.
+- **Dual Export**: Outputs both a universal database schema (`qna_database.json`) and native TestBench formats (`testbench_paper.json` and portable `testbench_paper.zip`).
+- **Strict 8-Point Validation**: Verified via `python -m tools.pdf_qna_pipeline.validate` to ensure question continuity, 0 orphans, valid dimensions, and schema compliance.
+
+### CLI Usage
+```bash
+# Inspect PDF structure and record facts
+python -m tools.pdf_qna_pipeline.cli inspect -i "path/to/exam.pdf" -o "dist/qna/output"
+
+# Run end-to-end extraction (parse, clip, export, validate)
+python -m tools.pdf_qna_pipeline.cli extract -i "path/to/exam.pdf" -o "dist/qna/output" -c "tools/pdf_qna_pipeline/configs/jee_main.yaml"
+
+# Run standalone validator
+python -m tools.pdf_qna_pipeline.cli validate -i "dist/qna/output/qna_database.json" -c "tools/pdf_qna_pipeline/configs/jee_main.yaml"
+```
 
 ### 5. Offline-First & JSON / ZIP Content
 - **100% Offline Capability**: Runs entirely in the browser using Dexie (IndexedDB) for local storage of papers, attempts, assets, and settings.
