@@ -1,5 +1,17 @@
 [
   {
+    "id": "jee-main-2026-apr-s2",
+    "exam": "jee-main",
+    "year": 2026,
+    "title": "JEE Main 2026 — April Session (02 Apr, Shift 2)",
+    "description": "Official NTA JEE Main April 2026 Session 2 question paper. 75 Questions (25 Mathematics, 25 Physics, 25 Chemistry) with cropped questions and options.",
+    "durationMin": 180,
+    "sectionsCount": 6,
+    "questionsCount": 75,
+    "path": "/papers/jee-main/jee-main-2026-apr-s2.json",
+    "badge": "2026 Shift 2"
+  },
+  {
     "id": "jee-main-2024-jan-s1",
     "exam": "jee-main",
     "year": 2024,

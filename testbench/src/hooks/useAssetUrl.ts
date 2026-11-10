@@ -23,6 +23,9 @@ export function useAssetUrl(paperId: string, filename?: string): string | null {
         if (asset && active) {
           createdUrl = createAssetUrl(asset);
           setUrl(createdUrl);
+        } else if (active) {
+          // Fallback to static public assets directory
+          setUrl(`/papers/assets/${paperId}/${filename}`);
         }
       } catch (err) {
         console.warn('Failed to load asset URL:', err);

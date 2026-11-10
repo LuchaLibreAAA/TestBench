@@ -115,10 +115,10 @@ export const RichText: React.FC<RichTextProps> = ({
   language = 'en',
   className = '',
 }) => {
-  if (!content) return null;
-
-  const raw = resolveText(content, language);
+  const raw = content ? resolveText(content, language) : '';
   const rendered = useMemo(() => parseInlineMarkup(raw), [raw]);
+
+  if (!content) return null;
 
   return (
     <div className={`leading-relaxed text-gray-800 break-words ${className}`}>
