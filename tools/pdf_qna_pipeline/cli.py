@@ -15,6 +15,13 @@ import sys
 from pathlib import Path
 import pymupdf
 
+from tools.pdf_qna_pipeline.config import load_config
+from tools.pdf_qna_pipeline.parsers.nta_cbt import NtaCbtParser
+from tools.pdf_qna_pipeline.extractors.image_clipper import ImageClipper
+from tools.pdf_qna_pipeline.exporters.universal_qna import UniversalQnAExporter
+from tools.pdf_qna_pipeline.exporters.testbench import TestBenchExporter
+from tools.pdf_qna_pipeline.validate import run_all_validation_checks
+
 
 def run_inspect(pdf_path: Path, output_dir: Path) -> dict:
     """Stage 0: Inspect the PDF and record facts into pdf_profile.json."""
@@ -114,13 +121,65 @@ def run_inspect(pdf_path: Path, output_dir: Path) -> dict:
     with open(out_file, "w", encoding="utf-8") as f:
         json.dump(profile, f, indent=2)
 
-    print(f"Inspection complete.")
+    print("Inspection complete.")
     print(f"Total Pages: {profile['pageCount']}")
     print(f"Question Headers detected: {len(profile['candidateMatches']['questionHeaders'])}")
     print(f"Option IDs detected: {len(profile['candidateMatches']['optionIds'])}")
     print(f"Sections detected: {len(profile['candidateMatches']['sectionHeaders'])}")
     print(f"Saved profile to: {out_file}")
     return profile
+
+
+def run_extract(pdf_path: Path, output_dir: Path, config_path: Path) -> Path:
+    """Run full extraction: parse, clip images, and export both Universal QnA and TestBench."""
+    if not pdf_path.exists():
+        raise FileNotFoundError(f"PDF file not found: {pdf_path}")
+    if not config_path.exists():
+        raise FileNotFoundError(f"Config file not found: {config_path}")
+
+    config = load_config(config_path)
+    output_dir.mkdir(parents=True, exist_ok=True)
+    images_dir = output_dir / "images"
+
+    print(f"Loading PDF: {pdf_path}")
+    doc = pymupdf.open(str(pdf_path))
+
+    print("Step 1: Parsing PDF structure...")
+    parser = NtaCbtParser(config)
+    paper = parser.parse(doc)
+    print(f"Parsed {len(paper.questions)} questions successfully.")
+
+    print("Step 2: Extracting, trimming and validating images...")
+    clipper = ImageClipper(doc, images_dir)
+    image_paths = clipper.extract_paper_images(paper)
+    print(f"Extracted {len(image_paths['questions'])} question images and {len(image_paths['options'])} option images.")
+
+    print("Step 3: Exporting Universal Q&A Database JSON...")
+    uni_exporter = UniversalQnAExporter(config)
+    qna_json_path = output_dir / "qna_database.json"
+    uni_exporter.export(paper, image_paths, qna_json_path, source_pdf_name=pdf_path.name)
+    print(f"Saved Universal Q&A Database to: {qna_json_path}")
+
+    print("Step 4: Exporting TestBench Paper JSON and ZIP...")
+    tb_exporter = TestBenchExporter(config)
+    tb_json_path = output_dir / "testbench_paper.json"
+    tb_exporter.export_json(paper, image_paths, tb_json_path)
+    tb_zip_path = output_dir / "testbench_paper.zip"
+    tb_exporter.export_zip(paper, image_paths, images_dir, tb_zip_path)
+    print(f"Saved TestBench Paper JSON to: {tb_json_path}")
+    print(f"Saved TestBench ZIP to: {tb_zip_path}")
+
+    print("Step 5: Running strict validation checks...")
+    errors = run_all_validation_checks(qna_json_path, config_path)
+    if errors:
+        print(f"Validation FAILED with {len(errors)} error(s):")
+        for err in errors:
+            print(f"  - {err}")
+        sys.exit(1)
+    else:
+        print("Validation PASSED: All 8 checks passed.")
+
+    return qna_json_path
 
 
 def main():
@@ -132,10 +191,33 @@ def main():
     inspect_parser.add_argument("--input", "-i", type=Path, required=True, help="Input PDF file path")
     inspect_parser.add_argument("--output", "-o", type=Path, default=Path("dist/qna/jee-main-2026-shift2"), help="Output directory")
 
+    # extract
+    extract_parser = subparsers.add_parser("extract", help="Extract questions, options and images")
+    extract_parser.add_argument("--input", "-i", type=Path, required=True, help="Input PDF file path")
+    extract_parser.add_argument("--output", "-o", type=Path, default=Path("dist/qna/jee-main-2026-shift2"), help="Output directory")
+    extract_parser.add_argument("--config", "-c", type=Path, default=Path("tools/pdf_qna_pipeline/configs/jee_main.yaml"), help="Config YAML path")
+
+    # validate
+    validate_parser = subparsers.add_parser("validate", help="Validate extracted database")
+    validate_parser.add_argument("--input", "-i", type=Path, required=True, help="Input qna_database.json path")
+    validate_parser.add_argument("--config", "-c", type=Path, default=Path("tools/pdf_qna_pipeline/configs/jee_main.yaml"), help="Config YAML path")
+
     args = parser.parse_args()
 
     if args.subcommand == "inspect":
         run_inspect(args.input, args.output)
+    elif args.subcommand == "extract":
+        run_extract(args.input, args.output, args.config)
+    elif args.subcommand == "validate":
+        errs = run_all_validation_checks(args.input, args.config)
+        if errs:
+            print(f"Validation FAILED with {len(errs)} error(s):")
+            for e in errs:
+                print(f"  - {e}")
+            sys.exit(1)
+        else:
+            print("Validation PASSED: All 8 checks passed.")
+            sys.exit(0)
 
 
 if __name__ == "__main__":
