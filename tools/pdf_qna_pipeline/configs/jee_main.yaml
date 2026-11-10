@@ -1,0 +1,57 @@
+exam_name: JEE Main
+year: 2026
+session: April
+date: "2026-04-02"
+shift: "Shift 2"
+paper: "B.Tech"
+
+regex:
+  section: '^\s*(Mathematics|Physics|Chemistry)\s+Section\s+([AB])'
+  question_header: 'Question Number\s*:\s*(\d+)\s+Question Id\s*:\s*(\d+)\s+Question Type\s*:\s*([A-Za-z]+)'
+  option_id: '(?m)^\s*(\d{9,10})\.\s*$'
+
+sections:
+  - id: math-a
+    name: Mathematics Section A
+    subject: Mathematics
+    type: single_choice
+    q_range: [1, 20]
+  - id: math-b
+    name: Mathematics Section B
+    subject: Mathematics
+    type: numeric
+    q_range: [21, 25]
+  - id: phy-a
+    name: Physics Section A
+    subject: Physics
+    type: single_choice
+    q_range: [26, 45]
+  - id: phy-b
+    name: Physics Section B
+    subject: Physics
+    type: numeric
+    q_range: [46, 50]
+  - id: chem-a
+    name: Chemistry Section A
+    subject: Chemistry
+    type: single_choice
+    q_range: [51, 70]
+  - id: chem-b
+    name: Chemistry Section B
+    subject: Chemistry
+    type: numeric
+    q_range: [71, 75]
+
+marking:
+  single_choice:
+    correct: 4
+    wrong: -1
+    unattempted: 0
+  numeric:
+    correct: 4
+    wrong: -1
+    unattempted: 0
+
+duration_minutes: 180
+total_questions: 75
+total_marks: 300
