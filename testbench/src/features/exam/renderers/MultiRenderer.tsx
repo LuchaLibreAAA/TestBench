@@ -1,9 +1,11 @@
 import React from 'react';
 import type { MultiQuestion, Response } from '@/core/schema';
 import { RichText } from '@/components/RichText';
+import { Img } from '@/components/Img';
 import { Check } from 'lucide-react';
 
 export interface MultiRendererProps {
+  paperId: string;
   question: MultiQuestion;
   response: Response | null;
   language: string;
@@ -11,6 +13,7 @@ export interface MultiRendererProps {
 }
 
 export const MultiRenderer: React.FC<MultiRendererProps> = ({
+  paperId,
   question,
   response,
   language,
@@ -55,9 +58,10 @@ export const MultiRenderer: React.FC<MultiRendererProps> = ({
                 {isSelected ? <Check className="w-5 h-5 stroke-[2.5]" /> : letter}
               </div>
 
-              {/* Option text */}
-              <div className="flex-1 text-base text-gray-900 pt-0.5">
+              {/* Option text and image */}
+              <div className="flex-1 text-base text-gray-900 pt-0.5 space-y-1">
                 {option.text && <RichText content={option.text} language={language} />}
+                {option.image && <Img paperId={paperId} src={option.image} />}
               </div>
             </button>
           );

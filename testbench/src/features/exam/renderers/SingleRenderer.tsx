@@ -1,8 +1,10 @@
 import React from 'react';
 import type { SingleQuestion, Response } from '@/core/schema';
 import { RichText } from '@/components/RichText';
+import { Img } from '@/components/Img';
 
 export interface SingleRendererProps {
+  paperId: string;
   question: SingleQuestion;
   response: Response | null;
   language: string;
@@ -10,6 +12,7 @@ export interface SingleRendererProps {
 }
 
 export const SingleRenderer: React.FC<SingleRendererProps> = ({
+  paperId,
   question,
   response,
   language,
@@ -50,9 +53,10 @@ export const SingleRenderer: React.FC<SingleRendererProps> = ({
               {letter}
             </div>
 
-            {/* Option text */}
-            <div className="flex-1 text-base text-gray-900 pt-0.5">
+            {/* Option text and image */}
+            <div className="flex-1 text-base text-gray-900 pt-0.5 space-y-1">
               {option.text && <RichText content={option.text} language={language} />}
+              {option.image && <Img paperId={paperId} src={option.image} />}
             </div>
           </button>
         );

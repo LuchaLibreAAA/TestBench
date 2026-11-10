@@ -7,12 +7,14 @@ import { ResultScreen } from '@/features/result/ResultScreen';
 import { ReviewScreen } from '@/features/review/ReviewScreen';
 import { AnalyticsScreen } from '@/features/analytics/AnalyticsScreen';
 import { SettingsScreen } from '@/features/settings/SettingsScreen';
+import { QnADatabaseScreen } from '@/features/qna/QnADatabaseScreen';
 
 export function App() {
   return (
     <HashRouter>
       <Routes>
         <Route path="/" element={<LibraryScreen />} />
+        <Route path="/qna" element={<QnADatabaseScreen />} />
         <Route path="/paper/:id" element={<PaperDetailScreen />} />
         <Route path="/exam/:attemptId/instructions" element={<InstructionsScreen />} />
         <Route path="/exam/:attemptId" element={<ExamScreen />} />

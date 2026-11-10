@@ -84,6 +84,7 @@ export const QuestionView: React.FC<QuestionViewProps> = ({
       <div className="pt-2 border-t border-gray-100">
         {question.type === 'single' && (
           <SingleRenderer
+            paperId={paperId}
             question={question}
             response={response}
             language={language}
@@ -93,6 +94,7 @@ export const QuestionView: React.FC<QuestionViewProps> = ({
 
         {question.type === 'multi' && (
           <MultiRenderer
+            paperId={paperId}
             question={question}
             response={response}
             language={language}

@@ -25,11 +25,22 @@ export interface Setting {
   value: unknown;
 }
 
+/** Stored QnA database with metadata */
+export interface StoredQnADatabase {
+  id: string;
+  title: string;
+  examName: string;
+  year: number;
+  data: unknown;
+  updatedAt: number;
+}
+
 class AppDB extends Dexie {
   papers!: Table<StoredPaper, string>;
   assets!: Table<StoredAsset, string>;
   attempts!: Table<Attempt, string>;
   settings!: Table<Setting, string>;
+  qnaDatabases!: Table<StoredQnADatabase, string>;
 
   constructor() {
     super('testbench');
@@ -38,6 +49,13 @@ class AppDB extends Dexie {
       assets: 'key, paperId',
       attempts: 'id, paperId, status, startedAt',
       settings: 'key',
+    });
+    this.version(2).stores({
+      papers: 'id, title, exam, updatedAt',
+      assets: 'key, paperId',
+      attempts: 'id, paperId, status, startedAt',
+      settings: 'key',
+      qnaDatabases: 'id, examName, year, updatedAt',
     });
   }
 }

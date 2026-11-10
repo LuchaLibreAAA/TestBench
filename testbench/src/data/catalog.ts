@@ -18,6 +18,19 @@ export interface CatalogItem {
 
 export const CATALOG_PAPERS: CatalogItem[] = [
   {
+    id: 'jee-main-2026-apr-s2',
+    exam: 'jee-main',
+    year: 2026,
+    title: 'JEE Main 2026 — April Session (02 Apr, Shift 2)',
+    description: 'Official NTA JEE Main April 2026 Session 2 question paper. 75 questions across Mathematics, Physics, and Chemistry with high-resolution clipped formulas and diagrams.',
+    durationMin: 180,
+    sectionsCount: 6,
+    questionsCount: 75,
+    path: '/papers/jee-main/jee-main-2026-apr-s2.json',
+    badge: 'JEE 2026 Shift 2',
+    accentColor: '#1f5fa6',
+  },
+  {
     id: 'jee-main-2024-jan-s1',
     exam: 'jee-main',
     year: 2024,

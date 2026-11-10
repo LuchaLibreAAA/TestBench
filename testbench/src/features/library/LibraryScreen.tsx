@@ -25,6 +25,7 @@ import {
   Search,
   BookOpen,
   DownloadCloud,
+  Database,
 } from 'lucide-react';
 
 type FilterTab = 'all' | 'jee-main' | 'neet' | 'custom';
@@ -360,6 +361,14 @@ export const LibraryScreen: React.FC = () => {
           </div>
 
           <div className="flex items-center gap-2">
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => navigate('/qna')}
+              icon={<Database className="w-4 h-4 text-blue-600" />}
+            >
+              Q&A Database
+            </Button>
             <Button
               variant="ghost"
               size="sm"

@@ -1,0 +1,4825 @@
+{
+  "schemaVersion": "1.0",
+  "examMetadata": {
+    "examName": "JEE Main",
+    "year": 2026,
+    "session": "April",
+    "date": "2026-04-02",
+    "shift": "Shift 2",
+    "paper": "B.Tech",
+    "totalMarks": 300,
+    "durationMinutes": 180,
+    "totalQuestions": 75,
+    "sourcePdf": "JEE-Main-2026-Question-Paper-B-Tech-2nd-Apr-Shift-2.pdf"
+  },
+  "sections": [
+    {
+      "sectionId": "math-a",
+      "sectionName": "Mathematics Section A",
+      "subject": "Mathematics",
+      "questionType": "single_choice",
+      "markingScheme": {
+        "correct": 4,
+        "wrong": -1,
+        "unattempted": 0
+      }
+    },
+    {
+      "sectionId": "math-b",
+      "sectionName": "Mathematics Section B",
+      "subject": "Mathematics",
+      "questionType": "numeric",
+      "markingScheme": {
+        "correct": 4,
+        "wrong": -1,
+        "unattempted": 0
+      }
+    },
+    {
+      "sectionId": "phy-a",
+      "sectionName": "Physics Section A",
+      "subject": "Physics",
+      "questionType": "single_choice",
+      "markingScheme": {
+        "correct": 4,
+        "wrong": -1,
+        "unattempted": 0
+      }
+    },
+    {
+      "sectionId": "phy-b",
+      "sectionName": "Physics Section B",
+      "subject": "Physics",
+      "questionType": "numeric",
+      "markingScheme": {
+        "correct": 4,
+        "wrong": -1,
+        "unattempted": 0
+      }
+    },
+    {
+      "sectionId": "chem-a",
+      "sectionName": "Chemistry Section A",
+      "subject": "Chemistry",
+      "questionType": "single_choice",
+      "markingScheme": {
+        "correct": 4,
+        "wrong": -1,
+        "unattempted": 0
+      }
+    },
+    {
+      "sectionId": "chem-b",
+      "sectionName": "Chemistry Section B",
+      "subject": "Chemistry",
+      "questionType": "numeric",
+      "markingScheme": {
+        "correct": 4,
+        "wrong": -1,
+        "unattempted": 0
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q-691121151",
+      "questionNumber": 1,
+      "questionId": "691121151",
+      "sectionId": "math-a",
+      "subject": "Mathematics",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121151.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121511",
+          "optionNumber": 1,
+          "optionId": "691121511",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121511.png"
+          ]
+        },
+        {
+          "id": "opt-691121512",
+          "optionNumber": 2,
+          "optionId": "691121512",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121512.png"
+          ]
+        },
+        {
+          "id": "opt-691121513",
+          "optionNumber": 3,
+          "optionId": "691121513",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121513.png"
+          ]
+        },
+        {
+          "id": "opt-691121514",
+          "optionNumber": 4,
+          "optionId": "691121514",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121514.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          2,
+          3
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121152",
+      "questionNumber": 2,
+      "questionId": "691121152",
+      "sectionId": "math-a",
+      "subject": "Mathematics",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121152.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121515",
+          "optionNumber": 1,
+          "optionId": "691121515",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121515.png"
+          ]
+        },
+        {
+          "id": "opt-691121516",
+          "optionNumber": 2,
+          "optionId": "691121516",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121516.png"
+          ]
+        },
+        {
+          "id": "opt-691121517",
+          "optionNumber": 3,
+          "optionId": "691121517",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121517.png"
+          ]
+        },
+        {
+          "id": "opt-691121518",
+          "optionNumber": 4,
+          "optionId": "691121518",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121518.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          3
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121153",
+      "questionNumber": 3,
+      "questionId": "691121153",
+      "sectionId": "math-a",
+      "subject": "Mathematics",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121153.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121519",
+          "optionNumber": 1,
+          "optionId": "691121519",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121519.png"
+          ]
+        },
+        {
+          "id": "opt-691121520",
+          "optionNumber": 2,
+          "optionId": "691121520",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121520.png"
+          ]
+        },
+        {
+          "id": "opt-691121521",
+          "optionNumber": 3,
+          "optionId": "691121521",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121521.png"
+          ]
+        },
+        {
+          "id": "opt-691121522",
+          "optionNumber": 4,
+          "optionId": "691121522",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121522.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          3
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121154",
+      "questionNumber": 4,
+      "questionId": "691121154",
+      "sectionId": "math-a",
+      "subject": "Mathematics",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121154.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121523",
+          "optionNumber": 1,
+          "optionId": "691121523",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121523.png"
+          ]
+        },
+        {
+          "id": "opt-691121524",
+          "optionNumber": 2,
+          "optionId": "691121524",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121524.png"
+          ]
+        },
+        {
+          "id": "opt-691121525",
+          "optionNumber": 3,
+          "optionId": "691121525",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121525.png"
+          ]
+        },
+        {
+          "id": "opt-691121526",
+          "optionNumber": 4,
+          "optionId": "691121526",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121526.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          3,
+          4
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121155",
+      "questionNumber": 5,
+      "questionId": "691121155",
+      "sectionId": "math-a",
+      "subject": "Mathematics",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121155.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121527",
+          "optionNumber": 1,
+          "optionId": "691121527",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121527.png"
+          ]
+        },
+        {
+          "id": "opt-691121528",
+          "optionNumber": 2,
+          "optionId": "691121528",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121528.png"
+          ]
+        },
+        {
+          "id": "opt-691121529",
+          "optionNumber": 3,
+          "optionId": "691121529",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121529.png"
+          ]
+        },
+        {
+          "id": "opt-691121530",
+          "optionNumber": 4,
+          "optionId": "691121530",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121530.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          4
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121156",
+      "questionNumber": 6,
+      "questionId": "691121156",
+      "sectionId": "math-a",
+      "subject": "Mathematics",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121156.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121531",
+          "optionNumber": 1,
+          "optionId": "691121531",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121531.png"
+          ]
+        },
+        {
+          "id": "opt-691121532",
+          "optionNumber": 2,
+          "optionId": "691121532",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121532.png"
+          ]
+        },
+        {
+          "id": "opt-691121533",
+          "optionNumber": 3,
+          "optionId": "691121533",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121533.png"
+          ]
+        },
+        {
+          "id": "opt-691121534",
+          "optionNumber": 4,
+          "optionId": "691121534",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121534.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          4
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121157",
+      "questionNumber": 7,
+      "questionId": "691121157",
+      "sectionId": "math-a",
+      "subject": "Mathematics",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121157.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121535",
+          "optionNumber": 1,
+          "optionId": "691121535",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121535.png"
+          ]
+        },
+        {
+          "id": "opt-691121536",
+          "optionNumber": 2,
+          "optionId": "691121536",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121536.png"
+          ]
+        },
+        {
+          "id": "opt-691121537",
+          "optionNumber": 3,
+          "optionId": "691121537",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121537.png"
+          ]
+        },
+        {
+          "id": "opt-691121538",
+          "optionNumber": 4,
+          "optionId": "691121538",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121538.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          4
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121158",
+      "questionNumber": 8,
+      "questionId": "691121158",
+      "sectionId": "math-a",
+      "subject": "Mathematics",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121158.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121539",
+          "optionNumber": 1,
+          "optionId": "691121539",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121539.png"
+          ]
+        },
+        {
+          "id": "opt-691121540",
+          "optionNumber": 2,
+          "optionId": "691121540",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121540.png"
+          ]
+        },
+        {
+          "id": "opt-691121541",
+          "optionNumber": 3,
+          "optionId": "691121541",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121541.png"
+          ]
+        },
+        {
+          "id": "opt-691121542",
+          "optionNumber": 4,
+          "optionId": "691121542",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121542.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          4,
+          5
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121159",
+      "questionNumber": 9,
+      "questionId": "691121159",
+      "sectionId": "math-a",
+      "subject": "Mathematics",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121159.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121543",
+          "optionNumber": 1,
+          "optionId": "691121543",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121543.png"
+          ]
+        },
+        {
+          "id": "opt-691121544",
+          "optionNumber": 2,
+          "optionId": "691121544",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121544.png"
+          ]
+        },
+        {
+          "id": "opt-691121545",
+          "optionNumber": 3,
+          "optionId": "691121545",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121545.png"
+          ]
+        },
+        {
+          "id": "opt-691121546",
+          "optionNumber": 4,
+          "optionId": "691121546",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121546.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          5
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121160",
+      "questionNumber": 10,
+      "questionId": "691121160",
+      "sectionId": "math-a",
+      "subject": "Mathematics",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121160.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121547",
+          "optionNumber": 1,
+          "optionId": "691121547",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121547.png"
+          ]
+        },
+        {
+          "id": "opt-691121548",
+          "optionNumber": 2,
+          "optionId": "691121548",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121548.png"
+          ]
+        },
+        {
+          "id": "opt-691121549",
+          "optionNumber": 3,
+          "optionId": "691121549",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121549.png"
+          ]
+        },
+        {
+          "id": "opt-691121550",
+          "optionNumber": 4,
+          "optionId": "691121550",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121550.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          5
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121161",
+      "questionNumber": 11,
+      "questionId": "691121161",
+      "sectionId": "math-a",
+      "subject": "Mathematics",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121161.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121551",
+          "optionNumber": 1,
+          "optionId": "691121551",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121551.png"
+          ]
+        },
+        {
+          "id": "opt-691121552",
+          "optionNumber": 2,
+          "optionId": "691121552",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121552.png"
+          ]
+        },
+        {
+          "id": "opt-691121553",
+          "optionNumber": 3,
+          "optionId": "691121553",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121553.png"
+          ]
+        },
+        {
+          "id": "opt-691121554",
+          "optionNumber": 4,
+          "optionId": "691121554",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121554.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          5,
+          6
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121162",
+      "questionNumber": 12,
+      "questionId": "691121162",
+      "sectionId": "math-a",
+      "subject": "Mathematics",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121162.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121555",
+          "optionNumber": 1,
+          "optionId": "691121555",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121555.png"
+          ]
+        },
+        {
+          "id": "opt-691121556",
+          "optionNumber": 2,
+          "optionId": "691121556",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121556.png"
+          ]
+        },
+        {
+          "id": "opt-691121557",
+          "optionNumber": 3,
+          "optionId": "691121557",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121557.png"
+          ]
+        },
+        {
+          "id": "opt-691121558",
+          "optionNumber": 4,
+          "optionId": "691121558",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121558.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          6
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121163",
+      "questionNumber": 13,
+      "questionId": "691121163",
+      "sectionId": "math-a",
+      "subject": "Mathematics",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121163.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121559",
+          "optionNumber": 1,
+          "optionId": "691121559",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121559.png"
+          ]
+        },
+        {
+          "id": "opt-691121560",
+          "optionNumber": 2,
+          "optionId": "691121560",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121560.png"
+          ]
+        },
+        {
+          "id": "opt-691121561",
+          "optionNumber": 3,
+          "optionId": "691121561",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121561.png"
+          ]
+        },
+        {
+          "id": "opt-691121562",
+          "optionNumber": 4,
+          "optionId": "691121562",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121562.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          6,
+          7
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121164",
+      "questionNumber": 14,
+      "questionId": "691121164",
+      "sectionId": "math-a",
+      "subject": "Mathematics",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121164.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121563",
+          "optionNumber": 1,
+          "optionId": "691121563",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121563.png"
+          ]
+        },
+        {
+          "id": "opt-691121564",
+          "optionNumber": 2,
+          "optionId": "691121564",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121564.png"
+          ]
+        },
+        {
+          "id": "opt-691121565",
+          "optionNumber": 3,
+          "optionId": "691121565",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121565.png"
+          ]
+        },
+        {
+          "id": "opt-691121566",
+          "optionNumber": 4,
+          "optionId": "691121566",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121566.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          7
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121165",
+      "questionNumber": 15,
+      "questionId": "691121165",
+      "sectionId": "math-a",
+      "subject": "Mathematics",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121165.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121567",
+          "optionNumber": 1,
+          "optionId": "691121567",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121567.png"
+          ]
+        },
+        {
+          "id": "opt-691121568",
+          "optionNumber": 2,
+          "optionId": "691121568",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121568.png"
+          ]
+        },
+        {
+          "id": "opt-691121569",
+          "optionNumber": 3,
+          "optionId": "691121569",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121569.png"
+          ]
+        },
+        {
+          "id": "opt-691121570",
+          "optionNumber": 4,
+          "optionId": "691121570",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121570.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          7
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121166",
+      "questionNumber": 16,
+      "questionId": "691121166",
+      "sectionId": "math-a",
+      "subject": "Mathematics",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121166.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121571",
+          "optionNumber": 1,
+          "optionId": "691121571",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121571.png"
+          ]
+        },
+        {
+          "id": "opt-691121572",
+          "optionNumber": 2,
+          "optionId": "691121572",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121572.png"
+          ]
+        },
+        {
+          "id": "opt-691121573",
+          "optionNumber": 3,
+          "optionId": "691121573",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121573.png"
+          ]
+        },
+        {
+          "id": "opt-691121574",
+          "optionNumber": 4,
+          "optionId": "691121574",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121574.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          7,
+          8
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121167",
+      "questionNumber": 17,
+      "questionId": "691121167",
+      "sectionId": "math-a",
+      "subject": "Mathematics",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121167.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121575",
+          "optionNumber": 1,
+          "optionId": "691121575",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121575.png"
+          ]
+        },
+        {
+          "id": "opt-691121576",
+          "optionNumber": 2,
+          "optionId": "691121576",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121576.png"
+          ]
+        },
+        {
+          "id": "opt-691121577",
+          "optionNumber": 3,
+          "optionId": "691121577",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121577.png"
+          ]
+        },
+        {
+          "id": "opt-691121578",
+          "optionNumber": 4,
+          "optionId": "691121578",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121578.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          8
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121168",
+      "questionNumber": 18,
+      "questionId": "691121168",
+      "sectionId": "math-a",
+      "subject": "Mathematics",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121168.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121579",
+          "optionNumber": 1,
+          "optionId": "691121579",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121579.png"
+          ]
+        },
+        {
+          "id": "opt-691121580",
+          "optionNumber": 2,
+          "optionId": "691121580",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121580.png"
+          ]
+        },
+        {
+          "id": "opt-691121581",
+          "optionNumber": 3,
+          "optionId": "691121581",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121581.png"
+          ]
+        },
+        {
+          "id": "opt-691121582",
+          "optionNumber": 4,
+          "optionId": "691121582",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121582.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          8
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121169",
+      "questionNumber": 19,
+      "questionId": "691121169",
+      "sectionId": "math-a",
+      "subject": "Mathematics",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121169.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121583",
+          "optionNumber": 1,
+          "optionId": "691121583",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121583.png"
+          ]
+        },
+        {
+          "id": "opt-691121584",
+          "optionNumber": 2,
+          "optionId": "691121584",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121584.png"
+          ]
+        },
+        {
+          "id": "opt-691121585",
+          "optionNumber": 3,
+          "optionId": "691121585",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121585.png"
+          ]
+        },
+        {
+          "id": "opt-691121586",
+          "optionNumber": 4,
+          "optionId": "691121586",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121586.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          8,
+          9
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121170",
+      "questionNumber": 20,
+      "questionId": "691121170",
+      "sectionId": "math-a",
+      "subject": "Mathematics",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121170.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121587",
+          "optionNumber": 1,
+          "optionId": "691121587",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121587.png"
+          ]
+        },
+        {
+          "id": "opt-691121588",
+          "optionNumber": 2,
+          "optionId": "691121588",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121588.png"
+          ]
+        },
+        {
+          "id": "opt-691121589",
+          "optionNumber": 3,
+          "optionId": "691121589",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121589.png"
+          ]
+        },
+        {
+          "id": "opt-691121590",
+          "optionNumber": 4,
+          "optionId": "691121590",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121590.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          9
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121171",
+      "questionNumber": 21,
+      "questionId": "691121171",
+      "sectionId": "math-b",
+      "subject": "Mathematics",
+      "type": "numeric",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121171.png"
+        ]
+      },
+      "options": [],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          9,
+          10
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121172",
+      "questionNumber": 22,
+      "questionId": "691121172",
+      "sectionId": "math-b",
+      "subject": "Mathematics",
+      "type": "numeric",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121172.png"
+        ]
+      },
+      "options": [],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          10
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121173",
+      "questionNumber": 23,
+      "questionId": "691121173",
+      "sectionId": "math-b",
+      "subject": "Mathematics",
+      "type": "numeric",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121173.png"
+        ]
+      },
+      "options": [],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          10
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121174",
+      "questionNumber": 24,
+      "questionId": "691121174",
+      "sectionId": "math-b",
+      "subject": "Mathematics",
+      "type": "numeric",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121174.png"
+        ]
+      },
+      "options": [],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          10
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121175",
+      "questionNumber": 25,
+      "questionId": "691121175",
+      "sectionId": "math-b",
+      "subject": "Mathematics",
+      "type": "numeric",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121175.png"
+        ]
+      },
+      "options": [],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          10,
+          11
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121176",
+      "questionNumber": 26,
+      "questionId": "691121176",
+      "sectionId": "phy-a",
+      "subject": "Physics",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121176.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121596",
+          "optionNumber": 1,
+          "optionId": "691121596",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121596.png"
+          ]
+        },
+        {
+          "id": "opt-691121597",
+          "optionNumber": 2,
+          "optionId": "691121597",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121597.png"
+          ]
+        },
+        {
+          "id": "opt-691121598",
+          "optionNumber": 3,
+          "optionId": "691121598",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121598.png"
+          ]
+        },
+        {
+          "id": "opt-691121599",
+          "optionNumber": 4,
+          "optionId": "691121599",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121599.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          11
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121177",
+      "questionNumber": 27,
+      "questionId": "691121177",
+      "sectionId": "phy-a",
+      "subject": "Physics",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121177.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121600",
+          "optionNumber": 1,
+          "optionId": "691121600",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121600.png"
+          ]
+        },
+        {
+          "id": "opt-691121601",
+          "optionNumber": 2,
+          "optionId": "691121601",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121601.png"
+          ]
+        },
+        {
+          "id": "opt-691121602",
+          "optionNumber": 3,
+          "optionId": "691121602",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121602.png"
+          ]
+        },
+        {
+          "id": "opt-691121603",
+          "optionNumber": 4,
+          "optionId": "691121603",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121603.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          11
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121178",
+      "questionNumber": 28,
+      "questionId": "691121178",
+      "sectionId": "phy-a",
+      "subject": "Physics",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121178.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121604",
+          "optionNumber": 1,
+          "optionId": "691121604",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121604.png"
+          ]
+        },
+        {
+          "id": "opt-691121605",
+          "optionNumber": 2,
+          "optionId": "691121605",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121605.png"
+          ]
+        },
+        {
+          "id": "opt-691121606",
+          "optionNumber": 3,
+          "optionId": "691121606",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121606.png"
+          ]
+        },
+        {
+          "id": "opt-691121607",
+          "optionNumber": 4,
+          "optionId": "691121607",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121607.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          11,
+          12
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121179",
+      "questionNumber": 29,
+      "questionId": "691121179",
+      "sectionId": "phy-a",
+      "subject": "Physics",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121179.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121608",
+          "optionNumber": 1,
+          "optionId": "691121608",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121608.png"
+          ]
+        },
+        {
+          "id": "opt-691121609",
+          "optionNumber": 2,
+          "optionId": "691121609",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121609.png"
+          ]
+        },
+        {
+          "id": "opt-691121610",
+          "optionNumber": 3,
+          "optionId": "691121610",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121610.png"
+          ]
+        },
+        {
+          "id": "opt-691121611",
+          "optionNumber": 4,
+          "optionId": "691121611",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121611.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          12
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121180",
+      "questionNumber": 30,
+      "questionId": "691121180",
+      "sectionId": "phy-a",
+      "subject": "Physics",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121180.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121612",
+          "optionNumber": 1,
+          "optionId": "691121612",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121612.png"
+          ]
+        },
+        {
+          "id": "opt-691121613",
+          "optionNumber": 2,
+          "optionId": "691121613",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121613.png"
+          ]
+        },
+        {
+          "id": "opt-691121614",
+          "optionNumber": 3,
+          "optionId": "691121614",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121614.png"
+          ]
+        },
+        {
+          "id": "opt-691121615",
+          "optionNumber": 4,
+          "optionId": "691121615",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121615.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          12,
+          13
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121181",
+      "questionNumber": 31,
+      "questionId": "691121181",
+      "sectionId": "phy-a",
+      "subject": "Physics",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121181.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121616",
+          "optionNumber": 1,
+          "optionId": "691121616",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121616.png"
+          ]
+        },
+        {
+          "id": "opt-691121617",
+          "optionNumber": 2,
+          "optionId": "691121617",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121617.png"
+          ]
+        },
+        {
+          "id": "opt-691121618",
+          "optionNumber": 3,
+          "optionId": "691121618",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121618.png"
+          ]
+        },
+        {
+          "id": "opt-691121619",
+          "optionNumber": 4,
+          "optionId": "691121619",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121619.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          13
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121182",
+      "questionNumber": 32,
+      "questionId": "691121182",
+      "sectionId": "phy-a",
+      "subject": "Physics",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121182.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121620",
+          "optionNumber": 1,
+          "optionId": "691121620",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121620.png"
+          ]
+        },
+        {
+          "id": "opt-691121621",
+          "optionNumber": 2,
+          "optionId": "691121621",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121621.png"
+          ]
+        },
+        {
+          "id": "opt-691121622",
+          "optionNumber": 3,
+          "optionId": "691121622",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121622.png"
+          ]
+        },
+        {
+          "id": "opt-691121623",
+          "optionNumber": 4,
+          "optionId": "691121623",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121623.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          13,
+          14
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121183",
+      "questionNumber": 33,
+      "questionId": "691121183",
+      "sectionId": "phy-a",
+      "subject": "Physics",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121183.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121624",
+          "optionNumber": 1,
+          "optionId": "691121624",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121624.png"
+          ]
+        },
+        {
+          "id": "opt-691121625",
+          "optionNumber": 2,
+          "optionId": "691121625",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121625.png"
+          ]
+        },
+        {
+          "id": "opt-691121626",
+          "optionNumber": 3,
+          "optionId": "691121626",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121626.png"
+          ]
+        },
+        {
+          "id": "opt-691121627",
+          "optionNumber": 4,
+          "optionId": "691121627",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121627.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          14
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121184",
+      "questionNumber": 34,
+      "questionId": "691121184",
+      "sectionId": "phy-a",
+      "subject": "Physics",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121184.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121628",
+          "optionNumber": 1,
+          "optionId": "691121628",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121628.png"
+          ]
+        },
+        {
+          "id": "opt-691121629",
+          "optionNumber": 2,
+          "optionId": "691121629",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121629.png"
+          ]
+        },
+        {
+          "id": "opt-691121630",
+          "optionNumber": 3,
+          "optionId": "691121630",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121630.png"
+          ]
+        },
+        {
+          "id": "opt-691121631",
+          "optionNumber": 4,
+          "optionId": "691121631",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121631.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          14
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121185",
+      "questionNumber": 35,
+      "questionId": "691121185",
+      "sectionId": "phy-a",
+      "subject": "Physics",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121185.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121632",
+          "optionNumber": 1,
+          "optionId": "691121632",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121632.png"
+          ]
+        },
+        {
+          "id": "opt-691121633",
+          "optionNumber": 2,
+          "optionId": "691121633",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121633.png"
+          ]
+        },
+        {
+          "id": "opt-691121634",
+          "optionNumber": 3,
+          "optionId": "691121634",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121634.png"
+          ]
+        },
+        {
+          "id": "opt-691121635",
+          "optionNumber": 4,
+          "optionId": "691121635",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121635.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          14,
+          15
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121186",
+      "questionNumber": 36,
+      "questionId": "691121186",
+      "sectionId": "phy-a",
+      "subject": "Physics",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121186.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121636",
+          "optionNumber": 1,
+          "optionId": "691121636",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121636.png"
+          ]
+        },
+        {
+          "id": "opt-691121637",
+          "optionNumber": 2,
+          "optionId": "691121637",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121637.png"
+          ]
+        },
+        {
+          "id": "opt-691121638",
+          "optionNumber": 3,
+          "optionId": "691121638",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121638.png"
+          ]
+        },
+        {
+          "id": "opt-691121639",
+          "optionNumber": 4,
+          "optionId": "691121639",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121639.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          15
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121187",
+      "questionNumber": 37,
+      "questionId": "691121187",
+      "sectionId": "phy-a",
+      "subject": "Physics",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121187.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121640",
+          "optionNumber": 1,
+          "optionId": "691121640",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121640.png"
+          ]
+        },
+        {
+          "id": "opt-691121641",
+          "optionNumber": 2,
+          "optionId": "691121641",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121641.png"
+          ]
+        },
+        {
+          "id": "opt-691121642",
+          "optionNumber": 3,
+          "optionId": "691121642",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121642.png"
+          ]
+        },
+        {
+          "id": "opt-691121643",
+          "optionNumber": 4,
+          "optionId": "691121643",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121643.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          15
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121188",
+      "questionNumber": 38,
+      "questionId": "691121188",
+      "sectionId": "phy-a",
+      "subject": "Physics",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121188.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121644",
+          "optionNumber": 1,
+          "optionId": "691121644",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121644.png"
+          ]
+        },
+        {
+          "id": "opt-691121645",
+          "optionNumber": 2,
+          "optionId": "691121645",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121645.png"
+          ]
+        },
+        {
+          "id": "opt-691121646",
+          "optionNumber": 3,
+          "optionId": "691121646",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121646.png"
+          ]
+        },
+        {
+          "id": "opt-691121647",
+          "optionNumber": 4,
+          "optionId": "691121647",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121647.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          15,
+          16
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121189",
+      "questionNumber": 39,
+      "questionId": "691121189",
+      "sectionId": "phy-a",
+      "subject": "Physics",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121189.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121648",
+          "optionNumber": 1,
+          "optionId": "691121648",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121648.png"
+          ]
+        },
+        {
+          "id": "opt-691121649",
+          "optionNumber": 2,
+          "optionId": "691121649",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121649.png"
+          ]
+        },
+        {
+          "id": "opt-691121650",
+          "optionNumber": 3,
+          "optionId": "691121650",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121650.png"
+          ]
+        },
+        {
+          "id": "opt-691121651",
+          "optionNumber": 4,
+          "optionId": "691121651",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121651.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          16
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121190",
+      "questionNumber": 40,
+      "questionId": "691121190",
+      "sectionId": "phy-a",
+      "subject": "Physics",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121190.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121652",
+          "optionNumber": 1,
+          "optionId": "691121652",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121652.png"
+          ]
+        },
+        {
+          "id": "opt-691121653",
+          "optionNumber": 2,
+          "optionId": "691121653",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121653.png"
+          ]
+        },
+        {
+          "id": "opt-691121654",
+          "optionNumber": 3,
+          "optionId": "691121654",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121654.png"
+          ]
+        },
+        {
+          "id": "opt-691121655",
+          "optionNumber": 4,
+          "optionId": "691121655",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121655.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          16
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121191",
+      "questionNumber": 41,
+      "questionId": "691121191",
+      "sectionId": "phy-a",
+      "subject": "Physics",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121191.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121656",
+          "optionNumber": 1,
+          "optionId": "691121656",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121656.png"
+          ]
+        },
+        {
+          "id": "opt-691121657",
+          "optionNumber": 2,
+          "optionId": "691121657",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121657.png"
+          ]
+        },
+        {
+          "id": "opt-691121658",
+          "optionNumber": 3,
+          "optionId": "691121658",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121658.png"
+          ]
+        },
+        {
+          "id": "opt-691121659",
+          "optionNumber": 4,
+          "optionId": "691121659",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121659.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          16,
+          17
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121192",
+      "questionNumber": 42,
+      "questionId": "691121192",
+      "sectionId": "phy-a",
+      "subject": "Physics",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121192.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121660",
+          "optionNumber": 1,
+          "optionId": "691121660",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121660.png"
+          ]
+        },
+        {
+          "id": "opt-691121661",
+          "optionNumber": 2,
+          "optionId": "691121661",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121661.png"
+          ]
+        },
+        {
+          "id": "opt-691121662",
+          "optionNumber": 3,
+          "optionId": "691121662",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121662.png"
+          ]
+        },
+        {
+          "id": "opt-691121663",
+          "optionNumber": 4,
+          "optionId": "691121663",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121663.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          17,
+          18
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121193",
+      "questionNumber": 43,
+      "questionId": "691121193",
+      "sectionId": "phy-a",
+      "subject": "Physics",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121193.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121664",
+          "optionNumber": 1,
+          "optionId": "691121664",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121664.png"
+          ]
+        },
+        {
+          "id": "opt-691121665",
+          "optionNumber": 2,
+          "optionId": "691121665",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121665.png"
+          ]
+        },
+        {
+          "id": "opt-691121666",
+          "optionNumber": 3,
+          "optionId": "691121666",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121666.png"
+          ]
+        },
+        {
+          "id": "opt-691121667",
+          "optionNumber": 4,
+          "optionId": "691121667",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121667.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          18
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121194",
+      "questionNumber": 44,
+      "questionId": "691121194",
+      "sectionId": "phy-a",
+      "subject": "Physics",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121194.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121668",
+          "optionNumber": 1,
+          "optionId": "691121668",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121668.png"
+          ]
+        },
+        {
+          "id": "opt-691121669",
+          "optionNumber": 2,
+          "optionId": "691121669",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121669.png"
+          ]
+        },
+        {
+          "id": "opt-691121670",
+          "optionNumber": 3,
+          "optionId": "691121670",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121670.png"
+          ]
+        },
+        {
+          "id": "opt-691121671",
+          "optionNumber": 4,
+          "optionId": "691121671",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121671.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          18
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121195",
+      "questionNumber": 45,
+      "questionId": "691121195",
+      "sectionId": "phy-a",
+      "subject": "Physics",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121195.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121672",
+          "optionNumber": 1,
+          "optionId": "691121672",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121672.png"
+          ]
+        },
+        {
+          "id": "opt-691121673",
+          "optionNumber": 2,
+          "optionId": "691121673",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121673.png"
+          ]
+        },
+        {
+          "id": "opt-691121674",
+          "optionNumber": 3,
+          "optionId": "691121674",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121674.png"
+          ]
+        },
+        {
+          "id": "opt-691121675",
+          "optionNumber": 4,
+          "optionId": "691121675",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121675.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          18,
+          19
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121196",
+      "questionNumber": 46,
+      "questionId": "691121196",
+      "sectionId": "phy-b",
+      "subject": "Physics",
+      "type": "numeric",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121196.png"
+        ]
+      },
+      "options": [],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          19
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121197",
+      "questionNumber": 47,
+      "questionId": "691121197",
+      "sectionId": "phy-b",
+      "subject": "Physics",
+      "type": "numeric",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121197.png"
+        ]
+      },
+      "options": [],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          19,
+          20
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121198",
+      "questionNumber": 48,
+      "questionId": "691121198",
+      "sectionId": "phy-b",
+      "subject": "Physics",
+      "type": "numeric",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121198.png"
+        ]
+      },
+      "options": [],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          20
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121199",
+      "questionNumber": 49,
+      "questionId": "691121199",
+      "sectionId": "phy-b",
+      "subject": "Physics",
+      "type": "numeric",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121199.png"
+        ]
+      },
+      "options": [],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          20
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121200",
+      "questionNumber": 50,
+      "questionId": "691121200",
+      "sectionId": "phy-b",
+      "subject": "Physics",
+      "type": "numeric",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121200.png"
+        ]
+      },
+      "options": [],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          20,
+          21
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121201",
+      "questionNumber": 51,
+      "questionId": "691121201",
+      "sectionId": "chem-a",
+      "subject": "Chemistry",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121201.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121681",
+          "optionNumber": 1,
+          "optionId": "691121681",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121681.png"
+          ]
+        },
+        {
+          "id": "opt-691121682",
+          "optionNumber": 2,
+          "optionId": "691121682",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121682.png"
+          ]
+        },
+        {
+          "id": "opt-691121683",
+          "optionNumber": 3,
+          "optionId": "691121683",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121683.png"
+          ]
+        },
+        {
+          "id": "opt-691121684",
+          "optionNumber": 4,
+          "optionId": "691121684",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121684.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          21
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121202",
+      "questionNumber": 52,
+      "questionId": "691121202",
+      "sectionId": "chem-a",
+      "subject": "Chemistry",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121202.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121685",
+          "optionNumber": 1,
+          "optionId": "691121685",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121685.png"
+          ]
+        },
+        {
+          "id": "opt-691121686",
+          "optionNumber": 2,
+          "optionId": "691121686",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121686.png"
+          ]
+        },
+        {
+          "id": "opt-691121687",
+          "optionNumber": 3,
+          "optionId": "691121687",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121687.png"
+          ]
+        },
+        {
+          "id": "opt-691121688",
+          "optionNumber": 4,
+          "optionId": "691121688",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121688.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          21
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121203",
+      "questionNumber": 53,
+      "questionId": "691121203",
+      "sectionId": "chem-a",
+      "subject": "Chemistry",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121203.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121689",
+          "optionNumber": 1,
+          "optionId": "691121689",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121689.png"
+          ]
+        },
+        {
+          "id": "opt-691121690",
+          "optionNumber": 2,
+          "optionId": "691121690",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121690.png"
+          ]
+        },
+        {
+          "id": "opt-691121691",
+          "optionNumber": 3,
+          "optionId": "691121691",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121691.png"
+          ]
+        },
+        {
+          "id": "opt-691121692",
+          "optionNumber": 4,
+          "optionId": "691121692",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121692.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          21,
+          22
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121204",
+      "questionNumber": 54,
+      "questionId": "691121204",
+      "sectionId": "chem-a",
+      "subject": "Chemistry",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121204.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121693",
+          "optionNumber": 1,
+          "optionId": "691121693",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121693.png"
+          ]
+        },
+        {
+          "id": "opt-691121694",
+          "optionNumber": 2,
+          "optionId": "691121694",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121694.png"
+          ]
+        },
+        {
+          "id": "opt-691121695",
+          "optionNumber": 3,
+          "optionId": "691121695",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121695.png"
+          ]
+        },
+        {
+          "id": "opt-691121696",
+          "optionNumber": 4,
+          "optionId": "691121696",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121696.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          22
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121205",
+      "questionNumber": 55,
+      "questionId": "691121205",
+      "sectionId": "chem-a",
+      "subject": "Chemistry",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121205.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121697",
+          "optionNumber": 1,
+          "optionId": "691121697",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121697.png"
+          ]
+        },
+        {
+          "id": "opt-691121698",
+          "optionNumber": 2,
+          "optionId": "691121698",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121698.png"
+          ]
+        },
+        {
+          "id": "opt-691121699",
+          "optionNumber": 3,
+          "optionId": "691121699",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121699.png"
+          ]
+        },
+        {
+          "id": "opt-691121700",
+          "optionNumber": 4,
+          "optionId": "691121700",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121700.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          22,
+          23
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121206",
+      "questionNumber": 56,
+      "questionId": "691121206",
+      "sectionId": "chem-a",
+      "subject": "Chemistry",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121206.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121701",
+          "optionNumber": 1,
+          "optionId": "691121701",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121701.png"
+          ]
+        },
+        {
+          "id": "opt-691121702",
+          "optionNumber": 2,
+          "optionId": "691121702",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121702.png"
+          ]
+        },
+        {
+          "id": "opt-691121703",
+          "optionNumber": 3,
+          "optionId": "691121703",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121703.png"
+          ]
+        },
+        {
+          "id": "opt-691121704",
+          "optionNumber": 4,
+          "optionId": "691121704",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121704.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          23
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121207",
+      "questionNumber": 57,
+      "questionId": "691121207",
+      "sectionId": "chem-a",
+      "subject": "Chemistry",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121207.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121705",
+          "optionNumber": 1,
+          "optionId": "691121705",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121705.png"
+          ]
+        },
+        {
+          "id": "opt-691121706",
+          "optionNumber": 2,
+          "optionId": "691121706",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121706.png"
+          ]
+        },
+        {
+          "id": "opt-691121707",
+          "optionNumber": 3,
+          "optionId": "691121707",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121707.png"
+          ]
+        },
+        {
+          "id": "opt-691121708",
+          "optionNumber": 4,
+          "optionId": "691121708",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121708.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          23,
+          24
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121208",
+      "questionNumber": 58,
+      "questionId": "691121208",
+      "sectionId": "chem-a",
+      "subject": "Chemistry",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121208.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121709",
+          "optionNumber": 1,
+          "optionId": "691121709",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121709.png"
+          ]
+        },
+        {
+          "id": "opt-691121710",
+          "optionNumber": 2,
+          "optionId": "691121710",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121710.png"
+          ]
+        },
+        {
+          "id": "opt-691121711",
+          "optionNumber": 3,
+          "optionId": "691121711",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121711.png"
+          ]
+        },
+        {
+          "id": "opt-691121712",
+          "optionNumber": 4,
+          "optionId": "691121712",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121712.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          24
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121209",
+      "questionNumber": 59,
+      "questionId": "691121209",
+      "sectionId": "chem-a",
+      "subject": "Chemistry",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121209.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121713",
+          "optionNumber": 1,
+          "optionId": "691121713",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121713.png"
+          ]
+        },
+        {
+          "id": "opt-691121714",
+          "optionNumber": 2,
+          "optionId": "691121714",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121714.png"
+          ]
+        },
+        {
+          "id": "opt-691121715",
+          "optionNumber": 3,
+          "optionId": "691121715",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121715.png"
+          ]
+        },
+        {
+          "id": "opt-691121716",
+          "optionNumber": 4,
+          "optionId": "691121716",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121716.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          24
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121210",
+      "questionNumber": 60,
+      "questionId": "691121210",
+      "sectionId": "chem-a",
+      "subject": "Chemistry",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121210.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121717",
+          "optionNumber": 1,
+          "optionId": "691121717",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121717.png"
+          ]
+        },
+        {
+          "id": "opt-691121718",
+          "optionNumber": 2,
+          "optionId": "691121718",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121718.png"
+          ]
+        },
+        {
+          "id": "opt-691121719",
+          "optionNumber": 3,
+          "optionId": "691121719",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121719.png"
+          ]
+        },
+        {
+          "id": "opt-691121720",
+          "optionNumber": 4,
+          "optionId": "691121720",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121720.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          24,
+          25
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121211",
+      "questionNumber": 61,
+      "questionId": "691121211",
+      "sectionId": "chem-a",
+      "subject": "Chemistry",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121211.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121721",
+          "optionNumber": 1,
+          "optionId": "691121721",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121721.png"
+          ]
+        },
+        {
+          "id": "opt-691121722",
+          "optionNumber": 2,
+          "optionId": "691121722",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121722.png"
+          ]
+        },
+        {
+          "id": "opt-691121723",
+          "optionNumber": 3,
+          "optionId": "691121723",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121723.png"
+          ]
+        },
+        {
+          "id": "opt-691121724",
+          "optionNumber": 4,
+          "optionId": "691121724",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121724.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          25
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121212",
+      "questionNumber": 62,
+      "questionId": "691121212",
+      "sectionId": "chem-a",
+      "subject": "Chemistry",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121212.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121725",
+          "optionNumber": 1,
+          "optionId": "691121725",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121725.png"
+          ]
+        },
+        {
+          "id": "opt-691121726",
+          "optionNumber": 2,
+          "optionId": "691121726",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121726.png"
+          ]
+        },
+        {
+          "id": "opt-691121727",
+          "optionNumber": 3,
+          "optionId": "691121727",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121727.png"
+          ]
+        },
+        {
+          "id": "opt-691121728",
+          "optionNumber": 4,
+          "optionId": "691121728",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121728.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          25,
+          26
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121213",
+      "questionNumber": 63,
+      "questionId": "691121213",
+      "sectionId": "chem-a",
+      "subject": "Chemistry",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121213.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121729",
+          "optionNumber": 1,
+          "optionId": "691121729",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121729.png"
+          ]
+        },
+        {
+          "id": "opt-691121730",
+          "optionNumber": 2,
+          "optionId": "691121730",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121730.png"
+          ]
+        },
+        {
+          "id": "opt-691121731",
+          "optionNumber": 3,
+          "optionId": "691121731",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121731.png"
+          ]
+        },
+        {
+          "id": "opt-691121732",
+          "optionNumber": 4,
+          "optionId": "691121732",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121732.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          26
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121214",
+      "questionNumber": 64,
+      "questionId": "691121214",
+      "sectionId": "chem-a",
+      "subject": "Chemistry",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121214.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121733",
+          "optionNumber": 1,
+          "optionId": "691121733",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121733.png"
+          ]
+        },
+        {
+          "id": "opt-691121734",
+          "optionNumber": 2,
+          "optionId": "691121734",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121734.png"
+          ]
+        },
+        {
+          "id": "opt-691121735",
+          "optionNumber": 3,
+          "optionId": "691121735",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121735.png"
+          ]
+        },
+        {
+          "id": "opt-691121736",
+          "optionNumber": 4,
+          "optionId": "691121736",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121736.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          26
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121215",
+      "questionNumber": 65,
+      "questionId": "691121215",
+      "sectionId": "chem-a",
+      "subject": "Chemistry",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121215.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121737",
+          "optionNumber": 1,
+          "optionId": "691121737",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121737.png"
+          ]
+        },
+        {
+          "id": "opt-691121738",
+          "optionNumber": 2,
+          "optionId": "691121738",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121738.png"
+          ]
+        },
+        {
+          "id": "opt-691121739",
+          "optionNumber": 3,
+          "optionId": "691121739",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121739.png"
+          ]
+        },
+        {
+          "id": "opt-691121740",
+          "optionNumber": 4,
+          "optionId": "691121740",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121740.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          26,
+          27
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121216",
+      "questionNumber": 66,
+      "questionId": "691121216",
+      "sectionId": "chem-a",
+      "subject": "Chemistry",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121216.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121741",
+          "optionNumber": 1,
+          "optionId": "691121741",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121741.png"
+          ]
+        },
+        {
+          "id": "opt-691121742",
+          "optionNumber": 2,
+          "optionId": "691121742",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121742.png"
+          ]
+        },
+        {
+          "id": "opt-691121743",
+          "optionNumber": 3,
+          "optionId": "691121743",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121743.png"
+          ]
+        },
+        {
+          "id": "opt-691121744",
+          "optionNumber": 4,
+          "optionId": "691121744",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121744.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          27
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121217",
+      "questionNumber": 67,
+      "questionId": "691121217",
+      "sectionId": "chem-a",
+      "subject": "Chemistry",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121217.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121745",
+          "optionNumber": 1,
+          "optionId": "691121745",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121745.png"
+          ]
+        },
+        {
+          "id": "opt-691121746",
+          "optionNumber": 2,
+          "optionId": "691121746",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121746.png"
+          ]
+        },
+        {
+          "id": "opt-691121747",
+          "optionNumber": 3,
+          "optionId": "691121747",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121747.png"
+          ]
+        },
+        {
+          "id": "opt-691121748",
+          "optionNumber": 4,
+          "optionId": "691121748",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121748.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          27,
+          28
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121218",
+      "questionNumber": 68,
+      "questionId": "691121218",
+      "sectionId": "chem-a",
+      "subject": "Chemistry",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121218.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121749",
+          "optionNumber": 1,
+          "optionId": "691121749",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121749.png"
+          ]
+        },
+        {
+          "id": "opt-691121750",
+          "optionNumber": 2,
+          "optionId": "691121750",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121750.png"
+          ]
+        },
+        {
+          "id": "opt-691121751",
+          "optionNumber": 3,
+          "optionId": "691121751",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121751.png"
+          ]
+        },
+        {
+          "id": "opt-691121752",
+          "optionNumber": 4,
+          "optionId": "691121752",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121752.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          28,
+          29
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121219",
+      "questionNumber": 69,
+      "questionId": "691121219",
+      "sectionId": "chem-a",
+      "subject": "Chemistry",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121219.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121753",
+          "optionNumber": 1,
+          "optionId": "691121753",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121753.png"
+          ]
+        },
+        {
+          "id": "opt-691121754",
+          "optionNumber": 2,
+          "optionId": "691121754",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121754.png"
+          ]
+        },
+        {
+          "id": "opt-691121755",
+          "optionNumber": 3,
+          "optionId": "691121755",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121755.png"
+          ]
+        },
+        {
+          "id": "opt-691121756",
+          "optionNumber": 4,
+          "optionId": "691121756",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121756.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          29
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121220",
+      "questionNumber": 70,
+      "questionId": "691121220",
+      "sectionId": "chem-a",
+      "subject": "Chemistry",
+      "type": "single_choice",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121220.png"
+        ]
+      },
+      "options": [
+        {
+          "id": "opt-691121757",
+          "optionNumber": 1,
+          "optionId": "691121757",
+          "label": "a",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121757.png"
+          ]
+        },
+        {
+          "id": "opt-691121758",
+          "optionNumber": 2,
+          "optionId": "691121758",
+          "label": "b",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121758.png"
+          ]
+        },
+        {
+          "id": "opt-691121759",
+          "optionNumber": 3,
+          "optionId": "691121759",
+          "label": "c",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121759.png"
+          ]
+        },
+        {
+          "id": "opt-691121760",
+          "optionNumber": 4,
+          "optionId": "691121760",
+          "label": "d",
+          "text": "",
+          "imagePaths": [
+            "images/opt_691121760.png"
+          ]
+        }
+      ],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          29,
+          30
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121221",
+      "questionNumber": 71,
+      "questionId": "691121221",
+      "sectionId": "chem-b",
+      "subject": "Chemistry",
+      "type": "numeric",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121221.png"
+        ]
+      },
+      "options": [],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          30
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121222",
+      "questionNumber": 72,
+      "questionId": "691121222",
+      "sectionId": "chem-b",
+      "subject": "Chemistry",
+      "type": "numeric",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121222.png"
+        ]
+      },
+      "options": [],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          30,
+          31
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121223",
+      "questionNumber": 73,
+      "questionId": "691121223",
+      "sectionId": "chem-b",
+      "subject": "Chemistry",
+      "type": "numeric",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121223.png"
+        ]
+      },
+      "options": [],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          31
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121224",
+      "questionNumber": 74,
+      "questionId": "691121224",
+      "sectionId": "chem-b",
+      "subject": "Chemistry",
+      "type": "numeric",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121224.png"
+        ]
+      },
+      "options": [],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          31
+        ],
+        "extractor": "embedded"
+      }
+    },
+    {
+      "id": "q-691121225",
+      "questionNumber": 75,
+      "questionId": "691121225",
+      "sectionId": "chem-b",
+      "subject": "Chemistry",
+      "type": "numeric",
+      "content": {
+        "text": "",
+        "imagePaths": [
+          "images/q_691121225.png"
+        ]
+      },
+      "options": [],
+      "answer": {
+        "correctOptionId": null,
+        "correctNumericValue": null,
+        "isAnswerKeyAvailable": false
+      },
+      "explanation": {
+        "text": "",
+        "imagePaths": []
+      },
+      "source": {
+        "pages": [
+          31,
+          32
+        ],
+        "extractor": "embedded"
+      }
+    }
+  ]
+}
