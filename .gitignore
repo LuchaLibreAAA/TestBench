@@ -35,4 +35,12 @@ pnpm-debug.log*
 *.key
 *.cert
 
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+
 
