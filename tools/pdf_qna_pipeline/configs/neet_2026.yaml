@@ -1,0 +1,55 @@
+parser_type: examgoal_neet
+paper_id: neet-ug-2026
+exam_name: NEET UG
+exam_slug: neet
+year: 2026
+session: May
+date: "2026-05-03"
+shift: "Paper"
+paper: "UG"
+booklet_code: "2026"
+
+title: "NEET UG 2026 — Official Question Paper"
+description: "Complete National Eligibility cum Entrance Test (UG) 2026. 180 compulsory multiple choice questions across Biology, Chemistry, and Physics with cleaned formulas and diagrams."
+instructions: "The question paper comprises 180 compulsory multiple choice questions across Biology (90), Chemistry (45), and Physics (45). Each correct answer carries +4 marks and -1 for wrong answer. Total time: 180 minutes. Maximum marks: 720."
+author: "NTA (National Testing Agency)"
+created_at: "2026-05-03T00:00:00Z"
+tags: ["neet", "neet-ug", "2026", "official"]
+
+examgoal:
+  start_page: 2
+  end_page: 55
+  answer_pages: [56, 57]
+  col_left_pt: 28.0
+  col_right_pt: 505.0
+  y_min_pt: 80.0
+  y_max_pt: 758.0
+  qr_xref: 9
+  smask_threshold: 90.0
+
+sections:
+  - id: bio
+    name: Biology
+    subject: Biology
+    type: single_choice
+    q_range: [1, 90]
+  - id: chem
+    name: Chemistry
+    subject: Chemistry
+    type: single_choice
+    q_range: [91, 135]
+  - id: phy
+    name: Physics
+    subject: Physics
+    type: single_choice
+    q_range: [136, 180]
+
+marking:
+  single_choice:
+    correct: 4
+    wrong: -1
+    unattempted: 0
+
+duration_minutes: 180
+total_questions: 180
+total_marks: 720

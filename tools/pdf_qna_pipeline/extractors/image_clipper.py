@@ -20,7 +20,13 @@ def strip_alpha_and_convert_rgb(img: Image.Image) -> Image.Image:
     return img.convert("RGB")
 
 
-def trim_whitespace_and_pad(img: Image.Image, padding: int = 8, threshold: int = 245) -> Image.Image:
+def trim_whitespace_and_pad(
+    img: Image.Image,
+    padding: int = 8,
+    threshold: int = 245,
+    min_width: int = 1,
+    min_height: int = 1,
+) -> Image.Image:
     """Trim pure white/near-white borders and add uniform white padding."""
     img_rgb = strip_alpha_and_convert_rgb(img)
     gray = img_rgb.convert("L")
@@ -44,12 +50,12 @@ def trim_whitespace_and_pad(img: Image.Image, padding: int = 8, threshold: int =
     cropped = img_rgb.crop((left, top, right, bottom))
 
     # Add extra padding if cropped touched original borders
-    new_w = cropped.width + (padding if left == 0 else 0) + (padding if right == w else 0)
-    new_h = cropped.height + (padding if top == 0 else 0) + (padding if bottom == h else 0)
+    new_w = max(min_width, cropped.width + (padding if left == 0 else 0) + (padding if right == w else 0))
+    new_h = max(min_height, cropped.height + (padding if top == 0 else 0) + (padding if bottom == h else 0))
     if new_w != cropped.width or new_h != cropped.height:
         padded = Image.new("RGB", (new_w, new_h), (255, 255, 255))
-        paste_x = padding if left == 0 else 0
-        paste_y = padding if top == 0 else 0
+        paste_x = max(0, (new_w - cropped.width) // 2)
+        paste_y = max(0, (new_h - cropped.height) // 2)
         padded.paste(cropped, (paste_x, paste_y))
         return padded
 
@@ -98,9 +104,9 @@ class ImageClipper:
                 pass  # Fallback to clip render
         return self.render_clip(region.page, region.bbox)
 
-    def process_and_save(self, img: Image.Image, filename: str) -> str:
+    def process_and_save(self, img: Image.Image, filename: str, min_dim: int = 24) -> str:
         """Process image (alpha strip, trim, pad, validate) and save to disk."""
-        processed = trim_whitespace_and_pad(img)
+        processed = trim_whitespace_and_pad(img, min_width=min_dim, min_height=min_dim)
         valid, msg = is_valid_image(processed)
         if not valid:
             raise ValueError(f"Image validation failed for {filename}: {msg}")

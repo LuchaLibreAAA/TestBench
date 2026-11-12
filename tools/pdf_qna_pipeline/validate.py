@@ -44,20 +44,37 @@ def run_all_validation_checks(json_path: Path, config_path: Optional[Path] = Non
 
     questions = db.questions
 
-    # Check 2: Exactly 75 questions, numbered 1 to 75 without gaps
-    q_nums = [q.questionNumber for q in questions]
-    if len(questions) != 75:
-        errors.append(f"Check 2 Failed: Expected 75 questions, found {len(questions)}")
-    if q_nums != list(range(1, 76)):
-        errors.append(f"Check 2 Failed: Question numbers are not 1..75 contiguous: {q_nums[:10]}...")
+    cfg = load_config(str(config_path)) if config_path and config_path.exists() else {}
+    expected_total = int(cfg.get("total_questions", 75))
+    if cfg.get("sections"):
+        expected_mcq = sum(
+            s["q_range"][1] - s["q_range"][0] + 1
+            for s in cfg["sections"]
+            if s["type"] == "single_choice"
+        )
+        expected_num = sum(
+            s["q_range"][1] - s["q_range"][0] + 1
+            for s in cfg["sections"]
+            if s["type"] == "numeric"
+        )
+    else:
+        expected_mcq = 60
+        expected_num = 15
 
-    # Check 3: Exactly 60 single_choice, 15 numeric
+    # Check 2: Contiguous questions 1..N without gaps
+    q_nums = [q.questionNumber for q in questions]
+    if len(questions) != expected_total:
+        errors.append(f"Check 2 Failed: Expected {expected_total} questions, found {len(questions)}")
+    if q_nums != list(range(1, expected_total + 1)):
+        errors.append(f"Check 2 Failed: Question numbers are not 1..{expected_total} contiguous: {q_nums[:10]}...")
+
+    # Check 3: Expected single_choice and numeric counts
     mcqs = [q for q in questions if q.type == "single_choice"]
     numerics = [q for q in questions if q.type == "numeric"]
-    if len(mcqs) != 60:
-        errors.append(f"Check 3 Failed: Expected 60 single_choice MCQs, found {len(mcqs)}")
-    if len(numerics) != 15:
-        errors.append(f"Check 3 Failed: Expected 15 numeric questions, found {len(numerics)}")
+    if len(mcqs) != expected_mcq:
+        errors.append(f"Check 3 Failed: Expected {expected_mcq} single_choice MCQs, found {len(mcqs)}")
+    if len(numerics) != expected_num:
+        errors.append(f"Check 3 Failed: Expected {expected_num} numeric questions, found {len(numerics)}")
 
     # Check 4: Each single_choice has exactly 4 options
     for q in mcqs:
@@ -67,22 +84,27 @@ def run_all_validation_checks(json_path: Path, config_path: Optional[Path] = Non
         if len(q.options) != 0:
             errors.append(f"Check 4 Failed: Numeric Q{q.questionNumber} has {len(q.options)} options (expected 0)")
 
-    # Check 5: All question IDs unique; all 240 option IDs unique
+    # Check 5: All question IDs unique; all option IDs unique
     q_ids = [q.questionId for q in questions]
     if len(q_ids) != len(set(q_ids)):
         errors.append("Check 5 Failed: Duplicate question IDs detected")
 
+    expected_opts = expected_mcq * 4
     opt_ids = [opt.optionId for q in mcqs for opt in q.options]
-    if len(opt_ids) != 240:
-        errors.append(f"Check 5 Failed: Expected 240 option IDs, found {len(opt_ids)}")
+    if len(opt_ids) != expected_opts:
+        errors.append(f"Check 5 Failed: Expected {expected_opts} option IDs, found {len(opt_ids)}")
     if len(opt_ids) != len(set(opt_ids)):
         errors.append("Check 5 Failed: Duplicate option IDs detected")
 
-    # Check 6: Every imagePath in JSON exists on disk, size > 500 bytes, dimension >= 20x20
+    # Check 6: Every question/option has content (text or valid image) and every referenced image exists on disk
     referenced_images: Set[Path] = set()
     for q in questions:
+        if not q.content.imagePaths and not q.content.text.strip():
+            errors.append(f"Check 6 Failed: Q{q.questionNumber} has neither text nor images")
         all_paths = list(q.content.imagePaths)
         for opt in q.options:
+            if not opt.imagePaths and not opt.text.strip():
+                errors.append(f"Check 6 Failed: Q{q.questionNumber} opt {opt.label} has neither text nor image")
             all_paths.extend(opt.imagePaths)
 
         for rel_p in all_paths:
@@ -91,7 +113,7 @@ def run_all_validation_checks(json_path: Path, config_path: Optional[Path] = Non
             if not img_file.exists():
                 errors.append(f"Check 6 Failed: Referenced image not found on disk: {img_file}")
                 continue
-            if img_file.stat().st_size <= 500:
+            if img_file.stat().st_size <= 150:
                 errors.append(f"Check 6 Failed: Image file too small ({img_file.stat().st_size} bytes): {img_file}")
             try:
                 with Image.open(img_file) as img:

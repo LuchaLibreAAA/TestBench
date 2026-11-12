@@ -23,6 +23,7 @@ class ParsedOption:
     page: int
     label_bbox: Tuple[float, float, float, float]
     image_region: Optional[PageRegion] = None
+    text: str = ""
 
 
 @dataclass
@@ -37,6 +38,7 @@ class ParsedQuestion:
     header_bbox: Tuple[float, float, float, float]
     statement_images: List[PageRegion] = field(default_factory=list)
     options: List[ParsedOption] = field(default_factory=list)
+    text: str = ""
 
 
 @dataclass
@@ -46,6 +48,7 @@ class ParsedPaper:
     total_questions: int
     questions: List[ParsedQuestion]
     raw_metadata: Dict[str, Any] = field(default_factory=dict)
+    sanitized_doc: Optional[pymupdf.Document] = None
 
 
 class BaseParser(ABC):

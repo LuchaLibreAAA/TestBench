@@ -1,0 +1,55 @@
+parser_type: neet_scanned
+paper_id: neet-ug-2025
+exam_name: NEET UG
+exam_slug: neet
+year: 2025
+session: May
+date: "2025-05-04"
+shift: "Code 45"
+paper: "UG"
+booklet_code: "45"
+
+title: "NEET UG 2025 — Official Question Paper"
+description: "Complete National Eligibility cum Entrance Test (UG) 2025 (Booklet 45). 180 compulsory questions covering Physics, Chemistry, and Biology."
+instructions: "The question paper comprises 180 compulsory multiple choice questions: Physics (Q1-45), Chemistry (Q46-90), and Biology (Q91-180). Each correct answer carries +4 marks and -1 for wrong answer. Total time: 180 minutes. Maximum marks: 720."
+author: "NTA (National Testing Agency)"
+created_at: "2025-05-04T00:00:00Z"
+tags: ["neet", "neet-ug", "2025", "code-45", "official"]
+
+scanner:
+  start_page: 2
+  end_page: 46
+  detection_dpi: 150
+  render_dpi: 240
+  gutter_x_px: [112, 145]
+  body_x_pt: [52.8, 300.0]
+  y_min_frac: 0.042
+  y_max_frac: 0.885
+  section_banner_qs: []
+
+sections:
+  - id: phy
+    name: Physics
+    subject: Physics
+    type: single_choice
+    q_range: [1, 45]
+  - id: chem
+    name: Chemistry
+    subject: Chemistry
+    type: single_choice
+    q_range: [46, 90]
+  - id: bio
+    name: Biology
+    subject: Biology
+    type: single_choice
+    q_range: [91, 180]
+
+marking:
+  single_choice:
+    correct: 4
+    wrong: -1
+    unattempted: 0
+
+duration_minutes: 180
+total_questions: 180
+total_marks: 720
