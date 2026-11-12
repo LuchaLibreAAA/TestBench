@@ -66,8 +66,8 @@ export const NumericalRenderer: React.FC<NumericalRendererProps> = ({
 
   return (
     <div className="space-y-5 mt-4">
-      <div className="bg-blue-50/60 border border-blue-200 rounded-xl p-4">
-        <label htmlFor="numeric-input" className="block text-xs font-semibold text-blue-900 uppercase tracking-wider mb-2">
+      <div className="bg-blue-50/60 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-800/70 rounded-xl p-4">
+        <label htmlFor="numeric-input" className="block text-xs font-semibold text-blue-900 dark:text-blue-300 uppercase tracking-wider mb-2">
           Enter Numerical Value
         </label>
         <div className="flex items-center gap-2">
@@ -78,10 +78,10 @@ export const NumericalRenderer: React.FC<NumericalRendererProps> = ({
             value={rawValue}
             onChange={(e) => handleInputChange(e.target.value)}
             placeholder="e.g. 12.5"
-            className="w-full text-xl sm:text-2xl font-mono font-medium py-3 px-4 rounded-lg bg-white border border-gray-300 focus:border-[#1f5fa6] focus:ring-2 focus:ring-[#1f5fa6]/20 focus:outline-none transition-all shadow-2xs"
+            className="w-full text-xl sm:text-2xl font-mono font-medium py-3 px-4 rounded-lg bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 border border-slate-300 dark:border-slate-700 focus:border-[#1a56db] dark:focus:border-blue-500 focus:ring-2 focus:ring-[#1a56db]/20 focus:outline-none transition-all shadow-2xs placeholder:text-slate-400 dark:placeholder:text-slate-500"
           />
           {question.unit && (
-            <span className="text-base font-medium text-gray-600 bg-gray-100 px-3 py-3 rounded-lg border border-gray-200 shrink-0">
+            <span className="text-base font-medium text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-800 px-3 py-3 rounded-lg border border-slate-200 dark:border-slate-700 shrink-0">
               {question.unit}
             </span>
           )}
@@ -91,11 +91,11 @@ export const NumericalRenderer: React.FC<NumericalRendererProps> = ({
       {/* On-screen Keypad Toggle */}
       <div className="pt-1">
         <div className="flex items-center justify-between mb-3">
-          <span className="text-xs font-medium text-gray-500">Virtual Keypad</span>
+          <span className="text-xs font-medium text-slate-500 dark:text-slate-400">Virtual Keypad</span>
           <button
             type="button"
             onClick={() => setShowKeypad(!showKeypad)}
-            className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#1f5fa6] hover:underline cursor-pointer"
+            className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#1a56db] dark:text-blue-400 hover:underline cursor-pointer"
           >
             <Calculator className="w-3.5 h-3.5" />
             <span>{showKeypad ? 'Hide Keypad' : 'Show Keypad'}</span>

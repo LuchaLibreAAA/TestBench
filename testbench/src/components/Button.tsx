@@ -32,11 +32,11 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     }[size];
 
     const variantStyles = {
-      primary: 'bg-[#1f5fa6] text-white hover:bg-[#1a4f8b] focus:ring-[#1f5fa6]',
-      secondary: 'bg-gray-100 text-gray-800 hover:bg-gray-200 focus:ring-gray-300',
-      outline: 'border border-gray-300 text-gray-700 bg-white hover:bg-gray-50 focus:ring-gray-300',
+      primary: 'bg-[#1a56db] dark:bg-blue-600 text-white hover:bg-[#1e40af] dark:hover:bg-blue-500 focus:ring-[#1a56db]',
+      secondary: 'bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-100 hover:bg-slate-200 dark:hover:bg-slate-700 focus:ring-slate-300 dark:focus:ring-slate-600',
+      outline: 'border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-200 bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 focus:ring-slate-300 dark:focus:ring-slate-600',
       danger: 'bg-red-600 text-white hover:bg-red-700 focus:ring-red-500',
-      ghost: 'text-gray-600 hover:bg-gray-100 hover:text-gray-900 focus:ring-gray-200',
+      ghost: 'text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white focus:ring-slate-200 dark:focus:ring-slate-700',
       success: 'bg-[#2e9e5b] text-white hover:bg-[#26844c] focus:ring-[#2e9e5b]',
     }[variant];
 

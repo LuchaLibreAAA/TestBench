@@ -28,8 +28,8 @@ export const Img: React.FC<ImgProps> = ({
 
   if (error || (!finalSrc && !isDirectUrl)) {
     return (
-      <div className="inline-flex items-center gap-2 px-3 py-2 bg-gray-100 border border-gray-200 rounded-lg text-xs text-gray-500">
-        <ImageIcon className="w-4 h-4 text-gray-400" />
+      <div className="inline-flex items-center gap-2 px-3 py-2 bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg text-xs text-slate-500 dark:text-slate-400">
+        <ImageIcon className="w-4 h-4 text-slate-400" />
         <span>Image unavailable ({src})</span>
       </div>
     );
@@ -39,8 +39,8 @@ export const Img: React.FC<ImgProps> = ({
     <>
       <div className="relative inline-block my-2 group">
         {!loaded && (
-          <div className="w-48 h-32 bg-gray-200 animate-pulse rounded-lg flex items-center justify-center">
-            <ImageIcon className="w-6 h-6 text-gray-400" />
+          <div className="w-48 h-32 bg-slate-200 dark:bg-slate-800 animate-pulse rounded-lg flex items-center justify-center">
+            <ImageIcon className="w-6 h-6 text-slate-400" />
           </div>
         )}
 
@@ -51,7 +51,7 @@ export const Img: React.FC<ImgProps> = ({
             onLoad={() => setLoaded(true)}
             onError={() => setError(true)}
             onClick={() => setViewerOpen(true)}
-            className={`max-w-full max-h-80 object-contain rounded-lg border border-gray-200 cursor-zoom-in transition-all group-hover:shadow-md ${
+            className={`max-w-full max-h-80 object-contain rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:p-1.5 cursor-zoom-in transition-all group-hover:shadow-md ${
               loaded ? 'block' : 'hidden'
             } ${className}`}
           />

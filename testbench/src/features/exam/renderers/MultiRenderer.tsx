@@ -25,7 +25,7 @@ export const MultiRenderer: React.FC<MultiRendererProps> = ({
 
   return (
     <div className="space-y-3 mt-4" role="group" aria-label="Multiple choice options">
-      <div className="text-xs font-medium text-amber-700 bg-amber-50 px-3 py-1.5 rounded-md inline-block border border-amber-200">
+      <div className="text-xs font-medium text-amber-700 dark:text-amber-300 bg-amber-50 dark:bg-amber-950/50 px-3 py-1.5 rounded-md inline-block border border-amber-200 dark:border-amber-800/70">
         One or more options may be correct. Select all that apply.
       </div>
 
@@ -43,23 +43,23 @@ export const MultiRenderer: React.FC<MultiRendererProps> = ({
               onClick={() => onToggleOption(option.id)}
               className={`w-full text-left p-3.5 sm:p-4 rounded-xl border-2 transition-all flex items-start gap-3.5 cursor-pointer min-h-[52px] select-none ${
                 isSelected
-                  ? 'border-[#1f5fa6] bg-blue-50/70 shadow-xs'
-                  : 'border-gray-200 bg-white hover:border-gray-300 hover:bg-gray-50/50'
+                  ? 'border-[#1a56db] dark:border-blue-500 bg-blue-50/70 dark:bg-blue-950/50 shadow-xs'
+                  : 'border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-slate-300 dark:hover:border-slate-700 hover:bg-slate-50/50 dark:hover:bg-slate-800/50'
               }`}
             >
               {/* Checkbox square */}
               <div
                 className={`shrink-0 w-8 h-8 rounded-lg flex items-center justify-center font-semibold text-xs transition-colors mt-0.5 ${
                   isSelected
-                    ? 'bg-[#1f5fa6] text-white'
-                    : 'bg-gray-100 text-gray-700 border border-gray-300'
+                    ? 'bg-[#1a56db] text-white'
+                    : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-slate-700'
                 }`}
               >
                 {isSelected ? <Check className="w-5 h-5 stroke-[2.5]" /> : letter}
               </div>
 
               {/* Option text and image */}
-              <div className="flex-1 text-base text-gray-900 pt-0.5 space-y-1">
+              <div className="flex-1 text-base text-slate-900 dark:text-slate-100 pt-0.5 space-y-1">
                 {option.text && <RichText content={option.text} language={language} />}
                 {option.image && <Img paperId={paperId} src={option.image} />}
               </div>

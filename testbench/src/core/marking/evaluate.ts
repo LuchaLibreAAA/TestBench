@@ -61,7 +61,7 @@ function evalSingle(
     return { outcome: "wrong", marks: marking.wrong };
   }
 
-  const isCorrect = studentAnswer[0] === question.answer[0];
+  const isCorrect = question.answer.includes(studentAnswer[0]);
   return isCorrect
     ? { outcome: "correct", marks: marking.correct }
     : { outcome: "wrong", marks: marking.wrong };

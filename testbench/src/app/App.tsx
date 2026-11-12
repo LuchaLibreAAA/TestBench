@@ -1,4 +1,6 @@
+import { useEffect } from 'react';
 import { HashRouter, Routes, Route } from 'react-router-dom';
+import { useThemeStore } from '@/stores/themeStore';
 import { LibraryScreen } from '@/features/library/LibraryScreen';
 import { PaperDetailScreen } from '@/features/library/PaperDetailScreen';
 import { InstructionsScreen } from '@/features/instructions/InstructionsScreen';
@@ -10,6 +12,12 @@ import { SettingsScreen } from '@/features/settings/SettingsScreen';
 import { QnADatabaseScreen } from '@/features/qna/QnADatabaseScreen';
 
 export function App() {
+  const initTheme = useThemeStore((s) => s.initTheme);
+
+  useEffect(() => {
+    void initTheme();
+  }, [initTheme]);
+
   return (
     <HashRouter>
       <Routes>

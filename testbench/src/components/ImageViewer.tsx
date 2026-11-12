@@ -75,7 +75,7 @@ export const ImageViewer: React.FC<ImageViewerProps> = ({
           src={src}
           alt={alt}
           style={{ transform: `scale(${scale})`, transition: 'transform 0.15s ease-out' }}
-          className="max-h-[85vh] max-w-[90vw] object-contain select-none shadow-2xl rounded-lg"
+          className="max-h-[85vh] max-w-[90vw] object-contain select-none shadow-2xl rounded-lg bg-white p-2"
           draggable={false}
         />
       </div>

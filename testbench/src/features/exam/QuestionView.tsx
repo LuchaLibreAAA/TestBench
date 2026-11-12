@@ -36,21 +36,21 @@ export const QuestionView: React.FC<QuestionViewProps> = ({
   const sectionName = resolveText(section.name, language);
 
   return (
-    <div className="bg-white rounded-2xl border border-gray-200/90 shadow-2xs p-4 sm:p-6">
+    <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/80 dark:border-slate-800 shadow-2xs p-4 sm:p-6">
       {/* Top Meta Bar */}
-      <div className="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-gray-100 text-xs text-gray-500">
+      <div className="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-slate-100 dark:border-slate-800 text-xs text-slate-500 dark:text-slate-400">
         <div className="flex items-center gap-2">
-          <span className="font-bold text-sm text-gray-900">
+          <span className="font-bold text-sm text-slate-900 dark:text-slate-100">
             Question {questionIndex + 1}
           </span>
-          <span className="text-gray-400">/</span>
-          <span className="text-gray-500">{totalQuestionsInSection}</span>
-          <span className="text-gray-300">•</span>
-          <span className="font-medium text-gray-700">{sectionName}</span>
+          <span className="text-slate-400 dark:text-slate-600">/</span>
+          <span className="text-slate-500 dark:text-slate-400">{totalQuestionsInSection}</span>
+          <span className="text-slate-300 dark:text-slate-700">•</span>
+          <span className="font-medium text-slate-700 dark:text-slate-300">{sectionName}</span>
           {question.topic && (
             <>
-              <span className="text-gray-300">•</span>
-              <span className="bg-gray-100 text-gray-600 px-2 py-0.5 rounded-md font-medium">
+              <span className="text-slate-300 dark:text-slate-700">•</span>
+              <span className="bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 px-2 py-0.5 rounded-md font-medium">
                 {question.topic}
               </span>
             </>
@@ -59,17 +59,17 @@ export const QuestionView: React.FC<QuestionViewProps> = ({
 
         {/* Marking Scheme Badge */}
         <div className="flex items-center gap-1.5 font-semibold text-xs">
-          <span className="text-[#2e9e5b] bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-md">
+          <span className="text-[#2e9e5b] dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-200 dark:border-emerald-800/70 px-2 py-0.5 rounded-md">
             +{effectiveMarking.correct}
           </span>
-          <span className="text-[#e5533d] bg-red-50 border border-red-200 px-2 py-0.5 rounded-md">
+          <span className="text-[#e5533d] dark:text-red-400 bg-red-50 dark:bg-red-950/60 border border-red-200 dark:border-red-800/70 px-2 py-0.5 rounded-md">
             {effectiveMarking.wrong > 0 ? `-${effectiveMarking.wrong}` : effectiveMarking.wrong}
           </span>
         </div>
       </div>
 
       {/* Question Body Text */}
-      <div className="py-4 text-base sm:text-lg text-gray-900 font-normal leading-relaxed">
+      <div className="py-4 text-base sm:text-lg text-slate-900 dark:text-slate-100 font-normal leading-relaxed">
         <RichText content={question.text} language={language} />
         {question.images && question.images.length > 0 && (
           <div className="flex flex-wrap gap-3 mt-3">
@@ -81,7 +81,7 @@ export const QuestionView: React.FC<QuestionViewProps> = ({
       </div>
 
       {/* Question Renderers */}
-      <div className="pt-2 border-t border-gray-100">
+      <div className="pt-2 border-t border-slate-100 dark:border-slate-800">
         {question.type === 'single' && (
           <SingleRenderer
             paperId={paperId}
@@ -117,8 +117,8 @@ export const QuestionView: React.FC<QuestionViewProps> = ({
               onClick={() => onSelectOption('true')}
               className={`p-4 rounded-xl border-2 font-bold text-center transition-all cursor-pointer ${
                 response?.answer === true
-                  ? 'border-[#1f5fa6] bg-blue-50 text-[#1f5fa6]'
-                  : 'border-gray-200 bg-white hover:bg-gray-50 text-gray-800'
+                  ? 'border-[#1a56db] dark:border-blue-500 bg-blue-50 dark:bg-blue-950/60 text-[#1a56db] dark:text-blue-400'
+                  : 'border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-800 dark:text-slate-200'
               }`}
             >
               True
@@ -128,8 +128,8 @@ export const QuestionView: React.FC<QuestionViewProps> = ({
               onClick={() => onSelectOption('false')}
               className={`p-4 rounded-xl border-2 font-bold text-center transition-all cursor-pointer ${
                 response?.answer === false
-                  ? 'border-[#1f5fa6] bg-blue-50 text-[#1f5fa6]'
-                  : 'border-gray-200 bg-white hover:bg-gray-50 text-gray-800'
+                  ? 'border-[#1a56db] dark:border-blue-500 bg-blue-50 dark:bg-blue-950/60 text-[#1a56db] dark:text-blue-400'
+                  : 'border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-800 dark:text-slate-200'
               }`}
             >
               False

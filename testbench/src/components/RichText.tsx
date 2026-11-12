@@ -121,7 +121,7 @@ export const RichText: React.FC<RichTextProps> = ({
   if (!content) return null;
 
   return (
-    <div className={`leading-relaxed text-gray-800 break-words ${className}`}>
+    <div className={`leading-relaxed text-slate-800 dark:text-slate-200 break-words ${className}`}>
       {rendered}
     </div>
   );

@@ -117,10 +117,10 @@ export const ExamScreen: React.FC = () => {
 
   if (loading || !state.paper || !state.currentQid) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gray-50">
+      <div className="min-h-screen flex items-center justify-center bg-slate-50 dark:bg-slate-950">
         <div className="flex flex-col items-center gap-3">
-          <Loader2 className="w-8 h-8 animate-spin text-[#1f5fa6]" />
-          <p className="text-sm font-medium text-gray-600">Loading exam...</p>
+          <Loader2 className="w-8 h-8 animate-spin text-[#1a56db] dark:text-blue-400" />
+          <p className="text-sm font-medium text-slate-600 dark:text-slate-400">Loading exam...</p>
         </div>
       </div>
     );
@@ -139,7 +139,7 @@ export const ExamScreen: React.FC = () => {
   const isLast = state.flatQuestionIds[state.flatQuestionIds.length - 1] === question.id;
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#f4f6f9] select-none">
+    <div className="min-h-screen flex flex-col bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 select-none transition-colors">
       {/* Header */}
       <Header
         paperTitle={state.paper.title}
@@ -189,10 +189,10 @@ export const ExamScreen: React.FC = () => {
 
         {/* Desktop Right Sidebar: Palette */}
         <aside className="hidden lg:block w-80 shrink-0">
-          <div className="bg-white rounded-2xl border border-gray-200/90 shadow-2xs p-4 sticky top-18">
-            <div className="flex items-center justify-between pb-3 border-b border-gray-100 mb-3">
-              <h2 className="text-sm font-bold text-gray-900">Question Palette</h2>
-              <span className="text-xs text-gray-500 font-medium">
+          <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/80 dark:border-slate-800 shadow-2xs p-4 sticky top-18">
+            <div className="flex items-center justify-between pb-3 border-b border-slate-100 dark:border-slate-800 mb-3">
+              <h2 className="text-sm font-bold text-slate-900 dark:text-slate-100">Question Palette</h2>
+              <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">
                 {state.flatQuestionIds.length} Questions
               </span>
             </div>
