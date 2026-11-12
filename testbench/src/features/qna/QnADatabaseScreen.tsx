@@ -290,10 +290,29 @@ export const QnADatabaseScreen: React.FC = () => {
             </div>
 
             {filteredQuestions.map((q) => {
-              const stmtImg = q.content.imagePaths[0]
-                ? q.content.imagePaths[0].replace(/^(images\/|\.\/|\/)+/, '')
-                : '';
+              const cleanImages = (q.content.imagePaths ?? [])
+                .map((p) => p.replace(/^(images\/|\.\/|\/)+/, ''))
+                .filter(Boolean);
               const isMcq = q.type === 'single_choice';
+              const qSec = data?.sections.find((s) => s.sectionId === q.sectionId);
+              const secLabel = qSec?.sectionName ?? (isMcq ? 'Section A (MCQ)' : 'Section B (Numerical)');
+              const correctMark = qSec?.markingScheme?.correct ?? 4;
+              const wrongMark = qSec?.markingScheme?.wrong ?? (isMcq ? -1 : 0);
+              const isWbtet =
+                paperId.startsWith('wbtet') ||
+                (data?.examMetadata.examName ?? '').toLowerCase().includes('tet');
+              const isWbtetBilingual =
+                isWbtet &&
+                (q.sectionId === 'cdp' || q.sectionId === 'math' || q.sectionId === 'evs') &&
+                cleanImages.length === 2;
+              const wbtetSingleLangLabel =
+                isWbtet && !isWbtetBilingual
+                  ? q.sectionId === 'lang1-bn'
+                    ? 'Bengali'
+                    : q.sectionId === 'lang2-en'
+                    ? 'English'
+                    : null
+                  : null;
 
               return (
                 <div
@@ -310,8 +329,13 @@ export const QnADatabaseScreen: React.FC = () => {
                       <span className="font-semibold text-slate-700 dark:text-slate-300">{q.subject}</span>
                       <span className="text-slate-300 dark:text-slate-700">•</span>
                       <span className="bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 px-2 py-0.5 rounded-md font-medium text-[11px]">
-                        {isMcq ? 'Section A (MCQ)' : 'Section B (Numerical)'}
+                        {secLabel}
                       </span>
+                      {isWbtet && (
+                        <span className="bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 border border-indigo-200/80 dark:border-indigo-800/70 px-2 py-0.5 rounded-md font-semibold text-[11px]">
+                          {isWbtetBilingual ? 'English & Bengali' : wbtetSingleLangLabel}
+                        </span>
+                      )}
                     </div>
 
                     <div className="flex items-center gap-2 font-mono text-[11px]">
@@ -322,15 +346,36 @@ export const QnADatabaseScreen: React.FC = () => {
                         Pages {q.source.pages.join('–')}
                       </span>
                       <span className="text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-200 dark:border-emerald-800/80 px-1.5 py-0.5 rounded font-sans font-bold">
-                        +4 / {isMcq ? '-1' : '0'}
+                        +{correctMark} / {wrongMark}
                       </span>
                     </div>
                   </div>
 
                   {/* Statement Image */}
-                  <div className="py-2">
-                    {stmtImg ? (
-                      <Img paperId={paperId} src={stmtImg} alt={`Question ${q.questionNumber}`} />
+                  <div className="py-2 space-y-3">
+                    {cleanImages.length > 0 ? (
+                      cleanImages.map((imgPath, imgIdx) => {
+                        const imgLabel = isWbtetBilingual
+                          ? imgIdx === 0
+                            ? 'English Version'
+                            : 'Bengali Version'
+                          : isWbtet && wbtetSingleLangLabel && cleanImages.length > 1
+                          ? imgIdx < cleanImages.length - 1
+                            ? `${wbtetSingleLangLabel} Passage${cleanImages.length > 2 ? ` (Part ${imgIdx + 1})` : ''}`
+                            : `${wbtetSingleLangLabel} Question`
+                          : null;
+
+                        return (
+                          <div key={imgPath} className="space-y-1">
+                            {imgLabel && (
+                              <span className="inline-block text-[11px] font-semibold uppercase tracking-wide text-indigo-700 dark:text-indigo-300 bg-indigo-50 dark:bg-indigo-950/50 border border-indigo-200/70 dark:border-indigo-800/70 px-2 py-0.5 rounded">
+                                {imgLabel}
+                              </span>
+                            )}
+                            <Img paperId={paperId} src={imgPath} alt={`Question ${q.questionNumber}`} />
+                          </div>
+                        );
+                      })
                     ) : (
                       <p className="text-sm text-slate-500 dark:text-slate-400 italic">No image statement available</p>
                     )}

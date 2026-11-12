@@ -1,0 +1,6935 @@
+{
+  "schemaVersion": 1,
+  "id": "wbtet-2022",
+  "title": "WB Primary TET 2022 \u2014 Official Question Paper",
+  "description": "West Bengal Board of Primary Education (WBBPE) Teacher Eligibility Test 2022 (Classes I\u2013V). 150 compulsory questions across 5 sections (Bilingual English & Bengali).",
+  "exam": "wbtet",
+  "durationMin": 150,
+  "languages": [
+    "en",
+    "bn"
+  ],
+  "navigation": "free",
+  "instructions": {
+    "en": "The question paper contains 150 compulsory multiple choice questions across five parts of 30 questions each: Child Development & Pedagogy, Language I (Bengali), Language II (English), Mathematics, and Environmental Studies. Each correct answer carries +1 mark with no negative marking. Total time: 150 minutes."
+  },
+  "meta": {
+    "author": "WBBPE (West Bengal Board of Primary Education)",
+    "createdAt": "2022-12-11T00:00:00Z",
+    "tags": [
+      "wbtet",
+      "tet",
+      "primary-tet",
+      "2022",
+      "wbbpe",
+      "bilingual"
+    ]
+  },
+  "sections": [
+    {
+      "id": "cdp",
+      "name": {
+        "en": "Child Development & Pedagogy"
+      },
+      "marking": {
+        "correct": 1,
+        "wrong": 0,
+        "unattempted": 0
+      },
+      "questions": [
+        {
+          "id": "q-wbtet-2022-q001",
+          "type": "single",
+          "topic": "Child Development & Pedagogy",
+          "text": {
+            "en": "Question 1"
+          },
+          "images": [
+            "q_wbtet-2022-q001_part1.png",
+            "q_wbtet-2022-q001_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q001_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q001_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q002",
+          "type": "single",
+          "topic": "Child Development & Pedagogy",
+          "text": {
+            "en": "Question 2"
+          },
+          "images": [
+            "q_wbtet-2022-q002_part1.png",
+            "q_wbtet-2022-q002_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q002_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q002_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q003",
+          "type": "single",
+          "topic": "Child Development & Pedagogy",
+          "text": {
+            "en": "Question 3"
+          },
+          "images": [
+            "q_wbtet-2022-q003_part1.png",
+            "q_wbtet-2022-q003_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q003_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q003_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q004",
+          "type": "single",
+          "topic": "Child Development & Pedagogy",
+          "text": {
+            "en": "Question 4"
+          },
+          "images": [
+            "q_wbtet-2022-q004_part1.png",
+            "q_wbtet-2022-q004_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q004_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q004_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q005",
+          "type": "single",
+          "topic": "Child Development & Pedagogy",
+          "text": {
+            "en": "Question 5"
+          },
+          "images": [
+            "q_wbtet-2022-q005_part1.png",
+            "q_wbtet-2022-q005_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q005_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q005_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q006",
+          "type": "single",
+          "topic": "Child Development & Pedagogy",
+          "text": {
+            "en": "Question 6"
+          },
+          "images": [
+            "q_wbtet-2022-q006_part1.png",
+            "q_wbtet-2022-q006_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q006_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q006_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q007",
+          "type": "single",
+          "topic": "Child Development & Pedagogy",
+          "text": {
+            "en": "Question 7"
+          },
+          "images": [
+            "q_wbtet-2022-q007_part1.png",
+            "q_wbtet-2022-q007_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q007_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q007_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q008",
+          "type": "single",
+          "topic": "Child Development & Pedagogy",
+          "text": {
+            "en": "Question 8"
+          },
+          "images": [
+            "q_wbtet-2022-q008_part1.png",
+            "q_wbtet-2022-q008_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q008_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q008_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q009",
+          "type": "single",
+          "topic": "Child Development & Pedagogy",
+          "text": {
+            "en": "Question 9"
+          },
+          "images": [
+            "q_wbtet-2022-q009_part1.png",
+            "q_wbtet-2022-q009_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q009_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q009_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q010",
+          "type": "single",
+          "topic": "Child Development & Pedagogy",
+          "text": {
+            "en": "Question 10"
+          },
+          "images": [
+            "q_wbtet-2022-q010_part1.png",
+            "q_wbtet-2022-q010_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q010_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q010_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q011",
+          "type": "single",
+          "topic": "Child Development & Pedagogy",
+          "text": {
+            "en": "Question 11"
+          },
+          "images": [
+            "q_wbtet-2022-q011_part1.png",
+            "q_wbtet-2022-q011_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q011_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q011_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q012",
+          "type": "single",
+          "topic": "Child Development & Pedagogy",
+          "text": {
+            "en": "Question 12"
+          },
+          "images": [
+            "q_wbtet-2022-q012_part1.png",
+            "q_wbtet-2022-q012_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q012_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q012_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q013",
+          "type": "single",
+          "topic": "Child Development & Pedagogy",
+          "text": {
+            "en": "Question 13"
+          },
+          "images": [
+            "q_wbtet-2022-q013_part1.png",
+            "q_wbtet-2022-q013_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q013_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q013_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q014",
+          "type": "single",
+          "topic": "Child Development & Pedagogy",
+          "text": {
+            "en": "Question 14"
+          },
+          "images": [
+            "q_wbtet-2022-q014_part1.png",
+            "q_wbtet-2022-q014_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q014_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q014_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q015",
+          "type": "single",
+          "topic": "Child Development & Pedagogy",
+          "text": {
+            "en": "Question 15"
+          },
+          "images": [
+            "q_wbtet-2022-q015_part1.png",
+            "q_wbtet-2022-q015_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q015_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q015_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q016",
+          "type": "single",
+          "topic": "Child Development & Pedagogy",
+          "text": {
+            "en": "Question 16"
+          },
+          "images": [
+            "q_wbtet-2022-q016_part1.png",
+            "q_wbtet-2022-q016_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q016_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q016_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q017",
+          "type": "single",
+          "topic": "Child Development & Pedagogy",
+          "text": {
+            "en": "Question 17"
+          },
+          "images": [
+            "q_wbtet-2022-q017_part1.png",
+            "q_wbtet-2022-q017_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q017_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q017_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q018",
+          "type": "single",
+          "topic": "Child Development & Pedagogy",
+          "text": {
+            "en": "Question 18"
+          },
+          "images": [
+            "q_wbtet-2022-q018_part1.png",
+            "q_wbtet-2022-q018_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q018_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q018_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q019",
+          "type": "single",
+          "topic": "Child Development & Pedagogy",
+          "text": {
+            "en": "Question 19"
+          },
+          "images": [
+            "q_wbtet-2022-q019_part1.png",
+            "q_wbtet-2022-q019_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q019_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q019_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q020",
+          "type": "single",
+          "topic": "Child Development & Pedagogy",
+          "text": {
+            "en": "Question 20"
+          },
+          "images": [
+            "q_wbtet-2022-q020_part1.png",
+            "q_wbtet-2022-q020_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q020_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q020_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q021",
+          "type": "single",
+          "topic": "Child Development & Pedagogy",
+          "text": {
+            "en": "Question 21"
+          },
+          "images": [
+            "q_wbtet-2022-q021_part1.png",
+            "q_wbtet-2022-q021_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q021_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q021_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q022",
+          "type": "single",
+          "topic": "Child Development & Pedagogy",
+          "text": {
+            "en": "Question 22"
+          },
+          "images": [
+            "q_wbtet-2022-q022_part1.png",
+            "q_wbtet-2022-q022_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q022_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q022_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q023",
+          "type": "single",
+          "topic": "Child Development & Pedagogy",
+          "text": {
+            "en": "Question 23"
+          },
+          "images": [
+            "q_wbtet-2022-q023_part1.png",
+            "q_wbtet-2022-q023_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q023_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q023_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q024",
+          "type": "single",
+          "topic": "Child Development & Pedagogy",
+          "text": {
+            "en": "Question 24"
+          },
+          "images": [
+            "q_wbtet-2022-q024_part1.png",
+            "q_wbtet-2022-q024_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q024_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q024_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q025",
+          "type": "single",
+          "topic": "Child Development & Pedagogy",
+          "text": {
+            "en": "Question 25"
+          },
+          "images": [
+            "q_wbtet-2022-q025_part1.png",
+            "q_wbtet-2022-q025_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q025_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q025_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q026",
+          "type": "single",
+          "topic": "Child Development & Pedagogy",
+          "text": {
+            "en": "Question 26"
+          },
+          "images": [
+            "q_wbtet-2022-q026_part1.png",
+            "q_wbtet-2022-q026_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q026_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q026_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q027",
+          "type": "single",
+          "topic": "Child Development & Pedagogy",
+          "text": {
+            "en": "Question 27"
+          },
+          "images": [
+            "q_wbtet-2022-q027_part1.png",
+            "q_wbtet-2022-q027_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q027_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q027_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q028",
+          "type": "single",
+          "topic": "Child Development & Pedagogy",
+          "text": {
+            "en": "Question 28"
+          },
+          "images": [
+            "q_wbtet-2022-q028_part1.png",
+            "q_wbtet-2022-q028_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q028_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q028_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q029",
+          "type": "single",
+          "topic": "Child Development & Pedagogy",
+          "text": {
+            "en": "Question 29"
+          },
+          "images": [
+            "q_wbtet-2022-q029_part1.png",
+            "q_wbtet-2022-q029_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q029_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q029_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q030",
+          "type": "single",
+          "topic": "Child Development & Pedagogy",
+          "text": {
+            "en": "Question 30"
+          },
+          "images": [
+            "q_wbtet-2022-q030_part1.png",
+            "q_wbtet-2022-q030_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q030_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q030_part2.png"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "lang1-bn",
+      "name": {
+        "en": "Language I \u2014 Bengali"
+      },
+      "marking": {
+        "correct": 1,
+        "wrong": 0,
+        "unattempted": 0
+      },
+      "questions": [
+        {
+          "id": "q-wbtet-2022-q031",
+          "type": "single",
+          "topic": "Bengali",
+          "text": {
+            "en": "Question 31"
+          },
+          "images": [
+            "q_wbtet-2022-q031_part1.png",
+            "q_wbtet-2022-q031_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q032",
+          "type": "single",
+          "topic": "Bengali",
+          "text": {
+            "en": "Question 32"
+          },
+          "images": [
+            "q_wbtet-2022-q032_part1.png",
+            "q_wbtet-2022-q032_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q033",
+          "type": "single",
+          "topic": "Bengali",
+          "text": {
+            "en": "Question 33"
+          },
+          "images": [
+            "q_wbtet-2022-q033_part1.png",
+            "q_wbtet-2022-q033_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q034",
+          "type": "single",
+          "topic": "Bengali",
+          "text": {
+            "en": "Question 34"
+          },
+          "images": [
+            "q_wbtet-2022-q034_part1.png",
+            "q_wbtet-2022-q034_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q035",
+          "type": "single",
+          "topic": "Bengali",
+          "text": {
+            "en": "Question 35"
+          },
+          "images": [
+            "q_wbtet-2022-q035_part1.png",
+            "q_wbtet-2022-q035_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q036",
+          "type": "single",
+          "topic": "Bengali",
+          "text": {
+            "en": "Question 36"
+          },
+          "images": [
+            "q_wbtet-2022-q036_part1.png",
+            "q_wbtet-2022-q036_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q037",
+          "type": "single",
+          "topic": "Bengali",
+          "text": {
+            "en": "Question 37"
+          },
+          "images": [
+            "q_wbtet-2022-q037_part1.png",
+            "q_wbtet-2022-q037_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q038",
+          "type": "single",
+          "topic": "Bengali",
+          "text": {
+            "en": "Question 38"
+          },
+          "images": [
+            "q_wbtet-2022-q038_part1.png",
+            "q_wbtet-2022-q038_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q039",
+          "type": "single",
+          "topic": "Bengali",
+          "text": {
+            "en": "Question 39"
+          },
+          "images": [
+            "q_wbtet-2022-q039_part1.png",
+            "q_wbtet-2022-q039_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q040",
+          "type": "single",
+          "topic": "Bengali",
+          "text": {
+            "en": "Question 40"
+          },
+          "images": [
+            "q_wbtet-2022-q040_part1.png",
+            "q_wbtet-2022-q040_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q041",
+          "type": "single",
+          "topic": "Bengali",
+          "text": {
+            "en": "Question 41"
+          },
+          "images": [
+            "q_wbtet-2022-q041_part1.png",
+            "q_wbtet-2022-q041_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q042",
+          "type": "single",
+          "topic": "Bengali",
+          "text": {
+            "en": "Question 42"
+          },
+          "images": [
+            "q_wbtet-2022-q042_part1.png",
+            "q_wbtet-2022-q042_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q043",
+          "type": "single",
+          "topic": "Bengali",
+          "text": {
+            "en": "Question 43"
+          },
+          "images": [
+            "q_wbtet-2022-q043_part1.png",
+            "q_wbtet-2022-q043_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q044",
+          "type": "single",
+          "topic": "Bengali",
+          "text": {
+            "en": "Question 44"
+          },
+          "images": [
+            "q_wbtet-2022-q044_part1.png",
+            "q_wbtet-2022-q044_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q045",
+          "type": "single",
+          "topic": "Bengali",
+          "text": {
+            "en": "Question 45"
+          },
+          "images": [
+            "q_wbtet-2022-q045_part1.png",
+            "q_wbtet-2022-q045_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q046",
+          "type": "single",
+          "topic": "Bengali",
+          "text": {
+            "en": "Question 46"
+          },
+          "images": [
+            "q_wbtet-2022-q046.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q047",
+          "type": "single",
+          "topic": "Bengali",
+          "text": {
+            "en": "Question 47"
+          },
+          "images": [
+            "q_wbtet-2022-q047.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q048",
+          "type": "single",
+          "topic": "Bengali",
+          "text": {
+            "en": "Question 48"
+          },
+          "images": [
+            "q_wbtet-2022-q048.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q049",
+          "type": "single",
+          "topic": "Bengali",
+          "text": {
+            "en": "Question 49"
+          },
+          "images": [
+            "q_wbtet-2022-q049.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q050",
+          "type": "single",
+          "topic": "Bengali",
+          "text": {
+            "en": "Question 50"
+          },
+          "images": [
+            "q_wbtet-2022-q050.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q051",
+          "type": "single",
+          "topic": "Bengali",
+          "text": {
+            "en": "Question 51"
+          },
+          "images": [
+            "q_wbtet-2022-q051.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q052",
+          "type": "single",
+          "topic": "Bengali",
+          "text": {
+            "en": "Question 52"
+          },
+          "images": [
+            "q_wbtet-2022-q052.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q053",
+          "type": "single",
+          "topic": "Bengali",
+          "text": {
+            "en": "Question 53"
+          },
+          "images": [
+            "q_wbtet-2022-q053.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q054",
+          "type": "single",
+          "topic": "Bengali",
+          "text": {
+            "en": "Question 54"
+          },
+          "images": [
+            "q_wbtet-2022-q054.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q055",
+          "type": "single",
+          "topic": "Bengali",
+          "text": {
+            "en": "Question 55"
+          },
+          "images": [
+            "q_wbtet-2022-q055.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q056",
+          "type": "single",
+          "topic": "Bengali",
+          "text": {
+            "en": "Question 56"
+          },
+          "images": [
+            "q_wbtet-2022-q056.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q057",
+          "type": "single",
+          "topic": "Bengali",
+          "text": {
+            "en": "Question 57"
+          },
+          "images": [
+            "q_wbtet-2022-q057.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q058",
+          "type": "single",
+          "topic": "Bengali",
+          "text": {
+            "en": "Question 58"
+          },
+          "images": [
+            "q_wbtet-2022-q058.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q059",
+          "type": "single",
+          "topic": "Bengali",
+          "text": {
+            "en": "Question 59"
+          },
+          "images": [
+            "q_wbtet-2022-q059.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q060",
+          "type": "single",
+          "topic": "Bengali",
+          "text": {
+            "en": "Question 60"
+          },
+          "images": [
+            "q_wbtet-2022-q060.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lang2-en",
+      "name": {
+        "en": "Language II \u2014 English"
+      },
+      "marking": {
+        "correct": 1,
+        "wrong": 0,
+        "unattempted": 0
+      },
+      "questions": [
+        {
+          "id": "q-wbtet-2022-q061",
+          "type": "single",
+          "topic": "English",
+          "text": {
+            "en": "Question 61"
+          },
+          "images": [
+            "q_wbtet-2022-q061_part1.png",
+            "q_wbtet-2022-q061_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q062",
+          "type": "single",
+          "topic": "English",
+          "text": {
+            "en": "Question 62"
+          },
+          "images": [
+            "q_wbtet-2022-q062_part1.png",
+            "q_wbtet-2022-q062_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q063",
+          "type": "single",
+          "topic": "English",
+          "text": {
+            "en": "Question 63"
+          },
+          "images": [
+            "q_wbtet-2022-q063_part1.png",
+            "q_wbtet-2022-q063_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q064",
+          "type": "single",
+          "topic": "English",
+          "text": {
+            "en": "Question 64"
+          },
+          "images": [
+            "q_wbtet-2022-q064_part1.png",
+            "q_wbtet-2022-q064_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q065",
+          "type": "single",
+          "topic": "English",
+          "text": {
+            "en": "Question 65"
+          },
+          "images": [
+            "q_wbtet-2022-q065_part1.png",
+            "q_wbtet-2022-q065_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q066",
+          "type": "single",
+          "topic": "English",
+          "text": {
+            "en": "Question 66"
+          },
+          "images": [
+            "q_wbtet-2022-q066_part1.png",
+            "q_wbtet-2022-q066_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q067",
+          "type": "single",
+          "topic": "English",
+          "text": {
+            "en": "Question 67"
+          },
+          "images": [
+            "q_wbtet-2022-q067_part1.png",
+            "q_wbtet-2022-q067_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q068",
+          "type": "single",
+          "topic": "English",
+          "text": {
+            "en": "Question 68"
+          },
+          "images": [
+            "q_wbtet-2022-q068_part1.png",
+            "q_wbtet-2022-q068_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q069",
+          "type": "single",
+          "topic": "English",
+          "text": {
+            "en": "Question 69"
+          },
+          "images": [
+            "q_wbtet-2022-q069_part1.png",
+            "q_wbtet-2022-q069_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q070",
+          "type": "single",
+          "topic": "English",
+          "text": {
+            "en": "Question 70"
+          },
+          "images": [
+            "q_wbtet-2022-q070_part1.png",
+            "q_wbtet-2022-q070_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q071",
+          "type": "single",
+          "topic": "English",
+          "text": {
+            "en": "Question 71"
+          },
+          "images": [
+            "q_wbtet-2022-q071_part1.png",
+            "q_wbtet-2022-q071_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q072",
+          "type": "single",
+          "topic": "English",
+          "text": {
+            "en": "Question 72"
+          },
+          "images": [
+            "q_wbtet-2022-q072_part1.png",
+            "q_wbtet-2022-q072_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q073",
+          "type": "single",
+          "topic": "English",
+          "text": {
+            "en": "Question 73"
+          },
+          "images": [
+            "q_wbtet-2022-q073_part1.png",
+            "q_wbtet-2022-q073_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q074",
+          "type": "single",
+          "topic": "English",
+          "text": {
+            "en": "Question 74"
+          },
+          "images": [
+            "q_wbtet-2022-q074_part1.png",
+            "q_wbtet-2022-q074_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q075",
+          "type": "single",
+          "topic": "English",
+          "text": {
+            "en": "Question 75"
+          },
+          "images": [
+            "q_wbtet-2022-q075_part1.png",
+            "q_wbtet-2022-q075_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q076",
+          "type": "single",
+          "topic": "English",
+          "text": {
+            "en": "Question 76"
+          },
+          "images": [
+            "q_wbtet-2022-q076.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q077",
+          "type": "single",
+          "topic": "English",
+          "text": {
+            "en": "Question 77"
+          },
+          "images": [
+            "q_wbtet-2022-q077.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q078",
+          "type": "single",
+          "topic": "English",
+          "text": {
+            "en": "Question 78"
+          },
+          "images": [
+            "q_wbtet-2022-q078.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q079",
+          "type": "single",
+          "topic": "English",
+          "text": {
+            "en": "Question 79"
+          },
+          "images": [
+            "q_wbtet-2022-q079.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q080",
+          "type": "single",
+          "topic": "English",
+          "text": {
+            "en": "Question 80"
+          },
+          "images": [
+            "q_wbtet-2022-q080.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q081",
+          "type": "single",
+          "topic": "English",
+          "text": {
+            "en": "Question 81"
+          },
+          "images": [
+            "q_wbtet-2022-q081.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q082",
+          "type": "single",
+          "topic": "English",
+          "text": {
+            "en": "Question 82"
+          },
+          "images": [
+            "q_wbtet-2022-q082.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q083",
+          "type": "single",
+          "topic": "English",
+          "text": {
+            "en": "Question 83"
+          },
+          "images": [
+            "q_wbtet-2022-q083.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q084",
+          "type": "single",
+          "topic": "English",
+          "text": {
+            "en": "Question 84"
+          },
+          "images": [
+            "q_wbtet-2022-q084.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q085",
+          "type": "single",
+          "topic": "English",
+          "text": {
+            "en": "Question 85"
+          },
+          "images": [
+            "q_wbtet-2022-q085.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q086",
+          "type": "single",
+          "topic": "English",
+          "text": {
+            "en": "Question 86"
+          },
+          "images": [
+            "q_wbtet-2022-q086.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q087",
+          "type": "single",
+          "topic": "English",
+          "text": {
+            "en": "Question 87"
+          },
+          "images": [
+            "q_wbtet-2022-q087.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q088",
+          "type": "single",
+          "topic": "English",
+          "text": {
+            "en": "Question 88"
+          },
+          "images": [
+            "q_wbtet-2022-q088.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q089",
+          "type": "single",
+          "topic": "English",
+          "text": {
+            "en": "Question 89"
+          },
+          "images": [
+            "q_wbtet-2022-q089.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-wbtet-2022-q090",
+          "type": "single",
+          "topic": "English",
+          "text": {
+            "en": "Question 90"
+          },
+          "images": [
+            "q_wbtet-2022-q090.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math",
+      "name": {
+        "en": "Mathematics"
+      },
+      "marking": {
+        "correct": 1,
+        "wrong": 0,
+        "unattempted": 0
+      },
+      "questions": [
+        {
+          "id": "q-wbtet-2022-q091",
+          "type": "single",
+          "topic": "Mathematics",
+          "text": {
+            "en": "Question 91"
+          },
+          "images": [
+            "q_wbtet-2022-q091_part1.png",
+            "q_wbtet-2022-q091_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q091_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q091_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q092",
+          "type": "single",
+          "topic": "Mathematics",
+          "text": {
+            "en": "Question 92"
+          },
+          "images": [
+            "q_wbtet-2022-q092_part1.png",
+            "q_wbtet-2022-q092_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q092_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q092_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q093",
+          "type": "single",
+          "topic": "Mathematics",
+          "text": {
+            "en": "Question 93"
+          },
+          "images": [
+            "q_wbtet-2022-q093_part1.png",
+            "q_wbtet-2022-q093_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q093_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q093_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q094",
+          "type": "single",
+          "topic": "Mathematics",
+          "text": {
+            "en": "Question 94"
+          },
+          "images": [
+            "q_wbtet-2022-q094_part1.png",
+            "q_wbtet-2022-q094_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q094_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q094_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q095",
+          "type": "single",
+          "topic": "Mathematics",
+          "text": {
+            "en": "Question 95"
+          },
+          "images": [
+            "q_wbtet-2022-q095_part1.png",
+            "q_wbtet-2022-q095_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q095_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q095_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q096",
+          "type": "single",
+          "topic": "Mathematics",
+          "text": {
+            "en": "Question 96"
+          },
+          "images": [
+            "q_wbtet-2022-q096_part1.png",
+            "q_wbtet-2022-q096_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q096_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q096_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q097",
+          "type": "single",
+          "topic": "Mathematics",
+          "text": {
+            "en": "Question 97"
+          },
+          "images": [
+            "q_wbtet-2022-q097_part1.png",
+            "q_wbtet-2022-q097_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q097_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q097_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q098",
+          "type": "single",
+          "topic": "Mathematics",
+          "text": {
+            "en": "Question 98"
+          },
+          "images": [
+            "q_wbtet-2022-q098_part1.png",
+            "q_wbtet-2022-q098_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q098_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q098_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q099",
+          "type": "single",
+          "topic": "Mathematics",
+          "text": {
+            "en": "Question 99"
+          },
+          "images": [
+            "q_wbtet-2022-q099_part1.png",
+            "q_wbtet-2022-q099_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q099_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q099_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q100",
+          "type": "single",
+          "topic": "Mathematics",
+          "text": {
+            "en": "Question 100"
+          },
+          "images": [
+            "q_wbtet-2022-q100_part1.png",
+            "q_wbtet-2022-q100_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q100_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q100_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q101",
+          "type": "single",
+          "topic": "Mathematics",
+          "text": {
+            "en": "Question 101"
+          },
+          "images": [
+            "q_wbtet-2022-q101_part1.png",
+            "q_wbtet-2022-q101_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q101_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q101_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q102",
+          "type": "single",
+          "topic": "Mathematics",
+          "text": {
+            "en": "Question 102"
+          },
+          "images": [
+            "q_wbtet-2022-q102_part1.png",
+            "q_wbtet-2022-q102_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q102_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q102_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q103",
+          "type": "single",
+          "topic": "Mathematics",
+          "text": {
+            "en": "Question 103"
+          },
+          "images": [
+            "q_wbtet-2022-q103_part1.png",
+            "q_wbtet-2022-q103_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q103_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q103_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q104",
+          "type": "single",
+          "topic": "Mathematics",
+          "text": {
+            "en": "Question 104"
+          },
+          "images": [
+            "q_wbtet-2022-q104_part1.png",
+            "q_wbtet-2022-q104_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q104_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q104_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q105",
+          "type": "single",
+          "topic": "Mathematics",
+          "text": {
+            "en": "Question 105"
+          },
+          "images": [
+            "q_wbtet-2022-q105_part1.png",
+            "q_wbtet-2022-q105_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q105_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q105_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q106",
+          "type": "single",
+          "topic": "Mathematics",
+          "text": {
+            "en": "Question 106"
+          },
+          "images": [
+            "q_wbtet-2022-q106_part1.png",
+            "q_wbtet-2022-q106_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q106_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q106_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q107",
+          "type": "single",
+          "topic": "Mathematics",
+          "text": {
+            "en": "Question 107"
+          },
+          "images": [
+            "q_wbtet-2022-q107_part1.png",
+            "q_wbtet-2022-q107_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q107_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q107_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q108",
+          "type": "single",
+          "topic": "Mathematics",
+          "text": {
+            "en": "Question 108"
+          },
+          "images": [
+            "q_wbtet-2022-q108_part1.png",
+            "q_wbtet-2022-q108_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q108_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q108_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q109",
+          "type": "single",
+          "topic": "Mathematics",
+          "text": {
+            "en": "Question 109"
+          },
+          "images": [
+            "q_wbtet-2022-q109_part1.png",
+            "q_wbtet-2022-q109_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q109_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q109_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q110",
+          "type": "single",
+          "topic": "Mathematics",
+          "text": {
+            "en": "Question 110"
+          },
+          "images": [
+            "q_wbtet-2022-q110_part1.png",
+            "q_wbtet-2022-q110_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q110_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q110_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q111",
+          "type": "single",
+          "topic": "Mathematics",
+          "text": {
+            "en": "Question 111"
+          },
+          "images": [
+            "q_wbtet-2022-q111_part1.png",
+            "q_wbtet-2022-q111_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q111_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q111_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q112",
+          "type": "single",
+          "topic": "Mathematics",
+          "text": {
+            "en": "Question 112"
+          },
+          "images": [
+            "q_wbtet-2022-q112_part1.png",
+            "q_wbtet-2022-q112_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q112_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q112_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q113",
+          "type": "single",
+          "topic": "Mathematics",
+          "text": {
+            "en": "Question 113"
+          },
+          "images": [
+            "q_wbtet-2022-q113_part1.png",
+            "q_wbtet-2022-q113_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q113_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q113_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q114",
+          "type": "single",
+          "topic": "Mathematics",
+          "text": {
+            "en": "Question 114"
+          },
+          "images": [
+            "q_wbtet-2022-q114_part1.png",
+            "q_wbtet-2022-q114_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q114_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q114_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q115",
+          "type": "single",
+          "topic": "Mathematics",
+          "text": {
+            "en": "Question 115"
+          },
+          "images": [
+            "q_wbtet-2022-q115_part1.png",
+            "q_wbtet-2022-q115_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q115_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q115_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q116",
+          "type": "single",
+          "topic": "Mathematics",
+          "text": {
+            "en": "Question 116"
+          },
+          "images": [
+            "q_wbtet-2022-q116_part1.png",
+            "q_wbtet-2022-q116_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q116_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q116_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q117",
+          "type": "single",
+          "topic": "Mathematics",
+          "text": {
+            "en": "Question 117"
+          },
+          "images": [
+            "q_wbtet-2022-q117_part1.png",
+            "q_wbtet-2022-q117_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q117_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q117_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q118",
+          "type": "single",
+          "topic": "Mathematics",
+          "text": {
+            "en": "Question 118"
+          },
+          "images": [
+            "q_wbtet-2022-q118_part1.png",
+            "q_wbtet-2022-q118_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q118_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q118_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q119",
+          "type": "single",
+          "topic": "Mathematics",
+          "text": {
+            "en": "Question 119"
+          },
+          "images": [
+            "q_wbtet-2022-q119_part1.png",
+            "q_wbtet-2022-q119_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q119_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q119_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q120",
+          "type": "single",
+          "topic": "Mathematics",
+          "text": {
+            "en": "Question 120"
+          },
+          "images": [
+            "q_wbtet-2022-q120_part1.png",
+            "q_wbtet-2022-q120_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q120_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q120_part2.png"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "evs",
+      "name": {
+        "en": "Environmental Studies"
+      },
+      "marking": {
+        "correct": 1,
+        "wrong": 0,
+        "unattempted": 0
+      },
+      "questions": [
+        {
+          "id": "q-wbtet-2022-q121",
+          "type": "single",
+          "topic": "Environmental Studies",
+          "text": {
+            "en": "Question 121"
+          },
+          "images": [
+            "q_wbtet-2022-q121_part1.png",
+            "q_wbtet-2022-q121_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q121_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q121_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q122",
+          "type": "single",
+          "topic": "Environmental Studies",
+          "text": {
+            "en": "Question 122"
+          },
+          "images": [
+            "q_wbtet-2022-q122_part1.png",
+            "q_wbtet-2022-q122_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q122_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q122_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q123",
+          "type": "single",
+          "topic": "Environmental Studies",
+          "text": {
+            "en": "Question 123"
+          },
+          "images": [
+            "q_wbtet-2022-q123_part1.png",
+            "q_wbtet-2022-q123_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q123_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q123_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q124",
+          "type": "single",
+          "topic": "Environmental Studies",
+          "text": {
+            "en": "Question 124"
+          },
+          "images": [
+            "q_wbtet-2022-q124_part1.png",
+            "q_wbtet-2022-q124_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q124_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q124_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q125",
+          "type": "single",
+          "topic": "Environmental Studies",
+          "text": {
+            "en": "Question 125"
+          },
+          "images": [
+            "q_wbtet-2022-q125_part1.png",
+            "q_wbtet-2022-q125_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q125_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q125_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q126",
+          "type": "single",
+          "topic": "Environmental Studies",
+          "text": {
+            "en": "Question 126"
+          },
+          "images": [
+            "q_wbtet-2022-q126_part1.png",
+            "q_wbtet-2022-q126_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q126_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q126_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q127",
+          "type": "single",
+          "topic": "Environmental Studies",
+          "text": {
+            "en": "Question 127"
+          },
+          "images": [
+            "q_wbtet-2022-q127_part1.png",
+            "q_wbtet-2022-q127_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q127_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q127_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q128",
+          "type": "single",
+          "topic": "Environmental Studies",
+          "text": {
+            "en": "Question 128"
+          },
+          "images": [
+            "q_wbtet-2022-q128_part1.png",
+            "q_wbtet-2022-q128_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q128_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q128_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q129",
+          "type": "single",
+          "topic": "Environmental Studies",
+          "text": {
+            "en": "Question 129"
+          },
+          "images": [
+            "q_wbtet-2022-q129_part1.png",
+            "q_wbtet-2022-q129_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q129_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q129_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q130",
+          "type": "single",
+          "topic": "Environmental Studies",
+          "text": {
+            "en": "Question 130"
+          },
+          "images": [
+            "q_wbtet-2022-q130_part1.png",
+            "q_wbtet-2022-q130_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q130_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q130_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q131",
+          "type": "single",
+          "topic": "Environmental Studies",
+          "text": {
+            "en": "Question 131"
+          },
+          "images": [
+            "q_wbtet-2022-q131_part1.png",
+            "q_wbtet-2022-q131_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q131_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q131_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q132",
+          "type": "single",
+          "topic": "Environmental Studies",
+          "text": {
+            "en": "Question 132"
+          },
+          "images": [
+            "q_wbtet-2022-q132_part1.png",
+            "q_wbtet-2022-q132_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q132_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q132_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q133",
+          "type": "single",
+          "topic": "Environmental Studies",
+          "text": {
+            "en": "Question 133"
+          },
+          "images": [
+            "q_wbtet-2022-q133_part1.png",
+            "q_wbtet-2022-q133_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q133_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q133_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q134",
+          "type": "single",
+          "topic": "Environmental Studies",
+          "text": {
+            "en": "Question 134"
+          },
+          "images": [
+            "q_wbtet-2022-q134_part1.png",
+            "q_wbtet-2022-q134_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q134_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q134_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q135",
+          "type": "single",
+          "topic": "Environmental Studies",
+          "text": {
+            "en": "Question 135"
+          },
+          "images": [
+            "q_wbtet-2022-q135_part1.png",
+            "q_wbtet-2022-q135_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q135_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q135_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q136",
+          "type": "single",
+          "topic": "Environmental Studies",
+          "text": {
+            "en": "Question 136"
+          },
+          "images": [
+            "q_wbtet-2022-q136_part1.png",
+            "q_wbtet-2022-q136_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q136_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q136_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q137",
+          "type": "single",
+          "topic": "Environmental Studies",
+          "text": {
+            "en": "Question 137"
+          },
+          "images": [
+            "q_wbtet-2022-q137_part1.png",
+            "q_wbtet-2022-q137_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q137_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q137_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q138",
+          "type": "single",
+          "topic": "Environmental Studies",
+          "text": {
+            "en": "Question 138"
+          },
+          "images": [
+            "q_wbtet-2022-q138_part1.png",
+            "q_wbtet-2022-q138_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q138_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q138_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q139",
+          "type": "single",
+          "topic": "Environmental Studies",
+          "text": {
+            "en": "Question 139"
+          },
+          "images": [
+            "q_wbtet-2022-q139_part1.png",
+            "q_wbtet-2022-q139_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q139_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q139_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q140",
+          "type": "single",
+          "topic": "Environmental Studies",
+          "text": {
+            "en": "Question 140"
+          },
+          "images": [
+            "q_wbtet-2022-q140_part1.png",
+            "q_wbtet-2022-q140_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q140_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q140_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q141",
+          "type": "single",
+          "topic": "Environmental Studies",
+          "text": {
+            "en": "Question 141"
+          },
+          "images": [
+            "q_wbtet-2022-q141_part1.png",
+            "q_wbtet-2022-q141_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q141_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q141_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q142",
+          "type": "single",
+          "topic": "Environmental Studies",
+          "text": {
+            "en": "Question 142"
+          },
+          "images": [
+            "q_wbtet-2022-q142_part1.png",
+            "q_wbtet-2022-q142_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q142_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q142_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q143",
+          "type": "single",
+          "topic": "Environmental Studies",
+          "text": {
+            "en": "Question 143"
+          },
+          "images": [
+            "q_wbtet-2022-q143_part1.png",
+            "q_wbtet-2022-q143_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q143_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q143_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q144",
+          "type": "single",
+          "topic": "Environmental Studies",
+          "text": {
+            "en": "Question 144"
+          },
+          "images": [
+            "q_wbtet-2022-q144_part1.png",
+            "q_wbtet-2022-q144_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q144_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q144_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q145",
+          "type": "single",
+          "topic": "Environmental Studies",
+          "text": {
+            "en": "Question 145"
+          },
+          "images": [
+            "q_wbtet-2022-q145_part1.png",
+            "q_wbtet-2022-q145_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q145_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q145_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q146",
+          "type": "single",
+          "topic": "Environmental Studies",
+          "text": {
+            "en": "Question 146"
+          },
+          "images": [
+            "q_wbtet-2022-q146_part1.png",
+            "q_wbtet-2022-q146_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q146_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q146_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q147",
+          "type": "single",
+          "topic": "Environmental Studies",
+          "text": {
+            "en": "Question 147"
+          },
+          "images": [
+            "q_wbtet-2022-q147_part1.png",
+            "q_wbtet-2022-q147_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q147_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q147_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q148",
+          "type": "single",
+          "topic": "Environmental Studies",
+          "text": {
+            "en": "Question 148"
+          },
+          "images": [
+            "q_wbtet-2022-q148_part1.png",
+            "q_wbtet-2022-q148_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q148_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q148_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q149",
+          "type": "single",
+          "topic": "Environmental Studies",
+          "text": {
+            "en": "Question 149"
+          },
+          "images": [
+            "q_wbtet-2022-q149_part1.png",
+            "q_wbtet-2022-q149_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q149_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q149_part2.png"
+            ]
+          }
+        },
+        {
+          "id": "q-wbtet-2022-q150",
+          "type": "single",
+          "topic": "Environmental Studies",
+          "text": {
+            "en": "Question 150"
+          },
+          "images": [
+            "q_wbtet-2022-q150_part1.png",
+            "q_wbtet-2022-q150_part2.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option A"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option B"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option C"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option D"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ],
+          "localizedImages": {
+            "en": [
+              "q_wbtet-2022-q150_part1.png"
+            ],
+            "bn": [
+              "q_wbtet-2022-q150_part2.png"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

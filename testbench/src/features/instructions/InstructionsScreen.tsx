@@ -6,7 +6,7 @@ import { useExamStore } from '@/stores/examStore';
 import type { Paper } from '@/core/schema';
 import { Button } from '@/components/Button';
 import { ThemeToggle } from '@/components/ThemeToggle';
-import { resolveText } from '@/core/utils/localized-text';
+import { resolveText, getWbtetLanguageLabel } from '@/core/utils/localized-text';
 import {
   ChevronLeft,
   CheckSquare,
@@ -106,7 +106,7 @@ export const InstructionsScreen: React.FC = () => {
                 >
                   {paper.languages.map((l) => (
                     <option key={l} value={l} className="dark:bg-slate-900">
-                      {l.toUpperCase()}
+                      {getWbtetLanguageLabel(l, paper.exam)}
                     </option>
                   ))}
                 </select>

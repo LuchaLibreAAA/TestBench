@@ -4,7 +4,7 @@ import { savePaper, getPaper } from './repositories/papers';
 
 export interface CatalogItem {
   id: string;
-  exam: 'jee-main' | 'neet' | string;
+  exam: 'jee-main' | 'neet' | 'wbtet' | string;
   year: number;
   title: string;
   description: string;
@@ -107,6 +107,32 @@ export const CATALOG_PAPERS: CatalogItem[] = [
     path: '/papers/neet/neet-ug-2023.json',
     badge: 'NEET 2023 Official',
     accentColor: '#059669',
+  },
+  {
+    id: 'wbtet-2023',
+    exam: 'wbtet',
+    year: 2023,
+    title: 'WB Primary TET 2023 — Official Question Paper',
+    description: 'West Bengal Board of Primary Education (WBBPE) Teacher Eligibility Test 2023 (Classes I–V). 150 compulsory questions across 5 sections (Bilingual English & Bengali).',
+    durationMin: 150,
+    sectionsCount: 5,
+    questionsCount: 150,
+    path: '/papers/wbtet/wbtet-2023.json',
+    badge: 'WBTET 2023 Official',
+    accentColor: '#4f46e5',
+  },
+  {
+    id: 'wbtet-2022',
+    exam: 'wbtet',
+    year: 2022,
+    title: 'WB Primary TET 2022 — Official Question Paper',
+    description: 'West Bengal Board of Primary Education (WBBPE) Teacher Eligibility Test 2022 (Classes I–V). 150 compulsory questions across 5 sections (Bilingual English & Bengali).',
+    durationMin: 150,
+    sectionsCount: 5,
+    questionsCount: 150,
+    path: '/papers/wbtet/wbtet-2022.json',
+    badge: 'WBTET 2022 Official',
+    accentColor: '#4f46e5',
   },
 ];
 

@@ -114,6 +114,28 @@ export const QNA_CATALOG = [
     path: '/qna/neet-ug-2023.json',
     paperId: 'neet-ug-2023',
   },
+  {
+    id: 'wbtet-2023',
+    title: 'WB Primary TET 2023 — Official Question Paper (Bilingual)',
+    examName: 'WB Primary TET',
+    year: 2023,
+    shift: 'Paper I',
+    date: '2023-12-24',
+    totalQuestions: 150,
+    path: '/qna/wbtet-2023.json',
+    paperId: 'wbtet-2023',
+  },
+  {
+    id: 'wbtet-2022',
+    title: 'WB Primary TET 2022 — Official Question Paper (Bilingual)',
+    examName: 'WB Primary TET',
+    year: 2022,
+    shift: 'Paper I',
+    date: '2022-12-11',
+    totalQuestions: 150,
+    path: '/qna/wbtet-2022.json',
+    paperId: 'wbtet-2022',
+  },
 ];
 
 /** Fetch and cache QnA database into IndexedDB */

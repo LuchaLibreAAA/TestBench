@@ -5,11 +5,12 @@ import { Img } from '@/components/Img';
 import { SingleRenderer } from './renderers/SingleRenderer';
 import { MultiRenderer } from './renderers/MultiRenderer';
 import { NumericalRenderer } from './renderers/NumericalRenderer';
-import { resolveText } from '@/core/utils/localized-text';
+import { resolveText, getWbtetQuestionLanguageBadge } from '@/core/utils/localized-text';
 import { useTextSizeSetting, getTextSizeClass } from '@/hooks/useTextSizeSetting';
 
 export interface QuestionViewProps {
   paperId: string;
+  exam?: string;
   question: Question;
   section: Section;
   questionIndex: number;
@@ -23,6 +24,7 @@ export interface QuestionViewProps {
 
 export const QuestionView: React.FC<QuestionViewProps> = ({
   paperId,
+  exam,
   question,
   section,
   questionIndex,
@@ -58,6 +60,18 @@ export const QuestionView: React.FC<QuestionViewProps> = ({
               </span>
             </>
           )}
+          {exam === 'wbtet' && (
+            <>
+              <span className="text-slate-300 dark:text-slate-700">•</span>
+              <span className="bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 border border-indigo-200/80 dark:border-indigo-800/70 px-2 py-0.5 rounded-md font-semibold">
+                {getWbtetQuestionLanguageBadge(
+                  section.id,
+                  language,
+                  Boolean(question.localizedImages?.en?.length && question.localizedImages?.bn?.length),
+                )}
+              </span>
+            </>
+          )}
         </div>
 
         {/* Marking Scheme Badge */}
@@ -74,13 +88,19 @@ export const QuestionView: React.FC<QuestionViewProps> = ({
       {/* Question Body Text */}
       <div className={`py-4 ${textSizeClass} text-slate-900 dark:text-slate-100 font-normal leading-relaxed`}>
         <RichText content={question.text} language={language} />
-        {question.images && question.images.length > 0 && (
-          <div className="flex flex-wrap gap-3 mt-3">
-            {question.images.map((img) => (
-              <Img key={img} paperId={paperId} src={img} />
-            ))}
-          </div>
-        )}
+        {(() => {
+          const displayImages =
+            (question.localizedImages?.[language] && question.localizedImages[language].length > 0
+              ? question.localizedImages[language]
+              : question.images) ?? [];
+          return displayImages.length > 0 ? (
+            <div className="flex flex-wrap gap-3 mt-3">
+              {displayImages.map((img) => (
+                <Img key={img} paperId={paperId} src={img} />
+              ))}
+            </div>
+          ) : null;
+        })()}
       </div>
 
       {/* Question Renderers */}

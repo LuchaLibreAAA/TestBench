@@ -1,10 +1,12 @@
 import React from 'react';
 import { useTimer } from '@/hooks/useTimer';
 import { ThemeToggle } from '@/components/ThemeToggle';
+import { getWbtetLanguageLabel } from '@/core/utils/localized-text';
 import { Clock, LayoutGrid, Globe } from 'lucide-react';
 
 export interface HeaderProps {
   paperTitle: string;
+  exam?: string;
   endsAt: number;
   languages: string[];
   activeLanguage: string;
@@ -15,6 +17,7 @@ export interface HeaderProps {
 
 export const Header: React.FC<HeaderProps> = ({
   paperTitle,
+  exam,
   endsAt,
   languages,
   activeLanguage,
@@ -53,7 +56,7 @@ export const Header: React.FC<HeaderProps> = ({
               >
                 {languages.map((l) => (
                   <option key={l} value={l} className="dark:bg-slate-900">
-                    {l.toUpperCase()}
+                    {getWbtetLanguageLabel(l, exam)}
                   </option>
                 ))}
               </select>

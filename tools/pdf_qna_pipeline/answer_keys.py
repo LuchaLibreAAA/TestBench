@@ -161,3 +161,27 @@ def apply_answers_to_datasets(
             json.dump(tb_data, f, indent=2)
 
     return updated
+
+
+def parse_wbtet_answer_key(
+    key_json_path: Path, expected_count: int = 150
+) -> Dict[int, List[str]]:
+    """Load verified official WBTET answer key JSON ({answers: {'1': 'd', ...}})."""
+    with open(key_json_path, "r", encoding="utf-8") as f:
+        payload = json.load(f)
+
+    raw_answers = payload.get("answers", {})
+    answers: Dict[int, List[str]] = {}
+    valid_labels = {"a", "b", "c", "d"}
+    for q_num in range(1, expected_count + 1):
+        val = raw_answers.get(str(q_num))
+        if isinstance(val, list):
+            labels = [str(v).strip().lower() for v in val]
+        elif isinstance(val, str):
+            labels = [val.strip().lower()]
+        else:
+            raise KeyError(f"Missing answer key for WBTET Q{q_num} in {key_json_path}")
+        if not labels or any(lbl not in valid_labels for lbl in labels):
+            raise ValueError(f"Invalid option label {labels!r} for WBTET Q{q_num}")
+        answers[q_num] = labels
+    return answers

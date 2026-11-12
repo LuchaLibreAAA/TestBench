@@ -36,10 +36,12 @@ function deriveShortId(paper: Paper): string {
     hash = (hash * 31 + paper.id.charCodeAt(i)) % 10000;
   }
   const code = String(Math.abs(hash)).padStart(4, '0');
-  return `NTA-${yy}-${code}X`;
+  const prefix = paper.exam === 'wbtet' ? 'WBTET' : 'NTA';
+  return `${prefix}-${yy}-${code}X`;
 }
 
 function deriveSectionInitials(paper: Paper): string {
+  if (paper.exam === 'wbtet') return 'TET';
   const names = paper.sections.map((s) => resolveText(s.name, 'en').toLowerCase());
   const initials: string[] = [];
   if (names.some((n) => n.includes('phys'))) initials.push('P');
@@ -191,6 +193,11 @@ export const PaperDetailScreen: React.FC = () => {
               <span className="text-[11px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-md bg-indigo-50 text-indigo-700 border border-indigo-100 dark:bg-indigo-950/60 dark:text-indigo-300 dark:border-indigo-800/50">
                 {paper.exam.toUpperCase()}
               </span>
+              {paper.exam === 'wbtet' && (
+                <span className="text-[11px] font-semibold px-2.5 py-0.5 rounded-md bg-blue-50 text-blue-700 border border-blue-100 dark:bg-blue-950/60 dark:text-blue-300 dark:border-blue-800/50">
+                  English & Bengali
+                </span>
+              )}
               <span className="text-[11px] font-semibold px-2.5 py-0.5 rounded-md bg-emerald-50 text-emerald-700 border border-emerald-100 dark:bg-emerald-950/60 dark:text-emerald-300 dark:border-emerald-800/50">
                 {paper.navigation === 'free' ? 'Free Navigation' : 'Sectional Lock'}
               </span>

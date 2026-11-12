@@ -46,6 +46,7 @@ backend/data/
 
 # Raw source exam PDFs with third-party watermarks
 testbench/NEET/
+testbench/WBTET/
 
 # Local architecture notes
 architecture.md

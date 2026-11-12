@@ -1,5 +1,9 @@
 import { describe, it, expect } from 'vitest';
 import { validatePaper } from '../index';
+import {
+  getWbtetLanguageLabel,
+  getWbtetQuestionLanguageBadge,
+} from '../../utils/localized-text';
 
 describe('Paper Validation', () => {
   it('rejects non-object paper input', () => {
@@ -212,5 +216,41 @@ describe('Paper Validation', () => {
       const res = validatePaper(match![1]);
       expect(res.success, `${item.id} failed: ${JSON.stringify(res.issues)}`).toBe(true);
     }
+  });
+
+  it('validates bilingual WBTET papers with localizedImages and +1/0 marking', () => {
+    const paperFiles = import.meta.glob('../../../../public/papers/wbtet/*.json', {
+      eager: true,
+      import: 'default',
+    });
+    const keys = Object.keys(paperFiles).sort();
+    expect(keys.length).toBe(2);
+
+    for (const key of keys) {
+      const paper = paperFiles[key] as Record<string, unknown>;
+      const res = validatePaper(paper);
+      expect(res.success, `${key} failed validation: ${JSON.stringify(res.issues)}`).toBe(true);
+      expect(res.data?.exam).toBe('wbtet');
+      expect(res.data?.languages).toEqual(['en', 'bn']);
+      expect(res.data?.durationMin).toBe(150);
+      expect(res.data?.sections).toHaveLength(5);
+
+      const firstSec = res.data!.sections[0];
+      expect(firstSec.marking).toEqual({ correct: 1, wrong: 0, unattempted: 0 });
+      expect(firstSec.questions[0].localizedImages?.en.length).toBe(1);
+      expect(firstSec.questions[0].localizedImages?.bn.length).toBe(1);
+    }
+  });
+
+  it('applies English and Bengali labels exclusively for WBTET', () => {
+    expect(getWbtetLanguageLabel('en', 'wbtet')).toBe('English');
+    expect(getWbtetLanguageLabel('bn', 'wbtet')).toBe('Bengali');
+    expect(getWbtetLanguageLabel('en', 'jee-main')).toBe('EN');
+    expect(getWbtetLanguageLabel('hi', 'neet')).toBe('HI');
+
+    expect(getWbtetQuestionLanguageBadge('cdp', 'en', true)).toBe('English Version');
+    expect(getWbtetQuestionLanguageBadge('math', 'bn', true)).toBe('Bengali Version');
+    expect(getWbtetQuestionLanguageBadge('lang1-bn', 'en', false)).toBe('Bengali');
+    expect(getWbtetQuestionLanguageBadge('lang2-en', 'bn', false)).toBe('English');
   });
 });

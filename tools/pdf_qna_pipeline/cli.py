@@ -19,11 +19,13 @@ from tools.pdf_qna_pipeline.config import load_config
 from tools.pdf_qna_pipeline.parsers.nta_cbt import NtaCbtParser
 from tools.pdf_qna_pipeline.parsers.neet_scanned import NeetScannedParser
 from tools.pdf_qna_pipeline.parsers.examgoal_neet import ExamGoalNeetParser
+from tools.pdf_qna_pipeline.parsers.wbtet_scanned import WbtetScannedParser
 from tools.pdf_qna_pipeline.answer_keys import (
     generate_random_answers,
     parse_2023_answer_key,
     parse_2024_or_2025_answer_key,
     parse_2026_pdf_answer_key,
+    parse_wbtet_answer_key,
     apply_answers_to_datasets,
 )
 from tools.pdf_qna_pipeline.extractors.image_clipper import ImageClipper
@@ -153,6 +155,8 @@ def _build_parser(config: dict):
         return NeetScannedParser(config)
     if parser_type == "examgoal_neet":
         return ExamGoalNeetParser(config)
+    if parser_type == "wbtet_scanned":
+        return WbtetScannedParser(config)
     raise ValueError(f"Unsupported parser_type: {parser_type}")
 
 
@@ -233,19 +237,34 @@ def run_extract(
 
 def run_apply_keys(
     year: int,
-    key_pdf: Path,
+    key_pdf: Path | None,
     book_code: str,
     qna_json: Path,
     testbench_json: Path,
+    exam: str = "neet",
+    key_json: Path | None = None,
 ) -> None:
-    """Parse official answer key PDF and update existing QnA and TestBench JSON datasets."""
-    if year == 2023:
+    """Parse official answer key PDF/JSON and update existing QnA and TestBench JSON datasets."""
+    if exam == "wbtet":
+        default_keys = {
+            2022: Path(__file__).parent / "answer_keys_data" / "wbtet_2022_WBBPE_02B.json",
+            2023: Path(__file__).parent / "answer_keys_data" / "wbtet_2023_A1_23.json",
+        }
+        src_json = key_json or default_keys.get(year)
+        if not src_json or not src_json.exists():
+            raise ValueError(f"Missing WBTET official key JSON for {year}: {src_json}")
+        answers = parse_wbtet_answer_key(src_json, expected_count=150)
+    elif year == 2023:
+        assert key_pdf is not None
         answers = parse_2023_answer_key(key_pdf, book_code=book_code or "G6")
     elif year == 2024:
+        assert key_pdf is not None
         answers = parse_2024_or_2025_answer_key(key_pdf, book_code=book_code or "S6", expected_count=200)
     elif year == 2025:
+        assert key_pdf is not None
         answers = parse_2024_or_2025_answer_key(key_pdf, book_code=book_code or "45", expected_count=180)
     elif year == 2026:
+        assert key_pdf is not None
         answers = parse_2026_pdf_answer_key(key_pdf, expected_count=180)
     else:
         raise ValueError(f"Unsupported year for apply-keys: {year}")
@@ -255,7 +274,7 @@ def run_apply_keys(
         qna_json_path=qna_json,
         testbench_json_path=testbench_json,
     )
-    print(f"Applied {len(answers)} answer keys ({year}, code={book_code}) -> updated {count} QnA entries.")
+    print(f"Applied {len(answers)} answer keys ({exam} {year}, code={book_code}) -> updated {count} QnA entries.")
 
 
 def main():
@@ -277,9 +296,11 @@ def main():
 
     # apply-keys
     keys_parser = subparsers.add_parser("apply-keys", help="Apply official answer keys to extracted datasets")
-    keys_parser.add_argument("--year", type=int, required=True, choices=[2023, 2024, 2025, 2026])
-    keys_parser.add_argument("--key-pdf", type=Path, required=True, help="Answer key PDF path")
-    keys_parser.add_argument("--book-code", type=str, default="", help="Test booklet code (G6, S6, 45)")
+    keys_parser.add_argument("--exam", type=str, default="neet", choices=["neet", "wbtet"])
+    keys_parser.add_argument("--year", type=int, required=True, choices=[2022, 2023, 2024, 2025, 2026])
+    keys_parser.add_argument("--key-pdf", type=Path, default=None, help="Answer key PDF path")
+    keys_parser.add_argument("--key-json", type=Path, default=None, help="Verified official answer key JSON path (for WBTET)")
+    keys_parser.add_argument("--book-code", type=str, default="", help="Test booklet code (G6, S6, 45, WBBPE/02B, A1-23)")
     keys_parser.add_argument("--qna-json", type=Path, default=None, help="Path to qna_database.json to update")
     keys_parser.add_argument("--testbench-json", type=Path, default=None, help="Path to testbench paper JSON to update")
 
@@ -307,6 +328,8 @@ def main():
             args.book_code,
             args.qna_json,
             args.testbench_json,
+            exam=args.exam,
+            key_json=args.key_json,
         )
     elif args.subcommand == "validate":
         errs = run_all_validation_checks(args.input, args.config)

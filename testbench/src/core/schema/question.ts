@@ -95,6 +95,8 @@ export const BaseQuestionSchema = z.object({
   text: LocalizedTextSchema,
   /** Optional images accompanying the question. */
   images: z.array(z.string()).optional(),
+  /** Optional per-language image lists for bilingual papers (e.g. { en: [...], bn: [...] }). */
+  localizedImages: z.record(z.string(), z.array(z.string())).optional(),
   /** Optional question-level marking override. */
   marking: MarkingSchemaSchema.optional(),
   /** Explanation shown after the test. */

@@ -1,0 +1,50 @@
+{
+  "exam": "wbtet",
+  "displayName": "WB Primary TET",
+  "shortName": "WBTET",
+  "description": "West Bengal Board of Primary Education — Teacher Eligibility Test (Classes I–V), 150 questions across 5 sections (+1 / 0)",
+  "durationMin": 150,
+  "languages": ["en", "bn"],
+  "defaultMarking": {
+    "correct": 1,
+    "incorrect": 0,
+    "unattempted": 0
+  },
+  "sections": [
+    {
+      "id": "cdp",
+      "name": "Child Development & Pedagogy",
+      "subject": "Child Development & Pedagogy",
+      "questionCount": 30,
+      "marking": { "correct": 1, "incorrect": 0, "unattempted": 0 }
+    },
+    {
+      "id": "lang1-bn",
+      "name": "Language I — Bengali",
+      "subject": "Bengali",
+      "questionCount": 30,
+      "marking": { "correct": 1, "incorrect": 0, "unattempted": 0 }
+    },
+    {
+      "id": "lang2-en",
+      "name": "Language II — English",
+      "subject": "English",
+      "questionCount": 30,
+      "marking": { "correct": 1, "incorrect": 0, "unattempted": 0 }
+    },
+    {
+      "id": "math",
+      "name": "Mathematics",
+      "subject": "Mathematics",
+      "questionCount": 30,
+      "marking": { "correct": 1, "incorrect": 0, "unattempted": 0 }
+    },
+    {
+      "id": "evs",
+      "name": "Environmental Studies",
+      "subject": "Environmental Studies",
+      "questionCount": 30,
+      "marking": { "correct": 1, "incorrect": 0, "unattempted": 0 }
+    }
+  ]
+}

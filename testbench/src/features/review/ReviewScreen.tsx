@@ -8,7 +8,11 @@ import { Button } from '@/components/Button';
 import { RichText } from '@/components/RichText';
 import { Img } from '@/components/Img';
 import { ThemeToggle } from '@/components/ThemeToggle';
-import { resolveText } from '@/core/utils/localized-text';
+import {
+  resolveText,
+  getWbtetLanguageLabel,
+  getWbtetQuestionLanguageBadge,
+} from '@/core/utils/localized-text';
 import { useTextSizeSetting, getTextSizeClass } from '@/hooks/useTextSizeSetting';
 import {
   ChevronLeft,
@@ -32,6 +36,7 @@ export const ReviewScreen: React.FC = () => {
   const [paper, setPaper] = useState<Paper | null>(null);
   const [activeQid, setActiveQid] = useState<string>('');
   const [filter, setFilter] = useState<'all' | 'correct' | 'wrong' | 'skipped'>('all');
+  const [language, setLanguage] = useState<string>('en');
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -44,6 +49,7 @@ export const ReviewScreen: React.FC = () => {
           const p = await getPaper(att.paperId);
           if (p) {
             setPaper(p.data);
+            setLanguage(p.data.languages[0] ?? 'en');
             const firstQid = p.data.sections[0]?.questions[0]?.id ?? '';
             setActiveQid(firstQid);
           }
@@ -149,6 +155,20 @@ export const ReviewScreen: React.FC = () => {
           </div>
 
           <div className="flex items-center gap-2 shrink-0">
+            {paper.exam === 'wbtet' && paper.languages.length > 1 && (
+              <select
+                value={language}
+                onChange={(e) => setLanguage(e.target.value)}
+                aria-label="Question language"
+                className="bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg px-2.5 py-1 text-xs font-semibold text-slate-700 dark:text-slate-200 focus:outline-none cursor-pointer"
+              >
+                {paper.languages.map((l) => (
+                  <option key={l} value={l} className="dark:bg-slate-900">
+                    {getWbtetLanguageLabel(l, paper.exam)}
+                  </option>
+                ))}
+              </select>
+            )}
             <ThemeToggle />
             <Button
               variant="ghost"
@@ -205,11 +225,20 @@ export const ReviewScreen: React.FC = () => {
                     Question {currentItem.index + 1}
                   </span>
                   <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">
-                    • {resolveText(currentSec.name, 'en')}
+                    • {resolveText(currentSec.name, language)}
                   </span>
                   {currentQ.topic && (
                     <span className="text-xs bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 px-2 py-0.5 rounded-md font-medium">
                       {currentQ.topic}
+                    </span>
+                  )}
+                  {paper.exam === 'wbtet' && (
+                    <span className="text-xs bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 border border-indigo-200/80 dark:border-indigo-800/70 px-2 py-0.5 rounded-md font-semibold">
+                      {getWbtetQuestionLanguageBadge(
+                        currentSec.id,
+                        language,
+                        Boolean(currentQ.localizedImages?.en?.length && currentQ.localizedImages?.bn?.length),
+                      )}
                     </span>
                   )}
                 </div>
@@ -237,14 +266,20 @@ export const ReviewScreen: React.FC = () => {
 
               {/* Question Text */}
               <div className={`${textSizeClass} text-slate-900 dark:text-slate-100 font-normal leading-relaxed`}>
-                <RichText content={currentQ.text} language="en" />
-                {currentQ.images && currentQ.images.length > 0 && (
-                  <div className="flex flex-wrap gap-3 mt-3">
-                    {currentQ.images.map((img) => (
-                      <Img key={img} paperId={paper.id} src={img} />
-                    ))}
-                  </div>
-                )}
+                <RichText content={currentQ.text} language={language} />
+                {(() => {
+                  const displayImages =
+                    (currentQ.localizedImages?.[language] && currentQ.localizedImages[language].length > 0
+                      ? currentQ.localizedImages[language]
+                      : currentQ.images) ?? [];
+                  return displayImages.length > 0 ? (
+                    <div className="flex flex-wrap gap-3 mt-3">
+                      {displayImages.map((img) => (
+                        <Img key={img} paperId={paper.id} src={img} />
+                      ))}
+                    </div>
+                  ) : null;
+                })()}
               </div>
 
               {/* Options Review for Single / Multi */}
@@ -285,7 +320,7 @@ export const ReviewScreen: React.FC = () => {
                           </div>
 
                           <div className="text-sm sm:text-base text-slate-900 dark:text-slate-100 pt-0.5">
-                            {opt.text && <RichText content={opt.text} language="en" />}
+                            {opt.text && <RichText content={opt.text} language={language} />}
                             {opt.image && <Img paperId={paper.id} src={opt.image} />}
                           </div>
                         </div>
@@ -347,7 +382,7 @@ export const ReviewScreen: React.FC = () => {
                     <span>Explanation & Solution</span>
                   </div>
                   <div className="text-sm text-slate-800 dark:text-slate-200 leading-relaxed pt-1">
-                    <RichText content={currentQ.explanation} language="en" />
+                    <RichText content={currentQ.explanation} language={language} />
                     {currentQ.explanationImages && currentQ.explanationImages.length > 0 && (
                       <div className="flex flex-wrap gap-2 mt-2">
                         {currentQ.explanationImages.map((img) => (

@@ -1,0 +1,296 @@
+paper_id: wbtet-2023
+exam_name: WB Primary TET
+exam_slug: wbtet
+parser_type: wbtet_scanned
+languages: ["en", "bn"]
+year: 2023
+session: December
+date: "2023-12-24"
+shift: "Primary TET (Classes I–V)"
+paper: "Paper I"
+booklet_code: "A1-23"
+
+title: "WB Primary TET 2023 — Official Question Paper"
+description: "West Bengal Board of Primary Education (WBBPE) Teacher Eligibility Test 2023 (Classes I–V). 150 compulsory questions across 5 sections (Bilingual English & Bengali)."
+instructions: "The question paper contains 150 compulsory multiple choice questions across five parts of 30 questions each: Child Development & Pedagogy, Language I (Bengali), Language II (English), Mathematics, and Environmental Studies. Each correct answer carries +1 mark with no negative marking. Total time: 150 minutes."
+author: "WBBPE (West Bengal Board of Primary Education)"
+created_at: "2023-12-24T00:00:00Z"
+tags: ["wbtet", "tet", "primary-tet", "2023", "wbbpe", "bilingual"]
+
+total_questions: 150
+duration_minutes: 150
+total_marks: 150
+render_dpi: 240
+deskew_dpi: 240
+scanner:
+  render_dpi: 240
+header_mask_y_pt: 32.0
+footer_mask_y_pt: 780.0
+
+marking:
+  single_choice:
+    correct: 1
+    wrong: 0
+    unattempted: 0
+
+sections:
+  - id: cdp
+    name: Child Development & Pedagogy
+    subject: Child Development & Pedagogy
+    type: single_choice
+    q_range: [1, 30]
+  - id: lang1-bn
+    name: Language I — Bengali
+    subject: Bengali
+    type: single_choice
+    q_range: [31, 60]
+  - id: lang2-en
+    name: Language II — English
+    subject: English
+    type: single_choice
+    q_range: [61, 90]
+  - id: math
+    name: Mathematics
+    subject: Mathematics
+    type: single_choice
+    q_range: [91, 120]
+  - id: evs
+    name: Environmental Studies
+    subject: Environmental Studies
+    type: single_choice
+    q_range: [121, 150]
+
+passages:
+  - id: p_2023_bn_1
+    q_range: [31, 39]
+    regions:
+      - page: 7
+        bbox: [14, 90, 291, 762]
+  - id: p_2023_bn_2
+    q_range: [40, 45]
+    regions:
+      - page: 8
+        bbox: [14, 95, 291, 765]
+  - id: p_2023_en_1
+    q_range: [61, 69]
+    regions:
+      - page: 10
+        bbox: [14, 90, 291, 765]
+      - page: 10
+        bbox: [295, 90, 584, 370]
+  - id: p_2023_en_2
+    q_range: [70, 79]
+    regions:
+      - page: 11
+        bbox: [14, 610, 291, 775]
+      - page: 11
+        bbox: [295, 65, 584, 218]
+
+pages:
+  - page: 1
+    section_id: cdp
+    layout: bilingual
+    q_start: 1
+    q_end: 6
+    en_x: [12, 291]
+    bn_x: [295, 586]
+    y_range: [72, 755]
+  - page: 2
+    section_id: cdp
+    layout: bilingual
+    q_start: 7
+    q_end: 11
+    en_x: [12, 291]
+    bn_x: [295, 586]
+    y_range: [90, 758]
+    en_y_splits: [99, 300, 472, 548, 632, 758]
+  - page: 3
+    section_id: cdp
+    layout: bilingual
+    q_start: 12
+    q_end: 16
+    en_x: [12, 291]
+    bn_x: [295, 586]
+    y_range: [90, 758]
+    en_y_splits: [98, 165, 528, 604, 691, 758]
+    bn_y_splits: [96, 162, 533, 605, 690, 758]
+  - page: 4
+    section_id: cdp
+    layout: bilingual
+    q_start: 17
+    q_end: 22
+    en_x: [12, 291]
+    bn_x: [295, 586]
+    y_range: [88, 758]
+  - page: 5
+    section_id: cdp
+    layout: bilingual
+    q_start: 23
+    q_end: 27
+    en_x: [12, 291]
+    bn_x: [295, 586]
+    y_range: [88, 762]
+    bn_y_splits: [96, 198, 300, 438, 525, 762]
+  - page: 6
+    section_id: cdp
+    layout: bilingual
+    q_start: 28
+    q_end: 30
+    en_x: [12, 291]
+    bn_x: [295, 586]
+    y_range: [90, 756]
+    en_y_splits: [96, 365, 658, 756]
+    bn_y_splits: [96, 365, 660, 756]
+  - page: 7
+    section_id: lang1-bn
+    layout: two_column
+    columns:
+      - q_start: 31
+        q_end: 39
+        x_range: [295, 584]
+        y_range: [90, 756]
+  - page: 8
+    section_id: lang1-bn
+    layout: two_column
+    columns:
+      - q_start: 40
+        q_end: 47
+        x_range: [295, 584]
+        y_range: [90, 758]
+  - page: 9
+    section_id: lang1-bn
+    layout: two_column
+    columns:
+      - q_start: 48
+        q_end: 53
+        x_range: [12, 291]
+        y_range: [88, 758]
+      - q_start: 54
+        q_end: 60
+        x_range: [295, 584]
+        y_range: [88, 754]
+  - page: 10
+    section_id: lang2-en
+    layout: two_column
+    columns:
+      - q_start: 61
+        q_end: 64
+        x_range: [295, 584]
+        y_range: [370, 756]
+  - page: 11
+    section_id: lang2-en
+    layout: two_column
+    columns:
+      - q_start: 65
+        q_end: 69
+        x_range: [12, 291]
+        y_range: [88, 608]
+      - q_start: 70
+        q_end: 76
+        x_range: [295, 584]
+        y_range: [218, 758]
+  - page: 12
+    section_id: lang2-en
+    layout: two_column
+    columns:
+      - q_start: 77
+        q_end: 84
+        x_range: [12, 291]
+        y_range: [88, 766]
+      - q_start: 85
+        q_end: 90
+        x_range: [295, 584]
+        y_range: [85, 760]
+  - page: 13
+    section_id: math
+    layout: bilingual
+    q_start: 91
+    q_end: 96
+    en_x: [12, 291]
+    bn_x: [295, 586]
+    y_range: [88, 750]
+    en_y_splits: [96, 202, 255, 420, 553, 646, 725]
+  - page: 14
+    section_id: math
+    layout: bilingual
+    q_start: 97
+    q_end: 103
+    en_x: [12, 291]
+    bn_x: [295, 586]
+    y_range: [88, 758]
+    en_y_splits: [96, 200, 258, 343, 516, 610, 682, 756]
+    bn_y_splits: [94, 195, 252, 340, 510, 604, 678, 745]
+  - page: 15
+    section_id: math
+    layout: bilingual
+    q_start: 104
+    q_end: 110
+    en_x: [12, 291]
+    bn_x: [295, 586]
+    y_range: [88, 756]
+    en_y_splits: [94, 176, 234, 358, 518, 590, 657, 752]
+    bn_y_splits: [94, 162, 228, 361, 521, 592, 656, 756]
+  - page: 16
+    section_id: math
+    layout: bilingual
+    q_start: 111
+    q_end: 116
+    en_x: [12, 291]
+    bn_x: [295, 586]
+    y_range: [88, 758]
+    en_y_splits: [100, 194, 263, 341, 429, 506, 758]
+    bn_y_splits: [94, 204, 294, 349, 427, 502, 764]
+  - page: 17
+    section_id: math
+    layout: bilingual
+    q_start: 117
+    q_end: 120
+    en_x: [12, 291]
+    bn_x: [295, 586]
+    y_range: [88, 756]
+  - page: 18
+    section_id: evs
+    layout: bilingual
+    q_start: 121
+    q_end: 127
+    en_x: [12, 291]
+    bn_x: [295, 586]
+    y_range: [88, 764]
+    en_y_splits: [96, 181, 344, 434, 508, 594, 678, 762]
+  - page: 19
+    section_id: evs
+    layout: bilingual
+    q_start: 128
+    q_end: 134
+    en_x: [12, 291]
+    bn_x: [295, 586]
+    y_range: [88, 758]
+    en_y_splits: [92, 199, 307, 370, 435, 594, 655, 756]
+  - page: 20
+    section_id: evs
+    layout: bilingual
+    q_start: 135
+    q_end: 141
+    en_x: [12, 291]
+    bn_x: [295, 586]
+    y_range: [88, 758]
+    en_y_splits: [92, 187, 274, 451, 512, 571, 632, 756]
+  - page: 21
+    section_id: evs
+    layout: bilingual
+    q_start: 142
+    q_end: 146
+    en_x: [12, 294]
+    bn_x: [295, 586]
+    y_range: [86, 750]
+    en_y_splits: [92, 185, 304, 412, 485, 696]
+  - page: 22
+    section_id: evs
+    layout: bilingual
+    q_start: 147
+    q_end: 150
+    en_x: [12, 291]
+    bn_x: [295, 586]
+    y_range: [86, 752]
+    en_y_splits: [94, 317, 422, 648, 748]
+    bn_y_splits: [94, 292, 417, 650, 752]

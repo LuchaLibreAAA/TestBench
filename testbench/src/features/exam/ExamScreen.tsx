@@ -143,6 +143,7 @@ export const ExamScreen: React.FC = () => {
       {/* Header */}
       <Header
         paperTitle={state.paper.title}
+        exam={state.paper.exam}
         endsAt={state.endsAt}
         languages={state.paper.languages}
         activeLanguage={state.language}
@@ -168,6 +169,7 @@ export const ExamScreen: React.FC = () => {
           <main className="flex-1 py-3">
             <QuestionView
               paperId={state.paper.id}
+              exam={state.paper.exam}
               question={question}
               section={section}
               questionIndex={questionIndexInSection}

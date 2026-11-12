@@ -25,7 +25,7 @@ import {
   Database,
 } from 'lucide-react';
 
-type FilterTab = 'all' | 'jee-main' | 'neet';
+type FilterTab = 'all' | 'jee-main' | 'neet' | 'wbtet';
 
 export const LibraryScreen: React.FC = () => {
   const navigate = useNavigate();
@@ -129,7 +129,15 @@ export const LibraryScreen: React.FC = () => {
         durationMin: p.durationMin ?? 180,
         questionsCount: totalQuestions,
         sectionsCount: p.sections.length,
-        badge: existing?.badge ?? (p.exam === 'jee-main' ? 'JEE Main' : p.exam === 'neet' ? 'NEET UG' : 'Custom'),
+        badge:
+          existing?.badge ??
+          (p.exam === 'jee-main'
+            ? 'JEE Main'
+            : p.exam === 'neet'
+            ? 'NEET UG'
+            : p.exam === 'wbtet'
+            ? 'WBTET'
+            : 'Custom'),
         isCatalog: existing?.isCatalog ?? false,
         isStored: true,
       });
@@ -160,6 +168,11 @@ export const LibraryScreen: React.FC = () => {
 
   const neetPapers = useMemo(
     () => filteredPapers.filter((p) => p.exam === 'neet'),
+    [filteredPapers]
+  );
+
+  const wbtetPapers = useMemo(
+    () => filteredPapers.filter((p) => p.exam === 'wbtet'),
     [filteredPapers]
   );
 
@@ -392,6 +405,18 @@ export const LibraryScreen: React.FC = () => {
               <Stethoscope className="w-3.5 h-3.5" />
               NEET UG ({neetPapers.length})
             </button>
+
+            <button
+              onClick={() => setActiveTab('wbtet')}
+              className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-colors cursor-pointer flex items-center gap-1.5 whitespace-nowrap ${
+                activeTab === 'wbtet'
+                  ? 'bg-indigo-700 text-white'
+                  : 'text-slate-600 dark:text-slate-400 hover:bg-indigo-50 dark:hover:bg-indigo-950/50 hover:text-indigo-700 dark:hover:text-indigo-400'
+              }`}
+            >
+              <FileText className="w-3.5 h-3.5" />
+              WBTET ({wbtetPapers.length})
+            </button>
           </div>
 
           {/* Search Input */}
@@ -478,6 +503,32 @@ export const LibraryScreen: React.FC = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {neetPapers.map((item) => renderPaperCard(item, 'emerald'))}
+                </div>
+              </section>
+            )}
+
+            {/* 3. WBTET Section */}
+            {(activeTab === 'all' || activeTab === 'wbtet') && wbtetPapers.length > 0 && (
+              <section className="space-y-3.5">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2.5">
+                    <div className="w-8 h-8 rounded-lg bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-400 flex items-center justify-center">
+                      <FileText className="w-4 h-4" />
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-bold text-slate-900 dark:text-slate-100">WB Primary TET Question Papers</h3>
+                      <p className="text-xs text-slate-500 dark:text-slate-400">
+                        150 Questions (CDP, Bengali, English, Math, EVS) • 150 Minutes • +1 / 0 Marking • Bilingual
+                      </p>
+                    </div>
+                  </div>
+                  <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-indigo-50 dark:bg-indigo-950/60 text-indigo-800 dark:text-indigo-400 border border-indigo-200/70 dark:border-indigo-800">
+                    {wbtetPapers.length} Available
+                  </span>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {wbtetPapers.map((item) => renderPaperCard(item, 'indigo'))}
                 </div>
               </section>
             )}

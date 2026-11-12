@@ -54,7 +54,7 @@ class TestBenchExporter:
                         tb_options.append(opt_entry)
 
                     init_ans = initial_answers.get(q.question_number, "a") if initial_answers else "a"
-                    section_questions.append({
+                    q_entry = {
                         "id": f"q-{q.question_id}",
                         "type": "single",
                         "topic": q.subject,
@@ -62,7 +62,18 @@ class TestBenchExporter:
                         "images": clean_q_imgs,
                         "options": tb_options,
                         "answer": [init_ans],
-                    })
+                    }
+                    loc_indices = (
+                        paper.raw_metadata.get("localized_image_indices", {}).get(q.question_id)
+                    )
+                    if loc_indices:
+                        localized_imgs = {
+                            lang: [clean_q_imgs[i] for i in idxs if i < len(clean_q_imgs)]
+                            for lang, idxs in loc_indices.items()
+                        }
+                        if localized_imgs:
+                            q_entry["localizedImages"] = localized_imgs
+                    section_questions.append(q_entry)
                 else:  # numeric
                     section_questions.append({
                         "id": f"q-{q.question_id}",
@@ -97,7 +108,7 @@ class TestBenchExporter:
             ),
             "exam": self.config.get("exam_slug", "jee-main"),
             "durationMin": self.config.get("duration_minutes", 180),
-            "languages": ["en"],
+            "languages": self.config.get("languages", ["en"]),
             "navigation": "free",
             "instructions": {
                 "en": self.config.get(
