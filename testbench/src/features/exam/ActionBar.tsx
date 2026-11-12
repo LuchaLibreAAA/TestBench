@@ -19,6 +19,7 @@ export const ActionBar: React.FC<ActionBarProps> = ({
   onPrev,
   onSubmit,
   isFirstQuestion,
+  isLastQuestion,
 }) => {
   return (
     <div className="sticky bottom-0 z-30 bg-white/95 dark:bg-slate-900/95 backdrop-blur-xs border-t border-slate-200/80 dark:border-slate-800 shadow-lg safe-bottom">
@@ -63,28 +64,43 @@ export const ActionBar: React.FC<ActionBarProps> = ({
             <span className="hidden sm:inline">Previous</span>
           </Button>
 
-          <Button
-            type="button"
-            variant="primary"
-            size="md"
-            onClick={onSaveNext}
-            className="font-semibold"
-          >
-            <span>Save & Next</span>
-            <ChevronRight className="w-4 h-4" />
-          </Button>
+          {isLastQuestion ? (
+            <Button
+              type="button"
+              variant="success"
+              size="md"
+              onClick={onSubmit}
+              className="font-semibold"
+              icon={<Send className="w-4 h-4" />}
+            >
+              <span>Submit Test</span>
+            </Button>
+          ) : (
+            <>
+              <Button
+                type="button"
+                variant="primary"
+                size="md"
+                onClick={onSaveNext}
+                className="font-semibold"
+              >
+                <span>Save & Next</span>
+                <ChevronRight className="w-4 h-4" />
+              </Button>
 
-          {/* Submit button on wider screens */}
-          <Button
-            type="button"
-            variant="success"
-            size="md"
-            onClick={onSubmit}
-            className="hidden lg:inline-flex"
-            icon={<Send className="w-4 h-4" />}
-          >
-            Submit
-          </Button>
+              {/* Submit button on wider screens */}
+              <Button
+                type="button"
+                variant="success"
+                size="md"
+                onClick={onSubmit}
+                className="hidden lg:inline-flex"
+                icon={<Send className="w-4 h-4" />}
+              >
+                Submit
+              </Button>
+            </>
+          )}
         </div>
       </div>
     </div>

@@ -1,2 +1,7 @@
-#This is the problems debugging file . if you find any problems add it here. alternatively
-delete it if its solved
+#This is the problems debugging file. If you find any problems add it here. Alternatively delete it if its solved.
+# Last Updated: 2026-11-12 (v0.0.2(beta))
+# All code bugs from the v0.0.1(beta) audit have been resolved and cleared.
+
+# Known Infrastructure Limitations (by design / hosting tier):
+# - Backend SQLite (`backend/data/app.db`) and uploaded assets (`backend/data/assets/`)
+#   live on ephemeral disk when deployed on Render's free tier (reset on redeploy unless a Render Disk is attached).

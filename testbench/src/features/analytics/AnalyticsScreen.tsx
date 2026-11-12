@@ -39,6 +39,16 @@ export const AnalyticsScreen: React.FC = () => {
     load();
   }, []);
 
+  // Pre-compute scored results once per attempt
+  const scoreMap = React.useMemo(() => {
+    const map = new Map<string, ScoreResult | undefined>();
+    attempts.forEach((att) => {
+      const paper = papersMap.get(att.paperId);
+      map.set(att.id, paper ? scorePaper(paper, att.responses) : (att.result as ScoreResult | undefined));
+    });
+    return map;
+  }, [attempts, papersMap]);
+
   // Compute aggregate stats across all completed attempts
   const stats = React.useMemo(() => {
     let totalScore = 0;
@@ -49,8 +59,7 @@ export const AnalyticsScreen: React.FC = () => {
     const topicStats = new Map<string, { correct: number; total: number }>();
 
     attempts.forEach((att) => {
-      const paper = papersMap.get(att.paperId);
-      const res = paper ? scorePaper(paper, att.responses) : (att.result as ScoreResult | undefined);
+      const res = scoreMap.get(att.id);
       if (!res) return;
 
       totalScore += res.totalObtained;
@@ -86,7 +95,7 @@ export const AnalyticsScreen: React.FC = () => {
       overallPercentage,
       topicBreakdown,
     };
-  }, [attempts, papersMap]);
+  }, [attempts, scoreMap]);
 
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 pb-16 select-none transition-colors">
@@ -186,7 +195,7 @@ export const AnalyticsScreen: React.FC = () => {
               <div className="divide-y divide-slate-100 dark:divide-slate-800">
                 {attempts.map((att) => {
                   const paper = papersMap.get(att.paperId);
-                  const res = paper ? scorePaper(paper, att.responses) : (att.result as ScoreResult | undefined);
+                  const res = scoreMap.get(att.id);
                   const dateStr = new Date(att.startedAt).toLocaleDateString(undefined, {
                     month: 'short',
                     day: 'numeric',

@@ -290,7 +290,9 @@ export const QnADatabaseScreen: React.FC = () => {
             </div>
 
             {filteredQuestions.map((q) => {
-              const stmtImg = q.content.imagePaths[0] ? q.content.imagePaths[0].replace(/^images\//, '') : '';
+              const stmtImg = q.content.imagePaths[0]
+                ? q.content.imagePaths[0].replace(/^(images\/|\.\/|\/)+/, '')
+                : '';
               const isMcq = q.type === 'single_choice';
 
               return (
@@ -342,7 +344,9 @@ export const QnADatabaseScreen: React.FC = () => {
                       </span>
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                         {q.options.map((opt, optIdx) => {
-                          const optImg = opt.imagePaths[0] ? opt.imagePaths[0].replace(/^images\//, '') : '';
+                          const optImg = opt.imagePaths[0]
+                            ? opt.imagePaths[0].replace(/^(images\/|\.\/|\/)+/, '')
+                            : '';
                           const letter = String.fromCharCode(65 + optIdx);
                           const isCorrect =
                             q.answer.isAnswerKeyAvailable && q.answer.correctOptionId === opt.id;

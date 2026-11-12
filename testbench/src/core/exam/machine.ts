@@ -56,6 +56,8 @@ export interface ExamState {
   responses: Record<string, Response>;
   /** Sections the student can no longer revisit. */
   lockedSections: string[];
+  /** Exam start timestamp (epoch ms). */
+  startedAt: number;
   /** Exam deadline (epoch ms). */
   endsAt: number;
   /** Per-section deadlines (epoch ms). */
@@ -88,6 +90,7 @@ export function createInitialState(): ExamState {
     currentSectionIndex: 0,
     responses: {},
     lockedSections: [],
+    startedAt: 0,
     endsAt: 0,
     sectionEndsAt: {},
     tabSwitches: 0,
@@ -249,6 +252,7 @@ export function examReducer(state: ExamState, action: ExamAction): ExamState {
         currentSectionIndex: 0,
         responses,
         lockedSections: [],
+        startedAt: now,
         endsAt,
         sectionEndsAt,
         tabSwitches: 0,

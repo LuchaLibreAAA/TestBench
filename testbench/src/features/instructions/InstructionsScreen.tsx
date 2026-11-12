@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import { getPaper } from '@/data/repositories/papers';
+import { getAttempt } from '@/data/repositories/attempts';
 import { useExamStore } from '@/stores/examStore';
 import type { Paper } from '@/core/schema';
 import { Button } from '@/components/Button';
@@ -19,7 +20,9 @@ export const InstructionsScreen: React.FC = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const paperId = (location.state as any)?.paperId;
+  const statePaperId = (location.state as { paperId?: string } | null)?.paperId;
+  const queryPaperId = new URLSearchParams(location.search).get('paperId') ?? undefined;
+  const paperIdHint = statePaperId || queryPaperId;
   const [paper, setPaper] = useState<Paper | null>(null);
   const [agreed, setAgreed] = useState(false);
   const [language, setLanguage] = useState('en');
@@ -29,12 +32,21 @@ export const InstructionsScreen: React.FC = () => {
 
   useEffect(() => {
     async function load() {
-      if (!paperId) {
+      let resolvedPaperId = paperIdHint;
+      if (!resolvedPaperId && attemptId) {
+        try {
+          const att = await getAttempt(attemptId);
+          resolvedPaperId = att?.paperId;
+        } catch {
+          // Ignore lookup error
+        }
+      }
+      if (!resolvedPaperId) {
         navigate('/');
         return;
       }
       try {
-        const stored = await getPaper(paperId);
+        const stored = await getPaper(resolvedPaperId);
         if (stored) {
           setPaper(stored.data);
           if (stored.data.languages.length > 0) {
@@ -48,7 +60,7 @@ export const InstructionsScreen: React.FC = () => {
       }
     }
     load();
-  }, [paperId, navigate]);
+  }, [paperIdHint, attemptId, navigate]);
 
   if (loading || !paper || !attemptId) {
     return (

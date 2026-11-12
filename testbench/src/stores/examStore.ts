@@ -33,12 +33,15 @@ export const useExamStore = create<ExamStore>((set, get) => ({
 
       // Async persist to Dexie whenever exam is running (SUBMIT is persisted by submitExam with score result)
       if (action.type !== 'SUBMIT' && nextState.attemptId && nextState.paper) {
+        const startedAt =
+          nextState.startedAt ||
+          nextState.endsAt - (nextState.paper.durationMin ?? 180) * 60_000;
         const attempt: Attempt = {
           id: nextState.attemptId,
           paperId: nextState.paper.id,
           paperVersion: '1',
           language: nextState.language,
-          startedAt: nextState.endsAt - (nextState.paper.durationMin ?? 180) * 60_000,
+          startedAt,
           endsAt: nextState.endsAt,
           sectionEndsAt: nextState.sectionEndsAt,
           status: nextState.phase === 'submitted' ? 'submitted' : 'inProgress',
@@ -72,7 +75,7 @@ export const useExamStore = create<ExamStore>((set, get) => ({
       paperId: paper.id,
       paperVersion: '1',
       language,
-      startedAt: Date.now(),
+      startedAt: nextState.startedAt || Date.now(),
       endsAt: nextState.endsAt,
       sectionEndsAt: nextState.sectionEndsAt,
       status: 'inProgress',
@@ -115,6 +118,7 @@ export const useExamStore = create<ExamStore>((set, get) => ({
       currentSectionIndex: currentSectionIndex >= 0 ? currentSectionIndex : 0,
       responses: attempt.responses,
       lockedSections: attempt.lockedSections || [],
+      startedAt: attempt.startedAt,
       endsAt: attempt.endsAt,
       sectionEndsAt: attempt.sectionEndsAt || {},
       tabSwitches: attempt.tabSwitches || 0,
@@ -139,12 +143,15 @@ export const useExamStore = create<ExamStore>((set, get) => ({
     const nextState = examReducer(state, { type: 'SUBMIT', payload: { auto } });
     const result = scorePaper(state.paper, nextState.responses);
 
+    const startedAt =
+      nextState.startedAt ||
+      nextState.endsAt - (state.paper.durationMin ?? 180) * 60_000;
     const attempt: Attempt = {
       id: nextState.attemptId,
       paperId: state.paper.id,
       paperVersion: '1',
       language: nextState.language,
-      startedAt: nextState.endsAt - (state.paper.durationMin ?? 180) * 60_000,
+      startedAt,
       endsAt: nextState.endsAt,
       sectionEndsAt: nextState.sectionEndsAt,
       status: auto ? 'autoSubmitted' : 'submitted',

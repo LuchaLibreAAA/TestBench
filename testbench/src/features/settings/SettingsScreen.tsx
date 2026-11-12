@@ -23,7 +23,11 @@ export const SettingsScreen: React.FC = () => {
 
   const [textSize, setTextSize] = useState<'small' | 'medium' | 'large'>('medium');
   const [showKeypad, setShowKeypad] = useState(true);
-  const [storageEstimate, setStorageEstimate] = useState<string>('Calculating...');
+  const [storageEstimate, setStorageEstimate] = useState<string>(() =>
+    typeof navigator !== 'undefined' && navigator.storage && typeof navigator.storage.estimate === 'function'
+      ? 'Calculating...'
+      : 'Unavailable in this browser'
+  );
 
   useEffect(() => {
     async function loadSettings() {
@@ -34,15 +38,13 @@ export const SettingsScreen: React.FC = () => {
     }
     loadSettings();
 
-    if (navigator.storage && navigator.storage.estimate) {
+    if (typeof navigator !== 'undefined' && navigator.storage && typeof navigator.storage.estimate === 'function') {
       navigator.storage.estimate().then((estimate) => {
         if (estimate.usage !== undefined) {
           const kb = (estimate.usage / 1024).toFixed(1);
           setStorageEstimate(`${kb} KB used`);
         }
       });
-    } else {
-      setStorageEstimate('Unavailable in this browser');
     }
   }, []);
 

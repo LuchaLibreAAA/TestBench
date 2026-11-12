@@ -41,14 +41,7 @@ def run_inspect(pdf_path: Path, output_dir: Path) -> dict:
     doc = pymupdf.open(str(pdf_path))
 
     profile = {
-        "summary": (
-            "Fact Analysis for NTA CBT JEE Main 2026 PDF: "
-            "1. Questions and options are embedded raster images (XObjects) accompanied by selectable text metadata. "
-            "2. Questions cross page boundaries (e.g. Q21 crosses from Page 8 to 9, Q45 statement is on Page 17 while options are on Page 18, Q75 crosses Page 30 to 31). "
-            "3. Section A consists of 60 single-choice MCQs (20 per subject) with 4 options each labeled by 9-digit option IDs (format: `\\d{9,10}\\.`). "
-            "4. Section B consists of 15 Short Answer (numeric) questions (5 per subject) with Question Type 'SA' and zero options. "
-            "5. Total questions: exactly 75 numbered 1 to 75 across 6 sections."
-        ),
+        "summary": "",
         "sourcePdf": str(pdf_path.name),
         "pageCount": len(doc),
         "pages": [],
@@ -125,6 +118,19 @@ def run_inspect(pdf_path: Path, output_dir: Path) -> dict:
             profile["sampleRawText"]["page1First40Lines"] = text.splitlines()[:40]
         elif page_idx == 1:
             profile["sampleRawText"]["page2First40Lines"] = text.splitlines()[:40]
+
+    doc.close()
+
+    q_count = len(profile["candidateMatches"]["questionHeaders"])
+    sec_count = len(profile["candidateMatches"]["sectionHeaders"])
+    opt_count = len(profile["candidateMatches"]["optionIds"])
+    total_images = sum(p["imageCount"] for p in profile["pages"])
+    profile["summary"] = (
+        f"Dynamic PDF Profile for {pdf_path.name}: "
+        f"{profile['pageCount']} pages, {total_images} embedded image entries, "
+        f"{sec_count} detected section headers, {q_count} detected question headers, "
+        f"and {opt_count} detected option IDs."
+    )
 
     out_file = output_dir / "pdf_profile.json"
     with open(out_file, "w", encoding="utf-8") as f:

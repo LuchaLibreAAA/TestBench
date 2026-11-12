@@ -6,6 +6,7 @@ import { SingleRenderer } from './renderers/SingleRenderer';
 import { MultiRenderer } from './renderers/MultiRenderer';
 import { NumericalRenderer } from './renderers/NumericalRenderer';
 import { resolveText } from '@/core/utils/localized-text';
+import { useTextSizeSetting, getTextSizeClass } from '@/hooks/useTextSizeSetting';
 
 export interface QuestionViewProps {
   paperId: string;
@@ -34,6 +35,8 @@ export const QuestionView: React.FC<QuestionViewProps> = ({
 }) => {
   const effectiveMarking = question.marking ?? section.marking;
   const sectionName = resolveText(section.name, language);
+  const textSize = useTextSizeSetting();
+  const textSizeClass = getTextSizeClass(textSize);
 
   return (
     <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/80 dark:border-slate-800 shadow-2xs p-4 sm:p-6">
@@ -69,7 +72,7 @@ export const QuestionView: React.FC<QuestionViewProps> = ({
       </div>
 
       {/* Question Body Text */}
-      <div className="py-4 text-base sm:text-lg text-slate-900 dark:text-slate-100 font-normal leading-relaxed">
+      <div className={`py-4 ${textSizeClass} text-slate-900 dark:text-slate-100 font-normal leading-relaxed`}>
         <RichText content={question.text} language={language} />
         {question.images && question.images.length > 0 && (
           <div className="flex flex-wrap gap-3 mt-3">

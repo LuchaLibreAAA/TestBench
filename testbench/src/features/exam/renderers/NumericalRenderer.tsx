@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import type { NumericalQuestion, Response } from '@/core/schema';
+import { getSetting } from '@/data/repositories/settings';
 import { NumericKeypad } from '../NumericKeypad';
 import { Calculator } from 'lucide-react';
 
@@ -15,6 +16,20 @@ export const NumericalRenderer: React.FC<NumericalRendererProps> = ({
   onSetNumeric,
 }) => {
   const [showKeypad, setShowKeypad] = useState(true);
+
+  useEffect(() => {
+    let active = true;
+    getSetting<boolean>('showKeypad', true)
+      .then((val) => {
+        if (active) setShowKeypad(val);
+      })
+      .catch(() => {
+        // Fallback to visible keypad
+      });
+    return () => {
+      active = false;
+    };
+  }, []);
   const rawValue = response?.rawInput ?? (response?.answer !== null && response?.answer !== undefined ? String(response.answer) : '');
 
   const handleInputChange = (val: string) => {

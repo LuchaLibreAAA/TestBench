@@ -9,6 +9,7 @@ import { RichText } from '@/components/RichText';
 import { Img } from '@/components/Img';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import { resolveText } from '@/core/utils/localized-text';
+import { useTextSizeSetting, getTextSizeClass } from '@/hooks/useTextSizeSetting';
 import {
   ChevronLeft,
   ChevronRight,
@@ -23,6 +24,9 @@ import {
 export const ReviewScreen: React.FC = () => {
   const { attemptId } = useParams<{ attemptId: string }>();
   const navigate = useNavigate();
+
+  const textSize = useTextSizeSetting();
+  const textSizeClass = getTextSizeClass(textSize);
 
   const [attempt, setAttempt] = useState<Attempt | null>(null);
   const [paper, setPaper] = useState<Paper | null>(null);
@@ -93,14 +97,11 @@ export const ReviewScreen: React.FC = () => {
     });
   }, [allQuestions, filter, resultMap]);
 
-  // Keep activeQid valid when filter changes
-  useEffect(() => {
-    if (filteredQuestions.length > 0) {
-      const exists = filteredQuestions.some((item) => item.question.id === activeQid);
-      if (!exists) {
-        setActiveQid(filteredQuestions[0].question.id);
-      }
-    }
+  // Derive valid activeQid for the current filter without triggering synchronous effect renders
+  const resolvedActiveQid = useMemo(() => {
+    if (filteredQuestions.length === 0) return activeQid;
+    const exists = filteredQuestions.some((item) => item.question.id === activeQid);
+    return exists ? activeQid : filteredQuestions[0].question.id;
   }, [filteredQuestions, activeQid]);
 
   if (loading || !attempt || !paper) {
@@ -111,16 +112,16 @@ export const ReviewScreen: React.FC = () => {
     );
   }
 
-  const currentItem = allQuestions.find((item) => item.question.id === activeQid) ?? allQuestions[0];
+  const currentItem = allQuestions.find((item) => item.question.id === resolvedActiveQid) ?? allQuestions[0];
   const currentQ = currentItem?.question;
   const currentSec = currentItem?.section;
-  const currentRes = attempt.responses[activeQid] as Response | undefined;
-  const currentOutcome = resultMap.get(activeQid)?.outcome ?? 'skipped';
-  const currentMarks = resultMap.get(activeQid)?.marks ?? 0;
+  const currentRes = attempt.responses[resolvedActiveQid] as Response | undefined;
+  const currentOutcome = resultMap.get(resolvedActiveQid)?.outcome ?? 'skipped';
+  const currentMarks = resultMap.get(resolvedActiveQid)?.marks ?? 0;
 
-  const currentIndexInFiltered = filteredQuestions.findIndex((item) => item.question.id === activeQid);
+  const currentIndexInFiltered = filteredQuestions.findIndex((item) => item.question.id === resolvedActiveQid);
   const hasPrev = currentIndexInFiltered > 0;
-  const hasNext = currentIndexInFiltered < filteredQuestions.length - 1;
+  const hasNext = currentIndexInFiltered >= 0 && currentIndexInFiltered < filteredQuestions.length - 1;
 
   const timeSpentSec = Math.round((currentRes?.timeSpentMs ?? 0) / 1000);
 
@@ -235,7 +236,7 @@ export const ReviewScreen: React.FC = () => {
               </div>
 
               {/* Question Text */}
-              <div className="text-base sm:text-lg text-slate-900 dark:text-slate-100 font-normal leading-relaxed">
+              <div className={`${textSizeClass} text-slate-900 dark:text-slate-100 font-normal leading-relaxed`}>
                 <RichText content={currentQ.text} language="en" />
                 {currentQ.images && currentQ.images.length > 0 && (
                   <div className="flex flex-wrap gap-3 mt-3">
@@ -377,7 +378,7 @@ export const ReviewScreen: React.FC = () => {
             </Button>
 
             <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">
-              {currentIndexInFiltered + 1} of {filteredQuestions.length}
+              {filteredQuestions.length > 0 ? currentIndexInFiltered + 1 : 0} of {filteredQuestions.length}
             </span>
 
             <Button
@@ -404,7 +405,7 @@ export const ReviewScreen: React.FC = () => {
             <div className="grid grid-cols-5 gap-2 max-h-[calc(100vh-220px)] overflow-y-auto pr-1">
               {allQuestions.map((item) => {
                 const outcome = resultMap.get(item.question.id)?.outcome ?? 'skipped';
-                const isActive = item.question.id === activeQid;
+                const isActive = item.question.id === resolvedActiveQid;
 
                 let colorStyle = 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-300 dark:border-slate-700';
                 if (outcome === 'correct') {
@@ -417,7 +418,15 @@ export const ReviewScreen: React.FC = () => {
                   <button
                     key={item.question.id}
                     type="button"
-                    onClick={() => setActiveQid(item.question.id)}
+                    onClick={() => {
+                      if (
+                        filter !== 'all' &&
+                        !filteredQuestions.some((fq) => fq.question.id === item.question.id)
+                      ) {
+                        setFilter('all');
+                      }
+                      setActiveQid(item.question.id);
+                    }}
                     className={`h-9 rounded-lg font-bold text-xs flex items-center justify-center border transition-all cursor-pointer ${colorStyle} ${
                       isActive ? 'ring-3 ring-blue-500 ring-offset-1 dark:ring-offset-slate-900 scale-105' : ''
                     }`}

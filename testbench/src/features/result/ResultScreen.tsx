@@ -145,13 +145,17 @@ export const ResultScreen: React.FC = () => {
       id: retryPaperId,
       title: `${paper.title} (Retry Wrong & Skipped)`,
       sections: derivedSections,
-      durationMin: Math.max(10, Math.round((wrongOrSkippedQids.size / result.totalQuestions) * (paper.durationMin ?? 60))),
+      durationMin: result.totalQuestions > 0
+        ? Math.max(10, Math.round((wrongOrSkippedQids.size / result.totalQuestions) * (paper.durationMin ?? 180)))
+        : 10,
     };
 
     await savePaper(derivedPaper);
 
     const newAttemptId = 'att-' + Date.now().toString(36) + '-' + Math.random().toString(36).substring(2, 6);
-    navigate(`/exam/${newAttemptId}/instructions`, { state: { paperId: retryPaperId } });
+    navigate(`/exam/${newAttemptId}/instructions?paperId=${encodeURIComponent(retryPaperId)}`, {
+      state: { paperId: retryPaperId },
+    });
   };
 
   return (
@@ -276,8 +280,14 @@ export const ResultScreen: React.FC = () => {
 
               <div className="p-3 bg-blue-50/70 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-800/70 rounded-xl space-y-1">
                 <span className="text-xs text-[#1a56db] dark:text-blue-400 font-semibold">Weak Topics</span>
-                <div className="text-xl font-bold text-[#1a56db] dark:text-blue-300">
-                  {insights.weakTopics.length > 0 ? insights.weakTopics[0].topic : 'None'}
+                <div className="text-sm sm:text-base font-bold text-[#1a56db] dark:text-blue-300 space-y-0.5">
+                  {insights.weakTopics.length > 0
+                    ? insights.weakTopics.slice(0, 3).map((t) => (
+                        <div key={t.topic} className="truncate">
+                          {t.topic} ({Math.round((t.correct / t.total) * 100)}%)
+                        </div>
+                      ))
+                    : <div>None</div>}
                 </div>
                 <p className="text-[11px] text-slate-500 dark:text-slate-400">Focus your revision here</p>
               </div>

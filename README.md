@@ -2,11 +2,11 @@
 
 <img src="testbench/public/icon.png" alt="TestBench Logo" width="84" />
 
-# 🎯 TestBench `v0.0.1(beta)`
+# 🎯 TestBench `v0.0.2(beta)`
 
 ### **Offline-First NTA CBT Mock Test Simulator, Q&A Database & PDF Extraction Platform**
 
-[![Version](https://img.shields.io/badge/Version-v0.0.1(beta)-2563eb?style=for-the-badge&logo=semanticrelease&logoColor=white)](#-release-v001beta)
+[![Version](https://img.shields.io/badge/Version-v0.0.2(beta)-2563eb?style=for-the-badge&logo=semanticrelease&logoColor=white)](#-release-v002beta)
 [![React](https://img.shields.io/badge/React-19-06b6d4?style=for-the-badge&logo=react&logoColor=white)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Strict-3178c6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38bdf8?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
@@ -22,10 +22,15 @@
 
 ---
 
-## 🏷️ Release `v0.0.1(beta)`
+## 🏷️ Release `v0.0.2(beta)`
 
-- **Current Version:** `v0.0.1(beta)` (displayed in the TestBench header, footer, and Settings **About** card)
-- **What's included in `v0.0.1(beta)`:**
+- **Current Version:** `v0.0.2(beta)` (displayed in the TestBench header, footer, and Settings **About** card)
+- **What's new in `v0.0.2(beta)`:**
+  - Live countdown on the Library **In Progress** resume card, consistent search/tab counts, and local cleanup of cached papers
+  - Wired **Settings** preferences (`Text Size` in Exam & Review, `Virtual Keypad` default visibility in Numerical questions)
+  - Improved **Exam**, **Instructions**, **Result**, **Review**, and **Analytics** reliability (`Submit Test` CTA on final question, URL `paperId` fallback on reload, accurate `startedAt` tracking, multi-topic weak insights, memoized analytics)
+  - Hardened backend PDF upload page-count guard and dynamic `pdf_qna_pipeline inspect` summary
+- **Core platform highlights:**
   - Full catalog of **7 Official Papers** (**JEE Main** 2023, 2024, 2026 + **NEET UG** 2023, 2024, 2025, 2026) with high-resolution cropped questions & options
   - Official NTA **5-State Question Palette** (`Not Visited`, `Not Answered`, `Answered`, `Marked for Review`, `Answered & Marked`)
   - Accurate **Scorecard & Analytics** honoring section attempt limits (e.g., 720 marks on NEET 200-Q pattern, 300 marks on JEE 90-Q pattern)
@@ -83,7 +88,7 @@
 Work/
 ├── testbench/                  # React 19 + TypeScript + Vite 8 + Tailwind v4 Frontend
 │   ├── src/
-│   │   ├── core/               # Schema (Zod v4), Marking Engine, CBT State Machine, v0.0.1(beta)
+│   │   ├── core/               # Schema (Zod v4), Marking Engine, CBT State Machine, v0.0.2(beta)
 │   │   ├── features/           # Library, Paper Detail, Exam, Result, Review, Analytics, Q&A DB, Settings
 │   │   └── data/               # Dexie IndexedDB repositories & static catalog loader
 │   └── public/                 # Built-in JEE & NEET papers, Q&A JSONs, and cropped PNG assets

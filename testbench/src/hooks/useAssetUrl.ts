@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { getAsset, createAssetUrl } from '@/data/repositories/assets';
 
 /**
@@ -7,23 +7,23 @@ import { getAsset, createAssetUrl } from '@/data/repositories/assets';
  */
 export function useAssetUrl(paperId: string, filename?: string): string | null {
   const [url, setUrl] = useState<string | null>(null);
+  const createdUrlRef = useRef<string | null>(null);
 
   useEffect(() => {
     if (!paperId || !filename) {
-      setUrl(null);
       return;
     }
 
-    let active = true;
-    let createdUrl: string | null = null;
+    const controller = new AbortController();
 
     async function load() {
       try {
         const asset = await getAsset(paperId, filename!);
-        if (asset && active) {
-          createdUrl = createAssetUrl(asset);
-          setUrl(createdUrl);
-        } else if (active) {
+        if (asset && !controller.signal.aborted) {
+          const blobUrl = createAssetUrl(asset);
+          createdUrlRef.current = blobUrl;
+          setUrl(blobUrl);
+        } else if (!controller.signal.aborted) {
           // Fallback to static public assets directory
           setUrl(`/papers/assets/${paperId}/${filename}`);
         }
@@ -35,13 +35,14 @@ export function useAssetUrl(paperId: string, filename?: string): string | null {
     load();
 
     return () => {
-      active = false;
-      if (createdUrl) {
-        URL.revokeObjectURL(createdUrl);
+      controller.abort();
+      if (createdUrlRef.current) {
+        URL.revokeObjectURL(createdUrlRef.current);
+        createdUrlRef.current = null;
       }
     };
   }, [paperId, filename]);
 
-  return url;
+  return !paperId || !filename ? null : url;
 }
 

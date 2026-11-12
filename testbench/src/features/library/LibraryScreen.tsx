@@ -163,8 +163,16 @@ export const LibraryScreen: React.FC = () => {
     [filteredPapers]
   );
 
+  const [now, setNow] = useState(() => Date.now());
+
+  useEffect(() => {
+    if (!inProgressAttempt) return;
+    const id = setInterval(() => setNow(Date.now()), 1000);
+    return () => clearInterval(id);
+  }, [inProgressAttempt]);
+
   const remainingMs = inProgressAttempt
-    ? Math.max(0, inProgressAttempt.endsAt - Date.now())
+    ? Math.max(0, inProgressAttempt.endsAt - now)
     : 0;
 
   const renderPaperCard = (item: typeof allPaperItems[0], accent: 'blue' | 'emerald' | 'indigo') => {
@@ -193,17 +201,20 @@ export const LibraryScreen: React.FC = () => {
               {item.badge ?? item.exam}
             </span>
 
-            {item.isStored && !item.isCatalog && (
+            {item.isStored && (
               <button
                 type="button"
                 onClick={(e) => {
                   e.stopPropagation();
-                  if (confirm(`Delete "${item.title}"?`)) {
+                  const msg = item.isCatalog
+                    ? `Remove cached copy of "${item.title}"?`
+                    : `Delete "${item.title}"?`;
+                  if (confirm(msg)) {
                     removePaper(item.id);
                   }
                 }}
                 className="p-1 rounded-lg text-slate-400 dark:text-slate-500 hover:text-red-600 dark:hover:text-red-400 hover:bg-red-50 dark:hover:bg-red-950/50 transition-colors"
-                title="Delete paper"
+                title={item.isCatalog ? 'Remove local copy' : 'Delete paper'}
               >
                 <Trash2 className="w-4 h-4" />
               </button>
@@ -355,7 +366,7 @@ export const LibraryScreen: React.FC = () => {
                   : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800'
               }`}
             >
-              All Tests ({allPaperItems.length})
+              All Tests ({filteredPapers.length})
             </button>
 
             <button

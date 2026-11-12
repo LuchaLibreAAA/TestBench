@@ -66,7 +66,7 @@ function parseInlineMarkup(text: string): React.ReactNode[] {
       }
 
       // Match inline math ($...$), bold (**...**), italic (*...*), sub (~...~), sup (^...^)
-      const tokens = line.split(/(\$[^\$]+?\$|\*\*[^*]+?\*\*|\*[^*]+?\*|\^[^^]+?\^|~[^~]+?~)/g);
+      const tokens = line.split(/(\$[^$]+?\$|\*\*[^*]+?\*\*|\*[^*]+?\*|\^[^^]+?\^|~[^~]+?~)/g);
 
       tokens.forEach((token, tIdx) => {
         const key = `${bIdx}-${lineIdx}-${tIdx}`;

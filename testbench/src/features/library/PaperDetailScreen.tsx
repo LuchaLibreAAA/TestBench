@@ -139,9 +139,13 @@ export const PaperDetailScreen: React.FC = () => {
     );
   }
 
+  const hasActiveSession = attempts.some((a) => a.status === 'inProgress');
+
   const handleStart = () => {
     const newAttemptId = 'att-' + Date.now().toString(36) + '-' + Math.random().toString(36).substring(2, 6);
-    navigate(`/exam/${newAttemptId}/instructions`, { state: { paperId: paper.id } });
+    navigate(`/exam/${newAttemptId}/instructions?paperId=${encodeURIComponent(paper.id)}`, {
+      state: { paperId: paper.id },
+    });
   };
 
   return (
@@ -163,10 +167,12 @@ export const PaperDetailScreen: React.FC = () => {
           </div>
 
           <div className="flex items-center gap-2 shrink-0">
-            <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200/80 dark:bg-emerald-950/60 dark:text-emerald-300 dark:border-emerald-800/60">
-              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-              Session Active
-            </span>
+            {hasActiveSession && (
+              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200/80 dark:bg-emerald-950/60 dark:text-emerald-300 dark:border-emerald-800/60">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                Session Active
+              </span>
+            )}
             <span className="hidden sm:inline-flex items-center px-2.5 py-1 rounded-md text-[11px] font-mono font-medium bg-slate-100 text-slate-600 border border-slate-200/80 dark:bg-slate-800 dark:text-slate-300 dark:border-slate-700">
               ID: {stats.shortId}
             </span>

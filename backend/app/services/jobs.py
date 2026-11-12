@@ -7,12 +7,15 @@ import subprocess
 import sys
 from pathlib import Path
 
+import pymupdf
+
 from backend.app.db import get_db
 from backend.app.services.ingest import ingest_file
 from backend.app.settings import Settings
 
 _pipeline_lock = asyncio.Lock()
 _TIMEOUT_SECONDS = 600
+_MAX_UPLOAD_PAGES = 60
 
 
 def create_job(settings: Settings, job_id: str) -> None:
@@ -38,6 +41,10 @@ def _run_pipeline(settings: Settings, job_id: str, job_dir: Path, config_name: s
         pdfs = list(job_dir.glob("*.pdf"))
         if len(pdfs) != 1:
             raise ValueError("Uploaded PDF missing")
+        with pymupdf.open(str(pdfs[0])) as doc:
+            page_count = len(doc)
+        if page_count > _MAX_UPLOAD_PAGES:
+            raise ValueError(f"PDF has {page_count} pages (maximum supported is {_MAX_UPLOAD_PAGES})")
         config_dir = Path("tools/pdf_qna_pipeline/configs").resolve()
         config = (config_dir / f"{config_name}.yaml").resolve()
         if config.parent != config_dir or not config.is_file():
