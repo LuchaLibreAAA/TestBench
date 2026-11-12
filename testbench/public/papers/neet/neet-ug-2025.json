@@ -1,0 +1,7269 @@
+{
+  "schemaVersion": 1,
+  "id": "neet-ug-2025",
+  "title": "NEET UG 2025 \u2014 Official Question Paper",
+  "description": "Complete National Eligibility cum Entrance Test (UG) 2025 (Booklet 45). 180 compulsory questions covering Physics, Chemistry, and Biology.",
+  "exam": "neet",
+  "durationMin": 180,
+  "languages": [
+    "en"
+  ],
+  "navigation": "free",
+  "instructions": {
+    "en": "The question paper comprises 180 compulsory multiple choice questions: Physics (Q1-45), Chemistry (Q46-90), and Biology (Q91-180). Each correct answer carries +4 marks and -1 for wrong answer. Total time: 180 minutes. Maximum marks: 720."
+  },
+  "meta": {
+    "author": "NTA (National Testing Agency)",
+    "createdAt": "2025-05-04T00:00:00Z",
+    "tags": [
+      "neet",
+      "neet-ug",
+      "2025",
+      "code-45",
+      "official"
+    ]
+  },
+  "sections": [
+    {
+      "id": "phy",
+      "name": {
+        "en": "Physics"
+      },
+      "marking": {
+        "correct": 4,
+        "wrong": -1,
+        "unattempted": 0
+      },
+      "questions": [
+        {
+          "id": "q-neet-ug-2025-q001",
+          "type": "single",
+          "topic": "Physics",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q001.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q002",
+          "type": "single",
+          "topic": "Physics",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q002.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q003",
+          "type": "single",
+          "topic": "Physics",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q003.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q004",
+          "type": "single",
+          "topic": "Physics",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q004.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q005",
+          "type": "single",
+          "topic": "Physics",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q005.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q006",
+          "type": "single",
+          "topic": "Physics",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q006.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q007",
+          "type": "single",
+          "topic": "Physics",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q007.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q008",
+          "type": "single",
+          "topic": "Physics",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q008.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q009",
+          "type": "single",
+          "topic": "Physics",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q009.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q010",
+          "type": "single",
+          "topic": "Physics",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q010.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q011",
+          "type": "single",
+          "topic": "Physics",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q011.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q012",
+          "type": "single",
+          "topic": "Physics",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q012.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q013",
+          "type": "single",
+          "topic": "Physics",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q013.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q014",
+          "type": "single",
+          "topic": "Physics",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q014.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q015",
+          "type": "single",
+          "topic": "Physics",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q015.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q016",
+          "type": "single",
+          "topic": "Physics",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q016.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q017",
+          "type": "single",
+          "topic": "Physics",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q017.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q018",
+          "type": "single",
+          "topic": "Physics",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q018.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q019",
+          "type": "single",
+          "topic": "Physics",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q019.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q020",
+          "type": "single",
+          "topic": "Physics",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q020.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q021",
+          "type": "single",
+          "topic": "Physics",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q021.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q022",
+          "type": "single",
+          "topic": "Physics",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q022.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q023",
+          "type": "single",
+          "topic": "Physics",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q023.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q024",
+          "type": "single",
+          "topic": "Physics",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q024.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q025",
+          "type": "single",
+          "topic": "Physics",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q025.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q026",
+          "type": "single",
+          "topic": "Physics",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q026.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q027",
+          "type": "single",
+          "topic": "Physics",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q027.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q028",
+          "type": "single",
+          "topic": "Physics",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q028.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q029",
+          "type": "single",
+          "topic": "Physics",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q029.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q030",
+          "type": "single",
+          "topic": "Physics",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q030.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q031",
+          "type": "single",
+          "topic": "Physics",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q031.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q032",
+          "type": "single",
+          "topic": "Physics",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q032.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q033",
+          "type": "single",
+          "topic": "Physics",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q033.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q034",
+          "type": "single",
+          "topic": "Physics",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q034.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q035",
+          "type": "single",
+          "topic": "Physics",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q035.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q036",
+          "type": "single",
+          "topic": "Physics",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q036.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q037",
+          "type": "single",
+          "topic": "Physics",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q037.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q038",
+          "type": "single",
+          "topic": "Physics",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q038.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q039",
+          "type": "single",
+          "topic": "Physics",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q039.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q040",
+          "type": "single",
+          "topic": "Physics",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q040.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q041",
+          "type": "single",
+          "topic": "Physics",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q041.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q042",
+          "type": "single",
+          "topic": "Physics",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q042.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q043",
+          "type": "single",
+          "topic": "Physics",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q043.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q044",
+          "type": "single",
+          "topic": "Physics",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q044.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q045",
+          "type": "single",
+          "topic": "Physics",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q045.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chem",
+      "name": {
+        "en": "Chemistry"
+      },
+      "marking": {
+        "correct": 4,
+        "wrong": -1,
+        "unattempted": 0
+      },
+      "questions": [
+        {
+          "id": "q-neet-ug-2025-q046",
+          "type": "single",
+          "topic": "Chemistry",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q046.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q047",
+          "type": "single",
+          "topic": "Chemistry",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q047.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q048",
+          "type": "single",
+          "topic": "Chemistry",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q048.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q049",
+          "type": "single",
+          "topic": "Chemistry",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q049.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q050",
+          "type": "single",
+          "topic": "Chemistry",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q050.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q051",
+          "type": "single",
+          "topic": "Chemistry",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q051.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q052",
+          "type": "single",
+          "topic": "Chemistry",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q052.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q053",
+          "type": "single",
+          "topic": "Chemistry",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q053.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q054",
+          "type": "single",
+          "topic": "Chemistry",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q054.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q055",
+          "type": "single",
+          "topic": "Chemistry",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q055.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q056",
+          "type": "single",
+          "topic": "Chemistry",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q056.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q057",
+          "type": "single",
+          "topic": "Chemistry",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q057.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q058",
+          "type": "single",
+          "topic": "Chemistry",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q058.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q059",
+          "type": "single",
+          "topic": "Chemistry",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q059.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q060",
+          "type": "single",
+          "topic": "Chemistry",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q060.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q061",
+          "type": "single",
+          "topic": "Chemistry",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q061.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q062",
+          "type": "single",
+          "topic": "Chemistry",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q062.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q063",
+          "type": "single",
+          "topic": "Chemistry",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q063.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q064",
+          "type": "single",
+          "topic": "Chemistry",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q064.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q065",
+          "type": "single",
+          "topic": "Chemistry",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q065.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q066",
+          "type": "single",
+          "topic": "Chemistry",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q066.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q067",
+          "type": "single",
+          "topic": "Chemistry",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q067.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q068",
+          "type": "single",
+          "topic": "Chemistry",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q068.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q069",
+          "type": "single",
+          "topic": "Chemistry",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q069.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q070",
+          "type": "single",
+          "topic": "Chemistry",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q070.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q071",
+          "type": "single",
+          "topic": "Chemistry",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q071.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q072",
+          "type": "single",
+          "topic": "Chemistry",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q072.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q073",
+          "type": "single",
+          "topic": "Chemistry",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q073.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q074",
+          "type": "single",
+          "topic": "Chemistry",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q074.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q075",
+          "type": "single",
+          "topic": "Chemistry",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q075.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q076",
+          "type": "single",
+          "topic": "Chemistry",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q076.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q077",
+          "type": "single",
+          "topic": "Chemistry",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q077.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q078",
+          "type": "single",
+          "topic": "Chemistry",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q078.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q079",
+          "type": "single",
+          "topic": "Chemistry",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q079.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q080",
+          "type": "single",
+          "topic": "Chemistry",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q080.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q081",
+          "type": "single",
+          "topic": "Chemistry",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q081.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q082",
+          "type": "single",
+          "topic": "Chemistry",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q082.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q083",
+          "type": "single",
+          "topic": "Chemistry",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q083.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q084",
+          "type": "single",
+          "topic": "Chemistry",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q084.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q085",
+          "type": "single",
+          "topic": "Chemistry",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q085.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q086",
+          "type": "single",
+          "topic": "Chemistry",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q086.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q087",
+          "type": "single",
+          "topic": "Chemistry",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q087.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q088",
+          "type": "single",
+          "topic": "Chemistry",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q088.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q089",
+          "type": "single",
+          "topic": "Chemistry",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q089.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q090",
+          "type": "single",
+          "topic": "Chemistry",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q090.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bio",
+      "name": {
+        "en": "Biology"
+      },
+      "marking": {
+        "correct": 4,
+        "wrong": -1,
+        "unattempted": 0
+      },
+      "questions": [
+        {
+          "id": "q-neet-ug-2025-q091",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q091.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q092",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q092.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q093",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q093.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q094",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q094.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q095",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q095.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q096",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q096.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q097",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q097.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q098",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q098.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q099",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q099.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q100",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q100.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q101",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q101.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q102",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q102.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q103",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q103.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q104",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q104.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q105",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q105.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q106",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q106.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q107",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q107.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q108",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q108.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q109",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q109.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q110",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q110.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q111",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q111.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q112",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q112.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q113",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q113.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q114",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q114.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q115",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q115.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q116",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q116.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q117",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q117.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q118",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q118.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q119",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q119.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q120",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q120.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q121",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q121.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q122",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q122.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q123",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q123.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q124",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q124.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q125",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q125.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q126",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q126.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q127",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q127.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q128",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q128.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q129",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q129.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q130",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q130.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q131",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q131.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q132",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q132.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q133",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q133.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q134",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q134.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q135",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q135.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q136",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q136.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q137",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q137.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q138",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q138.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q139",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q139.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q140",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q140.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q141",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q141.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q142",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q142.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q143",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q143.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q144",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q144.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q145",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q145.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q146",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q146.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q147",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q147.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q148",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q148.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q149",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q149.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q150",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q150.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q151",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q151.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q152",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q152.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q153",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q153.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q154",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q154.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q155",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q155.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q156",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q156.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q157",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q157.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q158",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q158.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q159",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q159.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q160",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q160.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q161",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q161.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q162",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q162.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q163",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q163.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q164",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q164.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q165",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q165.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q166",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q166.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q167",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q167.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q168",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q168.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q169",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q169.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q170",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q170.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q171",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q171.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q172",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q172.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q173",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q173.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q174",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q174.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q175",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q175.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "c"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q176",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q176.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q177",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q177.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q178",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q178.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "a"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q179",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q179.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "d"
+          ]
+        },
+        {
+          "id": "q-neet-ug-2025-q180",
+          "type": "single",
+          "topic": "Biology",
+          "text": {
+            "en": ""
+          },
+          "images": [
+            "q_neet-ug-2025-q180.png"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Option (1)"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Option (2)"
+              }
+            },
+            {
+              "id": "c",
+              "text": {
+                "en": "Option (3)"
+              }
+            },
+            {
+              "id": "d",
+              "text": {
+                "en": "Option (4)"
+              }
+            }
+          ],
+          "answer": [
+            "b"
+          ]
+        }
+      ]
+    }
+  ]
+}
