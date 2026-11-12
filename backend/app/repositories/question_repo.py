@@ -1,147 +1,83 @@
-"""Repository for Q&A questions and universal Q&A databases."""
+"""Queries canonical paper and question records."""
 
 import json
-from typing import List, Optional, Dict, Any, Tuple
-from backend.app.database import get_db
+from typing import Any
+
+from backend.app.db import get_db
+from backend.app.settings import Settings
 
 
 class QuestionRepository:
-    """Handles CRUD, indexing, and search queries for questions."""
+    """Read full Q&A exports and filtered question pages."""
 
     @staticmethod
-    def save_qna_database(qna_id: str, data: Dict[str, Any]) -> str:
-        """Store full Q&A database and index individual questions into SQLite."""
-        meta = data.get("examMetadata", {})
-        title = f"{meta.get('examName', 'Exam')} {meta.get('year', '')} {meta.get('shift', '')}".strip()
-        exam_name = meta.get("examName", "JEE Main")
-        year = meta.get("year", 2026)
-        questions = data.get("questions", [])
-        total_questions = len(questions)
-
-        with get_db() as conn:
-            # 1. Save to qna_databases table
-            conn.execute(
-                """
-                INSERT OR REPLACE INTO qna_databases
-                (id, title, exam_name, year, total_questions, data_json, updated_at)
-                VALUES (?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP);
-                """,
-                (qna_id, title, exam_name, year, total_questions, json.dumps(data)),
-            )
-
-            # 2. Index individual questions
-            for q in questions:
-                q_id = q["id"]
-                conn.execute(
-                    """
-                    INSERT OR REPLACE INTO questions
-                    (id, paper_id, question_number, question_id, section_id, subject, type,
-                     content_json, options_json, answer_json, explanation_json, source_json)
-                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
-                    """,
-                    (
-                        q_id,
-                        qna_id,
-                        q["questionNumber"],
-                        q["questionId"],
-                        q["sectionId"],
-                        q["subject"],
-                        q["type"],
-                        json.dumps(q.get("content", {})),
-                        json.dumps(q.get("options", [])),
-                        json.dumps(q.get("answer", {})),
-                        json.dumps(q.get("explanation", {})),
-                        json.dumps(q.get("source", {})),
-                    ),
-                )
-            conn.commit()
-
-        return qna_id
+    def get_qna_database(qna_id: str, settings: Settings | None = None) -> dict[str, Any] | None:
+        """Rebuild the versioned Q&A export shape from normalized rows."""
+        with get_db(settings) as conn:
+            paper = conn.execute("SELECT * FROM papers WHERE id=?", (qna_id,)).fetchone()
+            if paper is None:
+                return None
+            sections = conn.execute(
+                "SELECT * FROM sections WHERE paper_id=? ORDER BY position", (qna_id,)
+            ).fetchall()
+            questions = conn.execute(
+                "SELECT * FROM questions WHERE paper_id=? ORDER BY question_number", (qna_id,)
+            ).fetchall()
+        metadata = json.loads(paper["exam_metadata_json"])
+        return {
+            "schemaVersion": "1.0",
+            "examMetadata": metadata,
+            "sections": [{"sectionId": s["section_id"], "sectionName": s["section_name"],
+                          "subject": s["subject"], "questionType": s["question_type"],
+                          "markingScheme": json.loads(s["marking_json"])} for s in sections],
+            "questions": [QuestionRepository._question(q) for q in questions],
+        }
 
     @staticmethod
-    def get_qna_database(qna_id: str) -> Optional[Dict[str, Any]]:
-        """Retrieve complete Q&A database by ID."""
-        with get_db() as conn:
-            row = conn.execute(
-                "SELECT data_json FROM qna_databases WHERE id = ?;",
-                (qna_id,),
-            ).fetchone()
-            if row:
-                return json.loads(row["data_json"])
-            return None
-
-    @staticmethod
-    def query_questions(
-        qna_id: Optional[str] = None,
-        subject: Optional[str] = None,
-        q_type: Optional[str] = None,
-        search: Optional[str] = None,
-        page: int = 1,
-        limit: int = 25,
-    ) -> Tuple[List[Dict[str, Any]], int]:
-        """Query indexed questions with filters, search, and pagination."""
-        clauses = []
-        params = []
-
+    def query_questions(qna_id: str | None = None, subject: str | None = None,
+                        q_type: str | None = None, search: str | None = None,
+                        section: str | None = None,
+                        page: int = 1, limit: int = 25,
+                        settings: Settings | None = None) -> tuple[list[dict[str, Any]], int]:
+        """Filter and paginate questions, using FTS for textual search."""
+        conditions: list[str] = []
+        params: list[Any] = []
         if qna_id:
-            clauses.append("paper_id = ?")
+            conditions.append("q.paper_id=?")
             params.append(qna_id)
-
         if subject and subject.lower() != "all":
-            clauses.append("LOWER(subject) = ?")
+            conditions.append("LOWER(q.subject)=?")
             params.append(subject.lower())
-
         if q_type and q_type.lower() != "all":
-            if q_type == "mcq":
-                clauses.append("type = 'single_choice'")
-            elif q_type == "numeric":
-                clauses.append("type = 'numeric'")
-            else:
-                clauses.append("type = ?")
-                params.append(q_type)
-
+            normalized = {"mcq": "single_choice", "numeric": "numeric"}.get(q_type.lower(), q_type)
+            conditions.append("q.type=?")
+            params.append(normalized)
+        if section:
+            conditions.append("q.section_id=?")
+            params.append(section)
         if search:
-            search_str = f"%{search.strip().lower()}%"
-            clauses.append(
-                "(LOWER(question_id) LIKE ? OR question_number = ? OR LOWER(subject) LIKE ?)"
-            )
-            # Check if search is an integer for question_number
-            q_num_val = int(search.strip().lstrip("qQ")) if search.strip().lstrip("qQ").isdigit() else -1
-            params.extend([search_str, q_num_val, search_str])
+            term = search.strip()
+            number = int(term.lstrip("qQ")) if term.lstrip("qQ").isdigit() else -1
+            conditions.append("(q.question_number=? OR LOWER(q.question_id) LIKE ? OR q.question_id IN (SELECT question_id FROM questions_fts WHERE questions_fts MATCH ? AND paper_id=?))")
+            params.extend([number, f"%{term.lower()}%", _fts_query(term), qna_id or ""])
+        where = " WHERE " + " AND ".join(conditions) if conditions else ""
+        with get_db(settings) as conn:
+            if qna_id and conn.execute("SELECT 1 FROM papers WHERE id=?", (qna_id,)).fetchone() is None:
+                raise LookupError(qna_id)
+            total = conn.execute(f"SELECT COUNT(*) FROM questions q{where}", params).fetchone()[0]
+            rows = conn.execute(f"SELECT q.* FROM questions q{where} ORDER BY q.question_number LIMIT ? OFFSET ?",
+                                [*params, limit, (page - 1) * limit]).fetchall()
+        return [QuestionRepository._question(row) for row in rows], total
 
-        where_sql = f"WHERE {' AND '.join(clauses)}" if clauses else ""
+    @staticmethod
+    def _question(row: Any) -> dict[str, Any]:
+        return {"id": f"q-{row['question_id']}", "questionNumber": row["question_number"], "questionId": row["question_id"],
+                "sectionId": row["section_id"], "subject": row["subject"], "type": row["type"],
+                "content": json.loads(row["content_json"]), "options": json.loads(row["options_json"]),
+                "answer": json.loads(row["answer_json"]), "explanation": json.loads(row["explanation_json"]),
+                "source": json.loads(row["source_json"])}
 
-        with get_db() as conn:
-            # Count total matching
-            count_cur = conn.execute(f"SELECT COUNT(*) AS total FROM questions {where_sql};", params)
-            total = count_cur.fetchone()["total"]
 
-            # Query page
-            offset = (page - 1) * limit
-            query_sql = f"""
-                SELECT id, paper_id, question_number, question_id, section_id, subject, type,
-                       content_json, options_json, answer_json, explanation_json, source_json
-                FROM questions
-                {where_sql}
-                ORDER BY question_number ASC
-                LIMIT ? OFFSET ?;
-            """
-            rows = conn.execute(query_sql, params + [limit, offset]).fetchall()
-
-            questions = []
-            for r in rows:
-                questions.append({
-                    "id": r["id"],
-                    "questionNumber": r["question_number"],
-                    "questionId": r["question_id"],
-                    "sectionId": r["section_id"],
-                    "subject": r["subject"],
-                    "type": r["type"],
-                    "content": json.loads(r["content_json"]),
-                    "options": json.loads(r["options_json"]),
-                    "answer": json.loads(r["answer_json"]),
-                    "explanation": json.loads(r["explanation_json"]),
-                    "source": json.loads(r["source_json"]),
-                })
-
-            return questions, total
+def _fts_query(value: str) -> str:
+    """Quote user input as an FTS phrase instead of accepting FTS operators."""
+    return '"' + value.replace('"', '""') + '"'

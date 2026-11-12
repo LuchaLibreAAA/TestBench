@@ -1,36 +1,23 @@
-"""API route for serving question and option image assets."""
+"""Serve validated paper PNG assets with content-based cache validators."""
 
-from pathlib import Path
-from fastapi import APIRouter, HTTPException
-from fastapi.responses import FileResponse
-from backend.app.config import ASSETS_DIR
+import hashlib
+from fastapi import APIRouter, HTTPException, Request, Header
+from fastapi.responses import FileResponse, Response
+
+from backend.app.services.assets import resolve_asset
 
 router = APIRouter(prefix="/assets", tags=["Assets"])
 
-FALLBACK_ASSETS_DIR = Path("testbench/public/papers/assets")
-
 
 @router.get("/{paper_id}/{filename}")
-def get_image_asset(paper_id: str, filename: str):
-    """Serve a question or option PNG image."""
-    # Prevent directory traversal
-    if ".." in filename or "/" in filename or "\\" in filename:
-        raise HTTPException(status_code=400, detail="Invalid filename")
-
-    primary_path = ASSETS_DIR / paper_id / filename
-    if primary_path.exists():
-        return FileResponse(
-            str(primary_path),
-            media_type="image/png",
-            headers={"Cache-Control": "public, max-age=86400"},
-        )
-
-    fallback_path = FALLBACK_ASSETS_DIR / paper_id / filename
-    if fallback_path.exists():
-        return FileResponse(
-            str(fallback_path),
-            media_type="image/png",
-            headers={"Cache-Control": "public, max-age=86400"},
-        )
-
-    raise HTTPException(status_code=404, detail=f"Asset '{filename}' not found for paper '{paper_id}'")
+def get_image_asset(paper_id: str, filename: str, request: Request,
+                    if_none_match: str | None = Header(None)):
+    path = resolve_asset(request.app.state.settings.assets_dir, paper_id, filename)
+    if path is None:
+        raise HTTPException(status_code=404, detail="Asset not found")
+    etag_value = hashlib.sha256(path.read_bytes()).hexdigest()
+    etag = f'"{etag_value}"'
+    headers = {"ETag": etag, "Cache-Control": "public, max-age=31536000, immutable"}
+    if if_none_match == etag:
+        return Response(status_code=304, headers=headers)
+    return FileResponse(path, media_type="image/png", headers=headers)

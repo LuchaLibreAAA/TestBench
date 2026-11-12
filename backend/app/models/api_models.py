@@ -21,8 +21,8 @@ class PaginatedQuestionsResponse(BaseModel):
     page: int
     limit: int
     total: int
-    totalPages: int
-    questions: List[Dict[str, Any]]
+    pages: int
+    items: List[Dict[str, Any]]
 
 
 class UploadResponse(BaseModel):
@@ -31,3 +31,31 @@ class UploadResponse(BaseModel):
     paperId: str
     totalQuestions: int
     message: str
+
+
+class CatalogResponse(BaseModel):
+    items: List[PaperSummary]
+
+
+class JobResponse(BaseModel):
+    status: str
+    paperId: Optional[str] = None
+    error: Optional[str] = None
+
+
+class JobCreatedResponse(BaseModel):
+    jobId: str
+
+
+class AnswerUpdate(BaseModel):
+    questionId: str
+    correctOptionId: Optional[str] = None
+    correctNumericValue: Optional[float] = None
+
+
+class AnswerPatchRequest(BaseModel):
+    answers: List[AnswerUpdate]
+
+
+class AnswerPatchResponse(BaseModel):
+    updated: int

@@ -1,93 +1,55 @@
-"""Repository for paper management in SQLite."""
+"""Read paper catalog data from the canonical SQLite store."""
 
-import json
-from typing import List, Optional, Dict, Any
-from backend.app.database import get_db
-from backend.app.models.api_models import PaperSummary
+from typing import Any
+from backend.app.db import get_db
+from backend.app.settings import Settings
 
 
 class PaperRepository:
-    """Handles CRUD operations for test papers."""
+    """Queries papers and their indexed question data."""
 
     @staticmethod
-    def save_paper(data: Dict[str, Any]) -> str:
-        """Insert or replace a paper in SQLite."""
-        paper_id = data["id"]
-        title = data["title"]
-        exam = data.get("exam", "jee-main")
-        
-        # Calculate year from tags or title or current
-        year = 2026
-        for tag in data.get("meta", {}).get("tags", []):
-            if str(tag).isdigit() and len(str(tag)) == 4:
-                year = int(tag)
-                break
-
-        duration_min = data.get("durationMin", 180)
-        sections = data.get("sections", [])
-        sections_count = len(sections)
-        total_questions = sum(len(s.get("questions", [])) for s in sections)
-
-        data_json = json.dumps(data)
-
-        with get_db() as conn:
-            conn.execute(
-                """
-                INSERT OR REPLACE INTO papers 
-                (id, title, exam, year, duration_min, total_questions, sections_count, data_json, updated_at)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP);
-                """,
-                (paper_id, title, exam, year, duration_min, total_questions, sections_count, data_json),
-            )
-            conn.commit()
-
-        return paper_id
+    def get_paper(paper_id: str, settings: Settings | None = None) -> dict[str, Any] | None:
+        """Build the TestBench-compatible paper JSON from canonical rows."""
+        import json
+        from backend.app.services.cbt_export import export_paper
+        with get_db(settings) as conn:
+            paper = conn.execute("SELECT * FROM papers WHERE id=?", (paper_id,)).fetchone()
+            if paper is None:
+                return None
+            sections = conn.execute("SELECT * FROM sections WHERE paper_id=? ORDER BY position", (paper_id,)).fetchall()
+            questions = conn.execute("SELECT * FROM questions WHERE paper_id=? ORDER BY question_number", (paper_id,)).fetchall()
+        return export_paper(paper_id, paper, sections, questions)
 
     @staticmethod
-    def get_paper(paper_id: str) -> Optional[Dict[str, Any]]:
-        """Get complete paper JSON by paper ID."""
-        with get_db() as conn:
-            row = conn.execute(
-                "SELECT data_json FROM papers WHERE id = ?;",
-                (paper_id,),
-            ).fetchone()
-
-            if row:
-                return json.loads(row["data_json"])
-            return None
+    def paper_version(paper_id: str, settings: Settings | None = None) -> tuple[str, int] | None:
+        """Return canonical content hash and version for cache headers."""
+        with get_db(settings) as conn:
+            row = conn.execute("SELECT content_hash,data_version FROM papers WHERE id=?", (paper_id,)).fetchone()
+        return (row["content_hash"], row["data_version"]) if row else None
 
     @staticmethod
-    def list_papers() -> List[PaperSummary]:
-        """List all available papers as summaries."""
-        with get_db() as conn:
+    def list_papers(settings: Settings | None = None) -> list[dict[str, Any]]:
+        """List papers in catalog-summary format."""
+        with get_db(settings) as conn:
             rows = conn.execute(
                 """
-                SELECT id, title, exam, year, duration_min, total_questions, sections_count 
-                FROM papers 
+                SELECT p.id, p.title, p.exam, p.year, p.duration_min, p.total_questions,
+                       (SELECT COUNT(*) FROM sections s WHERE s.paper_id=p.id) AS sections_count
+                FROM papers p
                 ORDER BY year DESC, id ASC;
                 """
             ).fetchall()
 
-            summaries = []
-            for r in rows:
-                summaries.append(
-                    PaperSummary(
-                        id=r["id"],
-                        title=r["title"],
-                        exam=r["exam"],
-                        year=r["year"],
-                        durationMin=r["duration_min"],
-                        totalQuestions=r["total_questions"],
-                        sectionsCount=r["sections_count"],
-                        badge=f"{r['exam'].upper()} {r['year']}",
-                    )
-                )
-            return summaries
+            return [dict(id=r["id"], title=r["title"], exam=r["exam"], year=r["year"],
+                         durationMin=r["duration_min"], totalQuestions=r["total_questions"],
+                         sectionsCount=r["sections_count"], badge=f"{r['exam'].upper()} {r['year']}") for r in rows]
 
     @staticmethod
-    def delete_paper(paper_id: str) -> bool:
-        """Delete a paper by ID."""
-        with get_db() as conn:
+    def delete_paper(paper_id: str, settings: Settings | None = None) -> bool:
+        """Delete a paper and its dependent rows."""
+        with get_db(settings) as conn:
+            conn.execute("DELETE FROM questions_fts WHERE paper_id=?", (paper_id,))
             cur = conn.execute("DELETE FROM papers WHERE id = ?;", (paper_id,))
             conn.commit()
             return cur.rowcount > 0
