@@ -123,4 +123,94 @@ describe('Paper Validation & Import', () => {
     expect(res.data).toBeDefined();
     expect(res.data?.id).toBe('valid-mock-01');
   });
+
+  it('accepts multiple accepted answers on single-choice dual-key/bonus questions', () => {
+    const dualKeyPaper = {
+      schemaVersion: 1,
+      id: 'dual-key-01',
+      title: 'Dual Key Paper',
+      exam: 'neet',
+      durationMin: 180,
+      languages: ['en'],
+      navigation: 'free',
+      sections: [
+        {
+          id: 'phy',
+          name: 'Physics',
+          marking: { correct: 4, wrong: -1, unattempted: 0 },
+          questions: [
+            {
+              id: 'q1',
+              type: 'single',
+              text: 'Dual key question',
+              options: [
+                { id: 'a', text: '1' },
+                { id: 'b', text: '2' },
+              ],
+              answer: ['a', 'b'],
+            },
+          ],
+        },
+      ],
+    };
+
+    const res = validatePaper(dualKeyPaper);
+    expect(res.success).toBe(true);
+  });
+
+  it('rejects empty answer arrays on single-choice questions', () => {
+    const emptyAnswerPaper = {
+      schemaVersion: 1,
+      id: 'empty-answer-01',
+      title: 'Empty Answer Paper',
+      exam: 'neet',
+      durationMin: 180,
+      languages: ['en'],
+      navigation: 'free',
+      sections: [
+        {
+          id: 'phy',
+          name: 'Physics',
+          marking: { correct: 4, wrong: -1, unattempted: 0 },
+          questions: [
+            {
+              id: 'q1',
+              type: 'single',
+              text: 'No key question',
+              options: [
+                { id: 'a', text: '1' },
+                { id: 'b', text: '2' },
+              ],
+              answer: [],
+            },
+          ],
+        },
+      ],
+    };
+
+    const res = validatePaper(emptyAnswerPaper);
+    expect(res.success).toBe(false);
+  });
+
+  it('imports every built-in catalog paper without schema errors', () => {
+    const catalogFiles = import.meta.glob('../../../../public/papers/catalog.json', {
+      eager: true,
+      import: 'default',
+    });
+    const paperFiles = import.meta.glob('../../../../public/papers/*/*.json', {
+      eager: true,
+      import: 'default',
+    });
+
+    const catalog = Object.values(catalogFiles)[0] as Array<{ id: string; path: string }>;
+    expect(catalog.length).toBeGreaterThan(0);
+
+    for (const item of catalog) {
+      const suffix = item.path.replace(/^\/+/, '');
+      const match = Object.entries(paperFiles).find(([k]) => k.endsWith(suffix));
+      expect(match, `Missing file for ${item.id} (${suffix})`).toBeDefined();
+      const res = importPaperJSON(JSON.stringify(match![1]));
+      expect(res.success, `${item.id} failed: ${JSON.stringify(res.issues)}`).toBe(true);
+    }
+  });
 });

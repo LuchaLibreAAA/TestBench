@@ -114,14 +114,15 @@ export type BaseQuestion = z.infer<typeof BaseQuestionSchema>;
 
 /**
  * A single-correct-answer multiple-choice question.
- * Exactly one option id must appear in `answer`.
+ * One or more accepted option ids may appear in `answer`
+ * (normally one; multiple for dual-key or bonus/dropped questions).
  */
 export const SingleQuestionSchema = BaseQuestionSchema.extend({
   type: z.literal("single"),
   /** Available options (minimum 2). */
   options: z.array(OptionSchema).min(2),
-  /** Correct answer — exactly one option id. */
-  answer: z.array(z.string()).length(1),
+  /** Accepted answer option id(s) — at least one. */
+  answer: z.array(z.string()).min(1),
 });
 
 /** Inferred type for {@link SingleQuestionSchema}. */
