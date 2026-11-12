@@ -43,5 +43,8 @@ __pycache__/
 .pytest_cache/
 backend/data/
 
+# Raw source exam PDFs with third-party watermarks
+testbench/NEET/
+
 
 
