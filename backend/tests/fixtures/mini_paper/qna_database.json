@@ -1,0 +1,10 @@
+{
+  "schemaVersion": "1.0",
+  "examMetadata": {"examName": "Mini Exam", "year": 2025, "session": "May", "shift": "Shift 1", "totalQuestions": 3, "durationMinutes": 30},
+  "sections": [{"sectionId": "math-a", "sectionName": "Mathematics A", "subject": "Mathematics", "questionType": "single_choice", "markingScheme": {"correct": 4, "wrong": -1, "unattempted": 0}}],
+  "questions": [
+    {"id": "q-101", "questionNumber": 1, "questionId": "101", "sectionId": "math-a", "subject": "Mathematics", "type": "single_choice", "content": {"text": "one", "imagePaths": ["q_101.png"]}, "options": [], "answer": {}, "explanation": {}, "source": {}},
+    {"id": "q-102", "questionNumber": 2, "questionId": "102", "sectionId": "math-a", "subject": "Mathematics", "type": "single_choice", "content": {"text": "two", "imagePaths": []}, "options": [], "answer": {}, "explanation": {}, "source": {}},
+    {"id": "q-103", "questionNumber": 3, "questionId": "103", "sectionId": "math-a", "subject": "Mathematics", "type": "numeric", "content": {"text": "three", "imagePaths": []}, "options": [], "answer": {}, "explanation": {}, "source": {}}
+  ]
+}
