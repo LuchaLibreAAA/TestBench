@@ -42,7 +42,7 @@ __pycache__/
 *.pyd
 .pytest_cache/
 backend/data/
-/testbench/README.md
+/testbench/design.md
 
 # Raw source exam PDFs with third-party watermarks
 testbench/NEET/
