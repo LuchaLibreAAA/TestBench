@@ -5,6 +5,7 @@ import { ThemeToggle } from '@/components/ThemeToggle';
 import { db } from '@/data/db';
 import { getSetting, setSetting } from '@/data/repositories/settings';
 import { useThemeStore } from '@/stores/themeStore';
+import { APP_VERSION } from '@/core/version';
 import {
   ChevronLeft,
   Sun,
@@ -13,6 +14,7 @@ import {
   Calculator,
   HardDrive,
   Trash2,
+  Info,
 } from 'lucide-react';
 
 export const SettingsScreen: React.FC = () => {
@@ -208,6 +210,25 @@ export const SettingsScreen: React.FC = () => {
             >
               Clear All Data & Reset App
             </Button>
+          </div>
+        </div>
+
+        {/* About & Version */}
+        <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/80 dark:border-slate-800 p-5 shadow-2xs space-y-3">
+          <h2 className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
+            About
+          </h2>
+
+          <div className="flex items-center justify-between py-1">
+            <div className="space-y-0.5">
+              <span className="text-sm font-semibold text-slate-900 dark:text-slate-100 flex items-center gap-2">
+                <Info className="w-4 h-4 text-[#1a56db] dark:text-blue-400" /> App Version
+              </span>
+              <p className="text-xs text-slate-500 dark:text-slate-400">Current TestBench release channel</p>
+            </div>
+            <span className="text-xs font-mono font-bold text-[#1a56db] dark:text-blue-300 bg-blue-50 dark:bg-blue-950/60 border border-blue-200/80 dark:border-blue-800 px-2.5 py-1 rounded-lg">
+              {APP_VERSION}
+            </span>
           </div>
         </div>
       </main>

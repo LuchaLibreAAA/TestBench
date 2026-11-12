@@ -1,140 +1,153 @@
-# TestBench
+<div align="center">
 
-> A mobile-first, offline-capable, JSON-driven mock test platform built with React 19, TypeScript, Vite, and Tailwind CSS v4, replicating the official NTA computer-based test (CBT) experience.
+<img src="testbench/public/icon.png" alt="TestBench Logo" width="84" />
+
+# 🎯 TestBench `v0.0.1(beta)`
+
+### **Offline-First NTA CBT Mock Test Simulator, Q&A Database & PDF Extraction Platform**
+
+[![Version](https://img.shields.io/badge/Version-v0.0.1(beta)-2563eb?style=for-the-badge&logo=semanticrelease&logoColor=white)](#-release-v001beta)
+[![React](https://img.shields.io/badge/React-19-06b6d4?style=for-the-badge&logo=react&logoColor=white)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-Strict-3178c6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38bdf8?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-Backend-059669?style=for-the-badge&logo=fastapi&logoColor=white)](backend/)
+[![Render](https://img.shields.io/badge/Deploy-Render_Blueprint-7c3aed?style=for-the-badge&logo=render&logoColor=white)](render.yaml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-f59e0b?style=for-the-badge)](#-license)
 
 ---
 
-## 🌟 Key Features
+*Built for **JEE Main** & **NEET UG** aspirants with authentic NTA Computer-Based Test (CBT) fidelity, light & dark modes, cropped diagram assets, searchable Q&A database, and an extensible Python PDF extraction framework.*
 
-### 1. Familiar NTA Exam Interface
-- **Official 5-State Question Palette**:
-  - `notVisited` (Grey): Not yet opened
-  - `notAnswered` (Red): Visited but unanswered
-  - `answered` (Green): Saved and answered
-  - `marked` (Purple): Marked for review without answer
-  - `answeredMarked` (Purple with Green badge): Answered and marked for review (evaluated in scoring)
-- **Exam Player Controls**: Save & Next, Mark for Review & Next, Clear Response, Previous, Question Navigation.
-- **Section Tabs & Marking**: Section-wise grouping, custom negative marking schemes (+4/-1, +4/0, etc.), sectional attempt limits (e.g. JEE section B "any 5 of 10").
-- **Drift-Proof Countdown Timer**: Absolute `endsAt` timer with severity alerts (amber at 5 min, red pulse at 1 min) and automatic submission.
-- **Pre-Submit Summary Dialog**: Full question status breakdown by section before final submission.
+</div>
 
-### 2. Multi-Format Question Support
-- **Single-choice MCQ**: Full-row touch targets with radio selection.
-- **Multi-select MCQ**: Checkboxes with partial marking support.
-- **Numerical Value**: Live decimal validation with an on-screen touch keypad (0-9, `.`, `-`, backspace, clear).
-- **True / False**: Fast two-button selection.
-- **LaTeX Math Support**: KaTeX equations formatted inline (`$...$`) and block (`$$...$$`).
+---
 
-### 3. Solution Review & Analytics
-- **Review Mode**: Filter questions by All, Correct, Wrong, Skipped. Displays student choice vs correct answer, marks awarded, time spent, and detailed explanations.
-- **Performance Analytics**: Score totals, accuracy percentage, time per question, and topic mastery breakdown.
-- **Retry Modes**: Instant retake of wrong and skipped questions.
+## 🏷️ Release `v0.0.1(beta)`
 
-### 4. Official JEE Main & NEET UG Papers Catalog
-- **Separate Dedicated Sections**: Distinct, organized sections in the Library for **JEE Main** and **NEET UG** past year papers.
-- **Full Real Papers**:
-  - **JEE Main 2026 (April Session, Shift 2 - 02 Apr 2026)**: Complete 75 questions across Mathematics, Physics, and Chemistry (Section A MCQs + Section B numeric questions) with high-resolution clipped diagram & option assets.
-  - **JEE Main 2024 (January Session 1, Shift 1)**: Complete 90 questions across Physics, Chemistry, and Mathematics (Section A MCQs + Section B numericals with 5/10 attempt limit).
-  - **JEE Main 2023 (April Session 2, Shift 1)**: Complete 90 questions across Physics, Chemistry, and Mathematics.
-  - **NEET UG 2024 (Official)**: Complete 200 questions across Physics, Chemistry, Botany, and Zoology (Section A 35 compulsory + Section B 15 questions with 10/15 attempt limit).
-  - **NEET UG 2023 (Official)**: Complete 200 questions across Physics, Chemistry, Botany, and Zoology.
-- **One-Click Paper Seeding**: Instant loading and local offline persistence of all official papers directly into IndexedDB.
-- **Instant Search & Category Filters**: Search by exam name, year, or topic, with filtering tabs (`All`, `JEE Main`, `NEET UG`, `Custom`).
+- **Current Version:** `v0.0.1(beta)` (displayed in the TestBench header, footer, and Settings **About** card)
+- **What's included in `v0.0.1(beta)`:**
+  - Full catalog of **7 Official Papers** (**JEE Main** 2023, 2024, 2026 + **NEET UG** 2023, 2024, 2025, 2026) with high-resolution cropped questions & options
+  - Official NTA **5-State Question Palette** (`Not Visited`, `Not Answered`, `Answered`, `Marked for Review`, `Answered & Marked`)
+  - Accurate **Scorecard & Analytics** honoring section attempt limits (e.g., 720 marks on NEET 200-Q pattern, 300 marks on JEE 90-Q pattern)
+  - Built-in **Q&A Database Explorer** + **Light / Dark Theme**
+  - One-click **Render Blueprint** (`render.yaml`) for Static Frontend + FastAPI Backend
+
+---
+
+## ✨ Key Features
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 🖥️ Authentic NTA CBT Player
+- **5-State Palette**: Color-coded status badges matching NTA rules (`answeredMarked` counts toward evaluation)
+- **Drift-Proof Timer**: Absolute `endsAt` countdown with 5-min warning & 1-min urgent alert + auto-submit
+- **Sectional Controls**: Custom marking (`+4/-1`, `+4/0`), attempt limits (`any 5 of 10`, `any 10 of 15`), and pre-submit summary
+- **Multi-Format Questions**: Single-choice (including multi-key/bonus official keys), Multi-select (partial marking), Numerical keypad (`0–9`, `.`, `-`), and True/False
+- **KaTeX Math**: Crisp inline `$...$` and display `$$...$$` rendering
+
+</td>
+<td width="50%" valign="top">
+
+### 📊 Insights, Q&A DB & Themes
+- **Accurate Scorecard**: Section-wise breakdown, negative marking loss, rushed guesses (`<10s`), weak topics, and instant **Retry Wrong & Skipped** generator
+- **Solution Review**: Filter by `All`, `Correct`, `Wrong`, or `Skipped` with per-question time spent & answer comparison
+- **Q&A Database Screen**: Browse cropped question & option cards across all extracted papers
+- **Light & Dark Mode**: Persisted across Library, Instructions, Exam, Scorecard, Review, Analytics, and Settings
+- **Offline Persistence**: Runs smoothly offline in your browser with IndexedDB (Dexie) crash recovery & autosave
+
+</td>
+</tr>
+</table>
+
+---
+
+## 📚 Built-in Official Papers Catalog
+
+| Exam | Year | Paper / Session | Questions | Duration | Max Marks |
+| :--- | :---: | :--- | :---: | :---: | :---: |
+| 🟦 **JEE Main** | `2026` | April Session (02 Apr, Shift 2) | 75 Qs | 180 min | 300 |
+| 🟦 **JEE Main** | `2024` | January Session 1 (27 Jan, Shift 1) | 90 Qs *(75 counted)* | 180 min | 300 |
+| 🟦 **JEE Main** | `2023` | April Session 2 (06 Apr, Shift 1) | 90 Qs *(75 counted)* | 180 min | 300 |
+| 🟩 **NEET UG** | `2026` | Official Question Paper | 180 Qs | 180 min | 720 |
+| 🟩 **NEET UG** | `2025` | Official Question Paper (Booklet 45) | 180 Qs | 180 min | 720 |
+| 🟩 **NEET UG** | `2024` | Official Question Paper (Booklet S6) | 200 Qs *(180 counted)* | 200 min | 720 |
+| 🟩 **NEET UG** | `2023` | Official Question Paper (Booklet G6) | 200 Qs *(180 counted)* | 200 min | 720 |
+
+---
+
+## 🏗️ Architecture & Project Layout
+
+```text
+Work/
+├── testbench/                  # React 19 + TypeScript + Vite 8 + Tailwind v4 Frontend
+│   ├── src/
+│   │   ├── core/               # Schema (Zod v4), Marking Engine, CBT State Machine, v0.0.1(beta)
+│   │   ├── features/           # Library, Paper Detail, Exam, Result, Review, Analytics, Q&A DB, Settings
+│   │   └── data/               # Dexie IndexedDB repositories & static catalog loader
+│   └── public/                 # Built-in JEE & NEET papers, Q&A JSONs, and cropped PNG assets
+├── backend/                    # Interdependent FastAPI + SQLite FTS5 REST API
+│   ├── app/                    # Health, Papers, Q&A endpoints, Admin ingest & asset streaming
+│   └── tests/                  # Pytest API & ingest suite
+├── tools/pdf_qna_pipeline/     # Config-driven PDF -> QnA JSON & TestBench paper extractor
+│   ├── configs/                # Exam YAML definitions (jee_main, neet_2023..2026)
+│   ├── parsers/                # NTA CBT, ExamGOAL cleaned, and scanned NEET parsers
+│   └── extractors/             # High-DPI clipping, whitespace trim & watermark cleanup
+└── render.yaml                 # Render Blueprint (Static Site + Free Python Web Service)
+```
 
 ---
 
 ## 🛠 PDF-to-QnA Extraction Pipeline (`tools/pdf_qna_pipeline`)
 
-A config-driven, extensible extraction framework to convert official NTA Computer Based Test (CBT) question paper PDFs into universal Q&A datasets with lossless diagram and option clipping.
+Config-driven Python pipeline (`PyMuPDF`, `Pillow`, `OpenCV`, `Pydantic v2`, `PyYAML`) for converting exam PDFs into clean datasets:
 
-### Features
-- **Deterministic & Config-Driven**: Section configurations, marking schemes, and regexes are stored in YAML (`configs/jee_main.yaml`). Zero hardcoded exam constants in parser code.
-- **Lossless Image Extraction with Fallback**: PyMuPDF direct XObject extraction with coordinate clip rendering fallback at 300 DPI for inline images.
-- **Automated Post-Processing**: Trims near-white borders (grayscale threshold 245) with 8px margin and strips alpha channel to ensure pristine dark mode rendering.
-- **Dual Export**: Outputs both a universal database schema (`qna_database.json`) and native TestBench formats (`testbench_paper.json` and portable `testbench_paper.zip`).
-- **Strict 8-Point Validation**: Verified via `python -m tools.pdf_qna_pipeline.validate` to ensure question continuity, 0 orphans, valid dimensions, and schema compliance.
-
-### CLI Usage
 ```bash
-# Inspect PDF structure and record facts
+# Inspect PDF structure and record layout profile
 python -m tools.pdf_qna_pipeline.cli inspect -i "path/to/exam.pdf" -o "dist/qna/output"
 
-# Run end-to-end extraction (parse, clip, export, validate)
+# Extract questions, clip diagrams, export QnA + TestBench JSON, and validate
 python -m tools.pdf_qna_pipeline.cli extract -i "path/to/exam.pdf" -o "dist/qna/output" -c "tools/pdf_qna_pipeline/configs/jee_main.yaml"
 
-# Run standalone validator
+# Run standalone 8-point integrity validator
 python -m tools.pdf_qna_pipeline.cli validate -i "dist/qna/output/qna_database.json" -c "tools/pdf_qna_pipeline/configs/jee_main.yaml"
 ```
 
-### 5. Offline-First & JSON / ZIP Content
-- **100% Offline Capability**: Runs entirely in the browser using Dexie (IndexedDB) for local storage of papers, attempts, assets, and settings.
-- **JSON & ZIP Import**: Drag-and-drop or upload `.json` papers or `.zip` packages containing `paper.json` and diagram assets (`images/`).
-- **Two-Pass Validation**: Schema validation with Zod plus cross-field domain checks with human-readable error reporting.
-- **Crash Recovery & Autosave**: Persists student answers and visited state on every interaction; seamlessly resume tests across page refreshes.
-
 ---
 
-## 🛠 Tech Stack
+## 🚀 Getting Started Locally
 
-- **Framework**: React 19 + TypeScript
-- **Bundler**: Vite 8
-- **Styling**: Tailwind CSS v4
-- **State Management**: Zustand v5
-- **Local Database**: Dexie (IndexedDB)
-- **Validation**: Zod v4
-- **Math Rendering**: KaTeX
-- **ZIP Packaging**: fflate
-- **Icons**: Lucide React
-- **Testing**: Vitest + React Testing Library
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Node.js (v18+)
-- npm or pnpm
-
-### Installation
-
+### Frontend (`testbench/`)
 ```bash
-# Navigate to the project directory
 cd testbench
-
-# Install dependencies
 npm install
-
-# Start the local development server
-npm run dev
+npm run dev      # Start Vite dev server
+npm run lint     # Run oxlint
+npm run build    # TypeScript check + Vite production bundle
+npx vitest run   # Run frontend unit & catalog validation tests
 ```
 
-### Running Tests
-
+### Backend API & Pipeline (`backend/`, `tools/pdf_qna_pipeline/`)
 ```bash
-cd testbench
-npm test
+pip install -r backend/requirements.txt
+uvicorn backend.app.main:app --reload --port 8000
+python -m pytest backend/tests tools/pdf_qna_pipeline/tests -q
 ```
 
-### Production Build
-
-```bash
-cd testbench
-npm run build
-```
+### ☁️ One-Click Cloud Deployment (Render)
+Deploy both **`testbench-web`** (Static Site) and **`testbench-api`** (Free Python Web Service) directly from GitHub via [render.yaml](render.yaml).
 
 ---
 
-## 🔒 Security & Data Privacy
+## 🔒 Security & Privacy
 
-- **Client-Side & Offline-Only Architecture**: TestBench executes 100% in the user's browser. No student answers, test scores, or personal responses are transmitted to any remote servers.
-- **Zero Third-Party Tracking**: No analytics scripts, trackers, or cookies are stored or broadcast.
-- **XSS Mitigation with DOMPurify**: All KaTeX math renderings and markdown markup are sanitized via `DOMPurify` before rendering to prevent script injection.
-- **Rigorous Schema Validation**: All imported JSON and ZIP files are strictly validated with Zod v4 schemas with deep domain validation before any storage or execution.
-- **0 Dependencies Vulnerabilities**: Audited clean against known CVEs via `npm audit`.
+- **Local-First Execution**: All student answers, timers, and scores stay in your browser's IndexedDB (`Dexie`) — no tracking or third-party cookies.
+- **XSS Sanitization**: Math & rich text rendering is sanitized through `DOMPurify`.
+- **Fail-Closed Backend Config**: Production mode (`ALLOW_INSECURE_DEV=0`) requires a real `ADMIN_TOKEN` and rejects wildcard `*` `CORS_ORIGINS`.
 
 ---
 
 ## 📄 License
-MIT
 
-
+Distributed under the **MIT License**.

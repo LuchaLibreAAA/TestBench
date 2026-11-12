@@ -129,7 +129,7 @@ export function scorePaper(
 
   for (const section of paper.sections) {
     let sectionObtained = 0;
-    let sectionMax = 0;
+    const sectionQuestionMaxMarks: number[] = [];
     let sectionCorrect = 0;
     let sectionWrong = 0;
     let sectionPartial = 0;
@@ -194,7 +194,7 @@ export function scorePaper(
       questionResults.push(qResult);
 
       sectionObtained += evalResult.marks;
-      sectionMax += marking.correct;
+      sectionQuestionMaxMarks.push(marking.correct);
 
       switch (evalResult.outcome) {
         case "correct":
@@ -243,6 +243,15 @@ export function scorePaper(
         }
       }
     }
+
+    const countableCount =
+      attemptLimit !== undefined
+        ? Math.min(attemptLimit, sectionQuestionMaxMarks.length)
+        : sectionQuestionMaxMarks.length;
+    const sectionMax = [...sectionQuestionMaxMarks]
+      .sort((a, b) => b - a)
+      .slice(0, countableCount)
+      .reduce((sum, val) => sum + val, 0);
 
     sectionScores.push({
       sectionId: section.id,

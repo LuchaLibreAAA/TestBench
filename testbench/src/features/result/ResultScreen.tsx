@@ -3,7 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { getAttempt } from '@/data/repositories/attempts';
 import { getPaper, savePaper } from '@/data/repositories/papers';
 import type { Attempt, Paper, Section, Question } from '@/core/schema';
-import type { ScoreResult } from '@/core/marking';
+import { scorePaper, type ScoreResult } from '@/core/marking';
 import { Button } from '@/components/Button';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import { resolveText } from '@/core/utils/localized-text';
@@ -47,18 +47,23 @@ export const ResultScreen: React.FC = () => {
     load();
   }, [attemptId]);
 
-  const result = (attempt?.result as ScoreResult) ?? {
-    totalObtained: 0,
-    totalMax: 0,
-    totalCorrect: 0,
-    totalWrong: 0,
-    totalPartial: 0,
-    totalSkipped: 0,
-    totalQuestions: 0,
-    sectionScores: [],
-    topicScores: [],
-    questionResults: [],
-  };
+  const result = useMemo<ScoreResult>(() => {
+    if (attempt && paper) {
+      return scorePaper(paper, attempt.responses);
+    }
+    return (attempt?.result as ScoreResult) ?? {
+      totalObtained: 0,
+      totalMax: 0,
+      totalCorrect: 0,
+      totalWrong: 0,
+      totalPartial: 0,
+      totalSkipped: 0,
+      totalQuestions: 0,
+      sectionScores: [],
+      topicScores: [],
+      questionResults: [],
+    };
+  }, [attempt, paper]);
 
   const percentage = result.totalMax > 0
     ? Math.max(0, Math.round((result.totalObtained / result.totalMax) * 100))

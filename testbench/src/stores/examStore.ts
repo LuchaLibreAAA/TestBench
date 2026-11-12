@@ -31,8 +31,8 @@ export const useExamStore = create<ExamStore>((set, get) => ({
     set((store) => {
       const nextState = examReducer(store.state, action);
 
-      // Async persist to Dexie whenever exam is running
-      if (nextState.attemptId && nextState.paper) {
+      // Async persist to Dexie whenever exam is running (SUBMIT is persisted by submitExam with score result)
+      if (action.type !== 'SUBMIT' && nextState.attemptId && nextState.paper) {
         const attempt: Attempt = {
           id: nextState.attemptId,
           paperId: nextState.paper.id,
@@ -133,33 +133,32 @@ export const useExamStore = create<ExamStore>((set, get) => ({
   },
 
   submitExam: async (auto = false) => {
-    const { state, dispatch } = get();
+    const { state } = get();
     if (!state.paper || !state.attemptId) return;
 
-    dispatch({ type: 'SUBMIT', payload: { auto } });
-
-    // Compute final score
-    const result = scorePaper(state.paper, state.responses);
+    const nextState = examReducer(state, { type: 'SUBMIT', payload: { auto } });
+    const result = scorePaper(state.paper, nextState.responses);
 
     const attempt: Attempt = {
-      id: state.attemptId,
+      id: nextState.attemptId,
       paperId: state.paper.id,
       paperVersion: '1',
-      language: state.language,
-      startedAt: state.endsAt - (state.paper.durationMin ?? 180) * 60_000,
-      endsAt: state.endsAt,
-      sectionEndsAt: state.sectionEndsAt,
+      language: nextState.language,
+      startedAt: nextState.endsAt - (state.paper.durationMin ?? 180) * 60_000,
+      endsAt: nextState.endsAt,
+      sectionEndsAt: nextState.sectionEndsAt,
       status: auto ? 'autoSubmitted' : 'submitted',
-      currentQid: state.currentQid,
-      currentSectionId: state.currentSectionId,
-      responses: state.responses,
-      lockedSections: state.lockedSections,
-      tabSwitches: state.tabSwitches,
+      currentQid: nextState.currentQid,
+      currentSectionId: nextState.currentSectionId,
+      responses: nextState.responses,
+      lockedSections: nextState.lockedSections,
+      tabSwitches: nextState.tabSwitches,
       submittedAt: Date.now(),
       result,
     };
 
     await saveAttempt(attempt);
+    set({ state: nextState });
   },
 
   currentQuestion: () => {

@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { getAllAttempts } from '@/data/repositories/attempts';
 import { getAllPapers } from '@/data/repositories/papers';
 import type { Attempt, Paper } from '@/core/schema';
-import type { ScoreResult } from '@/core/marking';
+import { scorePaper, type ScoreResult } from '@/core/marking';
 import { Button } from '@/components/Button';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import {
@@ -49,7 +49,8 @@ export const AnalyticsScreen: React.FC = () => {
     const topicStats = new Map<string, { correct: number; total: number }>();
 
     attempts.forEach((att) => {
-      const res = att.result as ScoreResult | undefined;
+      const paper = papersMap.get(att.paperId);
+      const res = paper ? scorePaper(paper, att.responses) : (att.result as ScoreResult | undefined);
       if (!res) return;
 
       totalScore += res.totalObtained;
@@ -85,7 +86,7 @@ export const AnalyticsScreen: React.FC = () => {
       overallPercentage,
       topicBreakdown,
     };
-  }, [attempts]);
+  }, [attempts, papersMap]);
 
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 pb-16 select-none transition-colors">
@@ -185,7 +186,7 @@ export const AnalyticsScreen: React.FC = () => {
               <div className="divide-y divide-slate-100 dark:divide-slate-800">
                 {attempts.map((att) => {
                   const paper = papersMap.get(att.paperId);
-                  const res = att.result as ScoreResult | undefined;
+                  const res = paper ? scorePaper(paper, att.responses) : (att.result as ScoreResult | undefined);
                   const dateStr = new Date(att.startedAt).toLocaleDateString(undefined, {
                     month: 'short',
                     day: 'numeric',

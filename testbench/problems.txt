@@ -1,4 +1,2 @@
 #This is the problems debugging file . if you find any problems add it here. alternatively
 delete it if its solved
-1.The total marks obtained screen is inaccurate 
-2. The images open when i click a screen remove it

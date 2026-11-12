@@ -5,19 +5,14 @@
   },
   "library": {
     "title": "My Papers",
-    "import": "Import Paper",
-    "trySample": "Try Sample Paper",
-    "empty": "No papers yet. Import a JSON paper to get started.",
+    "empty": "No papers loaded yet.",
     "questions": "questions",
     "sections": "sections",
     "duration": "{{minutes}} min",
     "resume": "Resume Test",
     "resumeDesc": "You have an unfinished test",
     "remaining": "{{time}} remaining",
-    "deleteConfirm": "Delete this paper? Past attempts will also be removed.",
-    "importSuccess": "Paper imported successfully!",
-    "importErrors": "Import failed — fix the errors below:",
-    "importWarnings": "Imported with warnings:"
+    "deleteConfirm": "Delete this paper? Past attempts will also be removed."
   },
   "paper": {
     "start": "Start Test",

@@ -1,7 +1,7 @@
 import { db, type StoredPaper } from '../db';
 import type { Paper } from '@/core/schema';
 import { CATALOG_PAPERS } from '../catalog';
-import { importPaperJSON } from '@/core/import';
+import { validatePaper } from '@/core/import';
 
 export type { StoredPaper };
 
@@ -37,7 +37,7 @@ export async function getPaper(id: string): Promise<StoredPaper | undefined> {
       const res = await fetch(catalogItem.path);
       if (res.ok) {
         const text = await res.text();
-        const parsed = importPaperJSON(text);
+        const parsed = validatePaper(JSON.parse(text));
         if (parsed.success && parsed.data) {
           await savePaper(parsed.data);
           return await db.papers.get(id);

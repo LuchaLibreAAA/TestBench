@@ -71,11 +71,14 @@ describe("Marking Engine: scorePaper()", () => {
     const res = scorePaper(paper, responses);
 
     expect(res.totalObtained).toBe(7); // (+4) + (-1) + (+4) + (0) = 7
+    expect(res.totalMax).toBe(12); // sec-a (8) + sec-b attemptLimit=1 (4) = 12
     expect(res.totalCorrect).toBe(2);
     expect(res.totalWrong).toBe(1);
     expect(res.totalSkipped).toBe(1); // q4 counted as skipped due to limit
     expect(res.sectionScores[0].obtained).toBe(3);
+    expect(res.sectionScores[0].max).toBe(8);
     expect(res.sectionScores[1].obtained).toBe(4);
+    expect(res.sectionScores[1].max).toBe(4);
   });
 });
 

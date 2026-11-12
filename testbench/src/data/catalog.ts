@@ -1,5 +1,5 @@
 import type { Paper } from '@/core/schema';
-import { importPaperJSON } from '@/core/import';
+import { validatePaper } from '@/core/import';
 import { savePaper, getPaper } from './repositories/papers';
 
 export interface CatalogItem {
@@ -119,7 +119,7 @@ export async function loadCatalogPaper(id: string): Promise<Paper | null> {
     const res = await fetch(item.path);
     if (!res.ok) throw new Error(`HTTP ${res.status} fetching ${item.path}`);
     const text = await res.text();
-    const result = importPaperJSON(text);
+    const result = validatePaper(JSON.parse(text));
     if (result.success && result.data) {
       await savePaper(result.data);
       return result.data;

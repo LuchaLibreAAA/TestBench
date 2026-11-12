@@ -1,11 +1,11 @@
 import { describe, it, expect } from 'vitest';
-import { importPaperJSON, validatePaper } from '../index';
+import { validatePaper } from '../index';
 
-describe('Paper Validation & Import', () => {
-  it('rejects invalid JSON syntax', () => {
-    const res = importPaperJSON('{ invalid json ');
+describe('Paper Validation', () => {
+  it('rejects non-object paper input', () => {
+    const res = validatePaper(null);
     expect(res.success).toBe(false);
-    expect(res.issues[0].message).toContain('Invalid JSON syntax');
+    expect(res.issues.length).toBeGreaterThan(0);
   });
 
   it('rejects paper missing required fields', () => {
@@ -209,7 +209,7 @@ describe('Paper Validation & Import', () => {
       const suffix = item.path.replace(/^\/+/, '');
       const match = Object.entries(paperFiles).find(([k]) => k.endsWith(suffix));
       expect(match, `Missing file for ${item.id} (${suffix})`).toBeDefined();
-      const res = importPaperJSON(JSON.stringify(match![1]));
+      const res = validatePaper(match![1]);
       expect(res.success, `${item.id} failed: ${JSON.stringify(res.issues)}`).toBe(true);
     }
   });

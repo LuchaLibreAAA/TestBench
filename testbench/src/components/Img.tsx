@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useAssetUrl } from '@/hooks/useAssetUrl';
-import { ImageViewer } from './ImageViewer';
-import { Maximize2, Image as ImageIcon } from 'lucide-react';
+import { Image as ImageIcon } from 'lucide-react';
 
 export interface ImgProps {
   paperId: string;
@@ -20,7 +19,6 @@ export const Img: React.FC<ImgProps> = ({
   const assetUrl = useAssetUrl(isDirectUrl ? '' : paperId, isDirectUrl ? '' : (src ?? ''));
   const finalSrc = isDirectUrl ? src : assetUrl;
 
-  const [viewerOpen, setViewerOpen] = useState(false);
   const [loaded, setLoaded] = useState(false);
   const [error, setError] = useState(false);
 
@@ -36,48 +34,25 @@ export const Img: React.FC<ImgProps> = ({
   }
 
   return (
-    <>
-      <div className="relative inline-block my-2 group">
-        {!loaded && (
-          <div className="w-48 h-32 bg-slate-200 dark:bg-slate-800 animate-pulse rounded-lg flex items-center justify-center">
-            <ImageIcon className="w-6 h-6 text-slate-400" />
-          </div>
-        )}
-
-        {finalSrc && (
-          <img
-            src={finalSrc}
-            alt={alt}
-            onLoad={() => setLoaded(true)}
-            onError={() => setError(true)}
-            onClick={() => setViewerOpen(true)}
-            className={`max-w-full max-h-80 object-contain rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:p-1.5 cursor-zoom-in transition-all group-hover:shadow-md ${
-              loaded ? 'block' : 'hidden'
-            } ${className}`}
-          />
-        )}
-
-        {loaded && (
-          <button
-            type="button"
-            onClick={() => setViewerOpen(true)}
-            className="absolute bottom-2 right-2 p-1.5 bg-black/60 hover:bg-black/80 text-white rounded-md opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer"
-            title="Expand image"
-          >
-            <Maximize2 className="w-3.5 h-3.5" />
-          </button>
-        )}
-      </div>
+    <div className="relative inline-block my-2">
+      {!loaded && (
+        <div className="w-48 h-32 bg-slate-200 dark:bg-slate-800 animate-pulse rounded-lg flex items-center justify-center">
+          <ImageIcon className="w-6 h-6 text-slate-400" />
+        </div>
+      )}
 
       {finalSrc && (
-        <ImageViewer
-          open={viewerOpen}
-          onClose={() => setViewerOpen(false)}
+        <img
           src={finalSrc}
           alt={alt}
+          onLoad={() => setLoaded(true)}
+          onError={() => setError(true)}
+          className={`max-w-full max-h-80 object-contain rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:p-1.5 ${
+            loaded ? 'block' : 'hidden'
+          } ${className}`}
         />
       )}
-    </>
+    </div>
   );
 };
 

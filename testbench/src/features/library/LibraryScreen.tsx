@@ -1,20 +1,17 @@
-import React, { useEffect, useState, useRef, useMemo } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { usePaperStore } from '@/stores/paperStore';
 import { Button } from '@/components/Button';
 import { Dialog } from '@/components/Dialog';
 import { ThemeToggle } from '@/components/ThemeToggle';
-import { importPaperJSON, importPaperZip } from '@/core/import';
-import { saveAsset } from '@/data/repositories/assets';
 import { formatTime } from '@/core/exam/timer';
 import { CATALOG_PAPERS, loadCatalogPaper, seedAllCatalogPapers } from '@/data/catalog';
+import { APP_VERSION } from '@/core/version';
 import {
   FileText,
-  Upload,
   Play,
   Trash2,
   Settings,
-  Sparkles,
   Clock,
   Layers,
   HelpCircle,
@@ -24,12 +21,11 @@ import {
   Compass,
   Stethoscope,
   Search,
-  BookOpen,
   DownloadCloud,
   Database,
 } from 'lucide-react';
 
-type FilterTab = 'all' | 'jee-main' | 'neet' | 'custom';
+type FilterTab = 'all' | 'jee-main' | 'neet';
 
 export const LibraryScreen: React.FC = () => {
   const navigate = useNavigate();
@@ -39,119 +35,28 @@ export const LibraryScreen: React.FC = () => {
     inProgressAttempt,
     inProgressPaper,
     loadPapers,
-    addPaper,
     removePaper,
   } = usePaperStore();
 
-  const fileInputRef = useRef<HTMLInputElement>(null);
   const [activeTab, setActiveTab] = useState<FilterTab>('all');
   const [searchQuery, setSearchQuery] = useState('');
   const [seeding, setSeeding] = useState(false);
-  const [importReport, setImportReport] = useState<{
+  const [statusDialog, setStatusDialog] = useState<{
     open: boolean;
     success: boolean;
     message: string;
-    issues?: Array<{ level: string; message: string }>;
   }>({ open: false, success: false, message: '' });
 
   useEffect(() => {
     loadPapers();
   }, [loadPapers]);
 
-  const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (!file) return;
-
-    try {
-      const isZip = file.name.toLowerCase().endsWith('.zip');
-
-      if (isZip) {
-        const arrayBuffer = await file.arrayBuffer();
-        const buffer = new Uint8Array(arrayBuffer);
-        const result = importPaperZip(buffer);
-
-        if (result.success && result.paper) {
-          await addPaper(result.paper);
-          for (const asset of result.assets) {
-            await saveAsset(result.paper.id, asset.filename, asset.blob, asset.mimeType);
-          }
-
-          setImportReport({
-            open: true,
-            success: true,
-            message: `Successfully imported "${result.paper.title}" with ${result.assets.length} image asset(s)!`,
-            issues: result.issues,
-          });
-        } else {
-          setImportReport({
-            open: true,
-            success: false,
-            message: 'Failed to import ZIP package. Validation issues:',
-            issues: result.issues,
-          });
-        }
-      } else {
-        const text = await file.text();
-        const result = importPaperJSON(text);
-
-        if (result.success && result.data) {
-          await addPaper(result.data);
-          setImportReport({
-            open: true,
-            success: true,
-            message: `Successfully imported "${result.data.title}"!`,
-            issues: result.issues,
-          });
-        } else {
-          setImportReport({
-            open: true,
-            success: false,
-            message: 'Failed to import paper. Please check the validation issues below:',
-            issues: result.issues,
-          });
-        }
-      }
-    } catch (err) {
-      setImportReport({
-        open: true,
-        success: false,
-        message: `Could not read file: ${err instanceof Error ? err.message : String(err)}`,
-      });
-    } finally {
-      if (fileInputRef.current) fileInputRef.current.value = '';
-    }
-  };
-
-  const handleTrySample = async () => {
-    try {
-      const res = await fetch('/samples/sample-mock-01.json');
-      if (!res.ok) throw new Error('Sample file not found');
-      const text = await res.text();
-      const result = importPaperJSON(text);
-
-      if (result.success && result.data) {
-        await addPaper(result.data);
-        setImportReport({
-          open: true,
-          success: true,
-          message: 'Sample mock paper added successfully!',
-        });
-      }
-    } catch (err) {
-      setImportReport({
-        open: true,
-        success: false,
-        message: `Could not load sample: ${err instanceof Error ? err.message : String(err)}`,
-      });
-    }
-  };
-
   const handleSeedAll = async () => {
     setSeeding(true);
     try {
       const count = await seedAllCatalogPapers();
       await loadPapers();
-      setImportReport({
+      setStatusDialog({
         open: true,
         success: true,
         message: count > 0
@@ -159,7 +64,7 @@ export const LibraryScreen: React.FC = () => {
           : 'All official JEE & NEET papers are already loaded in your library.',
       });
     } catch (err) {
-      setImportReport({
+      setStatusDialog({
         open: true,
         success: false,
         message: `Failed to load catalog papers: ${err instanceof Error ? err.message : String(err)}`,
@@ -258,11 +163,6 @@ export const LibraryScreen: React.FC = () => {
     [filteredPapers]
   );
 
-  const customPapers = useMemo(
-    () => filteredPapers.filter((p) => p.exam !== 'jee-main' && p.exam !== 'neet'),
-    [filteredPapers]
-  );
-
   const remainingMs = inProgressAttempt
     ? Math.max(0, inProgressAttempt.endsAt - Date.now())
     : 0;
@@ -354,7 +254,12 @@ export const LibraryScreen: React.FC = () => {
           <div className="flex items-center gap-3">
             <img src="/icon.png" alt="" className="w-9 h-9 rounded-xl object-cover shadow-xs" />
             <div>
-              <h1 className="text-lg font-bold text-slate-900 dark:text-slate-100 leading-tight">TestBench</h1>
+              <div className="flex items-center gap-2">
+                <h1 className="text-lg font-bold text-slate-900 dark:text-slate-100 leading-tight">TestBench</h1>
+                <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded-full bg-blue-50 dark:bg-blue-950/70 text-[#1a56db] dark:text-blue-300 border border-blue-200/80 dark:border-blue-800">
+                  {APP_VERSION}
+                </span>
+              </div>
               <p className="text-[11px] text-slate-500 dark:text-slate-400 font-medium">NTA CBT Mock Test Platform</p>
             </div>
           </div>
@@ -426,40 +331,14 @@ export const LibraryScreen: React.FC = () => {
           </div>
 
           <div className="flex flex-wrap items-center gap-2">
-            <input
-              type="file"
-              ref={fileInputRef}
-              onChange={handleFileUpload}
-              accept=".json, .zip, application/zip"
-              className="hidden"
-            />
-
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={handleSeedAll}
-              disabled={seeding}
-              icon={<DownloadCloud className="w-4 h-4 text-[#1a56db] dark:text-blue-400" />}
-            >
-              {seeding ? 'Loading Papers...' : 'Load All Papers'}
-            </Button>
-
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={handleTrySample}
-              icon={<Sparkles className="w-4 h-4 text-amber-500" />}
-            >
-              Try Sample
-            </Button>
-
             <Button
               variant="primary"
               size="sm"
-              onClick={() => fileInputRef.current?.click()}
-              icon={<Upload className="w-4 h-4" />}
+              onClick={handleSeedAll}
+              disabled={seeding}
+              icon={<DownloadCloud className="w-4 h-4" />}
             >
-              Import JSON / ZIP
+              {seeding ? 'Loading Papers...' : 'Load All Papers'}
             </Button>
           </div>
         </div>
@@ -502,19 +381,6 @@ export const LibraryScreen: React.FC = () => {
               <Stethoscope className="w-3.5 h-3.5" />
               NEET UG ({neetPapers.length})
             </button>
-
-            {customPapers.length > 0 && (
-              <button
-                onClick={() => setActiveTab('custom')}
-                className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-colors cursor-pointer whitespace-nowrap ${
-                  activeTab === 'custom'
-                    ? 'bg-indigo-700 text-white'
-                    : 'text-slate-600 dark:text-slate-400 hover:bg-indigo-50 dark:hover:bg-indigo-950/50 hover:text-indigo-700 dark:hover:text-indigo-400'
-                }`}
-              >
-                Custom ({customPapers.length})
-              </button>
-            )}
           </div>
 
           {/* Search Input */}
@@ -604,75 +470,35 @@ export const LibraryScreen: React.FC = () => {
                 </div>
               </section>
             )}
-
-            {/* 3. Custom / Uploaded Section */}
-            {(activeTab === 'all' || activeTab === 'custom') && customPapers.length > 0 && (
-              <section className="space-y-3.5">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-2.5">
-                    <div className="w-8 h-8 rounded-lg bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-400 flex items-center justify-center">
-                      <BookOpen className="w-4 h-4" />
-                    </div>
-                    <div>
-                      <h3 className="text-lg font-bold text-slate-900 dark:text-slate-100">Custom & Uploaded Tests</h3>
-                      <p className="text-xs text-slate-500 dark:text-slate-400">User-imported test papers and sample mocks</p>
-                    </div>
-                  </div>
-                  <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-indigo-50 dark:bg-indigo-950/60 text-indigo-800 dark:text-indigo-400 border border-indigo-200/70 dark:border-indigo-800">
-                    {customPapers.length} Available
-                  </span>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {customPapers.map((item) => renderPaperCard(item, 'indigo'))}
-                </div>
-              </section>
-            )}
           </div>
         )}
       </main>
 
-      {/* Import Report Dialog */}
+      <footer className="max-w-6xl mx-auto px-4 pt-10 text-center text-xs text-slate-400 dark:text-slate-500">
+        TestBench <span className="font-mono font-semibold">{APP_VERSION}</span> • NTA CBT Mock Test Platform
+      </footer>
+
+      {/* Notification Dialog */}
       <Dialog
-        open={importReport.open}
-        onClose={() => setImportReport({ ...importReport, open: false })}
-        title={importReport.success ? 'Notification' : 'Import Report'}
+        open={statusDialog.open}
+        onClose={() => setStatusDialog({ ...statusDialog, open: false })}
+        title={statusDialog.success ? 'Notification' : 'Notice'}
         footer={
           <Button
             variant="primary"
-            onClick={() => setImportReport({ ...importReport, open: false })}
+            onClick={() => setStatusDialog({ ...statusDialog, open: false })}
           >
             OK
           </Button>
         }
       >
-        <div className="space-y-3">
-          <div className="flex items-center gap-2">
-            {importReport.success ? (
-              <CheckCircle2 className="w-5 h-5 text-emerald-600 dark:text-emerald-400 shrink-0" />
-            ) : (
-              <AlertCircle className="w-5 h-5 text-red-600 dark:text-red-400 shrink-0" />
-            )}
-            <p className="text-sm font-medium text-slate-800 dark:text-slate-200">{importReport.message}</p>
-          </div>
-
-          {importReport.issues && importReport.issues.length > 0 && (
-            <div className="mt-3 bg-slate-50 dark:bg-slate-800/70 p-3 rounded-lg border border-slate-200 dark:border-slate-700 max-h-48 overflow-y-auto space-y-1.5">
-              {importReport.issues.map((iss, i) => (
-                <div
-                  key={i}
-                  className={`text-xs ${
-                    iss.level === 'error'
-                      ? 'text-red-700 dark:text-red-400'
-                      : 'text-amber-700 dark:text-amber-400'
-                  }`}
-                >
-                  <span className="font-bold">[{iss.level.toUpperCase()}]: </span>
-                  {iss.message}
-                </div>
-              ))}
-            </div>
+        <div className="flex items-center gap-2">
+          {statusDialog.success ? (
+            <CheckCircle2 className="w-5 h-5 text-emerald-600 dark:text-emerald-400 shrink-0" />
+          ) : (
+            <AlertCircle className="w-5 h-5 text-red-600 dark:text-red-400 shrink-0" />
           )}
+          <p className="text-sm font-medium text-slate-800 dark:text-slate-200">{statusDialog.message}</p>
         </div>
       </Dialog>
     </div>

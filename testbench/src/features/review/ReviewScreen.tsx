@@ -3,7 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { getAttempt } from '@/data/repositories/attempts';
 import { getPaper } from '@/data/repositories/papers';
 import type { Attempt, Paper, Question, Section, Response } from '@/core/schema';
-import type { ScoreResult, QuestionResult } from '@/core/marking';
+import { scorePaper, type ScoreResult, type QuestionResult } from '@/core/marking';
 import { Button } from '@/components/Button';
 import { RichText } from '@/components/RichText';
 import { Img } from '@/components/Img';
@@ -53,7 +53,12 @@ export const ReviewScreen: React.FC = () => {
     load();
   }, [attemptId]);
 
-  const scoreResult = attempt?.result as ScoreResult | undefined;
+  const scoreResult = useMemo<ScoreResult | undefined>(() => {
+    if (attempt && paper) {
+      return scorePaper(paper, attempt.responses);
+    }
+    return attempt?.result as ScoreResult | undefined;
+  }, [attempt, paper]);
 
   // Map of qid -> QuestionResult
   const resultMap = useMemo(() => {
