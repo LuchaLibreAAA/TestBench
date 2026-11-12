@@ -351,9 +351,7 @@ export const LibraryScreen: React.FC = () => {
       <header className="bg-white border-b border-gray-200 sticky top-0 z-20 shadow-2xs safe-top">
         <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-xl bg-[#1f5fa6] text-white flex items-center justify-center font-black text-lg shadow-xs">
-              T
-            </div>
+            <img src="/icon.png" alt="" className="w-9 h-9 rounded-xl object-cover shadow-xs" />
             <div>
               <h1 className="text-lg font-bold text-gray-900 leading-tight">TestBench</h1>
               <p className="text-[11px] text-gray-500 font-medium">NTA CBT Mock Test Platform</p>
