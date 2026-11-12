@@ -2,11 +2,25 @@
 
 import sqlite3
 
+import pytest
 from fastapi.testclient import TestClient
 
 from backend.app.db import connect
 from backend.app.main import create_app
 from backend.app.settings import Settings
+
+
+def test_cors_origins_env_parsing(monkeypatch):
+    """Settings accepts comma-separated and JSON-array CORS_ORIGINS from env."""
+    monkeypatch.setenv("CORS_ORIGINS", "https://testbench-web.onrender.com,http://localhost:5173")
+    assert Settings().cors_origins == ["https://testbench-web.onrender.com", "http://localhost:5173"]
+
+    monkeypatch.setenv("CORS_ORIGINS", '["https://testbench-web.onrender.com"]')
+    assert Settings().cors_origins == ["https://testbench-web.onrender.com"]
+
+    monkeypatch.setenv("CORS_ORIGINS", "*")
+    with pytest.raises(ValueError, match="CORS_ORIGINS"):
+        Settings()
 
 
 def test_health_and_fresh_database(tmp_path):

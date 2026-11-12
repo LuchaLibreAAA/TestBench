@@ -1,10 +1,12 @@
 """Environment based configuration for the standalone API."""
 
+import json
 from functools import lru_cache
 from pathlib import Path
+from typing import Annotated
 
 from pydantic import field_validator
-from pydantic_settings import BaseSettings, SettingsConfigDict
+from pydantic_settings import BaseSettings, NoDecode, SettingsConfigDict
 
 
 class Settings(BaseSettings):
@@ -15,7 +17,7 @@ class Settings(BaseSettings):
     db_path: Path = Path("backend/data/app.db")
     assets_dir: Path = Path("backend/data/assets")
     admin_token: str = ""
-    cors_origins: list[str] = ["http://localhost:5173", "http://127.0.0.1:5173"]
+    cors_origins: Annotated[list[str], NoDecode] = ["http://localhost:5173", "http://127.0.0.1:5173"]
     max_upload_mb: int = 50
     allow_insecure_dev: bool = False
 
@@ -23,7 +25,11 @@ class Settings(BaseSettings):
     @classmethod
     def parse_origins(cls, value: object) -> object:
         if isinstance(value, str):
-            value = [origin.strip() for origin in value.split(",") if origin.strip()]
+            stripped = value.strip()
+            if stripped.startswith("["):
+                value = json.loads(stripped)
+            else:
+                value = [origin.strip() for origin in stripped.split(",") if origin.strip()]
         if isinstance(value, list) and "*" in value:
             raise ValueError("CORS_ORIGINS cannot contain '*' when credentials are enabled")
         return value
