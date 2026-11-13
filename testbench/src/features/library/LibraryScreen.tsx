@@ -137,15 +137,22 @@ export const LibraryScreen: React.FC = () => {
     // 1b. Overlay dynamic remote papers from API
     for (const r of remotePapers) {
       const existing = map.get(r.id);
+      const normalizedExam =
+        r.examCode === 'neet-ug' || r.examCode === 'neet' || r.exam?.toLowerCase().includes('neet')
+          ? 'neet'
+          : r.examCode || r.exam;
       map.set(r.id, {
         id: r.id,
         title: r.title,
-        exam: r.examCode || r.exam,
+        exam: normalizedExam,
         description: existing?.description,
         durationMin: r.durationMin,
         questionsCount: r.totalQuestions,
         sectionsCount: r.sectionsCount,
-        badge: r.badge || existing?.badge,
+        badge:
+          r.badge ||
+          existing?.badge ||
+          (normalizedExam === 'jee-main' ? 'JEE Main' : normalizedExam === 'neet' ? 'NEET UG' : 'WBTET'),
         isCatalog: true,
         isStored: existing ? existing.isStored : false,
       });
@@ -160,7 +167,7 @@ export const LibraryScreen: React.FC = () => {
       map.set(p.id, {
         id: p.id,
         title: p.title,
-        exam: p.exam,
+        exam: p.exam === 'neet-ug' ? 'neet' : p.exam,
         description: p.description ?? existing?.description,
         durationMin: p.durationMin ?? 180,
         questionsCount: totalQuestions,
@@ -169,7 +176,7 @@ export const LibraryScreen: React.FC = () => {
           existing?.badge ??
           (p.exam === 'jee-main'
             ? 'JEE Main'
-            : p.exam === 'neet'
+            : p.exam === 'neet' || p.exam === 'neet-ug'
             ? 'NEET UG'
             : p.exam === 'wbtet'
             ? 'WBTET'
@@ -518,7 +525,7 @@ export const LibraryScreen: React.FC = () => {
             )}
 
             {/* 2. NEET UG Section */}
-            {(activeTab === 'all' || activeTab === 'neet') && neetPapers.length > 0 && (
+            {(activeTab === 'all' || activeTab === 'neet' || activeTab === 'neet-ug') && neetPapers.length > 0 && (
               <section className="space-y-3.5">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                   <div className="flex items-start sm:items-center gap-2.5 min-w-0">

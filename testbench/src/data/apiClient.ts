@@ -252,3 +252,4 @@ export function buildAssetUrl(
   const qs = params.toString();
   return `${baseUrl}/assets/${paperId}/${cleanName}${qs ? `?${qs}` : ''}`;
 }
+

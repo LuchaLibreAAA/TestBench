@@ -25,7 +25,16 @@ class Settings(BaseSettings):
     s3_region: str = "auto"
     s3_public_url_prefix: str | None = None
     admin_token: str = ""
-    cors_origins: Annotated[list[str], NoDecode] = ["http://localhost:5173", "http://127.0.0.1:5173"]
+    cors_origins: Annotated[list[str], NoDecode] = [
+        "http://localhost:5173",
+        "http://127.0.0.1:5173",
+        "http://localhost:5174",
+        "http://127.0.0.1:5174",
+        "http://localhost:5175",
+        "http://127.0.0.1:5175",
+        "http://localhost:4173",
+        "http://127.0.0.1:4173",
+    ]
     max_upload_mb: int = 50
     allow_insecure_dev: bool = False
 
