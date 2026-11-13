@@ -93,6 +93,26 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         except sqlite3.Error:
             return JSONResponse(status_code=503, content={"status": "error", "apiVersion": "v1", "dbOk": False})
 
+    @app.get("/api/v1/system/status")
+    def system_status() -> dict[str, Any]:
+        paper_count = 0
+        try:
+            with sqlite3.connect(config.db_path) as connection:
+                connection.row_factory = sqlite3.Row
+                tables = [r[0] for r in connection.execute("SELECT name FROM sqlite_master WHERE type='table'").fetchall()]
+                if "papers" in tables:
+                    paper_count = connection.execute("SELECT count(*) FROM papers").fetchone()[0]
+        except Exception:
+            pass
+        return {
+            "status": "ok",
+            "apiVersion": "v1",
+            "paperCount": paper_count,
+            "commit": "5804816",
+            "dbPath": str(config.db_path),
+            "assetsDir": str(config.assets_dir),
+        }
+
     return app
 
 
