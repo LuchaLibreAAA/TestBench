@@ -31,13 +31,28 @@ def replace_paper(connection: sqlite3.Connection, paper_id: str, data: QnADataba
         (exam_code, meta.examName, meta.examName),
     )
 
+    exam_name = meta.examName
+    year = meta.year
+    session = getattr(meta, "session", None)
+    shift = getattr(meta, "shift", None)
+    if exam_name == "JEE Main":
+        session_str = f" — {session} Session" if session else ""
+        shift_str = f" ({shift})" if shift else ""
+        paper_title = f"JEE Main {year}{session_str}{shift_str}".strip()
+    elif "NEET" in exam_name:
+        paper_title = f"NEET UG {year} — Official Question Paper"
+    elif "TET" in exam_name:
+        paper_title = f"WB Primary TET {year} — Official Question Paper"
+    else:
+        paper_title = f"{exam_name} {year}".strip()
+
     connection.execute(
         """INSERT INTO papers(id,title,exam,exam_code,year,total_questions,duration_min,exam_metadata_json,data_version,content_hash)
            VALUES(?,?,?,?,?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET title=excluded.title, exam=excluded.exam,
            exam_code=excluded.exam_code, year=excluded.year, total_questions=excluded.total_questions,
            duration_min=excluded.duration_min, exam_metadata_json=excluded.exam_metadata_json,
            data_version=excluded.data_version, content_hash=excluded.content_hash, updated_at=datetime('now')""",
-        (paper_id, f"{meta.examName} {meta.year}", meta.examName, exam_code, meta.year, meta.totalQuestions,
+        (paper_id, paper_title, meta.examName, exam_code, meta.year, meta.totalQuestions,
          meta.durationMinutes, _json(meta.model_dump(mode="json", by_alias=True)), version, content_hash),
     )
     connection.execute("DELETE FROM questions WHERE paper_id = ?", (paper_id,))

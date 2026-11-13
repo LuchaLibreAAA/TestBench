@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useMemo } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { getPaper, isPaperAvailableOffline, downloadPaperForOffline } from '@/data/repositories/papers';
+import { CATALOG_PAPERS } from '@/data/catalog';
 import { getAttemptsByPaper } from '@/data/repositories/attempts';
 import type { Paper, Attempt } from '@/core/schema';
 import { Button } from '@/components/Button';
@@ -119,6 +120,24 @@ export const PaperDetailScreen: React.FC = () => {
     load();
   }, [id]);
 
+  const catalogItem = useMemo(() => {
+    return CATALOG_PAPERS.find((c) => c.id === paper?.id);
+  }, [paper?.id]);
+
+  const displayTitle = useMemo(() => {
+    if (!paper) return '';
+    return paper.title && !['B.Tech', 'UG', 'Paper I'].includes(paper.title.trim())
+      ? paper.title
+      : catalogItem?.title || paper.title;
+  }, [paper, catalogItem]);
+
+  const displayDescription = useMemo(() => {
+    if (!paper) return '';
+    return paper.description && !['B.Tech', 'UG', 'Paper I'].includes(paper.description.trim())
+      ? paper.description
+      : catalogItem?.description || paper.description;
+  }, [paper, catalogItem]);
+
   const stats = useMemo(() => {
     if (!paper) return null;
     const totalQuestions = paper.sections.reduce((acc, sec) => acc + sec.questions.length, 0);
@@ -190,7 +209,7 @@ export const PaperDetailScreen: React.FC = () => {
               <ChevronLeft className="w-5 h-5" />
             </button>
             <h1 className="text-sm font-semibold text-slate-800 dark:text-slate-100 truncate">
-              {paper.title}
+              {displayTitle}
             </h1>
           </div>
 
@@ -234,13 +253,13 @@ export const PaperDetailScreen: React.FC = () => {
 
             {/* Title */}
             <h2 className="text-xl sm:text-[26px] font-extrabold tracking-tight text-slate-900 dark:text-white leading-tight">
-              {paper.title}
+              {displayTitle}
             </h2>
 
             {/* Description */}
-            {paper.description && (
+            {displayDescription && (
               <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 leading-relaxed max-w-3xl">
-                {paper.description}
+                {displayDescription}
               </p>
             )}
           </div>

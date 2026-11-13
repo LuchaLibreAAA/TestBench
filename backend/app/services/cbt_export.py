@@ -111,12 +111,33 @@ def _cached(paper_id: str, content_hash: str, exam_code: str, metadata_json: str
 
         result_sections.append(sec_obj)
 
-    title = metadata.get("paper") or f"{metadata.get('examName', 'Exam')} {metadata.get('year', '')}".strip()
+    exam_name = metadata.get("examName", "Exam")
+    year = metadata.get("year", "")
+    session = metadata.get("session", "")
+    shift = metadata.get("shift", "")
+    date_str = metadata.get("date", "")
+
+    if exam_name == "JEE Main":
+        session_str = f" — {session} Session" if session else ""
+        shift_parts = [p for p in [date_str, shift] if p]
+        shift_str = f" ({', '.join(shift_parts)})" if shift_parts else ""
+        title = f"JEE Main {year}{session_str}{shift_str}".strip()
+        description = f"Official NTA JEE Main {session} {year} {shift} question paper.".strip()
+    elif "NEET" in exam_name:
+        title = f"NEET UG {year} — Official Question Paper"
+        description = f"Complete National Eligibility cum Entrance Test (UG) {year}."
+    elif "TET" in exam_name:
+        title = f"WB Primary TET {year} — Official Question Paper"
+        description = f"West Bengal Board of Primary Education (WBBPE) Teacher Eligibility Test {year}."
+    else:
+        title = f"{exam_name} {year}".strip()
+        description = f"{exam_name} {year} question paper."
+
     return {
         "schemaVersion": 1,
         "id": paper_id,
         "title": title,
-        "description": title,
+        "description": description,
         "exam": exam,
         "durationMin": metadata.get("durationMinutes", 180),
         "languages": ["en"],

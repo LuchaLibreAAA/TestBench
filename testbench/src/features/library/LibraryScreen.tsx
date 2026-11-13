@@ -141,9 +141,13 @@ export const LibraryScreen: React.FC = () => {
         r.examCode === 'neet-ug' || r.examCode === 'neet' || r.exam?.toLowerCase().includes('neet')
           ? 'neet'
           : r.examCode || r.exam;
+      const cleanTitle =
+        r.title && !['B.Tech', 'UG', 'Paper I'].includes(r.title.trim())
+          ? r.title
+          : existing?.title || r.title;
       map.set(r.id, {
         id: r.id,
-        title: r.title,
+        title: cleanTitle,
         exam: normalizedExam,
         description: existing?.description,
         durationMin: r.durationMin,
@@ -164,11 +168,20 @@ export const LibraryScreen: React.FC = () => {
       const totalQuestions = p.sections.reduce((sum, sec) => sum + sec.questions.length, 0);
       const existing = map.get(p.id);
 
+      const cleanTitle =
+        p.title && !['B.Tech', 'UG', 'Paper I'].includes(p.title.trim())
+          ? p.title
+          : existing?.title || p.title;
+      const cleanDesc =
+        p.description && !['B.Tech', 'UG', 'Paper I'].includes(p.description.trim())
+          ? p.description
+          : existing?.description || p.description;
+
       map.set(p.id, {
         id: p.id,
-        title: p.title,
+        title: cleanTitle,
         exam: p.exam === 'neet-ug' ? 'neet' : p.exam,
-        description: p.description ?? existing?.description,
+        description: cleanDesc,
         durationMin: p.durationMin ?? 180,
         questionsCount: totalQuestions,
         sectionsCount: p.sections.length,
