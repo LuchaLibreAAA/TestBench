@@ -162,17 +162,19 @@ export const ResultScreen: React.FC = () => {
     <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 pb-16 select-none transition-colors">
       {/* Header */}
       <header className="bg-white/95 dark:bg-slate-900/95 backdrop-blur-xs border-b border-slate-200/80 dark:border-slate-800 sticky top-0 z-20 safe-top">
-        <div className="max-w-4xl mx-auto px-4 h-14 flex items-center justify-between gap-2">
-          <div className="flex items-center gap-2 min-w-0">
-            <Award className="w-5 h-5 text-[#1a56db] dark:text-blue-400 shrink-0" />
-            <h1 className="text-base font-bold text-slate-900 dark:text-slate-100 truncate">Scorecard: {paper.title}</h1>
+        <div className="max-w-4xl mx-auto px-3 sm:px-4 h-13 sm:h-14 flex items-center justify-between gap-2">
+          <div className="flex items-center gap-2 min-w-0 flex-1">
+            <Award className="w-4 h-4 sm:w-5 sm:h-5 text-[#1a56db] dark:text-blue-400 shrink-0" />
+            <h1 className="text-xs sm:text-base font-bold text-slate-900 dark:text-slate-100 truncate">Scorecard: {paper.title}</h1>
           </div>
-          <div className="flex items-center gap-2 shrink-0">
+          <div className="flex items-center gap-1 sm:gap-2 shrink-0">
             <Button
               variant="ghost"
               size="sm"
               onClick={() => navigate('/analytics')}
               icon={<BarChart2 className="w-4 h-4" />}
+              className="p-2 sm:px-3 text-xs"
+              title="Analytics"
             >
               <span className="hidden sm:inline">Analytics</span>
             </Button>
@@ -181,6 +183,8 @@ export const ResultScreen: React.FC = () => {
               size="sm"
               onClick={() => navigate('/')}
               icon={<Home className="w-4 h-4" />}
+              className="p-2 sm:px-3 text-xs"
+              title="Home"
             >
               <span className="hidden sm:inline">Home</span>
             </Button>
@@ -190,47 +194,47 @@ export const ResultScreen: React.FC = () => {
       </header>
 
       {/* Main Container */}
-      <main className="max-w-4xl mx-auto px-4 pt-6 space-y-6">
+      <main className="max-w-4xl mx-auto px-3.5 sm:px-4 pt-5 sm:pt-6 space-y-5 sm:space-y-6">
         {/* Hero Card */}
-        <div className="bg-white dark:bg-slate-900 rounded-3xl border border-slate-200/80 dark:border-slate-800 p-6 sm:p-8 shadow-sm text-center relative overflow-hidden">
+        <div className="bg-white dark:bg-slate-900 rounded-3xl border border-slate-200/80 dark:border-slate-800 p-4 sm:p-8 shadow-sm text-center relative overflow-hidden">
           <div className="absolute top-0 inset-x-0 h-1.5 bg-gradient-to-r from-[#1a56db] via-indigo-500 to-[#2e9e5b]" />
 
-          <span className="inline-block text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-950/60 text-[#1a56db] dark:text-blue-400 border border-blue-200/60 dark:border-blue-800 mb-3">
+          <span className="inline-block text-[11px] sm:text-xs font-bold uppercase tracking-wider px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-full bg-blue-50 dark:bg-blue-950/60 text-[#1a56db] dark:text-blue-400 border border-blue-200/60 dark:border-blue-800 mb-2 sm:mb-3">
             Exam Completed
           </span>
 
-          <h2 className="text-3xl sm:text-4xl font-black text-slate-900 dark:text-slate-100 tracking-tight">
+          <h2 className="text-2xl sm:text-4xl font-black text-slate-900 dark:text-slate-100 tracking-tight">
             {result.totalObtained}{' '}
-            <span className="text-lg sm:text-xl font-normal text-slate-400 dark:text-slate-500">
+            <span className="text-base sm:text-xl font-normal text-slate-400 dark:text-slate-500">
               / {result.totalMax}
             </span>
           </h2>
-          <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-1">Total Marks Obtained</p>
+          <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-0.5 sm:mt-1">Total Marks Obtained</p>
 
           {/* Quick Metrics Bar */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-6 pt-6 border-t border-slate-100 dark:border-slate-800">
-            <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-100 dark:border-slate-800 p-3 rounded-2xl">
-              <Percent className="w-4 h-4 text-[#1a56db] dark:text-blue-400 mx-auto mb-1" />
-              <div className="text-lg font-bold text-slate-900 dark:text-slate-100">{percentage}%</div>
-              <div className="text-[11px] text-slate-500 dark:text-slate-400 font-medium">Percentage</div>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3 mt-4 sm:mt-6 pt-4 sm:pt-6 border-t border-slate-100 dark:border-slate-800">
+            <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-100 dark:border-slate-800 p-2.5 sm:p-3 rounded-2xl">
+              <Percent className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#1a56db] dark:text-blue-400 mx-auto mb-1" />
+              <div className="text-base sm:text-lg font-bold text-slate-900 dark:text-slate-100">{percentage}%</div>
+              <div className="text-[10px] sm:text-[11px] text-slate-500 dark:text-slate-400 font-medium">Percentage</div>
             </div>
 
-            <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-100 dark:border-slate-800 p-3 rounded-2xl">
-              <TrendingUp className="w-4 h-4 text-emerald-600 dark:text-emerald-400 mx-auto mb-1" />
-              <div className="text-lg font-bold text-slate-900 dark:text-slate-100">{accuracy}%</div>
-              <div className="text-[11px] text-slate-500 dark:text-slate-400 font-medium">Accuracy</div>
+            <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-100 dark:border-slate-800 p-2.5 sm:p-3 rounded-2xl">
+              <TrendingUp className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-emerald-600 dark:text-emerald-400 mx-auto mb-1" />
+              <div className="text-base sm:text-lg font-bold text-slate-900 dark:text-slate-100">{accuracy}%</div>
+              <div className="text-[10px] sm:text-[11px] text-slate-500 dark:text-slate-400 font-medium">Accuracy</div>
             </div>
 
-            <div className="bg-emerald-50/70 dark:bg-emerald-950/40 border border-emerald-100 dark:border-emerald-800/70 p-3 rounded-2xl">
-              <CheckCircle className="w-4 h-4 text-[#2e9e5b] dark:text-emerald-400 mx-auto mb-1" />
-              <div className="text-lg font-bold text-[#2e9e5b] dark:text-emerald-400">{result.totalCorrect}</div>
-              <div className="text-[11px] text-slate-600 dark:text-slate-400 font-medium">Correct</div>
+            <div className="bg-emerald-50/70 dark:bg-emerald-950/40 border border-emerald-100 dark:border-emerald-800/70 p-2.5 sm:p-3 rounded-2xl">
+              <CheckCircle className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#2e9e5b] dark:text-emerald-400 mx-auto mb-1" />
+              <div className="text-base sm:text-lg font-bold text-[#2e9e5b] dark:text-emerald-400">{result.totalCorrect}</div>
+              <div className="text-[10px] sm:text-[11px] text-slate-600 dark:text-slate-400 font-medium">Correct</div>
             </div>
 
-            <div className="bg-red-50/70 dark:bg-red-950/40 border border-red-100 dark:border-red-800/70 p-3 rounded-2xl">
-              <XCircle className="w-4 h-4 text-[#e5533d] dark:text-red-400 mx-auto mb-1" />
-              <div className="text-lg font-bold text-[#e5533d] dark:text-red-400">{result.totalWrong}</div>
-              <div className="text-[11px] text-slate-600 dark:text-slate-400 font-medium">Incorrect</div>
+            <div className="bg-red-50/70 dark:bg-red-950/40 border border-red-100 dark:border-red-800/70 p-2.5 sm:p-3 rounded-2xl">
+              <XCircle className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#e5533d] dark:text-red-400 mx-auto mb-1" />
+              <div className="text-base sm:text-lg font-bold text-[#e5533d] dark:text-red-400">{result.totalWrong}</div>
+              <div className="text-[10px] sm:text-[11px] text-slate-600 dark:text-slate-400 font-medium">Incorrect</div>
             </div>
           </div>
         </div>

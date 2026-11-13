@@ -58,37 +58,37 @@ export const Palette: React.FC<PaletteProps> = ({
   return (
     <div className="space-y-4">
       {/* Legend with counts */}
-      <div className="grid grid-cols-2 gap-2 text-xs bg-slate-50 dark:bg-slate-950/60 p-3 rounded-xl border border-slate-200 dark:border-slate-800">
-        <div className="flex items-center gap-2">
-          <span className="w-5 h-5 rounded-md bg-[#2e9e5b] text-white flex items-center justify-center font-bold text-[10px]">
+      <div className="grid grid-cols-2 gap-2 text-[11px] sm:text-xs bg-slate-50 dark:bg-slate-950/60 p-2.5 sm:p-3 rounded-xl border border-slate-200 dark:border-slate-800">
+        <div className="flex items-center gap-1.5 sm:gap-2 min-w-0">
+          <span className="w-5 h-5 rounded-md bg-[#2e9e5b] text-white flex items-center justify-center font-bold text-[10px] shrink-0">
             {counts.answered}
           </span>
-          <span className="text-slate-700 dark:text-slate-300">Answered</span>
+          <span className="text-slate-700 dark:text-slate-300 truncate">Answered</span>
         </div>
-        <div className="flex items-center gap-2">
-          <span className="w-5 h-5 rounded-md bg-[#e5533d] text-white flex items-center justify-center font-bold text-[10px]">
+        <div className="flex items-center gap-1.5 sm:gap-2 min-w-0">
+          <span className="w-5 h-5 rounded-md bg-[#e5533d] text-white flex items-center justify-center font-bold text-[10px] shrink-0">
             {counts.notAnswered}
           </span>
-          <span className="text-slate-700 dark:text-slate-300">Not Answered</span>
+          <span className="text-slate-700 dark:text-slate-300 truncate">Not Answered</span>
         </div>
-        <div className="flex items-center gap-2">
-          <span className="w-5 h-5 rounded-full bg-[#6f42c1] text-white flex items-center justify-center font-bold text-[10px]">
+        <div className="flex items-center gap-1.5 sm:gap-2 min-w-0">
+          <span className="w-5 h-5 rounded-full bg-[#6f42c1] text-white flex items-center justify-center font-bold text-[10px] shrink-0">
             {counts.marked}
           </span>
-          <span className="text-slate-700 dark:text-slate-300">Marked for Review</span>
+          <span className="text-slate-700 dark:text-slate-300 truncate">Marked for Review</span>
         </div>
-        <div className="flex items-center gap-2">
-          <span className="relative w-5 h-5 rounded-full bg-[#6f42c1] text-white flex items-center justify-center font-bold text-[10px]">
+        <div className="flex items-center gap-1.5 sm:gap-2 min-w-0">
+          <span className="relative w-5 h-5 rounded-full bg-[#6f42c1] text-white flex items-center justify-center font-bold text-[10px] shrink-0">
             {counts.answeredMarked}
-            <span className="absolute -bottom-1 -right-1 w-2.5 h-2.5 bg-[#2e9e5b] rounded-full border border-white dark:border-slate-900" />
+            <span className="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 bg-[#2e9e5b] rounded-full border border-white dark:border-slate-900" />
           </span>
           <span className="text-slate-700 dark:text-slate-300 truncate">Ans & Marked</span>
         </div>
-        <div className="col-span-2 flex items-center gap-2 pt-1.5 border-t border-slate-200 dark:border-slate-800">
-          <span className="w-5 h-5 rounded-md bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-200 flex items-center justify-center font-bold text-[10px]">
+        <div className="col-span-2 flex items-center gap-1.5 sm:gap-2 pt-1.5 border-t border-slate-200 dark:border-slate-800 min-w-0">
+          <span className="w-5 h-5 rounded-md bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-200 flex items-center justify-center font-bold text-[10px] shrink-0">
             {counts.notVisited}
           </span>
-          <span className="text-slate-700 dark:text-slate-300">Not Visited</span>
+          <span className="text-slate-700 dark:text-slate-300 truncate">Not Visited</span>
         </div>
       </div>
 

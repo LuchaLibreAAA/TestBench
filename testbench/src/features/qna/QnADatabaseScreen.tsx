@@ -94,47 +94,49 @@ export const QnADatabaseScreen: React.FC = () => {
     <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 pb-16 transition-colors">
       {/* Top Header */}
       <header className="bg-white/95 dark:bg-slate-900/95 backdrop-blur-xs border-b border-slate-200/80 dark:border-slate-800 sticky top-0 z-20 safe-top">
-        <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between gap-3">
-          <div className="flex items-center gap-3">
+        <div className="max-w-6xl mx-auto px-3 sm:px-4 h-14 sm:h-16 flex items-center justify-between gap-2 sm:gap-3">
+          <div className="flex items-center gap-2 sm:gap-3 min-w-0 flex-1">
             <Button
               variant="ghost"
               size="sm"
               onClick={() => navigate('/')}
               icon={<ArrowLeft className="w-4 h-4" />}
+              className="px-2 sm:px-3 text-xs"
             >
-              Back
+              <span className="hidden sm:inline">Back</span>
             </Button>
-            <div className="h-6 w-px bg-slate-200 dark:bg-slate-800 hidden sm:block" />
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-[#1a56db] text-white flex items-center justify-center font-bold text-sm shadow-xs">
-                <Database className="w-4 h-4" />
+            <div className="h-5 w-px bg-slate-200 dark:bg-slate-800 hidden sm:block" />
+            <div className="flex items-center gap-2 min-w-0">
+              <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-[#1a56db] text-white flex items-center justify-center font-bold text-xs sm:text-sm shadow-xs shrink-0">
+                <Database className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
               </div>
-              <div>
-                <h1 className="text-base font-bold text-slate-900 dark:text-slate-100 leading-tight">Q&A Question Bank</h1>
-                <p className="text-[11px] text-slate-500 dark:text-slate-400 font-medium">{activeCatalogEntry.title}</p>
+              <div className="min-w-0">
+                <h1 className="text-xs sm:text-base font-bold text-slate-900 dark:text-slate-100 leading-tight truncate">Q&A Bank</h1>
+                <p className="text-[10px] sm:text-[11px] text-slate-500 dark:text-slate-400 font-medium truncate">{activeCatalogEntry.title}</p>
               </div>
             </div>
           </div>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
             <ThemeToggle />
             <Button
               variant="primary"
               size="sm"
               onClick={() => navigate(`/paper/${paperId}`)}
-              icon={<Play className="w-4 h-4 fill-current" />}
-              className="font-semibold"
+              icon={<Play className="w-3.5 h-3.5 fill-current" />}
+              className="px-2.5 sm:px-3 text-xs font-semibold"
             >
-              Practice Exam
+              <span className="hidden sm:inline">Practice Exam</span>
+              <span className="sm:hidden">Practice</span>
             </Button>
           </div>
         </div>
       </header>
 
       {/* Main Container */}
-      <main className="max-w-6xl mx-auto px-4 pt-6 space-y-6">
+      <main className="max-w-6xl mx-auto px-3 sm:px-4 pt-4 sm:pt-6 space-y-5 sm:space-y-6">
         {/* Paper Switcher Pills */}
-        <div className="flex flex-wrap items-center gap-2">
+        <div className="flex items-center gap-2 overflow-x-auto no-scrollbar touch-scroll pb-1">
           {QNA_CATALOG.map((entry) => {
             const active = entry.id === selectedDbId;
             return (
@@ -142,7 +144,7 @@ export const QnADatabaseScreen: React.FC = () => {
                 key={entry.id}
                 type="button"
                 onClick={() => setSelectedDbId(entry.id)}
-                className={`px-3.5 py-2 rounded-xl text-xs font-bold border transition-all cursor-pointer ${
+                className={`px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl text-xs font-bold border whitespace-nowrap transition-all cursor-pointer ${
                   active
                     ? 'bg-[#1a56db] text-white border-[#1a56db] shadow-xs'
                     : 'bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800'
@@ -317,36 +319,40 @@ export const QnADatabaseScreen: React.FC = () => {
               return (
                 <div
                   key={q.id}
-                  className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/80 dark:border-slate-800 shadow-2xs p-5 sm:p-6 space-y-4 hover:border-slate-300 dark:hover:border-slate-700 transition-colors"
+                  className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/80 dark:border-slate-800 shadow-2xs p-3.5 sm:p-6 space-y-3.5 sm:space-y-4 hover:border-slate-300 dark:hover:border-slate-700 transition-colors"
                 >
                   {/* Card Header */}
-                  <div className="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-slate-100 dark:border-slate-800 text-xs text-slate-500 dark:text-slate-400">
-                    <div className="flex items-center gap-2">
-                      <span className="font-bold text-sm text-slate-900 dark:text-slate-100">
-                        Question {q.questionNumber}
-                      </span>
-                      <span className="text-slate-300 dark:text-slate-700">•</span>
-                      <span className="font-semibold text-slate-700 dark:text-slate-300">{q.subject}</span>
-                      <span className="text-slate-300 dark:text-slate-700">•</span>
-                      <span className="bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 px-2 py-0.5 rounded-md font-medium text-[11px]">
+                  <div className="pb-3 border-b border-slate-100 dark:border-slate-800 space-y-1.5 text-xs text-slate-500 dark:text-slate-400">
+                    <div className="flex items-center justify-between gap-2">
+                      <div className="flex items-center gap-1.5 min-w-0">
+                        <span className="font-bold text-sm text-slate-900 dark:text-slate-100 shrink-0">
+                          Question {q.questionNumber}
+                        </span>
+                        <span className="text-slate-300 dark:text-slate-700 shrink-0">•</span>
+                        <span className="font-semibold text-slate-700 dark:text-slate-300 truncate">{q.subject}</span>
+                      </div>
+
+                      <div className="flex items-center gap-1.5 font-mono text-[11px] shrink-0">
+                        <span className="text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 px-1.5 py-0.5 rounded">
+                          QID: {q.questionId}
+                        </span>
+                        <span className="text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-200 dark:border-emerald-800/80 px-1.5 py-0.5 rounded font-sans font-bold">
+                          +{correctMark} / {wrongMark}
+                        </span>
+                      </div>
+                    </div>
+
+                    <div className="flex flex-wrap items-center gap-1.5 text-[11px]">
+                      <span className="bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 px-2 py-0.5 rounded-md font-medium">
                         {secLabel}
                       </span>
                       {isWbtet && (
-                        <span className="bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 border border-indigo-200/80 dark:border-indigo-800/70 px-2 py-0.5 rounded-md font-semibold text-[11px]">
+                        <span className="bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 border border-indigo-200/80 dark:border-indigo-800/70 px-2 py-0.5 rounded-md font-semibold">
                           {isWbtetBilingual ? 'English & Bengali' : wbtetSingleLangLabel}
                         </span>
                       )}
-                    </div>
-
-                    <div className="flex items-center gap-2 font-mono text-[11px]">
-                      <span className="text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 px-2 py-0.5 rounded">
-                        QID: {q.questionId}
-                      </span>
-                      <span className="text-slate-400 dark:text-slate-500">
+                      <span className="text-slate-400 dark:text-slate-500 font-mono text-[10px]">
                         Pages {q.source.pages.join('–')}
-                      </span>
-                      <span className="text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-200 dark:border-emerald-800/80 px-1.5 py-0.5 rounded font-sans font-bold">
-                        +{correctMark} / {wrongMark}
                       </span>
                     </div>
                   </div>

@@ -20,7 +20,7 @@ export const SectionTabs: React.FC<SectionTabsProps> = ({
 }) => {
   return (
     <div className="bg-slate-100/80 dark:bg-slate-900/70 border-b border-slate-200/80 dark:border-slate-800 rounded-t-xl px-2 sm:px-3">
-      <div className="max-w-7xl mx-auto flex items-center gap-1.5 overflow-x-auto no-scrollbar py-1.5">
+      <div className="max-w-7xl mx-auto flex items-center gap-1.5 overflow-x-auto no-scrollbar touch-scroll py-1.5">
         {sections.map((section) => {
           const isActive = section.id === activeSectionId;
           const isLocked = lockedSections.includes(section.id);
@@ -32,7 +32,7 @@ export const SectionTabs: React.FC<SectionTabsProps> = ({
               type="button"
               disabled={isLocked}
               onClick={() => onSelectSection(section.id)}
-              className={`flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs sm:text-sm font-semibold whitespace-nowrap transition-all cursor-pointer min-h-[38px] select-none ${
+              className={`flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-lg text-xs sm:text-sm font-semibold whitespace-nowrap transition-all cursor-pointer min-h-[34px] sm:min-h-[38px] select-none active:scale-[0.98] ${
                 isActive
                   ? 'bg-[#1a56db] text-white shadow-xs'
                   : isLocked
@@ -43,7 +43,7 @@ export const SectionTabs: React.FC<SectionTabsProps> = ({
               {isLocked && <Lock className="w-3.5 h-3.5 text-slate-400 dark:text-slate-500 shrink-0" />}
               <span>{name}</span>
               <span
-                className={`text-[11px] px-1.5 py-0.2 rounded-full ${
+                className={`text-[10px] sm:text-[11px] px-1.5 py-0.2 rounded-full font-bold ${
                   isActive
                     ? 'bg-white/20 text-white'
                     : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400'

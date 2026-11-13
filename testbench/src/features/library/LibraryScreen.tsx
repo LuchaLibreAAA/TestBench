@@ -274,35 +274,39 @@ export const LibraryScreen: React.FC = () => {
     <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 pb-14 transition-colors">
       {/* Top Navbar */}
       <header className="bg-white/95 dark:bg-slate-900/95 backdrop-blur-xs border-b border-slate-200/80 dark:border-slate-800 sticky top-0 z-20 safe-top">
-        <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <img src="/icon.png" alt="" className="w-9 h-9 rounded-xl object-cover shadow-xs" />
-            <div>
-              <div className="flex items-center gap-2">
-                <h1 className="text-lg font-bold text-slate-900 dark:text-slate-100 leading-tight">TestBench</h1>
-                <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded-full bg-blue-50 dark:bg-blue-950/70 text-[#1a56db] dark:text-blue-300 border border-blue-200/80 dark:border-blue-800">
+        <div className="max-w-6xl mx-auto px-3 sm:px-4 h-14 sm:h-16 flex items-center justify-between gap-2">
+          <div className="flex items-center gap-2.5 sm:gap-3 min-w-0">
+            <img src="/icon.png" alt="" className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl object-cover shadow-xs shrink-0" />
+            <div className="min-w-0">
+              <div className="flex items-center gap-1.5 sm:gap-2">
+                <h1 className="text-base sm:text-lg font-bold text-slate-900 dark:text-slate-100 leading-tight">TestBench</h1>
+                <span className="text-[10px] font-mono font-bold px-1.5 sm:px-2 py-0.2 sm:py-0.5 rounded-full bg-blue-50 dark:bg-blue-950/70 text-[#1a56db] dark:text-blue-300 border border-blue-200/80 dark:border-blue-800 shrink-0">
                   {APP_VERSION}
                 </span>
               </div>
-              <p className="text-[11px] text-slate-500 dark:text-slate-400 font-medium">NTA CBT Mock Test Platform</p>
+              <p className="text-[10px] sm:text-[11px] text-slate-500 dark:text-slate-400 font-medium truncate">NTA CBT Mock Test Platform</p>
             </div>
           </div>
 
-          <div className="flex items-center gap-1.5 sm:gap-2">
+          <div className="flex items-center gap-1 sm:gap-2 shrink-0">
             <Button
               variant="ghost"
               size="sm"
               onClick={() => navigate('/qna')}
               icon={<Database className="w-4 h-4 text-[#1a56db] dark:text-blue-400" />}
+              className="px-2 sm:px-3 text-xs"
+              title="Universal Q&A Question Bank"
             >
               <span className="hidden sm:inline">Q&A Database</span>
-              <span className="sm:hidden">Q&A</span>
+              <span className="sm:hidden text-xs">Q&A</span>
             </Button>
             <Button
               variant="ghost"
               size="sm"
               onClick={() => navigate('/analytics')}
               icon={<BarChart2 className="w-4 h-4 text-slate-600 dark:text-slate-400" />}
+              className="p-2 sm:px-3 text-xs"
+              title="Analytics"
             >
               <span className="hidden sm:inline">Analytics</span>
             </Button>
@@ -311,6 +315,8 @@ export const LibraryScreen: React.FC = () => {
               size="sm"
               onClick={() => navigate('/settings')}
               icon={<Settings className="w-4 h-4 text-slate-600 dark:text-slate-400" />}
+              className="p-2 sm:px-3 text-xs"
+              title="Settings"
             >
               <span className="hidden sm:inline">Settings</span>
             </Button>
@@ -368,12 +374,12 @@ export const LibraryScreen: React.FC = () => {
         </div>
 
         {/* Search & Tabs Filter Bar */}
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-white dark:bg-slate-900 p-2.5 rounded-2xl border border-slate-200/80 dark:border-slate-800 shadow-2xs">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-white dark:bg-slate-900 p-2 sm:p-2.5 rounded-2xl border border-slate-200/80 dark:border-slate-800 shadow-2xs">
           {/* Tabs */}
-          <div className="flex items-center gap-1 overflow-x-auto pb-1 sm:pb-0">
+          <div className="flex items-center gap-1 overflow-x-auto no-scrollbar touch-scroll pb-1 sm:pb-0">
             <button
               onClick={() => setActiveTab('all')}
-              className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-colors cursor-pointer whitespace-nowrap ${
+              className={`px-3 sm:px-3.5 py-1.5 rounded-xl text-xs font-bold transition-colors cursor-pointer whitespace-nowrap ${
                 activeTab === 'all'
                   ? 'bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900'
                   : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800'
@@ -384,7 +390,7 @@ export const LibraryScreen: React.FC = () => {
 
             <button
               onClick={() => setActiveTab('jee-main')}
-              className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-colors cursor-pointer flex items-center gap-1.5 whitespace-nowrap ${
+              className={`px-3 sm:px-3.5 py-1.5 rounded-xl text-xs font-bold transition-colors cursor-pointer flex items-center gap-1.5 whitespace-nowrap ${
                 activeTab === 'jee-main'
                   ? 'bg-[#1a56db] text-white'
                   : 'text-slate-600 dark:text-slate-400 hover:bg-blue-50 dark:hover:bg-blue-950/50 hover:text-[#1a56db] dark:hover:text-blue-400'
@@ -396,7 +402,7 @@ export const LibraryScreen: React.FC = () => {
 
             <button
               onClick={() => setActiveTab('neet')}
-              className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-colors cursor-pointer flex items-center gap-1.5 whitespace-nowrap ${
+              className={`px-3 sm:px-3.5 py-1.5 rounded-xl text-xs font-bold transition-colors cursor-pointer flex items-center gap-1.5 whitespace-nowrap ${
                 activeTab === 'neet'
                   ? 'bg-emerald-700 text-white'
                   : 'text-slate-600 dark:text-slate-400 hover:bg-emerald-50 dark:hover:bg-emerald-950/50 hover:text-emerald-700 dark:hover:text-emerald-400'
@@ -408,7 +414,7 @@ export const LibraryScreen: React.FC = () => {
 
             <button
               onClick={() => setActiveTab('wbtet')}
-              className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-colors cursor-pointer flex items-center gap-1.5 whitespace-nowrap ${
+              className={`px-3 sm:px-3.5 py-1.5 rounded-xl text-xs font-bold transition-colors cursor-pointer flex items-center gap-1.5 whitespace-nowrap ${
                 activeTab === 'wbtet'
                   ? 'bg-indigo-700 text-white'
                   : 'text-slate-600 dark:text-slate-400 hover:bg-indigo-50 dark:hover:bg-indigo-950/50 hover:text-indigo-700 dark:hover:text-indigo-400'
@@ -436,15 +442,15 @@ export const LibraryScreen: React.FC = () => {
         {loading ? (
           <div className="py-20 text-center text-slate-500 dark:text-slate-400 text-sm">Loading test papers...</div>
         ) : filteredPapers.length === 0 ? (
-          <div className="bg-white dark:bg-slate-900 rounded-2xl border border-dashed border-slate-300 dark:border-slate-700 p-10 text-center space-y-3">
-            <div className="w-14 h-14 bg-blue-50 dark:bg-blue-950/60 text-[#1a56db] dark:text-blue-400 rounded-2xl flex items-center justify-center mx-auto">
-              <FileText className="w-7 h-7" />
+          <div className="bg-white dark:bg-slate-900 rounded-2xl border border-dashed border-slate-300 dark:border-slate-700 p-8 sm:p-10 text-center space-y-3">
+            <div className="w-12 h-12 sm:w-14 sm:h-14 bg-blue-50 dark:bg-blue-950/60 text-[#1a56db] dark:text-blue-400 rounded-2xl flex items-center justify-center mx-auto">
+              <FileText className="w-6 h-6 sm:w-7 sm:h-7" />
             </div>
             <h3 className="text-base font-bold text-slate-900 dark:text-slate-100">No matching test papers</h3>
             <p className="text-xs text-slate-500 dark:text-slate-400 max-w-sm mx-auto">
               No tests match your current search query or filter. Try clearing the search or load the official papers.
             </p>
-            <div className="pt-2 flex justify-center gap-3">
+            <div className="pt-2 flex flex-wrap justify-center gap-2 sm:gap-3">
               <Button variant="outline" size="sm" onClick={() => setSearchQuery('')}>
                 Clear Search
               </Button>
@@ -454,25 +460,27 @@ export const LibraryScreen: React.FC = () => {
             </div>
           </div>
         ) : (
-          <div className="space-y-9">
+          <div className="space-y-8 sm:space-y-9">
             {/* 1. JEE Main Section */}
             {(activeTab === 'all' || activeTab === 'jee-main') && jeePapers.length > 0 && (
               <section className="space-y-3.5">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-2.5">
-                    <div className="w-8 h-8 rounded-lg bg-blue-50 dark:bg-blue-950/60 text-[#1a56db] dark:text-blue-400 flex items-center justify-center">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                  <div className="flex items-start sm:items-center gap-2.5 min-w-0">
+                    <div className="w-8 h-8 rounded-lg bg-blue-50 dark:bg-blue-950/60 text-[#1a56db] dark:text-blue-400 flex items-center justify-center shrink-0 mt-0.5 sm:mt-0">
                       <Compass className="w-4 h-4" />
                     </div>
-                    <div>
-                      <h3 className="text-lg font-bold text-slate-900 dark:text-slate-100">JEE Main Question Papers</h3>
-                      <p className="text-xs text-slate-500 dark:text-slate-400">
+                    <div className="min-w-0">
+                      <h3 className="text-base sm:text-lg font-bold text-slate-900 dark:text-slate-100">JEE Main Question Papers</h3>
+                      <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
                         75–90 Questions (Physics, Chemistry, Mathematics) • 180 Minutes • NTA CBT Pattern
                       </p>
                     </div>
                   </div>
-                  <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-blue-50 dark:bg-blue-950/60 text-[#1a56db] dark:text-blue-400 border border-blue-200/70 dark:border-blue-800">
-                    {jeePapers.length} Available
-                  </span>
+                  <div className="self-start sm:self-auto pl-10.5 sm:pl-0 shrink-0">
+                    <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-blue-50 dark:bg-blue-950/60 text-[#1a56db] dark:text-blue-400 border border-blue-200/70 dark:border-blue-800">
+                      {jeePapers.length} Available
+                    </span>
+                  </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -484,21 +492,23 @@ export const LibraryScreen: React.FC = () => {
             {/* 2. NEET UG Section */}
             {(activeTab === 'all' || activeTab === 'neet') && neetPapers.length > 0 && (
               <section className="space-y-3.5">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-2.5">
-                    <div className="w-8 h-8 rounded-lg bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-400 flex items-center justify-center">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                  <div className="flex items-start sm:items-center gap-2.5 min-w-0">
+                    <div className="w-8 h-8 rounded-lg bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-400 flex items-center justify-center shrink-0 mt-0.5 sm:mt-0">
                       <Stethoscope className="w-4 h-4" />
                     </div>
-                    <div>
-                      <h3 className="text-lg font-bold text-slate-900 dark:text-slate-100">NEET UG Question Papers</h3>
-                      <p className="text-xs text-slate-500 dark:text-slate-400">
+                    <div className="min-w-0">
+                      <h3 className="text-base sm:text-lg font-bold text-slate-900 dark:text-slate-100">NEET UG Question Papers</h3>
+                      <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
                         200 Questions (Physics, Chemistry, Botany, Zoology) • 200 Minutes • 720 Marks
                       </p>
                     </div>
                   </div>
-                  <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-emerald-50 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-400 border border-emerald-200/70 dark:border-emerald-800">
-                    {neetPapers.length} Available
-                  </span>
+                  <div className="self-start sm:self-auto pl-10.5 sm:pl-0 shrink-0">
+                    <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-emerald-50 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-400 border border-emerald-200/70 dark:border-emerald-800">
+                      {neetPapers.length} Available
+                    </span>
+                  </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -510,21 +520,23 @@ export const LibraryScreen: React.FC = () => {
             {/* 3. WBTET Section */}
             {(activeTab === 'all' || activeTab === 'wbtet') && wbtetPapers.length > 0 && (
               <section className="space-y-3.5">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-2.5">
-                    <div className="w-8 h-8 rounded-lg bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-400 flex items-center justify-center">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                  <div className="flex items-start sm:items-center gap-2.5 min-w-0">
+                    <div className="w-8 h-8 rounded-lg bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-400 flex items-center justify-center shrink-0 mt-0.5 sm:mt-0">
                       <FileText className="w-4 h-4" />
                     </div>
-                    <div>
-                      <h3 className="text-lg font-bold text-slate-900 dark:text-slate-100">WB Primary TET Question Papers</h3>
-                      <p className="text-xs text-slate-500 dark:text-slate-400">
+                    <div className="min-w-0">
+                      <h3 className="text-base sm:text-lg font-bold text-slate-900 dark:text-slate-100">WB Primary TET Question Papers</h3>
+                      <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
                         150 Questions (CDP, Bengali, English, Math, EVS) • 150 Minutes • +1 / 0 Marking • Bilingual
                       </p>
                     </div>
                   </div>
-                  <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-indigo-50 dark:bg-indigo-950/60 text-indigo-800 dark:text-indigo-400 border border-indigo-200/70 dark:border-indigo-800">
-                    {wbtetPapers.length} Available
-                  </span>
+                  <div className="self-start sm:self-auto pl-10.5 sm:pl-0 shrink-0">
+                    <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-indigo-50 dark:bg-indigo-950/60 text-indigo-800 dark:text-indigo-400 border border-indigo-200/70 dark:border-indigo-800">
+                      {wbtetPapers.length} Available
+                    </span>
+                  </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

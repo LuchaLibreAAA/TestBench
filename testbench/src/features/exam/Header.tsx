@@ -35,24 +35,25 @@ export const Header: React.FC<HeaderProps> = ({
 
   return (
     <header className="sticky top-0 z-30 bg-white/95 dark:bg-slate-900/95 backdrop-blur-xs border-b border-slate-200/80 dark:border-slate-800 safe-top">
-      <div className="max-w-7xl mx-auto px-3 sm:px-4 h-14 flex items-center justify-between gap-3">
+      <div className="max-w-7xl mx-auto px-2.5 sm:px-4 h-13 sm:h-14 flex items-center justify-between gap-2 sm:gap-3">
         {/* Title */}
-        <div className="flex items-center gap-2 min-w-0">
-          <h1 className="text-sm sm:text-base font-bold text-slate-900 dark:text-slate-100 truncate">
+        <div className="flex items-center gap-1.5 sm:gap-2 min-w-0 flex-1">
+          <h1 className="text-xs sm:text-base font-bold text-slate-900 dark:text-slate-100 truncate">
             {paperTitle}
           </h1>
         </div>
 
         {/* Right tools: Language Toggle, Theme, Timer, Palette Button */}
-        <div className="flex items-center gap-2 shrink-0">
+        <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
           {/* Language Selector (if > 1 language) */}
           {languages.length > 1 && (
-            <div className="flex items-center gap-1 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg px-2 py-1 text-xs">
-              <Globe className="w-3.5 h-3.5 text-slate-500 dark:text-slate-400" />
+            <div className="flex items-center gap-1 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg px-1.5 sm:px-2 py-1 text-[11px] sm:text-xs">
+              <Globe className="w-3.5 h-3.5 text-slate-500 dark:text-slate-400 shrink-0" />
               <select
                 value={activeLanguage}
                 onChange={(e) => onLanguageChange(e.target.value)}
-                className="bg-transparent font-medium text-slate-700 dark:text-slate-200 focus:outline-none cursor-pointer"
+                className="bg-transparent font-medium text-slate-700 dark:text-slate-200 focus:outline-none cursor-pointer max-w-[80px] sm:max-w-none truncate"
+                aria-label="Select exam language"
               >
                 {languages.map((l) => (
                   <option key={l} value={l} className="dark:bg-slate-900">
@@ -67,21 +68,21 @@ export const Header: React.FC<HeaderProps> = ({
 
           {/* Timer Display */}
           <div
-            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg border font-mono text-sm sm:text-base transition-colors ${timerColorClass}`}
+            className={`flex items-center gap-1 sm:gap-1.5 px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg border font-mono text-xs sm:text-sm md:text-base transition-colors shrink-0 ${timerColorClass}`}
             aria-live="polite"
           >
-            <Clock className="w-4 h-4 shrink-0" />
+            <Clock className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
             <span className="font-semibold tracking-wider">{formatted}</span>
           </div>
 
-          {/* Palette button (mobile trigger) */}
+          {/* Palette button (trigger mobile/tablet sheet below lg breakpoint) */}
           <button
             type="button"
             onClick={onTogglePalette}
-            className="md:hidden flex items-center justify-center w-10 h-10 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 transition-colors cursor-pointer"
+            className="lg:hidden flex items-center justify-center w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 active:scale-95 text-slate-700 dark:text-slate-200 transition-all cursor-pointer shrink-0"
             aria-label="Open Question Palette"
           >
-            <LayoutGrid className="w-5 h-5 text-[#1a56db] dark:text-blue-400" />
+            <LayoutGrid className="w-4 h-4 sm:w-4.5 sm:h-4.5 text-[#1a56db] dark:text-blue-400" />
           </button>
         </div>
       </div>
