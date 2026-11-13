@@ -15,8 +15,9 @@ from scripts.import_cbt_paper import import_cbt_file
 from tools.pdf_qna_pipeline.models import QnADatabase
 
 
-def seed_all():
-    settings = get_settings()
+def seed_all(settings=None):
+    if settings is None:
+        settings = get_settings()
     migrate(settings)
 
     # Search paths for Q&A JSONs, assets, and CBT papers

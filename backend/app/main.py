@@ -31,6 +31,20 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         if settings is None and (not config.admin_token or config.admin_token == "replace-with-a-long-random-secret") and not config.allow_insecure_dev:
             raise RuntimeError("Set a non-example ADMIN_TOKEN or explicitly enable ALLOW_INSECURE_DEV=1")
         migrate(config)
+
+        # Standalone server startup: auto-seed baseline papers if DB is empty
+        if settings is None:
+            try:
+                from backend.app.repositories.paper_repo import PaperRepository
+                if len(PaperRepository.list_papers(config)) == 0:
+                    import logging
+                    logging.getLogger("uvicorn.info").info("No papers found in database; auto-seeding baseline papers...")
+                    from scripts.seed_all_papers import seed_all
+                    seed_all(config)
+            except Exception as e:
+                import logging
+                logging.getLogger("uvicorn.error").error(f"Auto-seeding check failed: {e}")
+
         yield
 
     app = FastAPI(title="Question & Mock Exam API", version="1", lifespan=lifespan)
