@@ -2,8 +2,13 @@
 
 import json
 import re
+import sys
 from pathlib import Path
 from typing import Any, Dict
+
+ROOT_DIR = Path(__file__).resolve().parent.parent
+if str(ROOT_DIR) not in sys.path:
+    sys.path.insert(0, str(ROOT_DIR))
 
 from backend.app.services.ingest import ingest_data_and_images
 from backend.app.settings import Settings, get_settings

@@ -10,3 +10,4 @@ numpy>=1.26,<3
 opencv-python-headless>=4.9,<5
 pytest>=8,<9
 httpx>=0.27,<1
+boto3>=1.34,<2

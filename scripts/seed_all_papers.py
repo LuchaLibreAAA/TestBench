@@ -1,7 +1,12 @@
 """Seed all 9 papers (7 Q&A + assets, 2 CBT papers) into the canonical database and storage backend."""
 
 import json
+import sys
 from pathlib import Path
+
+ROOT_DIR = Path(__file__).resolve().parent.parent
+if str(ROOT_DIR) not in sys.path:
+    sys.path.insert(0, str(ROOT_DIR))
 
 from backend.app.db import migrate
 from backend.app.services.ingest import ingest_data_and_images
@@ -14,9 +19,15 @@ def seed_all():
     settings = get_settings()
     migrate(settings)
 
-    qna_dir = Path("testbench/public/qna")
-    assets_base = Path("testbench/public/papers/assets")
-    cbt_dir = Path("testbench/public/papers")
+    # Search paths for Q&A JSONs, assets, and CBT papers
+    qna_candidates = [ROOT_DIR / "backend" / "seeds" / "qna", ROOT_DIR / "testbench" / "public" / "qna"]
+    qna_dir = next((d for d in qna_candidates if d.is_dir()), qna_candidates[0])
+
+    assets_candidates = [ROOT_DIR / "backend" / "seeds" / "assets", ROOT_DIR / "testbench" / "public" / "papers" / "assets"]
+    assets_base = next((d for d in assets_candidates if d.is_dir()), assets_candidates[0])
+
+    cbt_candidates = [ROOT_DIR / "backend" / "seeds" / "papers", ROOT_DIR / "testbench" / "public" / "papers"]
+    cbt_dir = next((d for d in cbt_candidates if d.is_dir()), cbt_candidates[0])
 
     qna_to_paper_id = {
         "jee-main-2026-shift2": "jee-main-2026-apr-s2",
@@ -52,10 +63,12 @@ def seed_all():
 
     # 2. Ingest CBT papers (text/formula papers)
     print("\n=== Ingesting CBT Papers ===")
-    cbt_papers = [
-        cbt_dir / "jee-main" / "jee-main-2024-jan-s1.json",
-        cbt_dir / "jee-main" / "jee-main-2023-apr-s1.json",
-    ]
+    cbt_papers = []
+    for filename in ["jee-main-2024-jan-s1.json", "jee-main-2023-apr-s1.json"]:
+        for candidate_path in [cbt_dir / filename, cbt_dir / "jee-main" / filename]:
+            if candidate_path.exists():
+                cbt_papers.append(candidate_path)
+                break
     for cbt_file in cbt_papers:
         if cbt_file.exists():
             print(f"Ingesting CBT paper {cbt_file.name}...")
