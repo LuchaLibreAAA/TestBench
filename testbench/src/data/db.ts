@@ -1,12 +1,14 @@
 import Dexie, { type Table } from 'dexie';
 import type { Paper, Attempt } from '@/core/schema';
 
-/** Stored paper with import metadata */
+/** Stored paper with import metadata and ETag */
 export interface StoredPaper {
   id: string;
   title: string;
   exam: string;
   data: Paper;
+  etag?: string;
+  dataVersion?: number;
   updatedAt: number;
   createdAt: number;
 }
@@ -54,6 +56,13 @@ class AppDB extends Dexie {
       papers: 'id, title, exam, updatedAt',
       assets: 'key, paperId',
       attempts: 'id, paperId, status, startedAt',
+      settings: 'key',
+      qnaDatabases: 'id, examName, year, updatedAt',
+    });
+    this.version(3).stores({
+      papers: 'id, title, exam, updatedAt',
+      assets: 'key, paperId',
+      attempts: 'id, paperId, status, startedAt, updatedAt',
       settings: 'key',
       qnaDatabases: 'id, examName, year, updatedAt',
     });

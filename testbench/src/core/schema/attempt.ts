@@ -89,6 +89,14 @@ export const AttemptSchema = z.object({
   tabSwitches: z.number().default(0),
   /** Epoch ms when the attempt was submitted. */
   submittedAt: z.number().optional(),
+  /** Epoch ms when the attempt was last updated. */
+  updatedAt: z.number().default(() => Date.now()),
+  /** Device identifier for multi-client sync. */
+  deviceId: z.string().optional(),
+  /** Client application version. */
+  appVersion: z.string().optional(),
+  /** Marking strategy id used during scoring. */
+  markingStrategy: z.string().optional(),
   /** Computed result (populated after scoring). */
   result: z.unknown().optional(),
 });

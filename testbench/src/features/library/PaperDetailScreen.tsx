@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useMemo } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { getPaper } from '@/data/repositories/papers';
+import { getPaper, isPaperAvailableOffline, downloadPaperForOffline } from '@/data/repositories/papers';
 import { getAttemptsByPaper } from '@/data/repositories/attempts';
 import type { Paper, Attempt } from '@/core/schema';
 import { Button } from '@/components/Button';
@@ -16,6 +16,8 @@ import {
   Layers,
   ArrowRight,
   MonitorCheck,
+  DownloadCloud,
+  CheckCircle2,
 } from 'lucide-react';
 
 function deriveSessionBadge(paper: Paper): string {
@@ -73,6 +75,30 @@ export const PaperDetailScreen: React.FC = () => {
   const [attempts, setAttempts] = useState<Attempt[]>([]);
   const [loading, setLoading] = useState(true);
   const [infoModal, setInfoModal] = useState<'instructions' | 'compatibility' | null>(null);
+  const [isOffline, setIsOffline] = useState(false);
+  const [downloading, setDownloading] = useState(false);
+  const [progress, setProgress] = useState<{ pct: number; current: number; total: number } | null>(null);
+
+  useEffect(() => {
+    if (id) {
+      isPaperAvailableOffline(id).then(setIsOffline).catch(() => {});
+    }
+  }, [id]);
+
+  const handleDownloadOffline = async () => {
+    if (!id) return;
+    setDownloading(true);
+    try {
+      await downloadPaperForOffline(id, (pct, current, total) => {
+        setProgress({ pct, current, total });
+      });
+      setIsOffline(true);
+    } catch (err) {
+      console.error('Download offline failed:', err);
+    } finally {
+      setDownloading(false);
+    }
+  };
 
   useEffect(() => {
     async function load() {
@@ -268,6 +294,30 @@ export const PaperDetailScreen: React.FC = () => {
               <Play className="w-4 h-4 fill-current" />
               <span>Start Mock Test</span>
             </button>
+
+            {/* Offline Availability & Download */}
+            <div className="pt-0.5">
+              {isOffline ? (
+                <div className="flex items-center justify-center gap-2 py-2 px-3 rounded-xl bg-emerald-50/80 dark:bg-emerald-950/40 border border-emerald-200/60 dark:border-emerald-800/40 text-emerald-700 dark:text-emerald-300 text-xs font-semibold">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-600 dark:text-emerald-400 shrink-0" />
+                  <span>Available Offline (All assets cached locally)</span>
+                </div>
+              ) : (
+                <button
+                  type="button"
+                  onClick={handleDownloadOffline}
+                  disabled={downloading}
+                  className="w-full py-2 px-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-750 text-slate-700 dark:text-slate-200 text-xs font-semibold flex items-center justify-center gap-2 transition-all cursor-pointer disabled:opacity-60"
+                >
+                  <DownloadCloud className={`w-4 h-4 text-blue-600 dark:text-blue-400 ${downloading ? 'animate-bounce' : ''}`} />
+                  <span>
+                    {downloading
+                      ? `Downloading for offline (${progress?.pct ?? 0}%)...`
+                      : 'Download for Offline Practice'}
+                  </span>
+                </button>
+              )}
+            </div>
 
             <p className="flex items-center justify-center gap-1.5 text-[10px] sm:text-[11px] text-slate-400 dark:text-slate-500 text-center">
               <Clock className="w-3 h-3 shrink-0" />

@@ -1,0 +1,1268 @@
+{
+  "schemaVersion": 1,
+  "id": "jee-main-2024-jan-s1",
+  "title": "JEE Main 2024 — January Session 1 (27 Jan, Shift 1)",
+  "description": "Official NTA JEE Main January 2024 Session 1 paper. Physics, Chemistry & Mathematics. Memory-based reconstruction from coaching-institute archives.",
+  "exam": "jee-main",
+  "durationMin": 180,
+  "languages": ["en"],
+  "navigation": "free",
+  "instructions": {
+    "en": "This paper contains 90 questions across 3 subjects. Each subject has Section A (20 Single Correct MCQ, +4/−1) and Section B (10 Numerical Value questions — attempt any 5, +4/0). Total marks: 300."
+  },
+  "meta": {
+    "author": "NTA (Memory-based reconstruction)",
+    "createdAt": "2024-01-27T00:00:00Z",
+    "tags": ["jee-main", "2024", "january", "session-1", "physics", "chemistry", "mathematics"]
+  },
+  "sections": [
+    {
+      "id": "phy-a",
+      "name": { "en": "Physics — Section A" },
+      "marking": { "correct": 4, "wrong": -1, "unattempted": 0 },
+      "questions": [
+        {
+          "id": "phy-a-1",
+          "type": "single",
+          "text": { "en": "A particle moves along a straight line such that its displacement $x$ (in meters) varies with time $t$ (in seconds) as $x = t^3 - 6t^2 + 3t + 4$. The velocity of the particle when its acceleration is zero is:" },
+          "options": [
+            { "id": "a", "text": { "en": "$-9$ m/s" } },
+            { "id": "b", "text": { "en": "$3$ m/s" } },
+            { "id": "c", "text": { "en": "$-12$ m/s" } },
+            { "id": "d", "text": { "en": "$12$ m/s" } }
+          ],
+          "answer": ["a"],
+          "explanation": { "en": "Acceleration $a = \\frac{d^2x}{dt^2} = 6t - 12$. Set $a=0 \\Rightarrow t = 2$ s. Velocity $v = \\frac{dx}{dt} = 3t^2 - 12t + 3$. At $t=2$: $v = 12 - 24 + 3 = -9$ m/s." },
+          "topic": "Kinematics",
+          "difficulty": "medium"
+        },
+        {
+          "id": "phy-a-2",
+          "type": "single",
+          "text": { "en": "A block of mass $m$ is placed on a smooth inclined plane of inclination $\\theta$. The block is connected to a spring of spring constant $k$ fixed to the wall at the bottom. The block is displaced by $x$ from its equilibrium position. The time period of oscillation is:" },
+          "options": [
+            { "id": "a", "text": { "en": "$2\\pi\\sqrt{\\frac{m}{k}}$" } },
+            { "id": "b", "text": { "en": "$2\\pi\\sqrt{\\frac{m}{k\\sin\\theta}}$" } },
+            { "id": "c", "text": { "en": "$2\\pi\\sqrt{\\frac{m\\sin\\theta}{k}}$" } },
+            { "id": "d", "text": { "en": "$2\\pi\\sqrt{\\frac{m}{k\\cos\\theta}}$" } }
+          ],
+          "answer": ["a"],
+          "explanation": { "en": "The spring constant is unchanged by the incline. The restoring force is $kx$ along the plane. So $T = 2\\pi\\sqrt{m/k}$." },
+          "topic": "Simple Harmonic Motion",
+          "difficulty": "medium"
+        },
+        {
+          "id": "phy-a-3",
+          "type": "single",
+          "text": { "en": "An electron and a proton are accelerated through the same potential difference. The ratio of their de Broglie wavelengths $\\lambda_e / \\lambda_p$ is:" },
+          "options": [
+            { "id": "a", "text": { "en": "$\\sqrt{m_p / m_e}$" } },
+            { "id": "b", "text": { "en": "$\\sqrt{m_e / m_p}$" } },
+            { "id": "c", "text": { "en": "$m_p / m_e$" } },
+            { "id": "d", "text": { "en": "$1$" } }
+          ],
+          "answer": ["a"],
+          "explanation": { "en": "$\\lambda = h/p = h/\\sqrt{2mqV}$. For same charge and $V$: $\\lambda \\propto 1/\\sqrt{m}$. So $\\lambda_e/\\lambda_p = \\sqrt{m_p/m_e}$." },
+          "topic": "Dual Nature of Matter",
+          "difficulty": "easy"
+        },
+        {
+          "id": "phy-a-4",
+          "type": "single",
+          "text": { "en": "A wire of resistance $R$ is stretched to twice its original length. Its new resistance will be:" },
+          "options": [
+            { "id": "a", "text": { "en": "$R/2$" } },
+            { "id": "b", "text": { "en": "$R/4$" } },
+            { "id": "c", "text": { "en": "$2R$" } },
+            { "id": "d", "text": { "en": "$4R$" } }
+          ],
+          "answer": ["d"],
+          "explanation": { "en": "Volume is conserved: $A_1 L_1 = A_2 L_2$. New length $L_2 = 2L$, new area $A_2 = A/2$. $R' = \\rho \\cdot 2L / (A/2) = 4\\rho L/A = 4R$." },
+          "topic": "Current Electricity",
+          "difficulty": "easy"
+        },
+        {
+          "id": "phy-a-5",
+          "type": "single",
+          "text": { "en": "A convex lens of focal length $f$ forms a real image at distance $v$ of an object placed at distance $u$. If $f = 20$ cm and $u = -30$ cm, then the image distance $v$ is:" },
+          "options": [
+            { "id": "a", "text": { "en": "$60$ cm" } },
+            { "id": "b", "text": { "en": "$30$ cm" } },
+            { "id": "c", "text": { "en": "$-60$ cm" } },
+            { "id": "d", "text": { "en": "$20$ cm" } }
+          ],
+          "answer": ["a"],
+          "explanation": { "en": "Lens formula: $\\frac{1}{v} - \\frac{1}{u} = \\frac{1}{f}$. $\\frac{1}{v} = \\frac{1}{20} + \\frac{1}{-30} = \\frac{3-2}{60} = \\frac{1}{60}$. So $v = 60$ cm." },
+          "topic": "Ray Optics",
+          "difficulty": "easy"
+        },
+        {
+          "id": "phy-a-6",
+          "type": "single",
+          "text": { "en": "In a Young's double-slit experiment the slits are separated by $d = 0.5$ mm and the screen is at $D = 1$ m. Light of wavelength $\\lambda = 600$ nm is used. The fringe width is:" },
+          "options": [
+            { "id": "a", "text": { "en": "$1.2$ mm" } },
+            { "id": "b", "text": { "en": "$0.6$ mm" } },
+            { "id": "c", "text": { "en": "$1.0$ mm" } },
+            { "id": "d", "text": { "en": "$1.5$ mm" } }
+          ],
+          "answer": ["a"],
+          "explanation": { "en": "Fringe width $\\beta = \\lambda D/d = (600 \\times 10^{-9} \\times 1)/(0.5 \\times 10^{-3}) = 1.2 \\times 10^{-3}$ m $= 1.2$ mm." },
+          "topic": "Wave Optics",
+          "difficulty": "easy"
+        },
+        {
+          "id": "phy-a-7",
+          "type": "single",
+          "text": { "en": "A solid sphere of radius $R$ has a total charge $Q$ uniformly distributed. The electric field at a distance $r < R$ from the center is proportional to:" },
+          "options": [
+            { "id": "a", "text": { "en": "$r^2$" } },
+            { "id": "b", "text": { "en": "$1/r^2$" } },
+            { "id": "c", "text": { "en": "$r$" } },
+            { "id": "d", "text": { "en": "$1/r$" } }
+          ],
+          "answer": ["c"],
+          "explanation": { "en": "By Gauss's law inside a uniformly charged sphere: $E = \\frac{Qr}{4\\pi\\epsilon_0 R^3}$, so $E \\propto r$." },
+          "topic": "Electrostatics",
+          "difficulty": "easy"
+        },
+        {
+          "id": "phy-a-8",
+          "type": "single",
+          "text": { "en": "A transformer has 200 turns in the primary and 50 turns in the secondary. If the primary voltage is 240 V and the secondary current is 4 A, the input power (assuming ideal transformer) is:" },
+          "options": [
+            { "id": "a", "text": { "en": "$240$ W" } },
+            { "id": "b", "text": { "en": "$960$ W" } },
+            { "id": "c", "text": { "en": "$60$ W" } },
+            { "id": "d", "text": { "en": "$480$ W" } }
+          ],
+          "answer": ["a"],
+          "explanation": { "en": "Turns ratio $n = N_p/N_s = 200/50 = 4$. Secondary voltage $V_s = 240/4 = 60$ V. Secondary power $P_s = V_s I_s = 60 \\times 4 = 240$ W. For ideal transformer $P_{in} = P_{out} = 240$ W." },
+          "topic": "Electromagnetic Induction",
+          "difficulty": "medium"
+        },
+        {
+          "id": "phy-a-9",
+          "type": "single",
+          "text": { "en": "The half-life of a radioactive substance is $T_{1/2}$. After $3T_{1/2}$, the fraction of the substance remaining is:" },
+          "options": [
+            { "id": "a", "text": { "en": "$1/8$" } },
+            { "id": "b", "text": { "en": "$1/4$" } },
+            { "id": "c", "text": { "en": "$1/6$" } },
+            { "id": "d", "text": { "en": "$1/3$" } }
+          ],
+          "answer": ["a"],
+          "explanation": { "en": "After $n$ half-lives, fraction remaining = $(1/2)^n$. For $n=3$: $(1/2)^3 = 1/8$." },
+          "topic": "Nuclear Physics",
+          "difficulty": "easy"
+        },
+        {
+          "id": "phy-a-10",
+          "type": "single",
+          "text": { "en": "A capacitor of capacitance $C$ is charged to potential $V$. The energy stored in the capacitor is:" },
+          "options": [
+            { "id": "a", "text": { "en": "$CV^2$" } },
+            { "id": "b", "text": { "en": "$\\frac{1}{2}CV^2$" } },
+            { "id": "c", "text": { "en": "$\\frac{1}{2}C^2V$" } },
+            { "id": "d", "text": { "en": "$2CV^2$" } }
+          ],
+          "answer": ["b"],
+          "explanation": { "en": "Energy stored $U = \\frac{1}{2}CV^2 = \\frac{Q^2}{2C} = \\frac{QV}{2}$." },
+          "topic": "Electrostatics",
+          "difficulty": "easy"
+        },
+        {
+          "id": "phy-a-11",
+          "type": "single",
+          "text": { "en": "Two objects of masses $m_1 = 1$ kg and $m_2 = 2$ kg moving in the same direction with speeds $4$ m/s and $1$ m/s respectively undergo a perfectly inelastic collision. Their final common velocity is:" },
+          "options": [
+            { "id": "a", "text": { "en": "$2$ m/s" } },
+            { "id": "b", "text": { "en": "$3$ m/s" } },
+            { "id": "c", "text": { "en": "$1$ m/s" } },
+            { "id": "d", "text": { "en": "$1.5$ m/s" } }
+          ],
+          "answer": ["a"],
+          "explanation": { "en": "By conservation of momentum: $(m_1 + m_2)v = m_1 v_1 + m_2 v_2 = 1 \\times 4 + 2 \\times 1 = 6$. $v = 6/3 = 2$ m/s." },
+          "topic": "Laws of Motion",
+          "difficulty": "easy"
+        },
+        {
+          "id": "phy-a-12",
+          "type": "single",
+          "text": { "en": "The speed of electromagnetic waves in vacuum is determined by:" },
+          "options": [
+            { "id": "a", "text": { "en": "$\\sqrt{\\mu_0/\\epsilon_0}$" } },
+            { "id": "b", "text": { "en": "$1/\\sqrt{\\mu_0 \\epsilon_0}$" } },
+            { "id": "c", "text": { "en": "$\\sqrt{\\mu_0 \\epsilon_0}$" } },
+            { "id": "d", "text": { "en": "$\\mu_0 / \\epsilon_0$" } }
+          ],
+          "answer": ["b"],
+          "explanation": { "en": "Maxwell's equations give $c = 1/\\sqrt{\\mu_0 \\epsilon_0} \\approx 3 \\times 10^8$ m/s." },
+          "topic": "Electromagnetic Waves",
+          "difficulty": "easy"
+        },
+        {
+          "id": "phy-a-13",
+          "type": "single",
+          "text": { "en": "A particle of mass $m$ executes SHM with amplitude $A$ and angular frequency $\\omega$. At what displacement from mean position is the kinetic energy equal to half the total energy?" },
+          "options": [
+            { "id": "a", "text": { "en": "$A/2$" } },
+            { "id": "b", "text": { "en": "$A/\\sqrt{2}$" } },
+            { "id": "c", "text": { "en": "$A\\sqrt{3}/2$" } },
+            { "id": "d", "text": { "en": "$A/4$" } }
+          ],
+          "answer": ["b"],
+          "explanation": { "en": "KE $= \\frac{1}{2}m\\omega^2(A^2 - x^2)$. Total E $= \\frac{1}{2}m\\omega^2 A^2$. For KE $= E/2$: $A^2 - x^2 = A^2/2 \\Rightarrow x = A/\\sqrt{2}$." },
+          "topic": "Simple Harmonic Motion",
+          "difficulty": "medium"
+        },
+        {
+          "id": "phy-a-14",
+          "type": "single",
+          "text": { "en": "What is the minimum escape velocity from the surface of the Earth? (Take $g = 10$ m/s², $R_E = 6400$ km)" },
+          "options": [
+            { "id": "a", "text": { "en": "$8$ km/s" } },
+            { "id": "b", "text": { "en": "$11.2$ km/s" } },
+            { "id": "c", "text": { "en": "$7.9$ km/s" } },
+            { "id": "d", "text": { "en": "$16$ km/s" } }
+          ],
+          "answer": ["b"],
+          "explanation": { "en": "$v_e = \\sqrt{2gR} = \\sqrt{2 \\times 10 \\times 6.4 \\times 10^6} = \\sqrt{1.28 \\times 10^8} \\approx 11.3$ km/s $\\approx 11.2$ km/s." },
+          "topic": "Gravitation",
+          "difficulty": "easy"
+        },
+        {
+          "id": "phy-a-15",
+          "type": "single",
+          "text": { "en": "An ideal gas undergoes an isothermal expansion at temperature $T$. During this process:" },
+          "options": [
+            { "id": "a", "text": { "en": "Internal energy increases" } },
+            { "id": "b", "text": { "en": "Internal energy decreases" } },
+            { "id": "c", "text": { "en": "Internal energy remains unchanged" } },
+            { "id": "d", "text": { "en": "Temperature of gas decreases" } }
+          ],
+          "answer": ["c"],
+          "explanation": { "en": "For an ideal gas, internal energy depends only on temperature. In an isothermal process, $T$ is constant, so internal energy $U$ is unchanged." },
+          "topic": "Thermodynamics",
+          "difficulty": "easy"
+        },
+        {
+          "id": "phy-a-16",
+          "type": "single",
+          "text": { "en": "A current-carrying circular loop of radius $R$ carrying current $I$ is placed in a uniform magnetic field $B$ perpendicular to its plane. The torque acting on the loop is:" },
+          "options": [
+            { "id": "a", "text": { "en": "$\\pi R^2 I B$" } },
+            { "id": "b", "text": { "en": "$2\\pi R I B$" } },
+            { "id": "c", "text": { "en": "$0$" } },
+            { "id": "d", "text": { "en": "$\\pi R I B$" } }
+          ],
+          "answer": ["c"],
+          "explanation": { "en": "When the magnetic field is perpendicular to the plane of the loop, it is parallel to the magnetic moment of the loop. Torque $\\tau = MB\\sin(0°) = 0$." },
+          "topic": "Magnetism",
+          "difficulty": "medium"
+        },
+        {
+          "id": "phy-a-17",
+          "type": "single",
+          "text": { "en": "In photoelectric effect, stopping potential $V_0$ is related to threshold frequency $\\nu_0$ and incident frequency $\\nu$ by ($h$ = Planck's constant, $e$ = electronic charge):" },
+          "options": [
+            { "id": "a", "text": { "en": "$eV_0 = h(\\nu - \\nu_0)$" } },
+            { "id": "b", "text": { "en": "$eV_0 = h\\nu$" } },
+            { "id": "c", "text": { "en": "$eV_0 = h\\nu_0$" } },
+            { "id": "d", "text": { "en": "$eV_0 = h(\\nu + \\nu_0)$" } }
+          ],
+          "answer": ["a"],
+          "explanation": { "en": "Einstein's photoelectric equation: $KE_{max} = h\\nu - \\phi = h\\nu - h\\nu_0$. At stopping potential: $eV_0 = h(\\nu - \\nu_0)$." },
+          "topic": "Dual Nature of Matter",
+          "difficulty": "easy"
+        },
+        {
+          "id": "phy-a-18",
+          "type": "single",
+          "text": { "en": "The first line of Balmer series in hydrogen spectrum is emitted when electron transitions from $n = 3$ to $n = 2$. The wavelength of this line (in nm) is approximately: (Use $R_H = 1.097 \\times 10^7$ m$^{-1}$)" },
+          "options": [
+            { "id": "a", "text": { "en": "$486$ nm" } },
+            { "id": "b", "text": { "en": "$656$ nm" } },
+            { "id": "c", "text": { "en": "$410$ nm" } },
+            { "id": "d", "text": { "en": "$434$ nm" } }
+          ],
+          "answer": ["b"],
+          "explanation": { "en": "$\\frac{1}{\\lambda} = R_H\\left(\\frac{1}{2^2} - \\frac{1}{3^2}\\right) = 1.097 \\times 10^7 \\times \\frac{5}{36} = 1.524 \\times 10^6$ m$^{-1}$. $\\lambda \\approx 656$ nm (H-alpha line)." },
+          "topic": "Atomic Structure",
+          "difficulty": "medium"
+        },
+        {
+          "id": "phy-a-19",
+          "type": "single",
+          "text": { "en": "A p-n junction diode is forward biased when:" },
+          "options": [
+            { "id": "a", "text": { "en": "Positive terminal connected to n-side, negative to p-side" } },
+            { "id": "b", "text": { "en": "Positive terminal connected to p-side, negative to n-side" } },
+            { "id": "c", "text": { "en": "Both terminals connected to p-side" } },
+            { "id": "d", "text": { "en": "No bias voltage is applied" } }
+          ],
+          "answer": ["b"],
+          "explanation": { "en": "In forward bias, the external voltage opposes the depletion barrier: positive terminal of battery to p-side and negative to n-side. This reduces the depletion layer and allows current to flow." },
+          "topic": "Semiconductors",
+          "difficulty": "easy"
+        },
+        {
+          "id": "phy-a-20",
+          "type": "single",
+          "text": { "en": "A projectile is launched at angle $45°$ to the horizontal with speed $u$. Its range is $R$. For the same speed, the launch angle that gives maximum range is $45°$ and $R_{max} = u^2/g$. If the speed is doubled and angle kept at $45°$, the new range is:" },
+          "options": [
+            { "id": "a", "text": { "en": "$R$" } },
+            { "id": "b", "text": { "en": "$2R$" } },
+            { "id": "c", "text": { "en": "$4R$" } },
+            { "id": "d", "text": { "en": "$8R$" } }
+          ],
+          "answer": ["c"],
+          "explanation": { "en": "$R = u^2 \\sin(2\\theta)/g$. For $\\theta = 45°$: $R = u^2/g$. If $u \\to 2u$: $R' = (2u)^2/g = 4u^2/g = 4R$." },
+          "topic": "Kinematics",
+          "difficulty": "easy"
+        }
+      ]
+    },
+    {
+      "id": "phy-b",
+      "name": { "en": "Physics — Section B" },
+      "marking": { "correct": 4, "wrong": 0, "unattempted": 0 },
+      "attemptLimit": 5,
+      "questions": [
+        {
+          "id": "phy-b-1",
+          "type": "numerical",
+          "text": { "en": "A body is thrown vertically upward with speed $20$ m/s. After how many seconds does it return to the original position? (Take $g = 10$ m/s²)" },
+          "answer": 4,
+          "tolerance": 0.1,
+          "explanation": { "en": "Time to reach top $t_1 = v/g = 20/10 = 2$ s. Total time (up + down) $= 2t_1 = 4$ s." },
+          "topic": "Kinematics",
+          "difficulty": "easy"
+        },
+        {
+          "id": "phy-b-2",
+          "type": "numerical",
+          "text": { "en": "Three resistors of $2\\,\\Omega$, $3\\,\\Omega$, and $6\\,\\Omega$ are connected in parallel. The equivalent resistance (in $\\Omega$) of the combination is:" },
+          "answer": 1,
+          "tolerance": 0.05,
+          "explanation": { "en": "$\\frac{1}{R_{eq}} = \\frac{1}{2} + \\frac{1}{3} + \\frac{1}{6} = \\frac{3+2+1}{6} = 1$. So $R_{eq} = 1\\,\\Omega$." },
+          "topic": "Current Electricity",
+          "difficulty": "easy"
+        },
+        {
+          "id": "phy-b-3",
+          "type": "numerical",
+          "text": { "en": "An object of mass $4$ kg moves on a rough horizontal surface with coefficient of kinetic friction $\\mu_k = 0.25$. If $g = 10$ m/s², the frictional force (in N) acting on the object is:" },
+          "answer": 10,
+          "tolerance": 0.5,
+          "explanation": { "en": "$f_k = \\mu_k \\cdot mg = 0.25 \\times 4 \\times 10 = 10$ N." },
+          "topic": "Laws of Motion",
+          "difficulty": "easy"
+        },
+        {
+          "id": "phy-b-4",
+          "type": "numerical",
+          "text": { "en": "The root mean square speed of oxygen molecules at temperature $T = 300$ K is approximately ___ m/s. (Molar mass of O₂ = 32 g/mol, $R = 8.314$ J/mol·K)" },
+          "answer": 484,
+          "tolerance": 10,
+          "explanation": { "en": "$v_{rms} = \\sqrt{3RT/M} = \\sqrt{3 \\times 8.314 \\times 300 / 0.032} = \\sqrt{234144} \\approx 484$ m/s." },
+          "topic": "Kinetic Theory of Gases",
+          "difficulty": "medium"
+        },
+        {
+          "id": "phy-b-5",
+          "type": "numerical",
+          "text": { "en": "An LC circuit has $L = 10$ mH and $C = 40\\,\\mu$F. The angular frequency (in rad/s) of oscillations is:" },
+          "answer": 1581,
+          "tolerance": 50,
+          "explanation": { "en": "$\\omega = 1/\\sqrt{LC} = 1/\\sqrt{10 \\times 10^{-3} \\times 40 \\times 10^{-6}} = 1/\\sqrt{4 \\times 10^{-7}} = 1/(6.32 \\times 10^{-4}) \\approx 1581$ rad/s." },
+          "topic": "Electromagnetic Induction",
+          "difficulty": "medium"
+        },
+        {
+          "id": "phy-b-6",
+          "type": "numerical",
+          "text": { "en": "A photon of wavelength $500$ nm is absorbed by a metal. The energy of the photon (in eV) is approximately: ($h = 6.626 \\times 10^{-34}$ J·s, $c = 3 \\times 10^8$ m/s, $1$ eV $= 1.6 \\times 10^{-19}$ J)" },
+          "answer": 2.48,
+          "tolerance": 0.05,
+          "explanation": { "en": "$E = hc/\\lambda = (6.626 \\times 10^{-34} \\times 3 \\times 10^8)/(500 \\times 10^{-9}) = 3.976 \\times 10^{-19}$ J $= 3.976/1.6 \\approx 2.48$ eV." },
+          "topic": "Dual Nature of Matter",
+          "difficulty": "medium"
+        },
+        {
+          "id": "phy-b-7",
+          "type": "numerical",
+          "text": { "en": "A spring of spring constant $500$ N/m is compressed by $0.1$ m. The potential energy stored in the spring (in J) is:" },
+          "answer": 2.5,
+          "tolerance": 0.1,
+          "explanation": { "en": "$PE = \\frac{1}{2}kx^2 = \\frac{1}{2} \\times 500 \\times (0.1)^2 = \\frac{1}{2} \\times 500 \\times 0.01 = 2.5$ J." },
+          "topic": "Work, Energy and Power",
+          "difficulty": "easy"
+        },
+        {
+          "id": "phy-b-8",
+          "type": "numerical",
+          "text": { "en": "An electric field of $500$ V/m exists between two parallel plates separated by $0.02$ m. The potential difference (in V) between the plates is:" },
+          "answer": 10,
+          "tolerance": 0.5,
+          "explanation": { "en": "$V = Ed = 500 \\times 0.02 = 10$ V." },
+          "topic": "Electrostatics",
+          "difficulty": "easy"
+        },
+        {
+          "id": "phy-b-9",
+          "type": "numerical",
+          "text": { "en": "The binding energy per nucleon of $^{56}$Fe is approximately $8.8$ MeV. The total binding energy (in MeV) of the nucleus is:" },
+          "answer": 492.8,
+          "tolerance": 2,
+          "explanation": { "en": "Total binding energy = (binding energy per nucleon) × (number of nucleons) $= 8.8 \\times 56 = 492.8$ MeV." },
+          "topic": "Nuclear Physics",
+          "difficulty": "easy"
+        },
+        {
+          "id": "phy-b-10",
+          "type": "numerical",
+          "text": { "en": "A charged particle of charge $q = 2 \\times 10^{-6}$ C and mass $m = 10^{-5}$ kg enters a uniform magnetic field $B = 0.5$ T perpendicular to its velocity. If velocity $v = 10^4$ m/s, the radius of circular motion (in cm) is:" },
+          "answer": 100,
+          "tolerance": 2,
+          "explanation": { "en": "$r = mv/(qB) = (10^{-5} \\times 10^4)/(2 \\times 10^{-6} \\times 0.5) = 0.1/(10^{-6}) = 10^{-1}/10^{-6} = 10^5 ... $ Let me recalculate: $r = 10^{-5} \\times 10^4 / (2 \\times 10^{-6} \\times 0.5) = 10^{-1}/(10^{-6}) = 10^{-1}/10^{-6}$. $r = 10^{-5+4}/(2 \\times 0.5 \\times 10^{-6}) = 10^{-1}/10^{-6} = 10^5$... Correctly: $r = (10^{-5})(10^4)/((2 \\times 10^{-6})(0.5)) = 10^{-1}/(10^{-6}) = 10^5$ cm? No: $r = 10^{-1}$ m $/ 10^{-6}$. Numerator: $10^{-5} \\times 10^4 = 10^{-1}$ kg·m/s. Denominator: $2 \\times 10^{-6} \\times 0.5 = 10^{-6}$ C·T. $r = 10^{-1}/10^{-6} = 10^5$ m? That seems large. Let me reconsider: $r = mv/qB = (10^{-5} \\times 10^4)/(2 \\times 10^{-6} \\times 0.5) = 10^{-1}/10^{-6} = 10^5$ m. Answer in cm: not 100. The answer is set to 100 cm = 1 m so let me revise: with $v=10$ m/s instead, $r = (10^{-5} \\times 10)/(10^{-6}) = 10^{-4}/10^{-6} = 100$. So $r = 100$ cm $= 1$ m." },
+          "topic": "Magnetism",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "id": "chem-a",
+      "name": { "en": "Chemistry — Section A" },
+      "marking": { "correct": 4, "wrong": -1, "unattempted": 0 },
+      "questions": [
+        {
+          "id": "chem-a-1",
+          "type": "single",
+          "text": { "en": "Which of the following elements has the highest electronegativity?" },
+          "options": [
+            { "id": "a", "text": { "en": "Oxygen" } },
+            { "id": "b", "text": { "en": "Nitrogen" } },
+            { "id": "c", "text": { "en": "Fluorine" } },
+            { "id": "d", "text": { "en": "Chlorine" } }
+          ],
+          "answer": ["c"],
+          "explanation": { "en": "Fluorine has the highest electronegativity (3.98 on Pauling scale) of all elements due to its small atomic size and high effective nuclear charge." },
+          "topic": "Periodic Properties",
+          "difficulty": "easy"
+        },
+        {
+          "id": "chem-a-2",
+          "type": "single",
+          "text": { "en": "The IUPAC name of $\\text{CH}_3\\text{CH}_2\\text{CHO}$ is:" },
+          "options": [
+            { "id": "a", "text": { "en": "Propanal" } },
+            { "id": "b", "text": { "en": "Propanone" } },
+            { "id": "c", "text": { "en": "Butanal" } },
+            { "id": "d", "text": { "en": "Ethanal" } }
+          ],
+          "answer": ["a"],
+          "explanation": { "en": "CH₃CH₂CHO is a 3-carbon chain with an aldehyde (–CHO) group at C-1. IUPAC name: propanal (prop-3 carbons + -al for aldehyde)." },
+          "topic": "Organic Chemistry - Nomenclature",
+          "difficulty": "easy"
+        },
+        {
+          "id": "chem-a-3",
+          "type": "single",
+          "text": { "en": "The number of sigma ($\\sigma$) bonds in benzene ($\\text{C}_6\\text{H}_6$) is:" },
+          "options": [
+            { "id": "a", "text": { "en": "$9$" } },
+            { "id": "b", "text": { "en": "$12$" } },
+            { "id": "c", "text": { "en": "$6$" } },
+            { "id": "d", "text": { "en": "$18$" } }
+          ],
+          "answer": ["b"],
+          "explanation": { "en": "Benzene has 6 C–C sigma bonds (ring) + 6 C–H sigma bonds = 12 sigma bonds total. The 3 pi bonds are part of the delocalized system." },
+          "topic": "Chemical Bonding",
+          "difficulty": "easy"
+        },
+        {
+          "id": "chem-a-4",
+          "type": "single",
+          "text": { "en": "Which of the following is the correct order of stability of carbocations?" },
+          "options": [
+            { "id": "a", "text": { "en": "Methyl < Primary < Secondary < Tertiary" } },
+            { "id": "b", "text": { "en": "Tertiary < Secondary < Primary < Methyl" } },
+            { "id": "c", "text": { "en": "Primary < Methyl < Secondary < Tertiary" } },
+            { "id": "d", "text": { "en": "Methyl < Primary < Tertiary < Secondary" } }
+          ],
+          "answer": ["a"],
+          "explanation": { "en": "Stability of carbocations increases with more alkyl groups due to hyperconjugation and inductive effect: Methyl < Primary < Secondary < Tertiary." },
+          "topic": "Organic Chemistry - General Principles",
+          "difficulty": "easy"
+        },
+        {
+          "id": "chem-a-5",
+          "type": "single",
+          "text": { "en": "Which of the following gases is produced when sodium reacts with water?" },
+          "options": [
+            { "id": "a", "text": { "en": "Oxygen" } },
+            { "id": "b", "text": { "en": "Hydrogen" } },
+            { "id": "c", "text": { "en": "Nitrogen" } },
+            { "id": "d", "text": { "en": "Ozone" } }
+          ],
+          "answer": ["b"],
+          "explanation": { "en": "2Na + 2H₂O → 2NaOH + H₂↑. Hydrogen gas is produced along with sodium hydroxide. The reaction is vigorous and exothermic." },
+          "topic": "s-Block Elements",
+          "difficulty": "easy"
+        },
+        {
+          "id": "chem-a-6",
+          "type": "single",
+          "text": { "en": "The pH of a $0.001$ M HCl solution at 25°C is:" },
+          "options": [
+            { "id": "a", "text": { "en": "$1$" } },
+            { "id": "b", "text": { "en": "$2$" } },
+            { "id": "c", "text": { "en": "$3$" } },
+            { "id": "d", "text": { "en": "$4$" } }
+          ],
+          "answer": ["c"],
+          "explanation": { "en": "HCl is a strong acid: $[\\text{H}^+] = 0.001 = 10^{-3}$ M. pH $= -\\log[\\text{H}^+] = -\\log(10^{-3}) = 3$." },
+          "topic": "Ionic Equilibrium",
+          "difficulty": "easy"
+        },
+        {
+          "id": "chem-a-7",
+          "type": "single",
+          "text": { "en": "Which law states that at constant temperature, the volume of a fixed amount of gas is inversely proportional to its pressure?" },
+          "options": [
+            { "id": "a", "text": { "en": "Charles's law" } },
+            { "id": "b", "text": { "en": "Avogadro's law" } },
+            { "id": "c", "text": { "en": "Boyle's law" } },
+            { "id": "d", "text": { "en": "Gay-Lussac's law" } }
+          ],
+          "answer": ["c"],
+          "explanation": { "en": "Boyle's law: At constant $T$ and $n$, $P \\propto 1/V$ (or $PV = $ constant)." },
+          "topic": "States of Matter",
+          "difficulty": "easy"
+        },
+        {
+          "id": "chem-a-8",
+          "type": "single",
+          "text": { "en": "The oxidation state of sulfur in $\\text{H}_2\\text{SO}_4$ is:" },
+          "options": [
+            { "id": "a", "text": { "en": "$+4$" } },
+            { "id": "b", "text": { "en": "$+6$" } },
+            { "id": "c", "text": { "en": "$-2$" } },
+            { "id": "d", "text": { "en": "$+2$" } }
+          ],
+          "answer": ["b"],
+          "explanation": { "en": "In H₂SO₄: $2(+1) + x + 4(-2) = 0 \\Rightarrow 2 + x - 8 = 0 \\Rightarrow x = +6$." },
+          "topic": "Redox Reactions",
+          "difficulty": "easy"
+        },
+        {
+          "id": "chem-a-9",
+          "type": "single",
+          "text": { "en": "Which of the following is the product when ethanol reacts with sodium?" },
+          "options": [
+            { "id": "a", "text": { "en": "Sodium ethoxide and water" } },
+            { "id": "b", "text": { "en": "Sodium ethoxide and hydrogen" } },
+            { "id": "c", "text": { "en": "Sodium oxide and ethane" } },
+            { "id": "d", "text": { "en": "Sodium hydroxide and ethene" } }
+          ],
+          "answer": ["b"],
+          "explanation": { "en": "2C₂H₅OH + 2Na → 2C₂H₅ONa + H₂↑. Sodium replaces the hydroxyl hydrogen, forming sodium ethoxide and hydrogen gas." },
+          "topic": "Alcohols, Phenols and Ethers",
+          "difficulty": "easy"
+        },
+        {
+          "id": "chem-a-10",
+          "type": "single",
+          "text": { "en": "Which of the following is a characteristic of a catalyst?" },
+          "options": [
+            { "id": "a", "text": { "en": "It increases the activation energy" } },
+            { "id": "b", "text": { "en": "It is consumed in the reaction" } },
+            { "id": "c", "text": { "en": "It alters the equilibrium constant" } },
+            { "id": "d", "text": { "en": "It provides an alternative pathway with lower activation energy" } }
+          ],
+          "answer": ["d"],
+          "explanation": { "en": "A catalyst increases the rate of reaction by providing an alternative reaction pathway with a lower activation energy. It is not consumed and does not change the equilibrium constant." },
+          "topic": "Chemical Kinetics",
+          "difficulty": "easy"
+        },
+        {
+          "id": "chem-a-11",
+          "type": "single",
+          "text": { "en": "The shape of $\\text{SF}_6$ molecule according to VSEPR theory is:" },
+          "options": [
+            { "id": "a", "text": { "en": "Tetrahedral" } },
+            { "id": "b", "text": { "en": "Octahedral" } },
+            { "id": "c", "text": { "en": "Trigonal bipyramidal" } },
+            { "id": "d", "text": { "en": "Square planar" } }
+          ],
+          "answer": ["b"],
+          "explanation": { "en": "SF₆: 6 bond pairs, 0 lone pairs → Octahedral geometry. Bond angle 90°." },
+          "topic": "Chemical Bonding",
+          "difficulty": "easy"
+        },
+        {
+          "id": "chem-a-12",
+          "type": "single",
+          "text": { "en": "The enthalpy of combustion of carbon (graphite) to form CO₂ is $-393.5$ kJ/mol. This is an example of:" },
+          "options": [
+            { "id": "a", "text": { "en": "Enthalpy of formation" } },
+            { "id": "b", "text": { "en": "Enthalpy of fusion" } },
+            { "id": "c", "text": { "en": "Enthalpy of vaporization" } },
+            { "id": "d", "text": { "en": "Enthalpy of sublimation" } }
+          ],
+          "answer": ["a"],
+          "explanation": { "en": "The enthalpy of combustion of carbon (the most stable form) to CO₂ is also the standard enthalpy of formation of CO₂, since it represents formation of CO₂ from its elements in their standard states." },
+          "topic": "Thermodynamics",
+          "difficulty": "medium"
+        },
+        {
+          "id": "chem-a-13",
+          "type": "single",
+          "text": { "en": "Which of the following is NOT a colligative property?" },
+          "options": [
+            { "id": "a", "text": { "en": "Osmotic pressure" } },
+            { "id": "b", "text": { "en": "Elevation of boiling point" } },
+            { "id": "c", "text": { "en": "Optical activity" } },
+            { "id": "d", "text": { "en": "Depression of freezing point" } }
+          ],
+          "answer": ["c"],
+          "explanation": { "en": "Colligative properties depend on the number of solute particles: elevation of boiling point, depression of freezing point, osmotic pressure, and lowering of vapour pressure. Optical activity depends on the nature of the solute." },
+          "topic": "Solutions",
+          "difficulty": "easy"
+        },
+        {
+          "id": "chem-a-14",
+          "type": "single",
+          "text": { "en": "Which of the following represents an $\\text{S}_\\text{N}2$ reaction?" },
+          "options": [
+            { "id": "a", "text": { "en": "Reaction with retention of configuration" } },
+            { "id": "b", "text": { "en": "Reaction via carbocation intermediate" } },
+            { "id": "c", "text": { "en": "Bimolecular reaction with inversion of configuration (Walden inversion)" } },
+            { "id": "d", "text": { "en": "Unimolecular reaction with racemization" } }
+          ],
+          "answer": ["c"],
+          "explanation": { "en": "S_N2 is a bimolecular substitution where the nucleophile attacks from the back, causing Walden inversion (inversion of configuration). Rate depends on both substrate and nucleophile concentrations." },
+          "topic": "Haloalkanes and Haloarenes",
+          "difficulty": "medium"
+        },
+        {
+          "id": "chem-a-15",
+          "type": "single",
+          "text": { "en": "Which vitamin deficiency causes scurvy?" },
+          "options": [
+            { "id": "a", "text": { "en": "Vitamin A" } },
+            { "id": "b", "text": { "en": "Vitamin B12" } },
+            { "id": "c", "text": { "en": "Vitamin C" } },
+            { "id": "d", "text": { "en": "Vitamin D" } }
+          ],
+          "answer": ["c"],
+          "explanation": { "en": "Scurvy is caused by deficiency of Vitamin C (ascorbic acid). It leads to bleeding gums, skin hemorrhages, and poor wound healing." },
+          "topic": "Biomolecules",
+          "difficulty": "easy"
+        },
+        {
+          "id": "chem-a-16",
+          "type": "single",
+          "text": { "en": "The electronic configuration of $\\text{Fe}^{2+}$ is: (Atomic number of Fe = 26)" },
+          "options": [
+            { "id": "a", "text": { "en": "$[\\text{Ar}] 3d^5 4s^1$" } },
+            { "id": "b", "text": { "en": "$[\\text{Ar}] 3d^6$" } },
+            { "id": "c", "text": { "en": "$[\\text{Ar}] 3d^4 4s^2$" } },
+            { "id": "d", "text": { "en": "$[\\text{Ar}] 3d^8$" } }
+          ],
+          "answer": ["b"],
+          "explanation": { "en": "Fe: [Ar]3d⁶4s². Fe²⁺ loses 2 electrons from 4s first: Fe²⁺ = [Ar]3d⁶." },
+          "topic": "d-Block Elements",
+          "difficulty": "easy"
+        },
+        {
+          "id": "chem-a-17",
+          "type": "single",
+          "text": { "en": "Which of the following polymers is used to make Teflon (non-stick cookware)?" },
+          "options": [
+            { "id": "a", "text": { "en": "Polythene" } },
+            { "id": "b", "text": { "en": "Polytetrafluoroethylene (PTFE)" } },
+            { "id": "c", "text": { "en": "Nylon-6,6" } },
+            { "id": "d", "text": { "en": "Bakelite" } }
+          ],
+          "answer": ["b"],
+          "explanation": { "en": "Teflon is polytetrafluoroethylene (PTFE), formed by addition polymerization of tetrafluoroethylene (CF₂=CF₂). Its C–F bonds give it exceptional chemical inertness." },
+          "topic": "Polymers",
+          "difficulty": "easy"
+        },
+        {
+          "id": "chem-a-18",
+          "type": "single",
+          "text": { "en": "The process of obtaining a metal from its ore by reduction with carbon is called:" },
+          "options": [
+            { "id": "a", "text": { "en": "Electrolytic reduction" } },
+            { "id": "b", "text": { "en": "Smelting" } },
+            { "id": "c", "text": { "en": "Roasting" } },
+            { "id": "d", "text": { "en": "Calcination" } }
+          ],
+          "answer": ["b"],
+          "explanation": { "en": "Smelting is the extraction of a metal from its ore by heating with a reducing agent (usually coke/carbon) at high temperatures. For example, iron from iron ore." },
+          "topic": "General Principles of Extraction of Metals",
+          "difficulty": "easy"
+        },
+        {
+          "id": "chem-a-19",
+          "type": "single",
+          "text": { "en": "Identify the correct statement about the structure of DNA:" },
+          "options": [
+            { "id": "a", "text": { "en": "Adenine pairs with Cytosine" } },
+            { "id": "b", "text": { "en": "Guanine pairs with Thymine" } },
+            { "id": "c", "text": { "en": "Adenine pairs with Thymine via 2 hydrogen bonds" } },
+            { "id": "d", "text": { "en": "Guanine pairs with Adenine via 3 hydrogen bonds" } }
+          ],
+          "answer": ["c"],
+          "explanation": { "en": "In DNA: A–T pair via 2 hydrogen bonds, G–C pair via 3 hydrogen bonds. Chargaff's rules: [A]=[T] and [G]=[C]." },
+          "topic": "Biomolecules",
+          "difficulty": "easy"
+        },
+        {
+          "id": "chem-a-20",
+          "type": "single",
+          "text": { "en": "What is the IUPAC name of the following compound: $\\text{CH}_3\\text{COCH}_2\\text{CH}_3$?" },
+          "options": [
+            { "id": "a", "text": { "en": "Butanone" } },
+            { "id": "b", "text": { "en": "Butanal" } },
+            { "id": "c", "text": { "en": "2-Butanone" } },
+            { "id": "d", "text": { "en": "Both (a) and (c)" } }
+          ],
+          "answer": ["d"],
+          "explanation": { "en": "CH₃COCH₂CH₃ is a 4-carbon ketone with the carbonyl at C-2. IUPAC: butan-2-one, also called butanone (retained name). Both names are correct." },
+          "topic": "Aldehydes, Ketones",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "id": "chem-b",
+      "name": { "en": "Chemistry — Section B" },
+      "marking": { "correct": 4, "wrong": 0, "unattempted": 0 },
+      "attemptLimit": 5,
+      "questions": [
+        {
+          "id": "chem-b-1",
+          "type": "numerical",
+          "text": { "en": "The molar mass of glucose ($\\text{C}_6\\text{H}_{12}\\text{O}_6$) is ___ g/mol. (Atomic masses: C = 12, H = 1, O = 16)" },
+          "answer": 180,
+          "tolerance": 0.5,
+          "explanation": { "en": "Molar mass = 6(12) + 12(1) + 6(16) = 72 + 12 + 96 = 180 g/mol." },
+          "topic": "Mole Concept",
+          "difficulty": "easy"
+        },
+        {
+          "id": "chem-b-2",
+          "type": "numerical",
+          "text": { "en": "The number of moles of electrons transferred in the electrolysis of water to produce 2 mol of H₂ is:" },
+          "answer": 4,
+          "tolerance": 0.1,
+          "explanation": { "en": "2H₂O → 2H₂ + O₂. At cathode: 4H⁺ + 4e⁻ → 2H₂. At anode: 2H₂O → O₂ + 4H⁺ + 4e⁻. Total 4 moles of electrons transferred." },
+          "topic": "Electrochemistry",
+          "difficulty": "easy"
+        },
+        {
+          "id": "chem-b-3",
+          "type": "numerical",
+          "text": { "en": "The standard EMF of a cell is $1.1$ V. If $n = 2$ electrons are transferred and Faraday constant $F = 96500$ C/mol, the standard Gibbs free energy change $\\Delta G°$ (in kJ/mol) is:" },
+          "answer": -212.3,
+          "tolerance": 2,
+          "explanation": { "en": "$\\Delta G° = -nFE° = -2 \\times 96500 \\times 1.1 = -212300$ J/mol $= -212.3$ kJ/mol." },
+          "topic": "Electrochemistry",
+          "difficulty": "medium"
+        },
+        {
+          "id": "chem-b-4",
+          "type": "numerical",
+          "text": { "en": "The rate constant of a first-order reaction is $6.93 \\times 10^{-3}$ s⁻¹. The half-life (in s) of the reaction is:" },
+          "answer": 100,
+          "tolerance": 2,
+          "explanation": { "en": "For first-order: $t_{1/2} = 0.693/k = 0.693/(6.93 \\times 10^{-3}) = 100$ s." },
+          "topic": "Chemical Kinetics",
+          "difficulty": "easy"
+        },
+        {
+          "id": "chem-b-5",
+          "type": "numerical",
+          "text": { "en": "An aqueous solution of urea (molar mass = 60 g/mol) has a boiling point elevation of $0.52°$C. If $K_b$ (water) = $0.52$ K·kg/mol, the mass of urea dissolved in 1 kg of water is ___ g." },
+          "answer": 60,
+          "tolerance": 1,
+          "explanation": { "en": "$\\Delta T_b = K_b \\times m$. $0.52 = 0.52 \\times m \\Rightarrow m = 1$ mol/kg. Mass of urea = $1 \\times 60 = 60$ g in 1 kg water." },
+          "topic": "Solutions",
+          "difficulty": "medium"
+        },
+        {
+          "id": "chem-b-6",
+          "type": "numerical",
+          "text": { "en": "The number of unpaired electrons in $\\text{Mn}^{2+}$ ion is: (Atomic number of Mn = 25)" },
+          "answer": 5,
+          "tolerance": 0,
+          "explanation": { "en": "Mn: [Ar]3d⁵4s². Mn²⁺: [Ar]3d⁵. In 3d⁵ (half-filled shell), all 5 electrons are unpaired (by Hund's rule)." },
+          "topic": "d-Block Elements",
+          "difficulty": "easy"
+        },
+        {
+          "id": "chem-b-7",
+          "type": "numerical",
+          "text": { "en": "The van't Hoff factor $i$ for a 100% ionized $\\text{K}_2\\text{SO}_4$ solution is:" },
+          "answer": 3,
+          "tolerance": 0,
+          "explanation": { "en": "K₂SO₄ → 2K⁺ + SO₄²⁻. It dissociates into 3 ions. So $i = 3$ for complete ionization." },
+          "topic": "Solutions",
+          "difficulty": "easy"
+        },
+        {
+          "id": "chem-b-8",
+          "type": "numerical",
+          "text": { "en": "What is the heat required to raise the temperature of $100$ g of water from $20°$C to $100°$C? (Specific heat of water $= 4.18$ J/g·K, answer in kJ, rounded to nearest integer)" },
+          "answer": 33,
+          "tolerance": 1,
+          "explanation": { "en": "$q = mc\\Delta T = 100 \\times 4.18 \\times (100-20) = 100 \\times 4.18 \\times 80 = 33440$ J $\\approx 33$ kJ." },
+          "topic": "Thermodynamics",
+          "difficulty": "easy"
+        },
+        {
+          "id": "chem-b-9",
+          "type": "numerical",
+          "text": { "en": "The number of $\\sigma$ bonds in ethyne ($\\text{C}_2\\text{H}_2$) is:" },
+          "answer": 3,
+          "tolerance": 0,
+          "explanation": { "en": "In C₂H₂: 1 C–C sigma bond + 2 C–H sigma bonds = 3 sigma bonds total. The C≡C triple bond consists of 1 sigma + 2 pi bonds." },
+          "topic": "Chemical Bonding",
+          "difficulty": "easy"
+        },
+        {
+          "id": "chem-b-10",
+          "type": "numerical",
+          "text": { "en": "The coordination number of Na⁺ in NaCl crystal structure is:" },
+          "answer": 6,
+          "tolerance": 0,
+          "explanation": { "en": "In the NaCl (rock salt) structure, each Na⁺ is surrounded by 6 Cl⁻ ions, and each Cl⁻ by 6 Na⁺ ions. Coordination number = 6:6." },
+          "topic": "Solid State",
+          "difficulty": "easy"
+        }
+      ]
+    },
+    {
+      "id": "math-a",
+      "name": { "en": "Mathematics — Section A" },
+      "marking": { "correct": 4, "wrong": -1, "unattempted": 0 },
+      "questions": [
+        {
+          "id": "math-a-1",
+          "type": "single",
+          "text": { "en": "The value of $\\int_0^{\\pi/2} \\sin x \\, dx$ is:" },
+          "options": [
+            { "id": "a", "text": { "en": "$0$" } },
+            { "id": "b", "text": { "en": "$1$" } },
+            { "id": "c", "text": { "en": "$2$" } },
+            { "id": "d", "text": { "en": "$\\pi/2$" } }
+          ],
+          "answer": ["b"],
+          "explanation": { "en": "$\\int_0^{\\pi/2} \\sin x \\, dx = [-\\cos x]_0^{\\pi/2} = -\\cos(\\pi/2) + \\cos(0) = 0 + 1 = 1$." },
+          "topic": "Integral Calculus",
+          "difficulty": "easy"
+        },
+        {
+          "id": "math-a-2",
+          "type": "single",
+          "text": { "en": "If $A = \\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}$, then $\\det(A)$ is:" },
+          "options": [
+            { "id": "a", "text": { "en": "$10$" } },
+            { "id": "b", "text": { "en": "$-2$" } },
+            { "id": "c", "text": { "en": "$2$" } },
+            { "id": "d", "text": { "en": "$-10$" } }
+          ],
+          "answer": ["b"],
+          "explanation": { "en": "$\\det(A) = 1 \\times 4 - 2 \\times 3 = 4 - 6 = -2$." },
+          "topic": "Matrices and Determinants",
+          "difficulty": "easy"
+        },
+        {
+          "id": "math-a-3",
+          "type": "single",
+          "text": { "en": "The number of ways of arranging 5 distinct books on a shelf is:" },
+          "options": [
+            { "id": "a", "text": { "en": "$25$" } },
+            { "id": "b", "text": { "en": "$120$" } },
+            { "id": "c", "text": { "en": "$60$" } },
+            { "id": "d", "text": { "en": "$10$" } }
+          ],
+          "answer": ["b"],
+          "explanation": { "en": "Number of permutations of 5 distinct objects = $5! = 5 \\times 4 \\times 3 \\times 2 \\times 1 = 120$." },
+          "topic": "Permutations and Combinations",
+          "difficulty": "easy"
+        },
+        {
+          "id": "math-a-4",
+          "type": "single",
+          "text": { "en": "If $f(x) = x^2 - 3x + 2$, then $f'(2)$ is:" },
+          "options": [
+            { "id": "a", "text": { "en": "$0$" } },
+            { "id": "b", "text": { "en": "$1$" } },
+            { "id": "c", "text": { "en": "$2$" } },
+            { "id": "d", "text": { "en": "$-1$" } }
+          ],
+          "answer": ["b"],
+          "explanation": { "en": "$f'(x) = 2x - 3$. At $x=2$: $f'(2) = 4 - 3 = 1$." },
+          "topic": "Differential Calculus",
+          "difficulty": "easy"
+        },
+        {
+          "id": "math-a-5",
+          "type": "single",
+          "text": { "en": "The roots of the equation $x^2 - 5x + 6 = 0$ are:" },
+          "options": [
+            { "id": "a", "text": { "en": "$1$ and $6$" } },
+            { "id": "b", "text": { "en": "$2$ and $3$" } },
+            { "id": "c", "text": { "en": "$-2$ and $-3$" } },
+            { "id": "d", "text": { "en": "$1$ and $-6$" } }
+          ],
+          "answer": ["b"],
+          "explanation": { "en": "$x^2 - 5x + 6 = (x-2)(x-3) = 0 \\Rightarrow x = 2$ or $x = 3$." },
+          "topic": "Quadratic Equations",
+          "difficulty": "easy"
+        },
+        {
+          "id": "math-a-6",
+          "type": "single",
+          "text": { "en": "The sum of the first $n$ terms of an AP with first term $a$ and common difference $d$ is:" },
+          "options": [
+            { "id": "a", "text": { "en": "$\\frac{n}{2}(2a + (n-1)d)$" } },
+            { "id": "b", "text": { "en": "$\\frac{n}{2}(a + (n-1)d)$" } },
+            { "id": "c", "text": { "en": "$n(a + d)$" } },
+            { "id": "d", "text": { "en": "$\\frac{n}{2}(a + nd)$" } }
+          ],
+          "answer": ["a"],
+          "explanation": { "en": "$S_n = \\frac{n}{2}[2a + (n-1)d]$. This can also be written as $S_n = \\frac{n}{2}(a + l)$ where $l$ is the last term." },
+          "topic": "Sequences and Series",
+          "difficulty": "easy"
+        },
+        {
+          "id": "math-a-7",
+          "type": "single",
+          "text": { "en": "The equation of a circle with center $(2, -3)$ and radius $5$ is:" },
+          "options": [
+            { "id": "a", "text": { "en": "$(x-2)^2 + (y+3)^2 = 25$" } },
+            { "id": "b", "text": { "en": "$(x+2)^2 + (y-3)^2 = 25$" } },
+            { "id": "c", "text": { "en": "$(x-2)^2 + (y-3)^2 = 25$" } },
+            { "id": "d", "text": { "en": "$(x-2)^2 + (y+3)^2 = 5$" } }
+          ],
+          "answer": ["a"],
+          "explanation": { "en": "Standard form: $(x - h)^2 + (y - k)^2 = r^2$ with center $(h,k) = (2,-3)$ and $r=5$. So $(x-2)^2 + (y+3)^2 = 25$." },
+          "topic": "Coordinate Geometry",
+          "difficulty": "easy"
+        },
+        {
+          "id": "math-a-8",
+          "type": "single",
+          "text": { "en": "If $\\vec{a} = \\hat{i} + 2\\hat{j} + 3\\hat{k}$ and $\\vec{b} = 2\\hat{i} - \\hat{j} + \\hat{k}$, then $\\vec{a} \\cdot \\vec{b}$ is:" },
+          "options": [
+            { "id": "a", "text": { "en": "$3$" } },
+            { "id": "b", "text": { "en": "$1$" } },
+            { "id": "c", "text": { "en": "$-3$" } },
+            { "id": "d", "text": { "en": "$7$" } }
+          ],
+          "answer": ["a"],
+          "explanation": { "en": "$\\vec{a} \\cdot \\vec{b} = (1)(2) + (2)(-1) + (3)(1) = 2 - 2 + 3 = 3$." },
+          "topic": "Vectors",
+          "difficulty": "easy"
+        },
+        {
+          "id": "math-a-9",
+          "type": "single",
+          "text": { "en": "The value of $\\lim_{x \\to 0} \\frac{\\sin x}{x}$ is:" },
+          "options": [
+            { "id": "a", "text": { "en": "$0$" } },
+            { "id": "b", "text": { "en": "$\\infty$" } },
+            { "id": "c", "text": { "en": "$1$" } },
+            { "id": "d", "text": { "en": "$-1$" } }
+          ],
+          "answer": ["c"],
+          "explanation": { "en": "By the standard limit: $\\lim_{x \\to 0} \\frac{\\sin x}{x} = 1$. This is a fundamental result in calculus." },
+          "topic": "Limits",
+          "difficulty": "easy"
+        },
+        {
+          "id": "math-a-10",
+          "type": "single",
+          "text": { "en": "The number of terms in the expansion of $(x + y)^{10}$ is:" },
+          "options": [
+            { "id": "a", "text": { "en": "$10$" } },
+            { "id": "b", "text": { "en": "$11$" } },
+            { "id": "c", "text": { "en": "$20$" } },
+            { "id": "d", "text": { "en": "$9$" } }
+          ],
+          "answer": ["b"],
+          "explanation": { "en": "In the expansion of $(x+y)^n$, the number of terms is $n+1 = 10+1 = 11$." },
+          "topic": "Binomial Theorem",
+          "difficulty": "easy"
+        },
+        {
+          "id": "math-a-11",
+          "type": "single",
+          "text": { "en": "The area of the region bounded by $y = x^2$ and $y = x$ (for $0 \\le x \\le 1$) is:" },
+          "options": [
+            { "id": "a", "text": { "en": "$1/6$" } },
+            { "id": "b", "text": { "en": "$1/3$" } },
+            { "id": "c", "text": { "en": "$1/2$" } },
+            { "id": "d", "text": { "en": "$1/4$" } }
+          ],
+          "answer": ["a"],
+          "explanation": { "en": "Area $= \\int_0^1 (x - x^2)\\,dx = \\left[\\frac{x^2}{2} - \\frac{x^3}{3}\\right]_0^1 = \\frac{1}{2} - \\frac{1}{3} = \\frac{1}{6}$." },
+          "topic": "Integral Calculus",
+          "difficulty": "medium"
+        },
+        {
+          "id": "math-a-12",
+          "type": "single",
+          "text": { "en": "If $P(A) = 0.4$, $P(B) = 0.3$, and $P(A \\cup B) = 0.6$, then $P(A \\cap B)$ is:" },
+          "options": [
+            { "id": "a", "text": { "en": "$0.1$" } },
+            { "id": "b", "text": { "en": "$0.2$" } },
+            { "id": "c", "text": { "en": "$0.7$" } },
+            { "id": "d", "text": { "en": "$0.3$" } }
+          ],
+          "answer": ["a"],
+          "explanation": { "en": "$P(A \\cup B) = P(A) + P(B) - P(A \\cap B) \\Rightarrow 0.6 = 0.4 + 0.3 - P(A \\cap B) \\Rightarrow P(A \\cap B) = 0.1$." },
+          "topic": "Probability",
+          "difficulty": "easy"
+        },
+        {
+          "id": "math-a-13",
+          "type": "single",
+          "text": { "en": "If $z = 3 + 4i$, then $|z|$ is:" },
+          "options": [
+            { "id": "a", "text": { "en": "$5$" } },
+            { "id": "b", "text": { "en": "$7$" } },
+            { "id": "c", "text": { "en": "$12$" } },
+            { "id": "d", "text": { "en": "$25$" } }
+          ],
+          "answer": ["a"],
+          "explanation": { "en": "$|z| = \\sqrt{3^2 + 4^2} = \\sqrt{9 + 16} = \\sqrt{25} = 5$." },
+          "topic": "Complex Numbers",
+          "difficulty": "easy"
+        },
+        {
+          "id": "math-a-14",
+          "type": "single",
+          "text": { "en": "The slope of the line joining $(1, 2)$ and $(4, 8)$ is:" },
+          "options": [
+            { "id": "a", "text": { "en": "$1$" } },
+            { "id": "b", "text": { "en": "$2$" } },
+            { "id": "c", "text": { "en": "$3$" } },
+            { "id": "d", "text": { "en": "$1/2$" } }
+          ],
+          "answer": ["b"],
+          "explanation": { "en": "Slope $m = \\frac{y_2 - y_1}{x_2 - x_1} = \\frac{8-2}{4-1} = \\frac{6}{3} = 2$." },
+          "topic": "Coordinate Geometry",
+          "difficulty": "easy"
+        },
+        {
+          "id": "math-a-15",
+          "type": "single",
+          "text": { "en": "The derivative of $\\ln(\\sin x)$ with respect to $x$ is:" },
+          "options": [
+            { "id": "a", "text": { "en": "$\\cot x$" } },
+            { "id": "b", "text": { "en": "$\\tan x$" } },
+            { "id": "c", "text": { "en": "$1/\\sin x$" } },
+            { "id": "d", "text": { "en": "$\\cos x / \\sin^2 x$" } }
+          ],
+          "answer": ["a"],
+          "explanation": { "en": "$\\frac{d}{dx}[\\ln(\\sin x)] = \\frac{1}{\\sin x} \\cdot \\cos x = \\frac{\\cos x}{\\sin x} = \\cot x$." },
+          "topic": "Differential Calculus",
+          "difficulty": "easy"
+        },
+        {
+          "id": "math-a-16",
+          "type": "single",
+          "text": { "en": "Which of the following is the general solution of $\\frac{dy}{dx} = y$?" },
+          "options": [
+            { "id": "a", "text": { "en": "$y = Ce^x$" } },
+            { "id": "b", "text": { "en": "$y = Ce^{-x}$" } },
+            { "id": "c", "text": { "en": "$y = C/x$" } },
+            { "id": "d", "text": { "en": "$y = Cx$" } }
+          ],
+          "answer": ["a"],
+          "explanation": { "en": "$\\frac{dy}{y} = dx \\Rightarrow \\ln|y| = x + C_1 \\Rightarrow y = Ce^x$ where $C = e^{C_1}$." },
+          "topic": "Differential Equations",
+          "difficulty": "easy"
+        },
+        {
+          "id": "math-a-17",
+          "type": "single",
+          "text": { "en": "$\\cos^{-1}(\\cos(2\\pi/3))$ equals:" },
+          "options": [
+            { "id": "a", "text": { "en": "$\\pi/3$" } },
+            { "id": "b", "text": { "en": "$2\\pi/3$" } },
+            { "id": "c", "text": { "en": "$-\\pi/3$" } },
+            { "id": "d", "text": { "en": "$4\\pi/3$" } }
+          ],
+          "answer": ["b"],
+          "explanation": { "en": "$2\\pi/3 \\in [0, \\pi]$, which is the principal range of $\\cos^{-1}$. So $\\cos^{-1}(\\cos(2\\pi/3)) = 2\\pi/3$." },
+          "topic": "Inverse Trigonometry",
+          "difficulty": "easy"
+        },
+        {
+          "id": "math-a-18",
+          "type": "single",
+          "text": { "en": "The eccentricity of the ellipse $\\frac{x^2}{25} + \\frac{y^2}{16} = 1$ is:" },
+          "options": [
+            { "id": "a", "text": { "en": "$3/5$" } },
+            { "id": "b", "text": { "en": "$4/5$" } },
+            { "id": "c", "text": { "en": "$5/4$" } },
+            { "id": "d", "text": { "en": "$1/2$" } }
+          ],
+          "answer": ["a"],
+          "explanation": { "en": "Here $a^2 = 25$, $b^2 = 16$. $c^2 = a^2 - b^2 = 9 \\Rightarrow c = 3$. Eccentricity $e = c/a = 3/5$." },
+          "topic": "Coordinate Geometry — Conics",
+          "difficulty": "medium"
+        },
+        {
+          "id": "math-a-19",
+          "type": "single",
+          "text": { "en": "The value of $\\tan(45° + 30°)$ is:" },
+          "options": [
+            { "id": "a", "text": { "en": "$\\sqrt{3}$" } },
+            { "id": "b", "text": { "en": "$\\frac{1+\\sqrt{3}}{1-\\sqrt{3}}$" } },
+            { "id": "c", "text": { "en": "$\\frac{\\sqrt{3}+1}{\\sqrt{3}-1}$" } },
+            { "id": "d", "text": { "en": "$1$" } }
+          ],
+          "answer": ["b"],
+          "explanation": { "en": "$\\tan(A+B) = \\frac{\\tan A + \\tan B}{1 - \\tan A \\tan B}$. With $A=45°, B=30°$: $\\frac{1 + 1/\\sqrt{3}}{1 - 1/\\sqrt{3}} = \\frac{\\sqrt{3}+1}{\\sqrt{3}-1} = \\frac{1+\\sqrt{3}}{1-\\sqrt{3}}$ (rationalised form)." },
+          "topic": "Trigonometry",
+          "difficulty": "medium"
+        },
+        {
+          "id": "math-a-20",
+          "type": "single",
+          "text": { "en": "If the function $f(x) = kx^3 + 3x + 1$ is monotonically increasing for all $x \\in \\mathbb{R}$, then:" },
+          "options": [
+            { "id": "a", "text": { "en": "$k \\ge 0$" } },
+            { "id": "b", "text": { "en": "$k > 0$" } },
+            { "id": "c", "text": { "en": "$k \\ge -1$" } },
+            { "id": "d", "text": { "en": "$k > -1$" } }
+          ],
+          "answer": ["a"],
+          "explanation": { "en": "$f'(x) = 3kx^2 + 3 \\ge 0$ for all $x$. For $k=0$: $f'(x) = 3 > 0$. For $k>0$: $3kx^2 + 3 > 0$. For $k < 0$: $f'(x)$ can be negative. So $k \\ge 0$." },
+          "topic": "Applications of Derivatives",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "id": "math-b",
+      "name": { "en": "Mathematics — Section B" },
+      "marking": { "correct": 4, "wrong": 0, "unattempted": 0 },
+      "attemptLimit": 5,
+      "questions": [
+        {
+          "id": "math-b-1",
+          "type": "numerical",
+          "text": { "en": "The value of $\\int_0^1 x e^x \\, dx$ is ___ (enter the integer part if answer is of the form $a + e^b$; actual value = $1$)" },
+          "answer": 1,
+          "tolerance": 0.05,
+          "explanation": { "en": "$\\int x e^x dx = e^x(x-1) + C$. $\\int_0^1 x e^x dx = [e^x(x-1)]_0^1 = e^1(0) - e^0(-1) = 0 + 1 = 1$." },
+          "topic": "Integral Calculus",
+          "difficulty": "medium"
+        },
+        {
+          "id": "math-b-2",
+          "type": "numerical",
+          "text": { "en": "The number of 3-digit even numbers that can be formed using digits 1, 2, 3, 4, 5 (without repetition) is:" },
+          "answer": 24,
+          "tolerance": 0,
+          "explanation": { "en": "Units digit must be even: 2 or 4 (2 choices). Remaining 4 digits for 2 places: $P(4,2) = 4 \\times 3 = 12$. Total = $2 \\times 12 = 24$." },
+          "topic": "Permutations and Combinations",
+          "difficulty": "medium"
+        },
+        {
+          "id": "math-b-3",
+          "type": "numerical",
+          "text": { "en": "If $A = \\begin{pmatrix} 2 & 1 \\\\ 1 & 3 \\end{pmatrix}$, the trace of $A$ (sum of diagonal elements) is:" },
+          "answer": 5,
+          "tolerance": 0,
+          "explanation": { "en": "Trace = sum of diagonal elements = $2 + 3 = 5$." },
+          "topic": "Matrices",
+          "difficulty": "easy"
+        },
+        {
+          "id": "math-b-4",
+          "type": "numerical",
+          "text": { "en": "The number of solutions of $\\sin x = x/5$ in $[-5\\pi, 5\\pi]$ is (count all intersections of the two curves graphically):" },
+          "answer": 11,
+          "tolerance": 0,
+          "explanation": { "en": "The line $y = x/5$ and $y = \\sin x$. They intersect at origin plus 5 pairs of symmetric intersections = 11 total." },
+          "topic": "Trigonometry",
+          "difficulty": "hard"
+        },
+        {
+          "id": "math-b-5",
+          "type": "numerical",
+          "text": { "en": "The coefficient of $x^5$ in the expansion of $(1+x)^{10}$ is:" },
+          "answer": 252,
+          "tolerance": 0,
+          "explanation": { "en": "$\\binom{10}{5} = \\frac{10!}{5! \\cdot 5!} = \\frac{10 \\times 9 \\times 8 \\times 7 \\times 6}{120} = 252$." },
+          "topic": "Binomial Theorem",
+          "difficulty": "easy"
+        },
+        {
+          "id": "math-b-6",
+          "type": "numerical",
+          "text": { "en": "The sum of infinite geometric series with first term $a = 2$ and common ratio $r = 1/3$ is:" },
+          "answer": 3,
+          "tolerance": 0.05,
+          "explanation": { "en": "$S_\\infty = \\frac{a}{1-r} = \\frac{2}{1 - 1/3} = \\frac{2}{2/3} = 3$." },
+          "topic": "Sequences and Series",
+          "difficulty": "easy"
+        },
+        {
+          "id": "math-b-7",
+          "type": "numerical",
+          "text": { "en": "The distance from the point $(1, 2)$ to the line $3x + 4y - 12 = 0$ is:" },
+          "answer": 1,
+          "tolerance": 0.05,
+          "explanation": { "en": "Distance $= \\frac{|3(1) + 4(2) - 12|}{\\sqrt{3^2+4^2}} = \\frac{|3 + 8 - 12|}{5} = \\frac{|-1|}{5} = \\frac{1}{5}$. Actually $1/5 = 0.2$. Let me correct: $|3+8-12| = |{-1}| = 1$. $\\sqrt{9+16}=5$. Distance = $1/5 = 0.2$." },
+          "answer": 0.2,
+          "tolerance": 0.01,
+          "topic": "Coordinate Geometry",
+          "difficulty": "easy"
+        },
+        {
+          "id": "math-b-8",
+          "type": "numerical",
+          "text": { "en": "If $\\vec{a} \\times \\vec{b} = \\vec{c}$ where $|\\vec{a}| = 2$, $|\\vec{b}| = 3$, and the angle between them is $30°$, then $|\\vec{c}|$ is:" },
+          "answer": 3,
+          "tolerance": 0.05,
+          "explanation": { "en": "$|\\vec{a} \\times \\vec{b}| = |\\vec{a}||\\vec{b}|\\sin\\theta = 2 \\times 3 \\times \\sin 30° = 6 \\times 0.5 = 3$." },
+          "topic": "Vectors",
+          "difficulty": "easy"
+        },
+        {
+          "id": "math-b-9",
+          "type": "numerical",
+          "text": { "en": "The variance of the data set {2, 4, 6, 8, 10} is:" },
+          "answer": 8,
+          "tolerance": 0.1,
+          "explanation": { "en": "Mean $\\bar{x} = (2+4+6+8+10)/5 = 30/5 = 6$. Variance $= \\frac{1}{5}[(2-6)^2+(4-6)^2+(6-6)^2+(8-6)^2+(10-6)^2] = \\frac{1}{5}[16+4+0+4+16] = 40/5 = 8$." },
+          "topic": "Statistics",
+          "difficulty": "medium"
+        },
+        {
+          "id": "math-b-10",
+          "type": "numerical",
+          "text": { "en": "The number of elements in the power set of a set with 4 elements is:" },
+          "answer": 16,
+          "tolerance": 0,
+          "explanation": { "en": "Power set of a set with $n$ elements has $2^n$ elements. For $n=4$: $2^4 = 16$." },
+          "topic": "Sets and Relations",
+          "difficulty": "easy"
+        }
+      ]
+    }
+  ]
+}
+

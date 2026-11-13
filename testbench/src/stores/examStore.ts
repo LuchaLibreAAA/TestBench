@@ -51,6 +51,7 @@ export const useExamStore = create<ExamStore>((set, get) => ({
           lockedSections: nextState.lockedSections,
           tabSwitches: nextState.tabSwitches,
           submittedAt: nextState.phase === 'submitted' ? Date.now() : undefined,
+          updatedAt: Date.now(),
         };
 
         saveAttempt(attempt).catch((err) =>
@@ -84,6 +85,7 @@ export const useExamStore = create<ExamStore>((set, get) => ({
       responses: nextState.responses,
       lockedSections: [],
       tabSwitches: 0,
+      updatedAt: Date.now(),
     };
     await saveAttempt(attempt);
 
@@ -161,6 +163,7 @@ export const useExamStore = create<ExamStore>((set, get) => ({
       lockedSections: nextState.lockedSections,
       tabSwitches: nextState.tabSwitches,
       submittedAt: Date.now(),
+      updatedAt: Date.now(),
       result,
     };
 

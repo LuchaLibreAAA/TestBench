@@ -1,0 +1,156 @@
+{
+  "description": "Standard single-choice questions with correct, wrong, and skipped outcomes",
+  "strategy": "nta-standard@1",
+  "paper": {
+    "schemaVersion": 1,
+    "id": "test-single",
+    "title": "Single MCQ Golden Vector",
+    "exam": "jee-main",
+    "durationMin": 60,
+    "languages": [
+      "en"
+    ],
+    "navigation": "free",
+    "sections": [
+      {
+        "id": "sec-1",
+        "name": "Section 1",
+        "marking": {
+          "correct": 4,
+          "wrong": -1,
+          "unattempted": 0
+        },
+        "questions": [
+          {
+            "id": "q1",
+            "type": "single",
+            "text": "Q1",
+            "options": [
+              {
+                "id": "a"
+              },
+              {
+                "id": "b"
+              }
+            ],
+            "answer": [
+              "a"
+            ]
+          },
+          {
+            "id": "q2",
+            "type": "single",
+            "text": "Q2",
+            "options": [
+              {
+                "id": "a"
+              },
+              {
+                "id": "b"
+              }
+            ],
+            "answer": [
+              "a"
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "single",
+            "text": "Q3",
+            "options": [
+              {
+                "id": "a"
+              },
+              {
+                "id": "b"
+              }
+            ],
+            "answer": [
+              "a"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "responses": {
+    "q1": {
+      "qid": "q1",
+      "answer": [
+        "a"
+      ],
+      "status": "answered",
+      "timeSpentMs": 1000,
+      "visits": 1
+    },
+    "q2": {
+      "qid": "q2",
+      "answer": [
+        "b"
+      ],
+      "status": "answered",
+      "timeSpentMs": 1000,
+      "visits": 1
+    },
+    "q3": {
+      "qid": "q3",
+      "answer": null,
+      "status": "notAnswered",
+      "timeSpentMs": 500,
+      "visits": 1
+    }
+  },
+  "expected": {
+    "totalObtained": 3,
+    "totalMax": 12,
+    "totalCorrect": 1,
+    "totalWrong": 1,
+    "totalSkipped": 1
+  },
+  "result": {
+    "questionResults": [
+      {
+        "qid": "q1",
+        "sectionId": "sec-1",
+        "outcome": "correct",
+        "marks": 4,
+        "maxMarks": 4
+      },
+      {
+        "qid": "q2",
+        "sectionId": "sec-1",
+        "outcome": "wrong",
+        "marks": -1,
+        "maxMarks": 4
+      },
+      {
+        "qid": "q3",
+        "sectionId": "sec-1",
+        "outcome": "skipped",
+        "marks": 0,
+        "maxMarks": 4
+      }
+    ],
+    "sectionScores": [
+      {
+        "sectionId": "sec-1",
+        "sectionName": "Section 1",
+        "obtained": 3,
+        "max": 12,
+        "correct": 1,
+        "wrong": 1,
+        "partial": 0,
+        "skipped": 1,
+        "total": 3
+      }
+    ],
+    "topicScores": [],
+    "totalObtained": 3,
+    "totalMax": 12,
+    "totalCorrect": 1,
+    "totalWrong": 1,
+    "totalPartial": 0,
+    "totalSkipped": 1,
+    "totalQuestions": 3
+  }
+}

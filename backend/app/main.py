@@ -12,7 +12,7 @@ from fastapi.responses import JSONResponse
 
 from backend.app.db import migrate
 from backend.app.settings import Settings, get_settings
-from backend.app.routes import assets, papers, qna, admin
+from backend.app.routes import assets, papers, qna, admin, exams, meta
 
 
 def error_body(code: str, message: str, details: Any = None) -> dict[str, Any]:
@@ -35,6 +35,8 @@ def create_app(settings: Settings | None = None) -> FastAPI:
 
     app = FastAPI(title="Question & Mock Exam API", version="1", lifespan=lifespan)
     app.state.settings = config
+    app.include_router(meta.router, prefix="/api/v1")
+    app.include_router(exams.router, prefix="/api/v1")
     app.include_router(papers.router, prefix="/api/v1")
     app.include_router(qna.router, prefix="/api/v1")
     app.include_router(assets.router, prefix="/api/v1")
@@ -43,8 +45,9 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         CORSMiddleware,
         allow_origins=config.cors_origins,
         allow_credentials=True,
-        allow_methods=["GET", "POST", "PATCH", "DELETE", "OPTIONS"],
-        allow_headers=["Content-Type", "If-None-Match", "X-Admin-Token"],
+        allow_methods=["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+        allow_headers=["Content-Type", "If-None-Match", "X-Admin-Token", "X-Client", "X-Features", "X-Schema-Max", "Range"],
+        expose_headers=["ETag", "X-Data-Version", "Content-Disposition", "Content-Range", "Accept-Ranges"],
     )
 
     @app.exception_handler(RequestValidationError)

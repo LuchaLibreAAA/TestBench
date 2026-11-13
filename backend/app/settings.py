@@ -16,6 +16,14 @@ class Settings(BaseSettings):
 
     db_path: Path = Path("backend/data/app.db")
     assets_dir: Path = Path("backend/data/assets")
+    storage_backend: str = "local"
+    storage_public_url_prefix: str | None = None
+    s3_bucket: str = ""
+    s3_endpoint_url: str | None = None
+    s3_access_key: str | None = None
+    s3_secret_key: str | None = None
+    s3_region: str = "auto"
+    s3_public_url_prefix: str | None = None
     admin_token: str = ""
     cors_origins: Annotated[list[str], NoDecode] = ["http://localhost:5173", "http://127.0.0.1:5173"]
     max_upload_mb: int = 50

@@ -196,30 +196,22 @@ describe('Paper Validation', () => {
     expect(res.success).toBe(false);
   });
 
-  it('imports every built-in catalog paper without schema errors', () => {
-    const catalogFiles = import.meta.glob('../../../../public/papers/catalog.json', {
+  it('imports fixture papers without schema errors', () => {
+    const paperFiles = import.meta.glob('./fixtures/*.json', {
       eager: true,
       import: 'default',
     });
-    const paperFiles = import.meta.glob('../../../../public/papers/*/*.json', {
-      eager: true,
-      import: 'default',
-    });
+    const entries = Object.entries(paperFiles);
+    expect(entries.length).toBeGreaterThan(0);
 
-    const catalog = Object.values(catalogFiles)[0] as Array<{ id: string; path: string }>;
-    expect(catalog.length).toBeGreaterThan(0);
-
-    for (const item of catalog) {
-      const suffix = item.path.replace(/^\/+/, '');
-      const match = Object.entries(paperFiles).find(([k]) => k.endsWith(suffix));
-      expect(match, `Missing file for ${item.id} (${suffix})`).toBeDefined();
-      const res = validatePaper(match![1]);
-      expect(res.success, `${item.id} failed: ${JSON.stringify(res.issues)}`).toBe(true);
+    for (const [key, paper] of entries) {
+      const res = validatePaper(paper);
+      expect(res.success, `${key} failed: ${JSON.stringify(res.issues)}`).toBe(true);
     }
   });
 
   it('validates bilingual WBTET papers with localizedImages and +1/0 marking', () => {
-    const paperFiles = import.meta.glob('../../../../public/papers/wbtet/*.json', {
+    const paperFiles = import.meta.glob('./fixtures/wbtet-*.json', {
       eager: true,
       import: 'default',
     });

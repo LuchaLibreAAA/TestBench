@@ -2,11 +2,11 @@
 
 <img src="testbench/public/icon.png" alt="TestBench Logo" width="84" />
 
-# 🎯 TestBench `v0.0.2(beta)`
+# 🎯 TestBench `v0.0.3`
 
 ### **Offline-First NTA CBT Mock Test Simulator, Q&A Database & PDF Extraction Platform**
 
-[![Version](https://img.shields.io/badge/Version-v0.0.2(beta)-2563eb?style=for-the-badge&logo=semanticrelease&logoColor=white)](#-release-v002beta)
+[![Version](https://img.shields.io/badge/Version-v0.0.3-2563eb?style=for-the-badge&logo=semanticrelease&logoColor=white)](#-release-v003)
 [![React](https://img.shields.io/badge/React-19-06b6d4?style=for-the-badge&logo=react&logoColor=white)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Strict-3178c6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38bdf8?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
@@ -16,26 +16,27 @@
 
 ---
 
-*Built for **JEE Main** & **NEET UG** aspirants with authentic NTA Computer-Based Test (CBT) fidelity, light & dark modes, cropped diagram assets, searchable Q&A database, and an extensible Python PDF extraction framework.*
+*Built for **JEE Main**, **NEET UG**, and state exams with authentic NTA Computer-Based Test (CBT) fidelity, light & dark modes, cropped diagram assets, searchable Q&A database, and an extensible Python PDF extraction framework.*
 
 </div>
 
 ---
 
-## 🏷️ Release `v0.0.2(beta)`
+## 🏷️ Release `v0.0.3`
 
-- **Current Version:** `v0.0.2(beta)` (displayed in the TestBench header, footer, and Settings **About** card)
-- **What's new in `v0.0.2(beta)`:**
-  - Live countdown on the Library **In Progress** resume card, consistent search/tab counts, and local cleanup of cached papers
-  - Wired **Settings** preferences (`Text Size` in Exam & Review, `Virtual Keypad` default visibility in Numerical questions)
-  - Improved **Exam**, **Instructions**, **Result**, **Review**, and **Analytics** reliability (`Submit Test` CTA on final question, URL `paperId` fallback on reload, accurate `startedAt` tracking, multi-topic weak insights, memoized analytics)
-  - Hardened backend PDF upload page-count guard and dynamic `pdf_qna_pipeline inspect` summary
+- **Current Version:** `v0.0.3` (displayed in the TestBench header, footer, and Settings **About** card)
+- **What's new in `v0.0.3` (Backend-Hosted Paper Data):**
+  - **Backend Single Source of Truth:** All paper schemas, answer keys, and question screenshots migrated out of `testbench/public/` into the FastAPI backend service. The frontend ships zero raw exam data.
+  - **Pluggable Storage & Content Addressing:** Assets are SHA-256 content-addressed with automatic WebP variant generation (480px, 720px, 1080px) and support for Local disk or S3/Cloudflare R2 object storage.
+  - **Offline Practice & Package Bundles:** Full offline practice preserved via Dexie IndexedDB SWR caching, multi-connection asset downloader, and pre-packaged offline zip bundles with HTTP `Range` resume support.
+  - **Multi-Client Stable Contract:** Versioned `/api/v1` API with capability negotiation (`X-Client`, `X-Features`, `X-Schema-Max`), published OpenAPI spec (`backend/openapi.v1.json`), and golden scoring vectors (`contracts/scoring/`) ensuring 100% parity across web and Android.
+  - **Extensible Registries:** Dynamic exam registry (`/api/v1/exams`), pluggable question types (`single`, `multi`, `numerical`, `tf`), and modular marking strategies (`nta-standard`, `wbtet-standard`).
 - **Core platform highlights:**
-  - Full catalog of **7 Official Papers** (**JEE Main** 2023, 2024, 2026 + **NEET UG** 2023, 2024, 2025, 2026) with high-resolution cropped questions & options
+  - Full catalog of **9 Official Papers** (**JEE Main** 2023, 2024, 2026 + **NEET UG** 2023, 2024, 2025, 2026 + **WBTET** 2022, 2023) with high-resolution cropped questions & options
   - Official NTA **5-State Question Palette** (`Not Visited`, `Not Answered`, `Answered`, `Marked for Review`, `Answered & Marked`)
   - Accurate **Scorecard & Analytics** honoring section attempt limits (e.g., 720 marks on NEET 200-Q pattern, 300 marks on JEE 90-Q pattern)
   - Built-in **Q&A Database Explorer** + **Light / Dark Theme**
-  - One-click **Render Blueprint** (`render.yaml`) for Static Frontend + FastAPI Backend
+  - One-click **Render Blueprint** (`render.yaml`) with persistent disk support for `testbench-api` and static `testbench-web`
 
 ---
 

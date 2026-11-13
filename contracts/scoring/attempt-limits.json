@@ -1,0 +1,123 @@
+{
+  "description": "JEE Main Section B optional questions: attempt any 5 of 6",
+  "strategy": "nta-standard@1",
+  "paper": {
+    "schemaVersion": 1,
+    "id": "test-limits",
+    "title": "Attempt Limit Golden Vector",
+    "exam": "jee-main",
+    "durationMin": 60,
+    "languages": [
+      "en"
+    ],
+    "navigation": "free",
+    "sections": [
+      {
+        "id": "sec-num",
+        "name": "Section B (Attempt any 2)",
+        "attemptLimit": 2,
+        "marking": {
+          "correct": 4,
+          "wrong": 0,
+          "unattempted": 0
+        },
+        "questions": [
+          {
+            "id": "q1",
+            "type": "numerical",
+            "text": "Q1",
+            "answer": 10
+          },
+          {
+            "id": "q2",
+            "type": "numerical",
+            "text": "Q2",
+            "answer": 20
+          },
+          {
+            "id": "q3",
+            "type": "numerical",
+            "text": "Q3",
+            "answer": 30
+          }
+        ]
+      }
+    ]
+  },
+  "responses": {
+    "q1": {
+      "qid": "q1",
+      "answer": 10,
+      "status": "answered",
+      "timeSpentMs": 1000,
+      "visits": 1
+    },
+    "q2": {
+      "qid": "q2",
+      "answer": 20,
+      "status": "answered",
+      "timeSpentMs": 1000,
+      "visits": 1
+    },
+    "q3": {
+      "qid": "q3",
+      "answer": 30,
+      "status": "answered",
+      "timeSpentMs": 1000,
+      "visits": 1
+    }
+  },
+  "expected": {
+    "totalObtained": 8,
+    "totalMax": 8,
+    "totalCorrect": 2,
+    "totalWrong": 0,
+    "totalSkipped": 1
+  },
+  "result": {
+    "questionResults": [
+      {
+        "qid": "q1",
+        "sectionId": "sec-num",
+        "outcome": "correct",
+        "marks": 4,
+        "maxMarks": 4
+      },
+      {
+        "qid": "q2",
+        "sectionId": "sec-num",
+        "outcome": "correct",
+        "marks": 4,
+        "maxMarks": 4
+      },
+      {
+        "qid": "q3",
+        "sectionId": "sec-num",
+        "outcome": "skipped",
+        "marks": 0,
+        "maxMarks": 4
+      }
+    ],
+    "sectionScores": [
+      {
+        "sectionId": "sec-num",
+        "sectionName": "Section B (Attempt any 2)",
+        "obtained": 8,
+        "max": 8,
+        "correct": 2,
+        "wrong": 0,
+        "partial": 0,
+        "skipped": 1,
+        "total": 3
+      }
+    ],
+    "topicScores": [],
+    "totalObtained": 8,
+    "totalMax": 8,
+    "totalCorrect": 2,
+    "totalWrong": 0,
+    "totalPartial": 0,
+    "totalSkipped": 1,
+    "totalQuestions": 3
+  }
+}

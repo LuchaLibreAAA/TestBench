@@ -1,6 +1,5 @@
 import type { Paper } from '@/core/schema';
-import { validatePaper } from '@/core/import';
-import { savePaper, getPaper } from './repositories/papers';
+import { getPaper } from './repositories/papers';
 
 export interface CatalogItem {
   id: string;
@@ -136,35 +135,18 @@ export const CATALOG_PAPERS: CatalogItem[] = [
   },
 ];
 
-/** Fetch and import a catalog paper into IndexedDB */
+/** Fetch and import a catalog paper into IndexedDB (delegates to getPaper with API-first + Dexie cache) */
 export async function loadCatalogPaper(id: string): Promise<Paper | null> {
-  const item = CATALOG_PAPERS.find((p) => p.id === id);
-  if (!item) return null;
-
-  try {
-    const res = await fetch(item.path);
-    if (!res.ok) throw new Error(`HTTP ${res.status} fetching ${item.path}`);
-    const text = await res.text();
-    const result = validatePaper(JSON.parse(text));
-    if (result.success && result.data) {
-      await savePaper(result.data);
-      return result.data;
-    }
-  } catch (err) {
-    console.error(`Failed to load catalog paper ${id}:`, err);
-  }
-  return null;
+  const stored = await getPaper(id);
+  return stored ? stored.data : null;
 }
 
 /** Pre-seed or ensure all catalog papers are in IndexedDB */
 export async function seedAllCatalogPapers(): Promise<number> {
   let seeded = 0;
   for (const item of CATALOG_PAPERS) {
-    const existing = await getPaper(item.id);
-    if (!existing) {
-      const loaded = await loadCatalogPaper(item.id);
-      if (loaded) seeded++;
-    }
+    const loaded = await getPaper(item.id);
+    if (loaded) seeded++;
   }
   return seeded;
 }

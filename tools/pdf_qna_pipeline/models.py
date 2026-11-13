@@ -47,7 +47,9 @@ class OptionItem(BaseModel):
 
 class AnswerBlock(BaseModel):
     correctOptionId: Optional[str] = None
+    correctOptionIds: Optional[List[str]] = None
     correctNumericValue: Optional[float] = None
+    correctBooleanValue: Optional[bool] = None
     isAnswerKeyAvailable: bool = False
 
 
@@ -67,7 +69,7 @@ class QuestionItem(BaseModel):
     questionId: str
     sectionId: str
     subject: str
-    type: Literal["single_choice", "numeric"]
+    type: Literal["single_choice", "multi_choice", "numeric", "true_false"]
     content: ContentBlock
     options: List[OptionItem] = Field(default_factory=list)
     answer: AnswerBlock = Field(default_factory=AnswerBlock)

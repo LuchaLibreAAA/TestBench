@@ -5,6 +5,11 @@ services:
     rootDir: testbench
     buildCommand: npm ci && npm run build
     staticPublishPath: dist
+    envVars:
+      - key: VITE_DATA_SOURCE
+        value: api
+      - key: VITE_API_URL
+        value: https://testbench-api.onrender.com/api/v1
     routes:
       - type: rewrite
         source: /*
@@ -13,20 +18,38 @@ services:
   - type: web
     name: testbench-api
     runtime: python
-    plan: free
+    plan: starter
+    disk:
+      name: testbench-data
+      mountPath: /var/data
+      sizeGB: 10
     buildCommand: pip install --upgrade pip && pip install -r backend/requirements.txt
+    postDeployCommand: python scripts/seed_all_papers.py
     startCommand: uvicorn backend.app.main:app --host 0.0.0.0 --port $PORT
     healthCheckPath: /api/v1/health
     envVars:
       - key: PYTHON_VERSION
         value: "3.12.7"
+      - key: STORAGE_BACKEND
+        value: local
       - key: DB_PATH
-        value: backend/data/app.db
+        value: /var/data/app.db
       - key: ASSETS_DIR
-        value: backend/data/assets
+        value: /var/data/assets
       - key: ADMIN_TOKEN
         generateValue: true
       - key: ALLOW_INSECURE_DEV
         value: "0"
       - key: CORS_ORIGINS
         value: https://testbench-web.onrender.com,http://localhost:5173
+      # S3 / Cloudflare R2 object storage option (uncomment to switch from local disk):
+      # - key: STORAGE_BACKEND
+      #   value: s3
+      # - key: S3_BUCKET
+      #   value: testbench-assets
+      # - key: S3_ENDPOINT_URL
+      #   value: https://<account_id>.r2.cloudflarestorage.com
+      # - key: S3_ACCESS_KEY_ID
+      #   sync: false
+      # - key: S3_SECRET_ACCESS_KEY
+      #   sync: false

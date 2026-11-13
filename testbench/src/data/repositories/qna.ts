@@ -1,4 +1,5 @@
 import { db, type StoredQnADatabase } from '../db';
+import * as apiClient from '../apiClient';
 
 export interface QnAQuestion {
   id: string;
@@ -146,8 +147,33 @@ export async function getQnADatabase(id: string = 'jee-main-2026-shift2'): Promi
     return stored.data as QnADatabaseData;
   }
 
-  // Find in catalog and fetch
+  // Find in catalog
   const entry = QNA_CATALOG.find((c) => c.id === id);
+  const targetId = entry?.paperId || id;
+  const mode = apiClient.getDataSourceMode();
+
+  // 1. Try API first
+  if (mode !== 'static' && typeof fetch !== 'undefined') {
+    try {
+      const res = await apiClient.getQna(targetId);
+      if (res.data) {
+        const toStore: StoredQnADatabase = {
+          id,
+          title: entry?.title || targetId,
+          examName: entry?.examName || 'Exam',
+          year: entry?.year || 2026,
+          data: res.data as unknown as QnADatabaseData,
+          updatedAt: Date.now(),
+        };
+        await db.qnaDatabases.put(toStore);
+        return res.data as unknown as QnADatabaseData;
+      }
+    } catch (err) {
+      console.warn(`API getQna for ${targetId} failed, trying static fallback:`, err);
+    }
+  }
+
+  // 2. Static fallback
   if (!entry) return null;
 
   try {

@@ -1,37 +1,71 @@
-# Backend API
+# Backend API (`v0.0.3`)
 
-FastAPI service for the canonical Universal Q&A store, CBT export, and paper assets.
+FastAPI service acting as the authoritative single source of truth for all question papers, answer keys, assets, and question banks.
 
-## Run
+## Quickstart
 
-From the repository root, install `backend/requirements.txt`, set `backend/.env` from `.env.example`, then run:
+From the repository root:
+
+1. Install dependencies:
+   ```powershell
+   pip install -r backend/requirements.txt
+   ```
+2. Set environment variables (or copy from `.env.example`):
+   ```powershell
+   $env:ADMIN_TOKEN = "your-secure-admin-token"
+   $env:STORAGE_BACKEND = "local" # or "s3"
+   ```
+3. Run migrations and seed data:
+   ```powershell
+   python scripts/seed_all_papers.py
+   ```
+4. Start the server:
+   ```powershell
+   uvicorn backend.app.main:app --host 0.0.0.0 --port 8000 --reload
+   ```
+
+## Storage Backends
+
+Configured via `STORAGE_BACKEND`:
+
+- **`local` (default):** Assets and packages are stored in `backend/data/assets/` with strict path-traversal guards.
+- **`s3`:** Stores assets in S3 / Cloudflare R2:
+  ```env
+  STORAGE_BACKEND=s3
+  S3_BUCKET=testbench-assets
+  S3_ENDPOINT_URL=https://<account_id>.r2.cloudflarestorage.com
+  S3_ACCESS_KEY_ID=<key>
+  S3_SECRET_ACCESS_KEY=<secret>
+  ```
+
+## Public API (`/api/v1`)
+
+- `GET /meta`: Server version, active schema limits, and client capabilities.
+- `GET /exams`: Registry of supported exams and layout specs.
+- `GET /papers`: Paginated catalog with client capability filtering (`X-Features`, `X-Schema-Max`).
+- `GET /papers/{id}`: Dynamic CBT paper JSON with ETag caching.
+- `GET /papers/{id}/manifest`: Complete asset manifest with SHA-256 hashes and sizes.
+- `GET /papers/{id}/bundle`: Combined paper JSON + asset manifest in a single call.
+- `GET /papers/{id}/package`: Pre-packaged offline `.zip` bundle with HTTP 206 `Range` support.
+- `GET /assets/{paperId}/{filename}`: Content-addressed image delivery with WebP variant generation (`?w=480|720|1080`).
+- `GET /qna/{id}`: Universal Q&A JSON export.
+- `GET /qna/{id}/questions`: Filtered, paginated question search with SQLite FTS5.
+
+## Admin API (`/api/v1/admin`)
+
+Requires `X-Admin-Token` header:
+
+- `POST /admin/papers/ingest`: Upload `.zip` package containing `qna_database.json` and `images/`.
+- `PUT /admin/papers/{id}/assets/{filename}`: Hot-replace an asset image and regenerate variants.
+- `POST /admin/exams`: Register a new exam specification.
+- `PATCH /admin/papers/{id}`: Update paper metadata.
+- `PATCH /admin/papers/{id}/answers`: Patch official answer keys.
+- `DELETE /admin/papers/{id}`: Cascade delete paper, sections, questions, and asset files.
+
+## Tests
+
+Run the test suite:
 
 ```powershell
-uvicorn backend.app.main:app --host 0.0.0.0 --port 8000
+python -m pytest backend/tests
 ```
-
-Set a strong `ADMIN_TOKEN` before exposing the service. `ALLOW_INSECURE_DEV=1` enables the fixed local development token `dev`; never use that mode on a network.
-
-## Seed
-
-```powershell
-python -m backend.scripts.seed --dir dist/qna
-```
-
-Each discovered `qna_database.json` is validated and upserted. Adjacent `images/` PNG assets are staged and copied after the database transaction commits.
-
-## API
-
-Public endpoints use `/api/v1`: `/health`, `/papers`, `/papers/{id}`, `/papers/{id}/download`, `/qna/{id}`, `/qna/{id}/questions`, and `/assets/{id}/{filename}`. Admin routes require `X-Admin-Token`:
-
-```powershell
-curl.exe -H "X-Admin-Token: $env:ADMIN_TOKEN" -F "pdf_file=@exam.pdf;type=application/pdf" http://localhost:8000/api/v1/admin/papers/upload
-```
-
-The upload response includes a `jobId`; poll `/api/v1/admin/jobs/{jobId}`. Admin routes also support answer-key PATCH and paper DELETE.
-
-## Data and backup
-
-SQLite and extracted assets live under `backend/data/` by default and are ignored by Git. Back up consistently with SQLite's online backup API (`sqlite3 app.db ".backup app-backup.db"`) and copy the matching `assets/` directory. Keep the database backup and assets from the same point in time.
-
-If the frontend is served over HTTPS, serve the API over HTTPS as well to avoid mixed-content blocking.

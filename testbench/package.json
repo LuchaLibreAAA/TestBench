@@ -1,12 +1,14 @@
 {
   "name": "testbench",
   "private": true,
-  "version": "0.1.02",
+  "version": "0.0.3",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "oxlint",
+    "test": "vitest run",
+    "verify:backend": "npx vite-node scripts/verify_backend.ts",
     "preview": "vite preview"
   },
   "dependencies": {

@@ -14,13 +14,30 @@ def replace_paper(connection: sqlite3.Connection, paper_id: str, data: QnADataba
     if existing and existing["content_hash"] == content_hash:
         return "unchanged"
     version = 1 if existing is None else existing["data_version"] + 1
+    exam_raw = (meta.examName or "").lower()
+    if "jee" in exam_raw:
+        exam_code = "jee-main"
+    elif "neet" in exam_raw:
+        exam_code = "neet-ug"
+    elif "tet" in exam_raw:
+        exam_code = "wbtet"
+    else:
+        import re
+        exam_code = re.sub(r"[^a-z0-9]+", "-", exam_raw).strip("-") or "other"
+
     connection.execute(
-        """INSERT INTO papers(id,title,exam,year,total_questions,duration_min,exam_metadata_json,data_version,content_hash)
-           VALUES(?,?,?,?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET title=excluded.title, exam=excluded.exam,
-           year=excluded.year, total_questions=excluded.total_questions, duration_min=excluded.duration_min,
-           exam_metadata_json=excluded.exam_metadata_json, data_version=excluded.data_version,
-           content_hash=excluded.content_hash, updated_at=datetime('now')""",
-        (paper_id, f"{meta.examName} {meta.year}", meta.examName, meta.year, meta.totalQuestions,
+        """INSERT OR IGNORE INTO exams(code, name, badge, default_marking_strategy, config_json, position, active)
+           VALUES(?, ?, ?, 'nta-standard', '{}', 99, 1)""",
+        (exam_code, meta.examName, meta.examName),
+    )
+
+    connection.execute(
+        """INSERT INTO papers(id,title,exam,exam_code,year,total_questions,duration_min,exam_metadata_json,data_version,content_hash)
+           VALUES(?,?,?,?,?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET title=excluded.title, exam=excluded.exam,
+           exam_code=excluded.exam_code, year=excluded.year, total_questions=excluded.total_questions,
+           duration_min=excluded.duration_min, exam_metadata_json=excluded.exam_metadata_json,
+           data_version=excluded.data_version, content_hash=excluded.content_hash, updated_at=datetime('now')""",
+        (paper_id, f"{meta.examName} {meta.year}", meta.examName, exam_code, meta.year, meta.totalQuestions,
          meta.durationMinutes, _json(meta.model_dump(mode="json", by_alias=True)), version, content_hash),
     )
     connection.execute("DELETE FROM questions WHERE paper_id = ?", (paper_id,))
@@ -28,17 +45,20 @@ def replace_paper(connection: sqlite3.Connection, paper_id: str, data: QnADataba
     connection.execute("DELETE FROM questions_fts WHERE paper_id = ?", (paper_id,))
     for position, section in enumerate(data.sections):
         connection.execute(
-            "INSERT INTO sections VALUES(?,?,?,?,?,?,?)",
+            """INSERT INTO sections(paper_id, section_id, section_name, subject, question_type, marking_json, position, marking_strategy, attempt_limit)
+               VALUES(?,?,?,?,?,?,?,?,?)""",
             (paper_id, section.sectionId, section.sectionName, section.subject, section.questionType,
-             _json(section.markingScheme.model_dump(mode="json")), position),
+             _json(section.markingScheme.model_dump(mode="json")), position,
+             getattr(section, "markingStrategy", None), getattr(section, "attemptLimit", None)),
         )
     for question in data.questions:
         connection.execute(
             """INSERT INTO questions(id,paper_id,question_number,question_id,section_id,subject,type,
-               content_json,options_json,answer_json,explanation_json,source_json)
-               VALUES(?,?,?,?,?,?,?,?,?,?,?,?)""",
+               content_json,content_blocks_json,options_json,answer_json,explanation_json,source_json)
+               VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)""",
             (f"{paper_id}:{question.questionId}", paper_id, question.questionNumber, question.questionId,
              question.sectionId, question.subject, question.type, _json(question.content.model_dump(mode="json")),
+             _json(getattr(question.content, "blocks", [])),
              _json([option.model_dump(mode="json") for option in question.options]),
              _json(question.answer.model_dump(mode="json")), _json(question.explanation.model_dump(mode="json")),
              _json(question.source.model_dump(mode="json"))),

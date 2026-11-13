@@ -6,6 +6,7 @@ import { Dialog } from '@/components/Dialog';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import { formatTime } from '@/core/exam/timer';
 import { CATALOG_PAPERS, loadCatalogPaper, seedAllCatalogPapers } from '@/data/catalog';
+import * as apiClient from '@/data/apiClient';
 import { APP_VERSION } from '@/core/version';
 import {
   FileText,
@@ -23,9 +24,8 @@ import {
   Search,
   DownloadCloud,
   Database,
+  GraduationCap,
 } from 'lucide-react';
-
-type FilterTab = 'all' | 'jee-main' | 'neet' | 'wbtet';
 
 export const LibraryScreen: React.FC = () => {
   const navigate = useNavigate();
@@ -38,7 +38,9 @@ export const LibraryScreen: React.FC = () => {
     removePaper,
   } = usePaperStore();
 
-  const [activeTab, setActiveTab] = useState<FilterTab>('all');
+  const [activeTab, setActiveTab] = useState<string>('all');
+  const [exams, setExams] = useState<apiClient.ExamSummary[]>([]);
+  const [remotePapers, setRemotePapers] = useState<apiClient.PaperSummary[]>([]);
   const [searchQuery, setSearchQuery] = useState('');
   const [seeding, setSeeding] = useState(false);
   const [statusDialog, setStatusDialog] = useState<{
@@ -49,6 +51,12 @@ export const LibraryScreen: React.FC = () => {
 
   useEffect(() => {
     loadPapers();
+    apiClient.getExams().then((res) => {
+      if (res && res.length > 0) setExams(res);
+    }).catch(() => {});
+    apiClient.getCatalog().then((res) => {
+      if (res && res.length > 0) setRemotePapers(res);
+    }).catch(() => {});
   }, [loadPapers]);
 
   const handleSeedAll = async () => {
@@ -84,6 +92,17 @@ export const LibraryScreen: React.FC = () => {
     navigate(`/paper/${paperId}`);
   };
 
+  const dynamicTabs = useMemo(() => {
+    if (exams.length > 0) {
+      return exams.map((e) => ({ code: e.code, name: e.badge || e.name }));
+    }
+    return [
+      { code: 'jee-main', name: 'JEE Main' },
+      { code: 'neet', name: 'NEET UG' },
+      { code: 'wbtet', name: 'WBTET' },
+    ];
+  }, [exams]);
+
   // Merge catalog items and stored papers without duplicates
   const allPaperItems = useMemo(() => {
     const map = new Map<string, {
@@ -112,6 +131,23 @@ export const LibraryScreen: React.FC = () => {
         badge: c.badge,
         isCatalog: true,
         isStored: false,
+      });
+    }
+
+    // 1b. Overlay dynamic remote papers from API
+    for (const r of remotePapers) {
+      const existing = map.get(r.id);
+      map.set(r.id, {
+        id: r.id,
+        title: r.title,
+        exam: r.examCode || r.exam,
+        description: existing?.description,
+        durationMin: r.durationMin,
+        questionsCount: r.totalQuestions,
+        sectionsCount: r.sectionsCount,
+        badge: r.badge || existing?.badge,
+        isCatalog: true,
+        isStored: existing ? existing.isStored : false,
       });
     }
 
@@ -144,7 +180,7 @@ export const LibraryScreen: React.FC = () => {
     }
 
     return Array.from(map.values());
-  }, [papers]);
+  }, [papers, remotePapers]);
 
   // Filtering by search query
   const filteredPapers = useMemo(() => {
@@ -388,41 +424,33 @@ export const LibraryScreen: React.FC = () => {
               All Tests ({filteredPapers.length})
             </button>
 
-            <button
-              onClick={() => setActiveTab('jee-main')}
-              className={`px-3 sm:px-3.5 py-1.5 rounded-xl text-xs font-bold transition-colors cursor-pointer flex items-center gap-1.5 whitespace-nowrap ${
-                activeTab === 'jee-main'
-                  ? 'bg-[#1a56db] text-white'
-                  : 'text-slate-600 dark:text-slate-400 hover:bg-blue-50 dark:hover:bg-blue-950/50 hover:text-[#1a56db] dark:hover:text-blue-400'
-              }`}
-            >
-              <Compass className="w-3.5 h-3.5" />
-              JEE Main ({jeePapers.length})
-            </button>
+            {dynamicTabs.map((tab) => {
+              const count = allPaperItems.filter(
+                (p) =>
+                  p.exam === tab.code ||
+                  (tab.code === 'neet' && p.exam === 'neet-ug') ||
+                  (tab.code === 'neet-ug' && p.exam === 'neet'),
+              ).length;
+              const isSelected =
+                activeTab === tab.code ||
+                (tab.code === 'neet' && activeTab === 'neet-ug') ||
+                (tab.code === 'neet-ug' && activeTab === 'neet');
 
-            <button
-              onClick={() => setActiveTab('neet')}
-              className={`px-3 sm:px-3.5 py-1.5 rounded-xl text-xs font-bold transition-colors cursor-pointer flex items-center gap-1.5 whitespace-nowrap ${
-                activeTab === 'neet'
-                  ? 'bg-emerald-700 text-white'
-                  : 'text-slate-600 dark:text-slate-400 hover:bg-emerald-50 dark:hover:bg-emerald-950/50 hover:text-emerald-700 dark:hover:text-emerald-400'
-              }`}
-            >
-              <Stethoscope className="w-3.5 h-3.5" />
-              NEET UG ({neetPapers.length})
-            </button>
-
-            <button
-              onClick={() => setActiveTab('wbtet')}
-              className={`px-3 sm:px-3.5 py-1.5 rounded-xl text-xs font-bold transition-colors cursor-pointer flex items-center gap-1.5 whitespace-nowrap ${
-                activeTab === 'wbtet'
-                  ? 'bg-indigo-700 text-white'
-                  : 'text-slate-600 dark:text-slate-400 hover:bg-indigo-50 dark:hover:bg-indigo-950/50 hover:text-indigo-700 dark:hover:text-indigo-400'
-              }`}
-            >
-              <FileText className="w-3.5 h-3.5" />
-              WBTET ({wbtetPapers.length})
-            </button>
+              return (
+                <button
+                  key={tab.code}
+                  onClick={() => setActiveTab(tab.code)}
+                  className={`px-3 sm:px-3.5 py-1.5 rounded-xl text-xs font-bold transition-colors cursor-pointer flex items-center gap-1.5 whitespace-nowrap ${
+                    isSelected
+                      ? 'bg-[#1a56db] text-white'
+                      : 'text-slate-600 dark:text-slate-400 hover:bg-blue-50 dark:hover:bg-blue-950/50 hover:text-[#1a56db] dark:hover:text-blue-400'
+                  }`}
+                >
+                  <GraduationCap className="w-3.5 h-3.5" />
+                  {tab.name} ({count})
+                </button>
+              );
+            })}
           </div>
 
           {/* Search Input */}
@@ -541,6 +569,31 @@ export const LibraryScreen: React.FC = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {wbtetPapers.map((item) => renderPaperCard(item, 'indigo'))}
+                </div>
+              </section>
+            )}
+
+            {/* 4. Other / Custom Exams */}
+            {activeTab !== 'all' && activeTab !== 'jee-main' && activeTab !== 'neet' && activeTab !== 'neet-ug' && activeTab !== 'wbtet' && (
+              <section className="space-y-3.5">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                  <div className="flex items-start sm:items-center gap-2.5 min-w-0">
+                    <div className="w-8 h-8 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 flex items-center justify-center shrink-0 mt-0.5 sm:mt-0">
+                      <GraduationCap className="w-4 h-4" />
+                    </div>
+                    <div className="min-w-0">
+                      <h3 className="text-base sm:text-lg font-bold text-slate-900 dark:text-slate-100">{activeTab.toUpperCase()} Question Papers</h3>
+                      <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+                        Official CBT Examination Papers
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {filteredPapers
+                    .filter((p) => p.exam === activeTab)
+                    .map((item) => renderPaperCard(item, 'blue'))}
                 </div>
               </section>
             )}

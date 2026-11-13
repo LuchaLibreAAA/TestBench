@@ -1,0 +1,126 @@
+{
+  "description": "Numerical question with tolerance bounds",
+  "strategy": "nta-standard@1",
+  "paper": {
+    "schemaVersion": 1,
+    "id": "test-tolerance",
+    "title": "Numeric Tolerance Golden Vector",
+    "exam": "jee-main",
+    "durationMin": 60,
+    "languages": [
+      "en"
+    ],
+    "navigation": "free",
+    "sections": [
+      {
+        "id": "sec-num",
+        "name": "Section B",
+        "marking": {
+          "correct": 4,
+          "wrong": -1,
+          "unattempted": 0
+        },
+        "questions": [
+          {
+            "id": "q1",
+            "type": "numerical",
+            "text": "Q1",
+            "answer": 5.5,
+            "tolerance": 0.1
+          },
+          {
+            "id": "q2",
+            "type": "numerical",
+            "text": "Q2",
+            "answerRange": [
+              10,
+              20
+            ]
+          },
+          {
+            "id": "q3",
+            "type": "numerical",
+            "text": "Q3",
+            "answer": 100
+          }
+        ]
+      }
+    ]
+  },
+  "responses": {
+    "q1": {
+      "qid": "q1",
+      "answer": 5.55,
+      "status": "answered",
+      "timeSpentMs": 1000,
+      "visits": 1
+    },
+    "q2": {
+      "qid": "q2",
+      "answer": 15,
+      "status": "answered",
+      "timeSpentMs": 1000,
+      "visits": 1
+    },
+    "q3": {
+      "qid": "q3",
+      "answer": 90,
+      "status": "answered",
+      "timeSpentMs": 1000,
+      "visits": 1
+    }
+  },
+  "expected": {
+    "totalObtained": 7,
+    "totalMax": 12,
+    "totalCorrect": 2,
+    "totalWrong": 1,
+    "totalSkipped": 0
+  },
+  "result": {
+    "questionResults": [
+      {
+        "qid": "q1",
+        "sectionId": "sec-num",
+        "outcome": "correct",
+        "marks": 4,
+        "maxMarks": 4
+      },
+      {
+        "qid": "q2",
+        "sectionId": "sec-num",
+        "outcome": "correct",
+        "marks": 4,
+        "maxMarks": 4
+      },
+      {
+        "qid": "q3",
+        "sectionId": "sec-num",
+        "outcome": "wrong",
+        "marks": -1,
+        "maxMarks": 4
+      }
+    ],
+    "sectionScores": [
+      {
+        "sectionId": "sec-num",
+        "sectionName": "Section B",
+        "obtained": 7,
+        "max": 12,
+        "correct": 2,
+        "wrong": 1,
+        "partial": 0,
+        "skipped": 0,
+        "total": 3
+      }
+    ],
+    "topicScores": [],
+    "totalObtained": 7,
+    "totalMax": 12,
+    "totalCorrect": 2,
+    "totalWrong": 1,
+    "totalPartial": 0,
+    "totalSkipped": 0,
+    "totalQuestions": 3
+  }
+}
