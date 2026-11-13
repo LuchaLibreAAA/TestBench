@@ -58,6 +58,35 @@ def get_papers_catalog(
         query += " ORDER BY p.year DESC, p.id ASC"
         rows = conn.execute(query, params).fetchall()
 
+        if not rows and not exam and not year and not q:
+            # Immediate fallback to seeds/papers/catalog.json if database is still seeding in background
+            from pathlib import Path
+            seed_catalog = Path(__file__).resolve().parent.parent.parent / "seeds" / "papers" / "catalog.json"
+            if seed_catalog.is_file():
+                try:
+                    cat_items = json.loads(seed_catalog.read_text(encoding="utf-8"))
+                    fallback_summaries = []
+                    for item in cat_items:
+                        fallback_summaries.append(
+                            PaperSummary(
+                                id=item["id"],
+                                title=item["title"],
+                                exam=item["exam"],
+                                examCode=item.get("exam"),
+                                year=item["year"],
+                                durationMin=item.get("durationMin", 180),
+                                totalQuestions=item.get("questionsCount", 0),
+                                sectionsCount=item.get("sectionsCount", 0),
+                                badge=item.get("badge", ""),
+                                status="published",
+                                minClientVersion=1,
+                                requiredFeatures=[],
+                            )
+                        )
+                    return {"items": fallback_summaries}
+                except Exception:
+                    pass
+
         items = []
         for r in rows:
             req_features = []

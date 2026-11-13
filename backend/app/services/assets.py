@@ -92,8 +92,15 @@ def resolve_asset(
         )
 
     # 3. Fallback to filesystem if not yet ingested into assets table
+    fallback_roots = []
     if local_fallback_dir:
-        root = local_fallback_dir.resolve()
+        fallback_roots.append(local_fallback_dir)
+    seeds_assets = Path(__file__).resolve().parent.parent.parent / "seeds" / "assets"
+    if seeds_assets.is_dir():
+        fallback_roots.append(seeds_assets)
+
+    for fallback_dir in fallback_roots:
+        root = fallback_dir.resolve()
         base = (root / paper_id).resolve()
         target = (base / filename).resolve()
         try:
@@ -109,6 +116,6 @@ def resolve_asset(
                     direct_path=target,
                 )
         except ValueError:
-            return None
+            continue
 
     return None

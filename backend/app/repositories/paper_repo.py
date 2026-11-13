@@ -16,6 +16,13 @@ class PaperRepository:
         with get_db(settings) as conn:
             paper = conn.execute("SELECT * FROM papers WHERE id=?", (paper_id,)).fetchone()
             if paper is None:
+                from pathlib import Path
+                seed_cand = Path(__file__).resolve().parent.parent.parent / "seeds" / "papers" / f"{paper_id}.json"
+                if seed_cand.is_file():
+                    try:
+                        return json.loads(seed_cand.read_text(encoding="utf-8"))
+                    except Exception:
+                        pass
                 return None
             sections = conn.execute("SELECT * FROM sections WHERE paper_id=? ORDER BY position", (paper_id,)).fetchall()
             questions = conn.execute("SELECT * FROM questions WHERE paper_id=? ORDER BY question_number", (paper_id,)).fetchall()
@@ -26,7 +33,13 @@ class PaperRepository:
         """Return canonical content hash and version for cache headers."""
         with get_db(settings) as conn:
             row = conn.execute("SELECT content_hash,data_version FROM papers WHERE id=?", (paper_id,)).fetchone()
-        return (row["content_hash"], row["data_version"]) if row else None
+        if not row:
+            from pathlib import Path
+            seed_cand = Path(__file__).resolve().parent.parent.parent / "seeds" / "papers" / f"{paper_id}.json"
+            if seed_cand.is_file():
+                return ("seed-v1", 1)
+            return None
+        return (row["content_hash"], row["data_version"])
 
     @staticmethod
     def list_papers(settings: Settings | None = None) -> list[dict[str, Any]]:
