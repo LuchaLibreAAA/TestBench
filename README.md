@@ -2,11 +2,11 @@
 
 <img src="testbench/public/icon.png" alt="TestBench Logo" width="84" />
 
-# 🎯 TestBench `v0.0.2(beta)`
+# 🎯 TestBench `v0.1.02`
 
 ### **Offline-First NTA CBT Mock Test Simulator, Q&A Database & PDF Extraction Platform**
 
-[![Version](https://img.shields.io/badge/Version-v0.0.2(beta)-2563eb?style=for-the-badge&logo=semanticrelease&logoColor=white)](#-release-v002beta)
+[![Version](https://img.shields.io/badge/Version-v0.1.02-2563eb?style=for-the-badge&logo=semanticrelease&logoColor=white)](#-release-v0102)
 [![React](https://img.shields.io/badge/React-19-06b6d4?style=for-the-badge&logo=react&logoColor=white)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Strict-3178c6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38bdf8?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
@@ -16,26 +16,26 @@
 
 ---
 
-*Built for **JEE Main** & **NEET UG** aspirants with authentic NTA Computer-Based Test (CBT) fidelity, light & dark modes, cropped diagram assets, searchable Q&A database, and an extensible Python PDF extraction framework.*
+*Built for **JEE Main**, **NEET UG**, and **WB Primary TET** aspirants with authentic Computer-Based Test (CBT) fidelity, light & dark modes, bilingual EN/BN support, mobile-optimized touch controls, searchable Q&A database, and an extensible Python PDF extraction framework.*
 
 </div>
 
 ---
 
-## 🏷️ Release `v0.0.2(beta)`
+## 🏷️ Release `v0.1.02`
 
-- **Current Version:** `v0.0.2(beta)` (displayed in the TestBench header, footer, and Settings **About** card)
-- **What's new in `v0.0.2(beta)`:**
-  - Live countdown on the Library **In Progress** resume card, consistent search/tab counts, and local cleanup of cached papers
-  - Wired **Settings** preferences (`Text Size` in Exam & Review, `Virtual Keypad` default visibility in Numerical questions)
-  - Improved **Exam**, **Instructions**, **Result**, **Review**, and **Analytics** reliability (`Submit Test` CTA on final question, URL `paperId` fallback on reload, accurate `startedAt` tracking, multi-topic weak insights, memoized analytics)
-  - Hardened backend PDF upload page-count guard and dynamic `pdf_qna_pipeline inspect` summary
+- **Current Version:** `v0.1.02` (displayed in the TestBench header, footer, and Settings **About** card)
+- **What's new in `v0.1.02`:**
+  - **WB Primary TET Integration**: Added WBTET category with official 2022 and 2023 question papers (150 Qs each, 150 marks, 150 min).
+  - **Bilingual EN/BN Support**: Language selector for Bengali and English with per-question text fallback and translated UI strings.
+  - **Mobile-First UX Overhaul**: 44px+ touch targets, sticky bottom action bar, responsive summary headers, and slide-out question palette bottom sheet (`PaletteSheet`).
+  - **Timer & Attempt Resiliency**: Absolute timestamp `endsAt` drift-proof countdown, automatic background autosave in IndexedDB (`Dexie`), and in-progress attempt resumption.
+  - **Granular Scorecards & Analytics**: Custom section attempt limit handling, rushed guess detection (`<10s`), weak-topic insights, and 1-click **Retry Wrong & Skipped** practice tests.
 - **Core platform highlights:**
-  - Full catalog of **7 Official Papers** (**JEE Main** 2023, 2024, 2026 + **NEET UG** 2023, 2024, 2025, 2026) with high-resolution cropped questions & options
-  - Official NTA **5-State Question Palette** (`Not Visited`, `Not Answered`, `Answered`, `Marked for Review`, `Answered & Marked`)
-  - Accurate **Scorecard & Analytics** honoring section attempt limits (e.g., 720 marks on NEET 200-Q pattern, 300 marks on JEE 90-Q pattern)
-  - Built-in **Q&A Database Explorer** + **Light / Dark Theme**
-  - One-click **Render Blueprint** (`render.yaml`) for Static Frontend + FastAPI Backend
+  - Full catalog of **9 Official Papers** across **JEE Main**, **NEET UG**, and **WB Primary TET** with 1,300+ cropped diagrams and options.
+  - Official NTA **5-State Question Palette** (`Not Visited`, `Not Answered`, `Answered`, `Marked for Review`, `Answered & Marked`).
+  - Strict marking engine supporting single-choice, multiple-choice (partial scoring), numeric keypad, and true/false questions.
+  - 100% offline-first execution: runs entirely within your browser with zero network lag or tracking.
 
 ---
 
