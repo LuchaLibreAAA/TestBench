@@ -45,22 +45,25 @@
 <tr>
 <td width="50%" valign="top">
 
-### 🖥️ Authentic NTA CBT Player
-- **5-State Palette**: Color-coded status badges matching NTA rules (`answeredMarked` counts toward evaluation)
-- **Drift-Proof Timer**: Absolute `endsAt` countdown with 5-min warning & 1-min urgent alert + auto-submit
-- **Sectional Controls**: Custom marking (`+4/-1`, `+4/0`), attempt limits (`any 5 of 10`, `any 10 of 15`), and pre-submit summary
-- **Multi-Format Questions**: Single-choice (including multi-key/bonus official keys), Multi-select (partial marking), Numerical keypad (`0–9`, `.`, `-`), and True/False
-- **KaTeX Math**: Crisp inline `$...$` and display `$$...$$` rendering
+### 🖥️ Authentic CBT Exam Player
+- **5-State NTA Palette**: Full fidelity color-coded states (`Not Visited`, `Not Answered`, `Answered`, `Marked for Review`, `Answered & Marked`).
+- **Mobile-First Responsive UX**: Dedicated bottom slide-out `PaletteSheet`, sticky mobile action bar, and $\ge$44px touch targets designed for smartphone screens.
+- **Drift-Proof Timer**: Absolute timestamp countdown with automatic local state preservation, 5-min warning, 1-min urgent pulse, and automatic submission.
+- **Bilingual Question Toggle**: Real-time switching between English, Hindi, and Bengali (`EN` / `BN`) with automated translation fallbacks.
+- **Sectional Controls & Limits**: Custom marking formulas (`+4/-1`, `+4/0`, `+1/0`), strict optional-question enforcement, and pre-submit question overview.
+- **Rich Question Types**: Single-choice (with official bonus/dual-key resolution), multi-select with partial evaluation, numerical on-screen keypad (`0–9`, `.`, `-`), and true/false.
+- **KaTeX Formulas**: Fast, pixel-perfect LaTeX formula rendering inline `$...$` and display `$$...$$`.
 
 </td>
 <td width="50%" valign="top">
 
-### 📊 Insights, Q&A DB & Themes
-- **Accurate Scorecard**: Section-wise breakdown, negative marking loss, rushed guesses (`<10s`), weak topics, and instant **Retry Wrong & Skipped** generator
-- **Solution Review**: Filter by `All`, `Correct`, `Wrong`, or `Skipped` with per-question time spent & answer comparison
-- **Q&A Database Screen**: Browse cropped question & option cards across all extracted papers
-- **Light & Dark Mode**: Persisted across Library, Instructions, Exam, Scorecard, Review, Analytics, and Settings
-- **Offline Persistence**: Runs smoothly offline in your browser with IndexedDB (Dexie) crash recovery & autosave
+### 📊 Deep Analytics, Solution Review & Q&A DB
+- **Detailed Scorecard**: Section-by-section breakdown, accuracy percentages, negative marking penalty tally, and rushed guess analysis (`<10s`).
+- **Weak-Topic Diagnostics**: Automatic identification of low-accuracy concepts with an instant **Retry Wrong & Skipped** custom test generator.
+- **Comprehensive Solution Review**: Question-by-question post-test breakdown with candidate response vs official key comparison and time spent tracking.
+- **Universal Q&A Bank Explorer**: Full-text searchable database of extracted question cards with high-DPI cropped diagrams.
+- **Theme & Text Personalization**: Light / Dark mode toggle and configurable text scaling (`sm`, `base`, `lg`) persisted across all views.
+- **100% Offline Resilience**: Powered entirely client-side via IndexedDB (`Dexie`) — exams continue uninterrupted during connection loss or page reloads.
 
 </td>
 </tr>
