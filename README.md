@@ -95,36 +95,45 @@ TestBench ships with **9 complete, officially validated question papers** (1,315
 
 ```text
 Work/
-├── testbench/                  # React 19 + TypeScript + Vite 8 + Tailwind v4 Frontend
+├── testbench/                  # React 19 + TypeScript + Vite 8 + Tailwind CSS v4 SPA
 │   ├── src/
-│   │   ├── core/               # Schema (Zod v4), Marking Engine, CBT State Machine, v0.0.2(beta)
-│   │   ├── features/           # Library, Paper Detail, Exam, Result, Review, Analytics, Q&A DB, Settings
-│   │   └── data/               # Dexie IndexedDB repositories & static catalog loader
-│   └── public/                 # Built-in JEE & NEET papers, Q&A JSONs, and cropped PNG assets
-├── backend/                    # Interdependent FastAPI + SQLite FTS5 REST API
+│   │   ├── core/               # Zod schemas, marking engine, CBT state machine, timer & versioning
+│   │   ├── features/           # Library, Paper Detail, Exam Player, Result, Review, Analytics, Q&A DB, Settings
+│   │   ├── data/               # Dexie IndexedDB stores (papers, attempts, assets) & static catalog loader
+│   │   ├── components/         # Shared UI: Buttons, Modal, Badge, PaletteSheet, Img, MathText
+│   │   ├── hooks/              # useAssetUrl, useTheme, useTimer, useKeyboardNavigation
+│   │   └── presets/            # Preset exam layouts for JEE Main, NEET UG, and WBTET
+│   └── public/                 # Bundled static catalog, Q&A databases, and cropped image assets
+│       ├── papers/             # Official CBT JSON papers & per-paper cropped diagram assets
+│       │   ├── jee-main/       # JEE Main 2023, 2024, 2026 papers
+│       │   ├── neet/           # NEET UG 2023, 2024, 2025, 2026 papers
+│       │   ├── wbtet/          # WB Primary TET 2022, 2023 papers
+│       │   └── assets/         # High-resolution question and option PNG screenshots
+│       └── qna/                # Universal Q&A JSON representations for all extracted papers
+├── backend/                    # FastAPI + SQLite FTS5 search service
 │   ├── app/                    # Health, Papers, Q&A endpoints, Admin ingest & asset streaming
-│   └── tests/                  # Pytest API & ingest suite
-├── tools/pdf_qna_pipeline/     # Config-driven PDF -> QnA JSON & TestBench paper extractor
-│   ├── configs/                # Exam YAML definitions (jee_main, neet_2023..2026)
-│   ├── parsers/                # NTA CBT, ExamGOAL cleaned, and scanned NEET parsers
-│   └── extractors/             # High-DPI clipping, whitespace trim & watermark cleanup
-└── render.yaml                 # Render Blueprint (Static Site + Free Python Web Service)
+│   └── tests/                  # Pytest API & database integrity test suite
+├── tools/pdf_qna_pipeline/     # Config-driven PDF -> Q&A extraction & validation toolkit
+│   ├── configs/                # Exam YAML definitions (jee_main, neet_2023..2026, wbtet)
+│   ├── parsers/                # Layout parsers for NTA CBT, ExamGOAL, and scanned booklets
+│   └── extractors/             # Image clipping, whitespace trim, and watermark filter
+└── render.yaml                 # Render Blueprint configuration for zero-downtime deployment
 ```
 
 ---
 
 ## 🛠 PDF-to-QnA Extraction Pipeline (`tools/pdf_qna_pipeline`)
 
-Config-driven Python pipeline (`PyMuPDF`, `Pillow`, `OpenCV`, `Pydantic v2`, `PyYAML`) for converting exam PDFs into clean datasets:
+Config-driven Python pipeline (`PyMuPDF`, `Pillow`, `OpenCV`, `Pydantic v2`, `PyYAML`) for converting official PDF papers into structured datasets:
 
 ```bash
-# Inspect PDF structure and record layout profile
+# 1. Inspect PDF structure and preview font / column profile
 python -m tools.pdf_qna_pipeline.cli inspect -i "path/to/exam.pdf" -o "dist/qna/output"
 
-# Extract questions, clip diagrams, export QnA + TestBench JSON, and validate
+# 2. Extract questions, crop diagrams, and export Q&A + CBT paper JSON
 python -m tools.pdf_qna_pipeline.cli extract -i "path/to/exam.pdf" -o "dist/qna/output" -c "tools/pdf_qna_pipeline/configs/jee_main.yaml"
 
-# Run standalone 8-point integrity validator
+# 3. Run automated 8-point schema and integrity validator
 python -m tools.pdf_qna_pipeline.cli validate -i "dist/qna/output/qna_database.json" -c "tools/pdf_qna_pipeline/configs/jee_main.yaml"
 ```
 
@@ -132,25 +141,41 @@ python -m tools.pdf_qna_pipeline.cli validate -i "dist/qna/output/qna_database.j
 
 ## 🚀 Getting Started Locally
 
-### Frontend (`testbench/`)
+### 1. Web Application (`testbench/`)
+The web application is fully client-side and requires **no external server** to run complete mock exams:
+
 ```bash
 cd testbench
 npm install
-npm run dev      # Start Vite dev server
-npm run lint     # Run oxlint
-npm run build    # TypeScript check + Vite production bundle
-npx vitest run   # Run frontend unit & catalog validation tests
+
+# Start Vite development server (http://localhost:5173)
+npm run dev
+
+# Run fast code linting via Oxlint
+npm run lint
+
+# Compile TypeScript and generate optimized production bundle
+npm run build
+
+# Preview production build locally
+npm run preview
 ```
 
-### Backend API & Pipeline (`backend/`, `tools/pdf_qna_pipeline/`)
+### 2. Optional Backend Service (`backend/`)
+Optional FastAPI service for question search, content management, and centralized indexing:
+
 ```bash
 pip install -r backend/requirements.txt
+
+# Start backend server with live reload on port 8000
 uvicorn backend.app.main:app --reload --port 8000
-python -m pytest backend/tests tools/pdf_qna_pipeline/tests -q
+
+# Run backend unit tests
+python -m pytest backend/tests -v
 ```
 
-### ☁️ One-Click Cloud Deployment (Render)
-Deploy both **`testbench-web`** (Static Site) and **`testbench-api`** (Free Python Web Service) directly from GitHub via [render.yaml](render.yaml).
+### 3. Cloud Deployment (Render)
+Deploy directly to Render with one click via `render.yaml`. The static web application is hosted with fast global CDN delivery, while all student data stays private within their browser storage.
 
 ---
 
