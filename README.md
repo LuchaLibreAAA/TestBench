@@ -70,15 +70,21 @@
 
 ## 📚 Built-in Official Papers Catalog
 
-| Exam | Year | Paper / Session | Questions | Duration | Max Marks |
-| :--- | :---: | :--- | :---: | :---: | :---: |
-| 🟦 **JEE Main** | `2026` | April Session (02 Apr, Shift 2) | 75 Qs | 180 min | 300 |
-| 🟦 **JEE Main** | `2024` | January Session 1 (27 Jan, Shift 1) | 90 Qs *(75 counted)* | 180 min | 300 |
-| 🟦 **JEE Main** | `2023` | April Session 2 (06 Apr, Shift 1) | 90 Qs *(75 counted)* | 180 min | 300 |
-| 🟩 **NEET UG** | `2026` | Official Question Paper | 180 Qs | 180 min | 720 |
-| 🟩 **NEET UG** | `2025` | Official Question Paper (Booklet 45) | 180 Qs | 180 min | 720 |
-| 🟩 **NEET UG** | `2024` | Official Question Paper (Booklet S6) | 200 Qs *(180 counted)* | 200 min | 720 |
-| 🟩 **NEET UG** | `2023` | Official Question Paper (Booklet G6) | 200 Qs *(180 counted)* | 200 min | 720 |
+TestBench ships with **9 complete, officially validated question papers** (1,315 total questions) across three major competitive examination boards:
+
+| Exam | Year | Paper / Session | Questions | Duration | Max Marks | Languages |
+| :--- | :---: | :--- | :---: | :---: | :---: | :---: |
+| 🟦 **JEE Main** | `2026` | April Session (02 Apr, Shift 2) | 75 Qs | 180 min | 300 | `EN` `HI` |
+| 🟦 **JEE Main** | `2024` | January Session 1 (27 Jan, Shift 1) | 90 Qs *(75 counted)* | 180 min | 300 | `EN` `HI` |
+| 🟦 **JEE Main** | `2023` | April Session 2 (06 Apr, Shift 1) | 90 Qs *(75 counted)* | 180 min | 300 | `EN` `HI` |
+| 🟩 **NEET UG** | `2026` | Official Question Paper | 180 Qs | 180 min | 720 | `EN` `HI` |
+| 🟩 **NEET UG** | `2025` | Official Question Paper (Booklet 45) | 180 Qs | 180 min | 720 | `EN` `HI` |
+| 🟩 **NEET UG** | `2024` | Official Question Paper (Booklet S6) | 200 Qs *(180 counted)* | 200 min | 720 | `EN` `HI` |
+| 🟩 **NEET UG** | `2023` | Official Question Paper (Booklet G6) | 200 Qs *(180 counted)* | 200 min | 720 | `EN` `HI` |
+| 🟨 **WB Primary TET** | `2023` | Official Question Paper (WBBPE) | 150 Qs | 150 min | 150 | `EN` `BN` |
+| 🟨 **WB Primary TET** | `2022` | Official Question Paper (WBBPE) | 150 Qs | 150 min | 150 | `EN` `BN` |
+
+> **Pattern Fidelity Note**: Papers with optional question rules (e.g. NEET Section B: *10 of 15 questions*, JEE Section B: *5 of 10 questions*) are strictly enforced by the marking engine. Attempts exceeding the limit evaluate only the first eligible answers, perfectly mirroring the official evaluation criteria.
 
 ---
 
