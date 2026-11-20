@@ -1,6 +1,6 @@
-# TestBench Architecture (`v0.0.2(beta)`)
+# TestBench Architecture (`v0.1.02`)
 
-> Complete technical architecture of the **TestBench** monorepo: React/TypeScript NTA CBT web application (`testbench/`), interdependent FastAPI + SQLite REST backend (`backend/`), config-driven PDF-to-QnA extraction framework (`tools/pdf_qna_pipeline/`), and Render Blueprint deployment (`render.yaml`).
+> Complete technical architecture of the **TestBench** monorepo: React/TypeScript NTA CBT web application (`testbench/`), optional FastAPI + SQLite REST backend (`backend/`), config-driven PDF-to-QnA extraction framework (`tools/pdf_qna_pipeline/`), and Render Blueprint deployment (`render.yaml`).
 
 ---
 
@@ -22,8 +22,8 @@ flowchart LR
 ```
 
 ### Key Architectural Principles
-1. **Local-First Web App:** `testbench/` executes mock exams, timing, evaluation, review, analytics, and theme preferences 100% client-side using **Dexie (IndexedDB)** and built-in static bundles under `testbench/public/`.
-2. **Interdependent Standalone Backend:** `backend/` provides a versioned FastAPI service (`/api/v1/*`) backed by SQLite + FTS5 so papers, universal Q&A sets, and image assets can be ingested, queried, patched, and exported over HTTP independently of the frontend.
+1. **Local-First & Offline-Ready Web App:** `testbench/` executes mock exams, timing, evaluation, review, analytics, and theme preferences 100% client-side using **Dexie (IndexedDB)** and pre-bundled static datasets under `testbench/public/`. All 9 official question papers (JEE Main, NEET UG, WB Primary TET) and their high-resolution cropped question assets are bundled directly with the web application, ensuring zero network latency and total offline reliability without requiring a running backend.
+2. **Decoupled Backend Service:** `backend/` provides an optional versioned FastAPI service (`/api/v1/*`) backed by SQLite + FTS5 so papers, universal Q&A sets, and image assets can be ingested, queried, patched, and exported over HTTP independently of the frontend. (Full cloud-hosted backend asset streaming is maintained on the dedicated feature branch `feature/backend-hosted-paper-data`).
 3. **Config-Driven Extraction Pipeline:** `tools/pdf_qna_pipeline/` separates layout parsing (`parsers/`), pixel clipping & watermark cleanup (`extractors/`), schema validation (`models.py`, `validate.py`), answer-key patching (`answer_keys.py`), and target exports (`exporters/`).
 
 ---
@@ -33,19 +33,20 @@ flowchart LR
 ```text
 Work/
 ├── render.yaml                     # Render Blueprint (testbench-web + testbench-api)
-├── README.md                       # Project documentation (v0.0.2(beta))
+├── README.md                       # Project documentation (v0.1.02)
 ├── .gitignore                      # Excludes node_modules, .env, backend/data/, testbench/NEET/
 ├── architecture.md                 # This system architecture document
 │
 ├── testbench/                      # Frontend SPA (React 19 + TypeScript + Tailwind v4)
-│   ├── package.json                # v0.0.2-beta scripts & npm deps
+│   ├── package.json                # v0.1.02 scripts & npm deps
 │   ├── vite.config.ts              # Vite 8 + Vitest config
 │   ├── public/
 │   │   ├── icon.png
 │   │   ├── papers/
-│   │   │   ├── catalog.json        # Built-in JEE Main & NEET UG paper catalog metadata
+│   │   │   ├── catalog.json        # Built-in JEE Main, NEET UG & WBTET paper catalog metadata
 │   │   │   ├── jee-main/*.json     # JEE Main 2023, 2024, 2026 PaperSchema JSONs
 │   │   │   ├── neet/*.json         # NEET UG 2023, 2024, 2025, 2026 PaperSchema JSONs
+│   │   │   ├── wbtet/*.json        # WB Primary TET 2022, 2023 PaperSchema JSONs (Bilingual)
 │   │   │   └── assets/<paperId>/   # Cropped question & option PNGs
 │   │   └── qna/*.json              # Universal Q&A JSONs (JEE 2026, NEET 2023..2026)
 │   └── src/
@@ -100,23 +101,23 @@ Uses `HashRouter` for zero-config static hosting and deep-link reload resilience
 
 | Route | Component | Responsibility |
 | :--- | :--- | :--- |
-| `/` | `LibraryScreen` | Exam catalog browsing (`All`, `JEE Main`, `NEET UG`), search, `Load All Papers`, `v0.0.2(beta)` branding, resume card |
+| `/` | `LibraryScreen` | Exam catalog browsing (`All`, `JEE Main`, `NEET UG`, `WB Primary TET`), search, `Load All Papers`, `v0.1.02` branding, resume card |
 | `/qna` | `QnADatabaseScreen` | Searchable & filterable Q&A bank explorer backed by `public/qna/*.json` + IndexedDB cache |
 | `/paper/:id` | `PaperDetailScreen` | Paper metadata summary, section breakdown, marking badges, past attempt history |
 | `/exam/:attemptId/instructions` | `InstructionsScreen` | Pre-test NTA general rules, language selector, agreement gate, start exam |
-| `/exam/:attemptId` | `ExamScreen` | Full NTA CBT player (header timer, section tabs, question view, action bar, palette) |
+| `/exam/:attemptId` | `ExamScreen` | Full NTA CBT player (header timer, section tabs, question view, action bar, palette sheet) |
 | `/result/:attemptId` | `ResultScreen` | Live recomputed scorecard (`scorePaper`), accuracy, diagnostics, section table, retry generator |
 | `/review/:attemptId` | `ReviewScreen` | Solution walkthrough (`All` / `Correct` / `Wrong` / `Skipped`), answer comparison, time spent |
 | `/analytics` | `AnalyticsScreen` | Aggregate score, accuracy, and topic mastery across completed attempts |
-| `/settings` | `SettingsScreen` | Theme (`light`/`dark`), text size, virtual numeric keypad toggle, IndexedDB stats/reset, `v0.0.2(beta)` About card |
+| `/settings` | `SettingsScreen` | Theme (`light`/`dark`), text size, virtual numeric keypad toggle, IndexedDB stats/reset, `v0.1.02` About card |
 
 ### 3.2 Pure Domain Core (`src/core/`)
 Designed to remain 100% React- and Dexie-free so it can run deterministically under Vitest:
 
-- **Versioning (`core/version.ts`)**: Exports `APP_VERSION = 'v0.0.2(beta)'`, synced with `testbench/package.json` (`"version": "0.0.2-beta"`).
+- **Versioning (`core/version.ts`)**: Exports `APP_VERSION = 'v0.1.02'`, synced with `testbench/package.json` (`"version": "0.1.02"`).
 - **Schemas (`core/schema/`)**:
   - `paper.ts`: `PaperSchema` (`schemaVersion: 1`, kebab-case `id`, `navigation: 'free' | 'sectionLocked'`, `sections[]` with `attemptLimit?` and `marking`).
-  - `question.ts`: Discriminated union across `single` (`SingleQuestionSchema` with `answer: z.array(z.string()).min(1)` supporting both standard single-key and NTA dual-key/bonus questions), `multi` (`MultiQuestionSchema`), `numerical` (`NumericalQuestionSchema` with exact/range/tolerance), and `tf` (`TFQuestionSchema`).
+  - `question.ts`: Discriminated union across `single` (`SingleQuestionSchema` with `answer: z.array(z.string()).min(1)` supporting standard single-key, NTA dual-key/bonus questions, and `localizedImages` for bilingual English/Bengali questions), `multi` (`MultiQuestionSchema`), `numerical` (`NumericalQuestionSchema` with exact/range/tolerance), and `tf` (`TFQuestionSchema`).
   - `attempt.ts`: `AttemptSchema`, `ResponseSchema`, and `QuestionStatus` (`notVisited | notAnswered | answered | marked | answeredMarked`).
 - **Validation (`core/import/validate.ts`)**: `validatePaper()` runs two passes — Zod schema validation followed by cross-field domain checks (unique question IDs across sections, `attemptLimit <= questions.length`, valid option IDs in `answer`, valid `answerRange`). Used by catalog auto-loading (`data/catalog.ts`, `data/repositories/papers.ts`).
 - **CBT State Machine (`core/exam/`)**:
@@ -188,7 +189,9 @@ flowchart TD
 ---
 
 ### 4.1 Architectural Role & Design Principles
-1. **Single Canonical Store (Universal Q&A Schema `1.0`):** The relational database stores papers, sections, and questions in the normalized Universal Q&A schema (`examMetadata`, `sections`, `questions` with raw JSON columns for content, options, answer, and source). The client-facing TestBench CBT schema is **derived dynamically** on-the-fly, preventing schema drift or duplicate sources of truth.
+> **Architecture Note on Branch Isolation:** In `v0.1.02` (on `main`), the web frontend is configured in an offline-first static architecture where all 9 official papers and image assets are bundled locally in `testbench/public/`. The backend service described below is completely modular and can run alongside the web app for administrative ingestion, full-text question queries, and external API consumption. The advanced mode where the frontend dynamically fetches all papers and image assets exclusively over the network from the FastAPI backend is maintained on the `feature/backend-hosted-paper-data` branch.
+
+1. **Canonical Relational Store (Universal Q&A Schema `1.0`):** The relational database stores papers, sections, and questions in the normalized Universal Q&A schema (`examMetadata`, `sections`, `questions` with raw JSON columns for content, options, answer, and source). The client-facing TestBench CBT schema is **derived dynamically** on-the-fly, preventing schema drift or duplicate sources of truth.
 2. **Layered Separation of Concerns:**
    - **Routes (`app/routes/*`):** Parameter binding, HTTP status codes, header injection (`ETag`, `X-Data-Version`), and error envelope translation. Routes contain zero SQL.
    - **Services (`app/services/*`):** Pure domain logic including ingestion validation, asynchronous job scheduling, path sanitization, and CBT export caching.
