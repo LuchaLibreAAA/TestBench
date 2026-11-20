@@ -22,7 +22,7 @@ flowchart LR
 ```
 
 ### Key Architectural Principles
-1. **Local-First & Offline-Ready Web App:** `testbench/` executes mock exams, timing, evaluation, review, analytics, and theme preferences 100% client-side using **Dexie (IndexedDB)** and pre-bundled static datasets under `testbench/public/`. All 10 official question papers (JEE Main, NEET UG, WB Primary TET) and their high-resolution cropped question assets are bundled directly with the web application, ensuring zero network latency and total offline reliability without requiring a running backend.
+1. **Local-First & Offline-Ready Web App:** `testbench/` executes mock exams, timing, evaluation, review, analytics, and theme preferences 100% client-side using **Dexie (IndexedDB)** and pre-bundled static datasets under `testbench/public/`. All 11 official question papers (JEE Main, NEET UG, WB Primary TET) and their high-resolution cropped question assets are bundled directly with the web application, ensuring zero network latency and total offline reliability without requiring a running backend.
 2. **Decoupled Backend Service:** `backend/` provides an optional versioned FastAPI service (`/api/v1/*`) backed by SQLite + FTS5 so papers, universal Q&A sets, and image assets can be ingested, queried, patched, and exported over HTTP independently of the frontend. (Full cloud-hosted backend asset streaming is maintained on the dedicated feature branch `feature/backend-hosted-paper-data`).
 3. **Config-Driven Extraction Pipeline:** `tools/pdf_qna_pipeline/` separates layout parsing (`parsers/`), pixel clipping & watermark cleanup (`extractors/`), schema validation (`models.py`, `validate.py`), answer-key patching (`answer_keys.py`), and target exports (`exporters/`).
 
@@ -189,7 +189,7 @@ flowchart TD
 ---
 
 ### 4.1 Architectural Role & Design Principles
-> **Architecture Note on Branch Isolation:** In `v0.1.02` (on `main`), the web frontend is configured in an offline-first static architecture where all 10 official papers and image assets are bundled locally in `testbench/public/`. The backend service described below is completely modular and can run alongside the web app for administrative ingestion, full-text question queries, and external API consumption. The advanced mode where the frontend dynamically fetches all papers and image assets exclusively over the network from the FastAPI backend is maintained on the `feature/backend-hosted-paper-data` branch.
+> **Architecture Note on Branch Isolation:** In `v0.1.02` (on `main`), the web frontend is configured in an offline-first static architecture where all 11 official papers and image assets are bundled locally in `testbench/public/`. The backend service described below is completely modular and can run alongside the web app for administrative ingestion, full-text question queries, and external API consumption. The advanced mode where the frontend dynamically fetches all papers and image assets exclusively over the network from the FastAPI backend is maintained on the `feature/backend-hosted-paper-data` branch.
 
 1. **Canonical Relational Store (Universal Q&A Schema `1.0`):** The relational database stores papers, sections, and questions in the normalized Universal Q&A schema (`examMetadata`, `sections`, `questions` with raw JSON columns for content, options, answer, and source). The client-facing TestBench CBT schema is **derived dynamically** on-the-fly, preventing schema drift or duplicate sources of truth.
 2. **Layered Separation of Concerns:**
