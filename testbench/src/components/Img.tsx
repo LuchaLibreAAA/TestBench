@@ -15,16 +15,29 @@ export const Img: React.FC<ImgProps> = ({
   alt = 'Question diagram',
   className = '',
 }) => {
-  const isDirectUrl = src?.startsWith('http://') || src?.startsWith('https://') || src?.startsWith('data:');
+  const isDirectUrl =
+    src?.startsWith('http://') ||
+    src?.startsWith('https://') ||
+    src?.startsWith('data:') ||
+    src?.startsWith('blob:');
+
   const assetUrl = useAssetUrl(isDirectUrl ? '' : paperId, isDirectUrl ? '' : (src ?? ''));
   const finalSrc = isDirectUrl ? src : assetUrl;
 
+  const [prevSrc, setPrevSrc] = useState(finalSrc);
   const [loaded, setLoaded] = useState(false);
   const [error, setError] = useState(false);
 
+  // Reset state during render if the image source changes (React recommended pattern)
+  if (prevSrc !== finalSrc) {
+    setPrevSrc(finalSrc);
+    setLoaded(false);
+    setError(false);
+  }
+
   if (!src) return null;
 
-  if (error || (!finalSrc && !isDirectUrl)) {
+  if (error) {
     return (
       <div className="inline-flex items-center gap-2 px-3 py-2 bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg text-xs text-slate-500 dark:text-slate-400">
         <ImageIcon className="w-4 h-4 text-slate-400" />
@@ -35,7 +48,7 @@ export const Img: React.FC<ImgProps> = ({
 
   return (
     <div className="relative inline-block my-2">
-      {!loaded && (
+      {(!loaded || !finalSrc) && (
         <div className="w-48 h-32 bg-slate-200 dark:bg-slate-800 animate-pulse rounded-lg flex items-center justify-center">
           <ImageIcon className="w-6 h-6 text-slate-400" />
         </div>
@@ -55,4 +68,3 @@ export const Img: React.FC<ImgProps> = ({
     </div>
   );
 };
-
