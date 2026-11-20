@@ -5,7 +5,7 @@ export const APP_VERSION = 'v0.1.02';
 export const APP_METADATA = {
   version: APP_VERSION,
   name: 'TestBench',
-  catalogCount: 9,
+  catalogCount: 10,
   categories: ['jee-main', 'neet', 'wbtet'] as const,
   offlineFirst: true,
 } as const;

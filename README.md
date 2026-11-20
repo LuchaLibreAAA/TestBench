@@ -32,7 +32,7 @@
   - **Timer & Attempt Resiliency**: Absolute timestamp `endsAt` drift-proof countdown, automatic background autosave in IndexedDB (`Dexie`), and in-progress attempt resumption.
   - **Granular Scorecards & Analytics**: Custom section attempt limit handling, rushed guess detection (`<10s`), weak-topic insights, and 1-click **Retry Wrong & Skipped** practice tests.
 - **Core platform highlights:**
-  - Full catalog of **9 Official Papers** across **JEE Main**, **NEET UG**, and **WB Primary TET** with 1,300+ cropped diagrams and options.
+  - Full catalog of **10 Official Papers** across **JEE Main**, **NEET UG**, and **WB Primary TET** with 1,480+ cropped diagrams and options.
   - Official NTA **5-State Question Palette** (`Not Visited`, `Not Answered`, `Answered`, `Marked for Review`, `Answered & Marked`).
   - Strict marking engine supporting single-choice, multiple-choice (partial scoring), numeric keypad, and true/false questions.
   - 100% offline-first execution: runs entirely within your browser with zero network lag or tracking.
@@ -81,6 +81,7 @@ TestBench ships with **9 complete, officially validated question papers** (1,315
 | 🟦 **JEE Main** | `2024` | January Session 1 (27 Jan, Shift 1) | 90 Qs *(75 counted)* | 180 min | 300 | `EN` `HI` |
 | 🟦 **JEE Main** | `2023` | April Session 2 (06 Apr, Shift 1) | 90 Qs *(75 counted)* | 180 min | 300 | `EN` `HI` |
 | 🟩 **NEET UG** | `2026` | Official Question Paper | 180 Qs | 180 min | 720 | `EN` `HI` |
+| 🟩 **NEET UG** | `2026` | Official Question Paper (Re-Exam, Code 50) | 180 Qs | 180 min | 720 | `EN` |
 | 🟩 **NEET UG** | `2025` | Official Question Paper (Booklet 45) | 180 Qs | 180 min | 720 | `EN` `HI` |
 | 🟩 **NEET UG** | `2024` | Official Question Paper (Booklet S6) | 200 Qs *(180 counted)* | 200 min | 720 | `EN` `HI` |
 | 🟩 **NEET UG** | `2023` | Official Question Paper (Booklet G6) | 200 Qs *(180 counted)* | 200 min | 720 | `EN` `HI` |
@@ -106,7 +107,7 @@ Work/
 │   └── public/                 # Bundled static catalog, Q&A databases, and cropped image assets
 │       ├── papers/             # Official CBT JSON papers & per-paper cropped diagram assets
 │       │   ├── jee-main/       # JEE Main 2023, 2024, 2026 papers
-│       │   ├── neet/           # NEET UG 2023, 2024, 2025, 2026 papers
+│       │   ├── neet/           # NEET UG 2023, 2024, 2025, 2026 (Regular & Re-Exam) papers
 │       │   ├── wbtet/          # WB Primary TET 2022, 2023 papers
 │       │   └── assets/         # High-resolution question and option PNG screenshots
 │       └── qna/                # Universal Q&A JSON representations for all extracted papers
