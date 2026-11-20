@@ -10,7 +10,8 @@
 | Rev | Date | Author | Summary of change |
 |-----|------|--------|-------------------|
 | 0.1 | 2026-11-04 | initial | First full draft |
-| | | | |
+| 0.2 | 2026-11-14 | core | Release v0.1.02: WBTET category & bilingual EN/BN support, mobile responsiveness, 9 bundled papers |
+| 0.3 | 2026-11-20 | arch | ADR: Retain offline-first static bundle on main; isolate backend-hosted asset streaming to feature branch |
 
 ### 0.2 Status Legend
 - `[ ]` not started, `[~]` in progress, `[x]` done
@@ -1145,7 +1146,9 @@ Typecheck, lint, unit tests, build, and a Playwright smoke test on every push.
 | D3 | 2026-11-04 | Dexie/IndexedDB for all local data | blobs for images, larger quota than localStorage |
 | D4 | 2026-11-04 | Hash routing | safe in Capacitor and static hosting |
 | D5 | 2026-11-04 | No backend in v1 | keep scope small, offline-first |
-| | | | |
+| D6 | 2026-11-14 | Pre-bundle 9 official papers in `public/` | zero-network offline experience out of the box |
+| D7 | 2026-11-14 | Bilingual EN/BN with `localizedImages` | support regional primary teacher eligibility exams (WBTET) |
+| D8 | 2026-11-20 | Dual-architecture feature branch strategy | keep `main` production-grade & statically deployable without runtime backend dependencies; isolate full dynamic backend-hosted asset streaming in `feature/backend-hosted-paper-data` |
 
 ---
 
