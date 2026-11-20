@@ -96,6 +96,18 @@
     "badge": "NEET 2023"
   },
   {
+    "id": "neet-ug-2022",
+    "exam": "neet",
+    "year": 2022,
+    "title": "NEET UG 2022 — Official Question Paper (Code R6)",
+    "description": "Official National Eligibility cum Entrance Test (UG) 2022 question paper (Code R6). 200 questions covering Physics, Chemistry, Botany, and Zoology with Section A (compulsory) and Section B (attempt any 10).",
+    "durationMin": 200,
+    "sectionsCount": 8,
+    "questionsCount": 200,
+    "path": "/papers/neet/neet-ug-2022.json",
+    "badge": "NEET 2022"
+  },
+  {
     "id": "wbtet-2023",
     "exam": "wbtet",
     "year": 2023,
